@@ -1,0 +1,11 @@
+D:\mica\poc_tcc\EstoqueService\bin\Debug\netcoreapp2.0\EstoqueService.deps.json
+D:\mica\poc_tcc\EstoqueService\bin\Debug\netcoreapp2.0\EstoqueService.runtimeconfig.json
+D:\mica\poc_tcc\EstoqueService\bin\Debug\netcoreapp2.0\EstoqueService.runtimeconfig.dev.json
+D:\mica\poc_tcc\EstoqueService\bin\Debug\netcoreapp2.0\EstoqueService.dll
+D:\mica\poc_tcc\EstoqueService\bin\Debug\netcoreapp2.0\EstoqueService.pdb
+D:\mica\poc_tcc\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.csprojAssemblyReference.cache
+D:\mica\poc_tcc\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.csproj.CoreCompileInputs.cache
+D:\mica\poc_tcc\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.AssemblyInfoInputs.cache
+D:\mica\poc_tcc\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.AssemblyInfo.cs
+D:\mica\poc_tcc\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.dll
+D:\mica\poc_tcc\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.pdb
