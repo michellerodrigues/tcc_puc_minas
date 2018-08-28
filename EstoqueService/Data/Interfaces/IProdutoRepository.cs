@@ -8,6 +8,6 @@ namespace EstoqueService.Data.Interfaces
 {
     public interface IProdutoRepository : IRepository<Produto>
     {
-        IEnumerable<Produto> FindProdutos(Func<Produto, bool> predicate);
+        IEnumerable<Produto> FindProdutos(Func<Produto, bool> predicate);       
     }
 }

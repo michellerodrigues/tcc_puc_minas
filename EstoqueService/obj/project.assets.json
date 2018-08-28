@@ -13132,11 +13132,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\mica\\poc_tcc\\EstoqueService\\EstoqueService.csproj",
+      "projectUniqueName": "D:\\mica\\tcc\\tcc_puc_minas\\EstoqueService\\EstoqueService.csproj",
       "projectName": "EstoqueService",
-      "projectPath": "D:\\mica\\poc_tcc\\EstoqueService\\EstoqueService.csproj",
+      "projectPath": "D:\\mica\\tcc\\tcc_puc_minas\\EstoqueService\\EstoqueService.csproj",
       "packagesPath": "C:\\Users\\Michelle Rodrigues\\.nuget\\packages\\",
-      "outputPath": "D:\\mica\\poc_tcc\\EstoqueService\\obj\\",
+      "outputPath": "D:\\mica\\tcc\\tcc_puc_minas\\EstoqueService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

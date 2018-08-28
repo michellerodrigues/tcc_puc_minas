@@ -1,0 +1,11 @@
+D:\mica\tcc\tcc_puc_minas\DescarteService\obj\Debug\netcoreapp2.0\DescarteService.csprojAssemblyReference.cache
+D:\mica\tcc\tcc_puc_minas\DescarteService\obj\Debug\netcoreapp2.0\DescarteService.csproj.CoreCompileInputs.cache
+D:\mica\tcc\tcc_puc_minas\DescarteService\obj\Debug\netcoreapp2.0\DescarteService.AssemblyInfoInputs.cache
+D:\mica\tcc\tcc_puc_minas\DescarteService\obj\Debug\netcoreapp2.0\DescarteService.AssemblyInfo.cs
+D:\mica\tcc\tcc_puc_minas\DescarteService\bin\Debug\netcoreapp2.0\DescarteService.deps.json
+D:\mica\tcc\tcc_puc_minas\DescarteService\bin\Debug\netcoreapp2.0\DescarteService.runtimeconfig.json
+D:\mica\tcc\tcc_puc_minas\DescarteService\bin\Debug\netcoreapp2.0\DescarteService.runtimeconfig.dev.json
+D:\mica\tcc\tcc_puc_minas\DescarteService\bin\Debug\netcoreapp2.0\DescarteService.dll
+D:\mica\tcc\tcc_puc_minas\DescarteService\bin\Debug\netcoreapp2.0\DescarteService.pdb
+D:\mica\tcc\tcc_puc_minas\DescarteService\obj\Debug\netcoreapp2.0\DescarteService.dll
+D:\mica\tcc\tcc_puc_minas\DescarteService\obj\Debug\netcoreapp2.0\DescarteService.pdb

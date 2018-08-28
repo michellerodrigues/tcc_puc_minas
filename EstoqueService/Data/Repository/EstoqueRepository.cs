@@ -16,4 +16,14 @@ public class EstoqueRepository : Repository<Estoque>, IEstoqueRepository
     {
         return _context.Estoques.Where(predicate);
     }
+
+    public IEnumerable<Estoque> FindItensFinalizadosEstoque()
+    {
+         return _context.Estoques.Where(e=>e.Descartado==false&&e.QtdeDispUnidade==0).OrderBy(e=>e.RevendidoPor);
+    }
+
+    public IEnumerable<Estoque> FindItensVencidosEstoque()
+    {
+        return _context.Estoques.Where(e=>e.Descartado==false && e.DataVecimentoProduto.ToOADate()<=DateTime.Now.ToOADate()).OrderBy(e=>e.FornecidoPor);
+    }
 }
