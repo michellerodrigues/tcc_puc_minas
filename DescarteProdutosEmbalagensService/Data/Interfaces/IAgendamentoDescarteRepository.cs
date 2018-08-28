@@ -6,8 +6,9 @@ using DescarteService.Data.Models;
 
 namespace DescarteService.Data.Interfaces
 {
-    public interface IRevendedorRepository : IRepository<Revendedor>
+    public interface IAgendamentoDescarteRepository : IRepository<AgendamentoDescarte>
     {
-        IEnumerable<Revendedor> FindRevendedor(Func<Revendedor, bool> predicate);
+        IEnumerable<AgendamentoDescarte> FindAgendamentoEmAndamento();
     }
+
 }

@@ -1,5 +1,6 @@
 ﻿public class AppSettings
 {
+    public string JobsConectionString { get; set; }
     public int RetriesJob { get; set; }
     public int IntervaloLeituraJob { get; set; }
     public int DaysDurationQueueJob { get; set; }

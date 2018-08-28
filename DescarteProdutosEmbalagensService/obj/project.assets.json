@@ -85,20 +85,6 @@
           }
         }
       },
-      "Hangfire.SimpleInjector/1.3.1": {
-        "type": "package",
-        "dependencies": {
-          "Hangfire.Core": "1.6.12",
-          "Newtonsoft.Json": "10.0.2",
-          "SimpleInjector": "4.0.7"
-        },
-        "compile": {
-          "lib/net45/Hangfire.SimpleInjector.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Hangfire.SimpleInjector.dll": {}
-        }
-      },
       "Hangfire.SqlServer/1.6.20": {
         "type": "package",
         "dependencies": {
@@ -2983,14 +2969,34 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/10.0.2": {
+      "Newtonsoft.Json/10.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
-          "NETStandard.Library": "1.6.1",
+          "System.Collections": "4.3.0",
           "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Linq.Expressions": "4.3.0",
+          "System.ObjectModel": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.Numerics": "4.3.0",
           "System.Runtime.Serialization.Formatters": "4.3.0",
           "System.Runtime.Serialization.Primitives": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Tasks": "4.3.0",
+          "System.Xml.ReaderWriter": "4.3.0",
+          "System.Xml.XDocument": "4.3.0",
           "System.Xml.XmlDocument": "4.3.0"
         },
         "compile": {
@@ -3264,19 +3270,6 @@
             "assetType": "native",
             "rid": "win-x86"
           }
-        }
-      },
-      "SimpleInjector/4.0.7": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.0",
-          "System.ComponentModel": "4.0.1"
-        },
-        "compile": {
-          "lib/netstandard1.3/SimpleInjector.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/SimpleInjector.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.7": {
@@ -5288,16 +5281,6 @@
         "lib/netstandard1.3/es/Hangfire.Core.resources.dll",
         "lib/netstandard1.3/zh-TW/Hangfire.Core.resources.dll",
         "lib/netstandard1.3/zh/Hangfire.Core.resources.dll"
-      ]
-    },
-    "Hangfire.SimpleInjector/1.3.1": {
-      "sha512": "eqBcoqGIwJHWJEpX2YsrRy62rnSL2o3jfSx3tga1taT3c/7DKo9fIYQlyB7l/dFbXqIxblEmi2F30ShB4QXQTQ==",
-      "type": "package",
-      "path": "hangfire.simpleinjector/1.3.1",
-      "files": [
-        "hangfire.simpleinjector.1.3.1.nupkg.sha512",
-        "hangfire.simpleinjector.nuspec",
-        "lib/net45/Hangfire.SimpleInjector.dll"
       ]
     },
     "Hangfire.SqlServer/1.6.20": {
@@ -8377,12 +8360,11 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/10.0.2": {
-      "sha512": "iwElSU2IXmwGvytJsezyDML2ZWDkG2JzTYzlU/BNlmzMdlmRvbnwITsGGY74gwVEpDli1UdOLkMT7/3jxWvXzA==",
+    "Newtonsoft.Json/10.0.1": {
+      "sha512": "ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
       "type": "package",
-      "path": "newtonsoft.json/10.0.2",
+      "path": "newtonsoft.json/10.0.1",
       "files": [
-        "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -8395,11 +8377,9 @@
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",
         "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wpa81+wp8/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wpa81+wp8/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wpa81+wp8/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wpa81+wp8/Newtonsoft.Json.xml",
-        "newtonsoft.json.10.0.2.nupkg.sha512",
+        "newtonsoft.json.10.0.1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
       ]
@@ -8708,23 +8688,6 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "SimpleInjector/4.0.7": {
-      "sha512": "OVrpelx43/gvblYuv08C1X4MmP7bU+7pC0vlIJy/KxVWy2C+lzeuQ00yozYCLNL+9OkxYgcFVX9EoN4tAHjTGw==",
-      "type": "package",
-      "path": "simpleinjector/4.0.7",
-      "files": [
-        "lib/net40/SimpleInjector.dll",
-        "lib/net40/SimpleInjector.xml",
-        "lib/net45/SimpleInjector.dll",
-        "lib/net45/SimpleInjector.xml",
-        "lib/netstandard1.0/SimpleInjector.dll",
-        "lib/netstandard1.0/SimpleInjector.xml",
-        "lib/netstandard1.3/SimpleInjector.dll",
-        "lib/netstandard1.3/SimpleInjector.xml",
-        "simpleinjector.4.0.7.nupkg.sha512",
-        "simpleinjector.nuspec"
       ]
     },
     "SQLitePCLRaw.bundle_green/1.1.7": {
@@ -13628,7 +13591,6 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "HangFire >= 1.6.20",
-      "HangFire.SimpleInjector >= 1.3.1",
       "Microsoft.AspNetCore.All >= 2.0.6",
       "Microsoft.EntityFrameworkCore.Design >= 2.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.0.2",
@@ -13644,11 +13606,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\mica\\tcc\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\DescarteService.csproj",
+      "projectUniqueName": "D:\\mica\\tcc\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\DescarteService.csproj",
       "projectName": "DescarteService",
-      "projectPath": "d:\\mica\\tcc\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\DescarteService.csproj",
+      "projectPath": "D:\\mica\\tcc\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\DescarteService.csproj",
       "packagesPath": "C:\\Users\\Michelle Rodrigues\\.nuget\\packages\\",
-      "outputPath": "d:\\mica\\tcc\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\obj\\",
+      "outputPath": "D:\\mica\\tcc\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13681,10 +13643,6 @@
           "HangFire": {
             "target": "Package",
             "version": "[1.6.20, )"
-          },
-          "HangFire.SimpleInjector": {
-            "target": "Package",
-            "version": "[1.3.1, )"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
@@ -13719,17 +13677,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Hangfire.SimpleInjector 1.3.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Hangfire.SimpleInjector",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }

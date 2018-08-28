@@ -13,7 +13,6 @@ using Hangfire;
 using DescarteServices.Jobs;
 using DescarteService.Services.Messages;
 using DescarteService.Services;
-using SimpleInjector;
 
 namespace DescarteService
 {
@@ -68,7 +67,7 @@ namespace DescarteService
 
             DBInicializar.StartDataBase(app);
 
-            Hangfire.GlobalConfiguration.Configuration.UseSqlServerStorage("JobsDB");
+            Hangfire.GlobalConfiguration.Configuration.UseSqlServerStorage("Server = DESKTOP-C8BIS20\\MSSQLSERVER2;Database=JobsDB;Integrated Security=True;");
 
             app.UseHangfireDashboard("/jobs", new DashboardOptions
             {

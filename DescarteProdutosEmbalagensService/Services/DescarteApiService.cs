@@ -18,13 +18,18 @@ namespace DescarteService.Services
         static string EstoqueServicesURL = Startup.AppSettings.EstoqueServicesURL;
         public ObterProdutosVencidosMessageResponse ObterProdutosVencidos()
         {
+           // var _factory = new DesignTimeDbContextFactory();
+
+           // var repository = new AgendamentoDescarteRepository(_factory.CreateDbContext(new string[1]));
+
+
             ObterProdutosVencidosMessageResponse response = HttpRestClient.GetAsync<ObterProdutosVencidosMessageResponse>(string.Format("{0}/{1}", EstoqueServicesURL, (object)"vencidos")).GetAwaiter().GetResult();
             if (response != null)
-            {
+            {            
              
-                var produtosOrdenadosPorFabricante = response.LoteProdutosVecidos.OrderBy(p=>p.EmailFabricante).ToList();
                 if(response.codRetorno!=1)
                 {
+                    //var produtosOrdenadosPorFabricante = response.LoteProdutosVecidos.OrderBy(p=>p.EmailFabricante).ToList();
 
                     var listaFabricantes = response.LoteProdutosVecidos.Select(x => x.EmailFabricante).Distinct().ToList();
                     
@@ -33,7 +38,7 @@ namespace DescarteService.Services
                         ComunicarDescartePendenteMessageRequest request = new ComunicarDescartePendenteMessageRequest();
                         DatasDisponiveisMessage data15 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(15),LinkAgendamento="http://localhost:1515/agendar/lote1234&data15Dias"};
                         DatasDisponiveisMessage data30 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(30),LinkAgendamento="http://localhost:1515/agendar/lote1234&data30Dias"};
-                        DatasDisponiveisMessage data45 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(45),LinkAgendamento="http://localhost:1515/agendar/lote1234&data45Dias"}
+                        DatasDisponiveisMessage data45 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(45),LinkAgendamento="http://localhost:1515/agendar/lote1234&data45Dias"};
                         request.DatasDisponiveis = new List<DatasDisponiveisMessage>();
                         request.DatasDisponiveis.Add(data15);
                         request.DatasDisponiveis.Add(data30);
@@ -48,24 +53,24 @@ namespace DescarteService.Services
                             DescartePendente descarte = new DescartePendente(){DataVencimento=produto.DataVencimento, IdItemEstoque=produto.IdItemEstoque, NomeProduto=produto.NomeProduto,QtdeprodutoDisponivel=produto.QtdeprodutoDisponivel};
                             request.ListaProdutos.Add(descarte);
                         }
-
+                        //TODO: incluir logica no banco de dados dos lotes e agendamentos possíveis
                         request.EmailRemetente = emailFabricante;
                         request.NomeArquivo="DescarteProdutoVencido";
                         request.NomeResponsavel=listaProdutos.First().NomeResponsavel;
 
                         string jobId = BackgroundJob.Enqueue<EmailService>(js => js.EnviarDescarteProdutoPendente(request));
                         
-                        response.StatusCode = 200;
-                        response.StatusMessage = "OK";
-                        response.Message = string.Format("Email Nome: '{0}' enviado para a fila de gravação no disco. Job Id: '{1}'Por favor, aguarde.", assuntoEmail, jobId);
-                        
+                        //colocar uma lista e jobs aqui com os emails...
+                        response.codRetorno = 0;
+                        response.StatusRetorno = String.Format("Podutos Vencidos enviados para a fila de notificação. Job Id: '{0}' Por favor, aguarde.", jobId);
                     }
-
+                    return response;
                 }
                 else{
                     return response;
                 }
             }
+            return response;
         }      
     }
 }

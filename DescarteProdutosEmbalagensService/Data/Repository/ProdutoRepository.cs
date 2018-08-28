@@ -6,14 +6,13 @@ using DescarteService.Data.Interfaces;
 using DescarteService.Data.Models;
 using DescarteService.Data.Repository;
 
-public class ProdutoRepository : Repository<Produto>, IProdutoRepository
+public class ProdutoDescarteRepository : Repository<ProdutoDescarte>, IProdutoDescarteRepository
 {
-    public ProdutoRepository(AppDataContext context) : base(context)
+    public ProdutoDescarteRepository(AppDataContext context) : base(context)
     {
     }
-
-    public IEnumerable<Produto> FindProdutos(Func<Produto, bool> predicate)
+    public IEnumerable<ProdutoDescarte> FindProdutosVencidos()
     {
-        return _context.Produtos.Where(predicate);
+        return _context.ProdutoDescartes.Where(pd=>pd.DataVecimentoProduto<=DateTime.Now);
     }
 }

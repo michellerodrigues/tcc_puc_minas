@@ -19,7 +19,7 @@ public class EstoqueRepository : Repository<Estoque>, IEstoqueRepository
 
     public IEnumerable<Estoque> FindItensFinalizadosEstoque()
     {
-         return _context.Estoques.Where(e=>e.Descartado==false&&e.QtdeDispUnidade==0).OrderBy(e=>e.RevendidoPor);
+         return _context.Estoques.Where(e=>e.Descartado==false && e.QtdeDispUnidade==0).OrderBy(e=>e.RevendidoPor);
     }
 
     public IEnumerable<Estoque> FindItensVencidosEstoque()

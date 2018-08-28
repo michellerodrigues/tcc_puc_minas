@@ -39,7 +39,10 @@ namespace EstoqueService.Services.Messages
                     IdItemEstoque = estoque.Id,
                     EmailFabricante = estoque.FornecidoPor.Email,
                     EmailRevendedor = estoque.RevendidoPor.Email,
-                    NomeResponsavel = estoque.RevendidoPor.Nome
+                    NomeResponsavel = estoque.RevendidoPor.Nome,
+                    PesoCheio = estoque.IdProduto.PesoCheio,
+                    PesoVazio = estoque.IdProduto.PesoVazio,
+                    VolumeEmbalagem = estoque.IdProduto.VolumeEmbalagem
                 };
                 response.LoteProdutosVecidos.Append(produtoMessage);
             }
@@ -74,7 +77,10 @@ namespace EstoqueService.Services.Messages
                     IdItemEstoque = estoque.Id,
                     EmailFabricante = estoque.FornecidoPor.Email,
                     EmailRevendedor = estoque.RevendidoPor.Email,
-                    NomeResponsavel = estoque.FornecidoPor.Nome
+                    NomeResponsavel = estoque.FornecidoPor.Nome,
+                    PesoCheio = estoque.IdProduto.PesoCheio,
+                    PesoVazio = estoque.IdProduto.PesoVazio,
+                    VolumeEmbalagem = estoque.IdProduto.VolumeEmbalagem
                 };
                 response.LoteProdutosFinalizados.Append(produtoMessage);
             }

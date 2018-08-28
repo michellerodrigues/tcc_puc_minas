@@ -25,7 +25,10 @@ namespace DescarteService.Services
             SmtpClient client = new SmtpClient(Startup.AppSettings.EnvioEmail.ServidorSMTP);
             client.UseDefaultCredentials = false;
             client.Credentials = new NetworkCredential(Startup.AppSettings.EnvioEmail.UsuarioEmail, Startup.AppSettings.EnvioEmail.SenhaEmail);
-            
+            client.DeliveryMethod = SmtpDeliveryMethod.Network; // modo de envio
+            client.EnableSsl = true; // GMail requer SSL
+            client.Port = Startup.AppSettings.EnvioEmail.PortaServidor;
+   
             MailMessage mail = new MailMessage();
 
             mail.From = new MailAddress(Startup.AppSettings.EnvioEmail.UsuarioEmail);

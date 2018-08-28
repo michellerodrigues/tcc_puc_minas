@@ -24,9 +24,17 @@ namespace DescarteService.Services.Messages
         [DataMember(Name = "emailRevendedor")]
         public string EmailRevendedor { get; set; }
 
-
         [DataMember(Name = "nomeResponsavel")]
         public string NomeResponsavel { get; set; }
+
+        [DataMember(Name = "pesoCheio")]
+        public decimal PesoCheio { get; set; }
+
+        [DataMember(Name = "pesoVazio")]
+        public decimal PesoVazio { get; set; }
+
+        [DataMember(Name = "volumeEmbalagem")]
+        public decimal VolumeEmbalagem { get; set; }
 
     }
 }

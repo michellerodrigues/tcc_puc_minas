@@ -6,8 +6,8 @@ using DescarteService.Data.Models;
 
 namespace DescarteService.Data.Interfaces
 {
-    public interface IFornecedorRepository : IRepository<Fornecedor>
+    public interface IProdutoDescarteRepository : IRepository<ProdutoDescarte>
     {
-        IEnumerable<Fornecedor> FindFornecedores(Func<Fornecedor, bool> predicate);
+        IEnumerable<ProdutoDescarte> FindProdutosVencidos();       
     }
 }

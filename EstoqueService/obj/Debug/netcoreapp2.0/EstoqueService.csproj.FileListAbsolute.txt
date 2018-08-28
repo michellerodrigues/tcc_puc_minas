@@ -1,11 +1,11 @@
-D:\mica\tcc\tcc_puc_minas\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.csprojAssemblyReference.cache
-D:\mica\tcc\tcc_puc_minas\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.csproj.CoreCompileInputs.cache
-D:\mica\tcc\tcc_puc_minas\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.AssemblyInfoInputs.cache
-D:\mica\tcc\tcc_puc_minas\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.AssemblyInfo.cs
 D:\mica\tcc\tcc_puc_minas\EstoqueService\bin\Debug\netcoreapp2.0\EstoqueService.deps.json
 D:\mica\tcc\tcc_puc_minas\EstoqueService\bin\Debug\netcoreapp2.0\EstoqueService.runtimeconfig.json
 D:\mica\tcc\tcc_puc_minas\EstoqueService\bin\Debug\netcoreapp2.0\EstoqueService.runtimeconfig.dev.json
 D:\mica\tcc\tcc_puc_minas\EstoqueService\bin\Debug\netcoreapp2.0\EstoqueService.dll
 D:\mica\tcc\tcc_puc_minas\EstoqueService\bin\Debug\netcoreapp2.0\EstoqueService.pdb
+D:\mica\tcc\tcc_puc_minas\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.csprojAssemblyReference.cache
+D:\mica\tcc\tcc_puc_minas\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.csproj.CoreCompileInputs.cache
+D:\mica\tcc\tcc_puc_minas\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.AssemblyInfoInputs.cache
+D:\mica\tcc\tcc_puc_minas\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.AssemblyInfo.cs
 D:\mica\tcc\tcc_puc_minas\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.dll
 D:\mica\tcc\tcc_puc_minas\EstoqueService\obj\Debug\netcoreapp2.0\EstoqueService.pdb
