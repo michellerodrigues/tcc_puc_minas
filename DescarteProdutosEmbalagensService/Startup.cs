@@ -42,6 +42,9 @@ namespace DescarteService
             services.AddDbContext<AppDataContext>(option => option.UseSqlServer(Configuration.GetConnectionString("Default")));
         
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+
+             services.AddHangfire(config => config.UseSqlServerStorage(Configuration.GetConnectionString("Jobs")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -67,8 +70,6 @@ namespace DescarteService
 
             DBInicializar.StartDataBase(app);
 
-            Hangfire.GlobalConfiguration.Configuration.UseSqlServerStorage("Server = DESKTOP-C8BIS20\\MSSQLSERVER2;Database=JobsDB;Integrated Security=True;");
-
             app.UseHangfireDashboard("/jobs", new DashboardOptions
             {
                 Authorization = new[] { new JobsAuthorizationFilter() }
@@ -89,13 +90,13 @@ namespace DescarteService
             GlobalJobFilters.Filters.Add(new ProlongExpirationTimeAttribute());
             GlobalJobFilters.Filters.Add(new LogEverythingAttributeJobFilter());
             
-            var retries = Configuration.GetSection("AppSettings.RetriesJob").ToString();
+            int retries = AppSettings.RetriesJob;
 
-            string intervaloLeituraJob = Configuration.GetSection("AppSettings.IntervaloLeituraJob").ToString();
+            int intervaloLeituraJob = AppSettings.IntervaloLeituraJob;
 
-            GlobalJobFilters.Filters.Add(new AutomaticRetryAttribute { Attempts = GetRetriesJob(retries) }); 
+            GlobalJobFilters.Filters.Add(new AutomaticRetryAttribute { Attempts = retries}); 
 
-            RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosVencidos", js => js.ObterProdutosVencidos(), Cron.MinuteInterval(GetIntervaloLeitura(intervaloLeituraJob)));         
+            RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosVencidos", js => js.ObterProdutosVencidos(), Cron.MinuteInterval(GetIntervaloLeitura(intervaloLeituraJob.ToString())));         
 
         }
 
