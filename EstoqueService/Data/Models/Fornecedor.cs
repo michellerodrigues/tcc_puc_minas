@@ -7,11 +7,6 @@ namespace EstoqueService.Data.Models
 {
     public class Fornecedor
     {
-        public Fornecedor()
-        {
-            Produtos = new JoinCollectionFacade<Produto, Fornecedor, FornecedorProduto>(this, FornecedorProdutos);
-        } 
-
         [Key]
         public int FornecedorId { get; set; }
 
@@ -23,12 +18,8 @@ namespace EstoqueService.Data.Models
         [StringLength(255)]
         public string Email { get; set; }
 
-        private ICollection<FornecedorProduto> FornecedorProdutos { get; } = new List<FornecedorProduto>();
-
         [NotMapped]        
-        private ICollection<Produto> Produtos { get; } = new List<Produto>();
-
-
+        private ICollection<Estoque> ItensEmEstoque { get; } = new List<Estoque>();
 
     }
 }

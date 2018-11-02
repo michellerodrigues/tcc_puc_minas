@@ -11,7 +11,7 @@ using System;
 namespace EstoqueService.Migrations
 {
     [DbContext(typeof(AppDataContext))]
-    [Migration("20180826042339_InitialCreate")]
+    [Migration("20181102224443_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,17 +32,17 @@ namespace EstoqueService.Migrations
 
                     b.Property<bool>("Descartado");
 
-                    b.Property<int>("FornecidoPorFornecedorId");
-
-                    b.Property<int>("IdProdutoId");
+                    b.Property<int>("FornecedorId");
 
                     b.Property<string>("Lote")
                         .IsRequired()
                         .HasMaxLength(10);
 
+                    b.Property<int>("ProdutoId");
+
                     b.Property<decimal>("QtdeDispUnidade");
 
-                    b.Property<int>("RevendidoPorRevendedorId");
+                    b.Property<int>("RevendedorId");
 
                     b.Property<string>("Serie")
                         .IsRequired()
@@ -50,11 +50,11 @@ namespace EstoqueService.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("FornecidoPorFornecedorId");
+                    b.HasIndex("FornecedorId");
 
-                    b.HasIndex("IdProdutoId");
+                    b.HasIndex("ProdutoId");
 
-                    b.HasIndex("RevendidoPorRevendedorId");
+                    b.HasIndex("RevendedorId");
 
                     b.ToTable("Estoques");
                 });
@@ -75,19 +75,6 @@ namespace EstoqueService.Migrations
                     b.HasKey("FornecedorId");
 
                     b.ToTable("Fornecedores");
-                });
-
-            modelBuilder.Entity("EstoqueService.Data.Models.FornecedorProduto", b =>
-                {
-                    b.Property<int>("FornecedorId");
-
-                    b.Property<int>("ProdutoId");
-
-                    b.HasKey("FornecedorId", "ProdutoId");
-
-                    b.HasIndex("ProdutoId");
-
-                    b.ToTable("FornecedorProduto");
                 });
 
             modelBuilder.Entity("EstoqueService.Data.Models.Produto", b =>
@@ -130,52 +117,13 @@ namespace EstoqueService.Migrations
                     b.ToTable("Revendedores");
                 });
 
-            modelBuilder.Entity("EstoqueService.Data.Models.RevendedorProduto", b =>
-                {
-                    b.Property<int>("RevendedorId");
-
-                    b.Property<int>("ProdutoId");
-
-                    b.HasKey("RevendedorId", "ProdutoId");
-
-                    b.HasIndex("ProdutoId");
-
-                    b.ToTable("RevendedorProduto");
-                });
-
             modelBuilder.Entity("EstoqueService.Data.Models.Estoque", b =>
-                {
-                    b.HasOne("EstoqueService.Data.Models.Fornecedor", "FornecidoPor")
-                        .WithMany()
-                        .HasForeignKey("FornecidoPorFornecedorId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("EstoqueService.Data.Models.Produto", "IdProduto")
-                        .WithMany()
-                        .HasForeignKey("IdProdutoId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("EstoqueService.Data.Models.Revendedor", "RevendidoPor")
-                        .WithMany()
-                        .HasForeignKey("RevendidoPorRevendedorId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("EstoqueService.Data.Models.FornecedorProduto", b =>
                 {
                     b.HasOne("EstoqueService.Data.Models.Fornecedor", "Fornecedor")
                         .WithMany()
                         .HasForeignKey("FornecedorId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("EstoqueService.Data.Models.Produto", "Produto")
-                        .WithMany()
-                        .HasForeignKey("ProdutoId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("EstoqueService.Data.Models.RevendedorProduto", b =>
-                {
                     b.HasOne("EstoqueService.Data.Models.Produto", "Produto")
                         .WithMany()
                         .HasForeignKey("ProdutoId")

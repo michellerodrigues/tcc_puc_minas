@@ -34,15 +34,14 @@ namespace EstoqueService.Services.Messages
                 var produtoMessage = new ProdutoMessage()
                 {
                     DataVencimento = estoque.DataVecimentoProduto.ToShortDateString(),
-                    NomeProduto = estoque.IdProduto.Nome,
+                    NomeProduto = estoque.Produto.Nome,
                     QtdeprodutoDisponivel = estoque.QtdeDispUnidade.ToString(),
                     IdItemEstoque = estoque.Id,
-                    EmailFabricante = estoque.FornecidoPor.Email,
-                    EmailRevendedor = estoque.RevendidoPor.Email,
-                    NomeResponsavel = estoque.RevendidoPor.Nome,
-                    PesoCheio = estoque.IdProduto.PesoCheio,
-                    PesoVazio = estoque.IdProduto.PesoVazio,
-                    VolumeEmbalagem = estoque.IdProduto.VolumeEmbalagem
+                    EmailFornecedor = estoque.Fornecedor.Email,
+                    EmailRevendedor = estoque.Revendedor.Email,
+                    PesoCheio = estoque.Produto.PesoCheio,
+                    PesoVazio = estoque.Produto.PesoVazio,
+                    VolumeEmbalagem = estoque.Produto.VolumeEmbalagem
                 };
                 response.LoteProdutosVecidos.Append(produtoMessage);
             }
@@ -72,15 +71,14 @@ namespace EstoqueService.Services.Messages
                 var produtoMessage = new ProdutoMessage()
                 {
                     DataVencimento = estoque.DataVecimentoProduto.ToShortDateString(),
-                    NomeProduto = estoque.IdProduto.Nome,
+                    NomeProduto = estoque.Produto.Nome,
                     QtdeprodutoDisponivel = estoque.QtdeDispUnidade.ToString(),
                     IdItemEstoque = estoque.Id,
-                    EmailFabricante = estoque.FornecidoPor.Email,
-                    EmailRevendedor = estoque.RevendidoPor.Email,
-                    NomeResponsavel = estoque.FornecidoPor.Nome,
-                    PesoCheio = estoque.IdProduto.PesoCheio,
-                    PesoVazio = estoque.IdProduto.PesoVazio,
-                    VolumeEmbalagem = estoque.IdProduto.VolumeEmbalagem
+                    EmailFornecedor = estoque.Fornecedor.Email,
+                    EmailRevendedor = estoque.Revendedor.Email,
+                    PesoCheio = estoque.Produto.PesoCheio,
+                    PesoVazio = estoque.Produto.PesoVazio,
+                    VolumeEmbalagem = estoque.Produto.VolumeEmbalagem
                 };
                 response.LoteProdutosFinalizados.Append(produtoMessage);
             }

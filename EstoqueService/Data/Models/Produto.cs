@@ -7,13 +7,6 @@ namespace EstoqueService.Data.Models
 {
     public class Produto
     {
-        public Produto()
-        {
-            Revendedores = new JoinCollectionFacade<Revendedor,Produto, RevendedorProduto>(this, RevendedorProdutos);
-            Fornecedores = new JoinCollectionFacade<Fornecedor, Produto, FornecedorProduto>(this, FornecedorProdutos);
-        } 
-
-
         [Key]
         public int Id { get; set; }
 
@@ -31,20 +24,10 @@ namespace EstoqueService.Data.Models
         public decimal PesoVazio { get; set; }
 
         [Required]
-        public decimal VolumeEmbalagem { get; set; }
+        public decimal VolumeEmbalagem { get; set; } 
 
-        [Required]        
-        private ICollection<RevendedorProduto> RevendedorProdutos { get; } = new List<RevendedorProduto>();
-        
         [NotMapped]
-        public ICollection<Revendedor> Revendedores { get; }
-
-
-        [Required]        
-        private ICollection<FornecedorProduto> FornecedorProdutos { get; } = new List<FornecedorProduto>();
-        
-        [NotMapped]
-        public ICollection<Fornecedor> Fornecedores { get; }
+        public List<Estoque> ItensEmEstoque { get; set;} 
 
     }
 }

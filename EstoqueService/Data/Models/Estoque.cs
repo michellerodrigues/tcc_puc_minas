@@ -1,5 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using EstoqueService.Data.JoinFacade;
 
 namespace EstoqueService.Data.Models
 {
@@ -7,10 +9,6 @@ namespace EstoqueService.Data.Models
     {
         [Key]
         public int Id { get; set; }
-
-        [Required]
-        [StringLength(3)]
-        public Produto IdProduto { get; set; }
 
         [Required]
         [StringLength(10)]
@@ -30,12 +28,15 @@ namespace EstoqueService.Data.Models
         public decimal QtdeDispUnidade { get; set; }
 
         [Required]
-        public Revendedor RevendidoPor { get; set; }
-
-        [Required]
-        public Fornecedor FornecidoPor { get; set; }
-
-        [Required]
         public bool Descartado { get; set; }
+
+        [Required]
+        public Fornecedor Fornecedor { get; set;} 
+
+        [Required]
+        public Revendedor Revendedor { get; set;} 
+
+        [Required]
+        public Produto Produto { get; set;} 
     }
 }

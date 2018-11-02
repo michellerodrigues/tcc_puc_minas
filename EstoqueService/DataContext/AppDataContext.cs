@@ -16,18 +16,8 @@ namespace EstoqueService.DataContext{
         public DbSet<Fornecedor> Fornecedores {get;set;}
         public DbSet<Revendedor> Revendedores {get;set;}
 
-        public DbSet<FornecedorProduto> FornecedorProduto {get;set;}
-
-        public DbSet<RevendedorProduto> RevendedorProduto {get;set;}
-
-
         protected override void OnModelCreating(ModelBuilder builder) {
-        base.OnModelCreating(builder);
-            builder.Entity<FornecedorProduto>()
-            .HasKey(t => new { t.FornecedorId, t.ProdutoId });
-            
-            builder.Entity<RevendedorProduto>()
-            .HasKey(t => new { t.RevendedorId, t.ProdutoId });
-    }
+        base.OnModelCreating(builder);            
+        }
     }
 }

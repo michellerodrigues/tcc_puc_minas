@@ -7,10 +7,6 @@ namespace EstoqueService.Data.Models
 {
     public class Revendedor
     {
-        public Revendedor()
-        {
-            Produtos = new JoinCollectionFacade<Produto, Revendedor, RevendedorProduto>(this, RevendedorProdutos);
-        } 
         [Key]
         public int RevendedorId { get; set; }
 
@@ -22,10 +18,8 @@ namespace EstoqueService.Data.Models
         [StringLength(255)]
         public string Email { get; set; }
      
-        private ICollection<RevendedorProduto> RevendedorProdutos { get; } = new List<RevendedorProduto>();
-
         [NotMapped]        
-        private ICollection<Produto> Produtos { get; } = new List<Produto>();
+        private ICollection<Estoque> Estoques { get; } = new List<Estoque>();
 
     }
 }
