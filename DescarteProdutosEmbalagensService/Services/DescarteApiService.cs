@@ -36,9 +36,9 @@ namespace DescarteService.Services
                     foreach(string emailFabricante in listaFabricantes)
                     {
                         ComunicarDescartePendenteMessageRequest request = new ComunicarDescartePendenteMessageRequest();
-                        DatasDisponiveisMessage data15 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(15),LinkAgendamento="http://localhost:1515/agendar/lote1234&data15Dias"};
-                        DatasDisponiveisMessage data30 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(30),LinkAgendamento="http://localhost:1515/agendar/lote1234&data30Dias"};
-                        DatasDisponiveisMessage data45 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(45),LinkAgendamento="http://localhost:1515/agendar/lote1234&data45Dias"};
+                        DatasDisponiveisMessage data15 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(15),LinkAgendamento="http://localhost:9009/agendar/lote1234&data15Dias"};
+                        DatasDisponiveisMessage data30 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(30),LinkAgendamento="http://localhost:9009/agendar/lote1234&data30Dias"};
+                        DatasDisponiveisMessage data45 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(45),LinkAgendamento="http://localhost:9009/agendar/lote1234&data45Dias"};
                         request.DatasDisponiveis = new List<DatasDisponiveisMessage>();
                         request.DatasDisponiveis.Add(data15);
                         request.DatasDisponiveis.Add(data30);
@@ -56,8 +56,7 @@ namespace DescarteService.Services
                         //TODO: incluir logica no banco de dados dos lotes e agendamentos possíveis
                         request.EmailRemetente = emailFabricante;
                         request.NomeArquivo="DescarteProdutoVencido";
-                        request.NomeResponsavel=listaProdutos.First().NomeResponsavel;
-
+                        
                         string jobId = BackgroundJob.Enqueue<EmailService>(js => js.EnviarDescarteProdutoPendente(request));
                         
                         //colocar uma lista e jobs aqui com os emails...

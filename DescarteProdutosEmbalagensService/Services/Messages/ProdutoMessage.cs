@@ -6,7 +6,7 @@ namespace DescarteService.Services.Messages
     [DataContract]
     public class ProdutoMessage
     {
-        [DataMember(Name = "idItemEstoque")]
+       [DataMember(Name = "idItemEstoque")]
         public int IdItemEstoque { get; set; }
 
         [DataMember(Name = "nomeProduto")]
@@ -23,9 +23,6 @@ namespace DescarteService.Services.Messages
 
         [DataMember(Name = "emailRevendedor")]
         public string EmailRevendedor { get; set; }
-
-        [DataMember(Name = "nomeResponsavel")]
-        public string NomeResponsavel { get; set; }
 
         [DataMember(Name = "pesoCheio")]
         public decimal PesoCheio { get; set; }
