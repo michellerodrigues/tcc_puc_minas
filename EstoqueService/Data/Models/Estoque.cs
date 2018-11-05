@@ -29,14 +29,14 @@ namespace EstoqueService.Data.Models
 
         [Required]
         public bool Descartado { get; set; }
+       
+        [ForeignKey("FabricanteId")]
+        public Fabricante Fabricante { get; set;} 
 
-        [Required]
-        public Fornecedor Fornecedor { get; set;} 
-
-        [Required]
+        [ForeignKey("RevendedorId")]
         public Revendedor Revendedor { get; set;} 
-
-        [Required]
+        
+        [ForeignKey("ProdutoId")]
         public Produto Produto { get; set;} 
     }
 }

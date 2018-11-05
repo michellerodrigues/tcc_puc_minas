@@ -8,6 +8,6 @@ namespace EstoqueService.Services.Messages
     {
       
         [DataMember(Name = "loteProdutosVecidos")]
-        public IEnumerable<ProdutoMessage> LoteProdutosVecidos { get; set; } = new List<ProdutoMessage>();
+        public List<ProdutoMessage> LoteProdutosVecidos { get; set; } = new List<ProdutoMessage>();
     }
 }

@@ -34,7 +34,7 @@ namespace EstoqueService.Controllers
             }
 
             var produto = await _context.Produtos
-                .SingleOrDefaultAsync(m => m.Id == id);
+                .SingleOrDefaultAsync(m => m.ProdutoId == id);
             if (produto == null)
             {
                 return NotFound();
@@ -73,7 +73,7 @@ namespace EstoqueService.Controllers
                 return NotFound();
             }
 
-            var produto = await _context.Produtos.SingleOrDefaultAsync(m => m.Id == id);
+            var produto = await _context.Produtos.SingleOrDefaultAsync(m => m.ProdutoId == id);
             if (produto == null)
             {
                 return NotFound();
@@ -88,7 +88,7 @@ namespace EstoqueService.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Valor,PesoCheio,PesoVazio,VolumeEmbalagem")] Produto produto)
         {
-            if (id != produto.Id)
+            if (id != produto.ProdutoId)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace EstoqueService.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProdutoExists(produto.Id))
+                    if (!ProdutoExists(produto.ProdutoId))
                     {
                         return NotFound();
                     }
@@ -125,7 +125,7 @@ namespace EstoqueService.Controllers
             }
 
             var produto = await _context.Produtos
-                .SingleOrDefaultAsync(m => m.Id == id);
+                .SingleOrDefaultAsync(m => m.ProdutoId == id);
             if (produto == null)
             {
                 return NotFound();
@@ -139,7 +139,7 @@ namespace EstoqueService.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var produto = await _context.Produtos.SingleOrDefaultAsync(m => m.Id == id);
+            var produto = await _context.Produtos.SingleOrDefaultAsync(m => m.ProdutoId == id);
             _context.Produtos.Remove(produto);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -147,7 +147,7 @@ namespace EstoqueService.Controllers
 
         private bool ProdutoExists(int id)
         {
-            return _context.Produtos.Any(e => e.Id == id);
+            return _context.Produtos.Any(e => e.ProdutoId == id);
         }
     }
 }

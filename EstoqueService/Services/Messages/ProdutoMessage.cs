@@ -18,8 +18,8 @@ namespace EstoqueService.Services.Messages
         [DataMember(Name = "qtdeLiquidaProdutoDisponivel")]
         public string QtdeprodutoDisponivel { get; set; }
 
-        [DataMember(Name = "emailFornecedor")]
-        public string EmailFornecedor { get; set; }
+        [DataMember(Name = "emailFabricante")]
+        public string EmailFabricante { get; set; }
 
         [DataMember(Name = "emailRevendedor")]
         public string EmailRevendedor { get; set; }

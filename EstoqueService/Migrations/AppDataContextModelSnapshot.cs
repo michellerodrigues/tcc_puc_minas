@@ -31,17 +31,17 @@ namespace EstoqueService.Migrations
 
                     b.Property<bool>("Descartado");
 
-                    b.Property<int>("FornecedorId");
+                    b.Property<int?>("FabricanteId");
 
                     b.Property<string>("Lote")
                         .IsRequired()
                         .HasMaxLength(10);
 
-                    b.Property<int>("ProdutoId");
+                    b.Property<int?>("ProdutoId");
 
                     b.Property<decimal>("QtdeDispUnidade");
 
-                    b.Property<int>("RevendedorId");
+                    b.Property<int?>("RevendedorId");
 
                     b.Property<string>("Serie")
                         .IsRequired()
@@ -49,7 +49,7 @@ namespace EstoqueService.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("FornecedorId");
+                    b.HasIndex("FabricanteId");
 
                     b.HasIndex("ProdutoId");
 
@@ -58,9 +58,9 @@ namespace EstoqueService.Migrations
                     b.ToTable("Estoques");
                 });
 
-            modelBuilder.Entity("EstoqueService.Data.Models.Fornecedor", b =>
+            modelBuilder.Entity("EstoqueService.Data.Models.Fabricante", b =>
                 {
-                    b.Property<int>("FornecedorId")
+                    b.Property<int>("FabricanteId")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Email")
@@ -71,14 +71,14 @@ namespace EstoqueService.Migrations
                         .IsRequired()
                         .HasMaxLength(255);
 
-                    b.HasKey("FornecedorId");
+                    b.HasKey("FabricanteId");
 
-                    b.ToTable("Fornecedores");
+                    b.ToTable("Fabricantes");
                 });
 
             modelBuilder.Entity("EstoqueService.Data.Models.Produto", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ProdutoId")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Nome")
@@ -93,7 +93,7 @@ namespace EstoqueService.Migrations
 
                     b.Property<decimal>("VolumeEmbalagem");
 
-                    b.HasKey("Id");
+                    b.HasKey("ProdutoId");
 
                     b.ToTable("Produtos");
                 });
@@ -118,20 +118,17 @@ namespace EstoqueService.Migrations
 
             modelBuilder.Entity("EstoqueService.Data.Models.Estoque", b =>
                 {
-                    b.HasOne("EstoqueService.Data.Models.Fornecedor", "Fornecedor")
-                        .WithMany()
-                        .HasForeignKey("FornecedorId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                    b.HasOne("EstoqueService.Data.Models.Fabricante", "Fabricante")
+                        .WithMany("Estoques")
+                        .HasForeignKey("FabricanteId");
 
                     b.HasOne("EstoqueService.Data.Models.Produto", "Produto")
-                        .WithMany()
-                        .HasForeignKey("ProdutoId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .WithMany("Estoques")
+                        .HasForeignKey("ProdutoId");
 
                     b.HasOne("EstoqueService.Data.Models.Revendedor", "Revendedor")
-                        .WithMany()
-                        .HasForeignKey("RevendedorId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .WithMany("Estoques")
+                        .HasForeignKey("RevendedorId");
                 });
 #pragma warning restore 612, 618
         }

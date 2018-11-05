@@ -6,8 +6,8 @@ using EstoqueService.Data.Models;
 
 namespace EstoqueService.Data.Interfaces
 {
-    public interface IFornecedorRepository : IRepository<Fornecedor>
+    public interface IFabricanteRepository : IRepository<Fabricante>
     {
-        IEnumerable<Fornecedor> FindFornecedores(Func<Fornecedor, bool> predicate);
+        IEnumerable<Fabricante> FindFabricantes(Func<Fabricante, bool> predicate);
     }
 }

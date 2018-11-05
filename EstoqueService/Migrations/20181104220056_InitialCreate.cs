@@ -10,24 +10,24 @@ namespace EstoqueService.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Fornecedores",
+                name: "Fabricantes",
                 columns: table => new
                 {
-                    FornecedorId = table.Column<int>(nullable: false)
+                    FabricanteId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Email = table.Column<string>(maxLength: 255, nullable: false),
                     Nome = table.Column<string>(maxLength: 255, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Fornecedores", x => x.FornecedorId);
+                    table.PrimaryKey("PK_Fabricantes", x => x.FabricanteId);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Produtos",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
+                    ProdutoId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Nome = table.Column<string>(maxLength: 255, nullable: false),
                     PesoCheio = table.Column<decimal>(nullable: false),
@@ -37,7 +37,7 @@ namespace EstoqueService.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Produtos", x => x.Id);
+                    table.PrimaryKey("PK_Produtos", x => x.ProdutoId);
                 });
 
             migrationBuilder.CreateTable(
@@ -63,40 +63,40 @@ namespace EstoqueService.Migrations
                     DataInclusao = table.Column<DateTime>(nullable: false),
                     DataVecimentoProduto = table.Column<DateTime>(nullable: false),
                     Descartado = table.Column<bool>(nullable: false),
-                    FornecedorId = table.Column<int>(nullable: false),
+                    FabricanteId = table.Column<int>(nullable: true),
                     Lote = table.Column<string>(maxLength: 10, nullable: false),
-                    ProdutoId = table.Column<int>(nullable: false),
+                    ProdutoId = table.Column<int>(nullable: true),
                     QtdeDispUnidade = table.Column<decimal>(nullable: false),
-                    RevendedorId = table.Column<int>(nullable: false),
+                    RevendedorId = table.Column<int>(nullable: true),
                     Serie = table.Column<string>(maxLength: 3, nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Estoques", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Estoques_Fornecedores_FornecedorId",
-                        column: x => x.FornecedorId,
-                        principalTable: "Fornecedores",
-                        principalColumn: "FornecedorId",
-                        onDelete: ReferentialAction.Cascade);
+                        name: "FK_Estoques_Fabricantes_FabricanteId",
+                        column: x => x.FabricanteId,
+                        principalTable: "Fabricantes",
+                        principalColumn: "FabricanteId",
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Estoques_Produtos_ProdutoId",
                         column: x => x.ProdutoId,
                         principalTable: "Produtos",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "ProdutoId",
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Estoques_Revendedores_RevendedorId",
                         column: x => x.RevendedorId,
                         principalTable: "Revendedores",
                         principalColumn: "RevendedorId",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Estoques_FornecedorId",
+                name: "IX_Estoques_FabricanteId",
                 table: "Estoques",
-                column: "FornecedorId");
+                column: "FabricanteId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Estoques_ProdutoId",
@@ -115,7 +115,7 @@ namespace EstoqueService.Migrations
                 name: "Estoques");
 
             migrationBuilder.DropTable(
-                name: "Fornecedores");
+                name: "Fabricantes");
 
             migrationBuilder.DropTable(
                 name: "Produtos");

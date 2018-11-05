@@ -5,10 +5,10 @@ using EstoqueService.Data.JoinFacade;
 
 namespace EstoqueService.Data.Models
 {
-    public class Fornecedor
+    public class Fabricante
     {
         [Key]
-        public int FornecedorId { get; set; }
+        public int FabricanteId { get; set; }
 
         [Required]
         [StringLength(255)]
@@ -17,9 +17,7 @@ namespace EstoqueService.Data.Models
         [Required]
         [StringLength(255)]
         public string Email { get; set; }
-
-        [NotMapped]        
-        private ICollection<Estoque> ItensEmEstoque { get; } = new List<Estoque>();
-
+     
+        public virtual ICollection<Estoque> Estoques { get; } = new List<Estoque>();
     }
 }

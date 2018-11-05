@@ -8,7 +8,7 @@ namespace EstoqueService.Data.Models
     public class Produto
     {
         [Key]
-        public int Id { get; set; }
+        public int ProdutoId { get; set; }
 
         [Required]
         [StringLength(255)]
@@ -26,8 +26,7 @@ namespace EstoqueService.Data.Models
         [Required]
         public decimal VolumeEmbalagem { get; set; } 
 
-        [NotMapped]
-        public List<Estoque> ItensEmEstoque { get; set;} 
+        public ICollection<Estoque> Estoques { get; } = new List<Estoque>();
 
     }
 }

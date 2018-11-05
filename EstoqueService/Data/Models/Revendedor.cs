@@ -18,8 +18,7 @@ namespace EstoqueService.Data.Models
         [StringLength(255)]
         public string Email { get; set; }
      
-        [NotMapped]        
-        private ICollection<Estoque> Estoques { get; } = new List<Estoque>();
+        public virtual ICollection<Estoque> Estoques { get; set;} = new List<Estoque>();
 
     }
 }

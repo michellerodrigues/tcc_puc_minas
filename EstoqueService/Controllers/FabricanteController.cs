@@ -10,22 +10,22 @@ using EstoqueService.DataContext;
 
 namespace EstoqueService.Controllers
 {
-    public class FornecedorController : Controller
+    public class FabricanteController : Controller
     {
         private readonly AppDataContext _context;
 
-        public FornecedorController(AppDataContext context)
+        public FabricanteController(AppDataContext context)
         {
             _context = context;
         }
 
-        // GET: Fornecedor
+        // GET: Fabricante
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Fornecedores.ToListAsync());
+            return View(await _context.Fabricantes.ToListAsync());
         }
 
-        // GET: Fornecedor/Details/5
+        // GET: Fabricante/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,39 +33,39 @@ namespace EstoqueService.Controllers
                 return NotFound();
             }
 
-            var fornecedor = await _context.Fornecedores
-                .SingleOrDefaultAsync(m => m.FornecedorId == id);
-            if (fornecedor == null)
+            var Fabricante = await _context.Fabricantes
+                .SingleOrDefaultAsync(m => m.FabricanteId == id);
+            if (Fabricante == null)
             {
                 return NotFound();
             }
 
-            return View(fornecedor);
+            return View(Fabricante);
         }
 
-        // GET: Fornecedor/Create
+        // GET: Fabricante/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Fornecedor/Create
+        // POST: Fabricante/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("FornecedorId,Nome,Email")] Fornecedor fornecedor)
+        public async Task<IActionResult> Create([Bind("FabricanteId,Nome,Email")] Fabricante Fabricante)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(fornecedor);
+                _context.Add(Fabricante);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(fornecedor);
+            return View(Fabricante);
         }
 
-        // GET: Fornecedor/Edit/5
+        // GET: Fabricante/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -73,22 +73,22 @@ namespace EstoqueService.Controllers
                 return NotFound();
             }
 
-            var fornecedor = await _context.Fornecedores.SingleOrDefaultAsync(m => m.FornecedorId == id);
-            if (fornecedor == null)
+            var Fabricante = await _context.Fabricantes.SingleOrDefaultAsync(m => m.FabricanteId == id);
+            if (Fabricante == null)
             {
                 return NotFound();
             }
-            return View(fornecedor);
+            return View(Fabricante);
         }
 
-        // POST: Fornecedor/Edit/5
+        // POST: Fabricante/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("FornecedorId,Nome,Email")] Fornecedor fornecedor)
+        public async Task<IActionResult> Edit(int id, [Bind("FabricanteId,Nome,Email")] Fabricante Fabricante)
         {
-            if (id != fornecedor.FornecedorId)
+            if (id != Fabricante.FabricanteId)
             {
                 return NotFound();
             }
@@ -97,12 +97,12 @@ namespace EstoqueService.Controllers
             {
                 try
                 {
-                    _context.Update(fornecedor);
+                    _context.Update(Fabricante);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!FornecedorExists(fornecedor.FornecedorId))
+                    if (!FabricanteExists(Fabricante.FabricanteId))
                     {
                         return NotFound();
                     }
@@ -113,10 +113,10 @@ namespace EstoqueService.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(fornecedor);
+            return View(Fabricante);
         }
 
-        // GET: Fornecedor/Delete/5
+        // GET: Fabricante/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -124,30 +124,30 @@ namespace EstoqueService.Controllers
                 return NotFound();
             }
 
-            var fornecedor = await _context.Fornecedores
-                .SingleOrDefaultAsync(m => m.FornecedorId == id);
-            if (fornecedor == null)
+            var Fabricante = await _context.Fabricantes
+                .SingleOrDefaultAsync(m => m.FabricanteId == id);
+            if (Fabricante == null)
             {
                 return NotFound();
             }
 
-            return View(fornecedor);
+            return View(Fabricante);
         }
 
-        // POST: Fornecedor/Delete/5
+        // POST: Fabricante/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var fornecedor = await _context.Fornecedores.SingleOrDefaultAsync(m => m.FornecedorId == id);
-            _context.Fornecedores.Remove(fornecedor);
+            var Fabricante = await _context.Fabricantes.SingleOrDefaultAsync(m => m.FabricanteId == id);
+            _context.Fabricantes.Remove(Fabricante);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool FornecedorExists(int id)
+        private bool FabricanteExists(int id)
         {
-            return _context.Fornecedores.Any(e => e.FornecedorId == id);
+            return _context.Fabricantes.Any(e => e.FabricanteId == id);
         }
     }
 }

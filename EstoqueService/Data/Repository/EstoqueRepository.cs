@@ -5,11 +5,13 @@ using EstoqueService.DataContext;
 using EstoqueService.Data.Interfaces;
 using EstoqueService.Data.Models;
 using EstoqueService.Data.Repository;
+using Microsoft.EntityFrameworkCore;
 
 public class EstoqueRepository : Repository<Estoque>, IEstoqueRepository
     {
     public EstoqueRepository(AppDataContext context) : base(context)
     {
+        _context.Estoques.Include(e=>e.Revendedor).Include(e=>e.Fabricante).Include(e=>e.Produto);
     }
 
     public IEnumerable<Estoque> FindItensEstoque(Func<Estoque, bool> predicate)
@@ -19,11 +21,11 @@ public class EstoqueRepository : Repository<Estoque>, IEstoqueRepository
 
     public IEnumerable<Estoque> FindItensFinalizadosEstoque()
     {
-         return _context.Estoques.Where(e=>e.Descartado==false && e.QtdeDispUnidade==0).OrderBy(e=>e.Revendedor);
+         return _context.Estoques.Include(e=>e.Revendedor).Include(e=>e.Fabricante).Include(e=>e.Produto).Where(e=>e.Descartado==false && e.QtdeDispUnidade==0).OrderBy(e=>e.Revendedor);
     }
 
     public IEnumerable<Estoque> FindItensVencidosEstoque()
     {
-        return _context.Estoques.Where(e=>e.Descartado==false && e.DataVecimentoProduto.ToOADate()<=DateTime.Now.ToOADate()).OrderBy(e=>e.Fornecedor);
+        return _context.Estoques.Include(e=>e.Revendedor).Include(e=>e.Fabricante).Include(e=>e.Produto).Where(e=>e.Descartado==false && e.DataVecimentoProduto.ToOADate()<=DateTime.Now.ToOADate()).OrderBy(e=>e.Fabricante);
     }
 }
