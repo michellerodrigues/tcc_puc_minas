@@ -36,9 +36,9 @@ namespace DescarteService.Services
                     foreach(string emailFabricante in listaFabricantes)
                     {
                         ComunicarDescartePendenteMessageRequest request = new ComunicarDescartePendenteMessageRequest();
-                        DatasDisponiveisMessage data15 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(15),LinkAgendamento="http://localhost:9009/agendar/lote1234&data15Dias"};
-                        DatasDisponiveisMessage data30 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(30),LinkAgendamento="http://localhost:9009/agendar/lote1234&data30Dias"};
-                        DatasDisponiveisMessage data45 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(45),LinkAgendamento="http://localhost:9009/agendar/lote1234&data45Dias"};
+                        DatasDisponiveisMessage data15 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(15),LinkAgendamento=String.Format("http://localhost:9009/agendar?lote=1234&data={0}",DateTime.Now.AddDays(15).ToString("yyyyMMdd"))};
+                        DatasDisponiveisMessage data30 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(30),LinkAgendamento=String.Format("http://localhost:9009/agendar?lote=1234&data={0}",DateTime.Now.AddDays(30).ToString("yyyyMMdd"))};
+                        DatasDisponiveisMessage data45 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(45),LinkAgendamento=String.Format("http://localhost:9009/agendar?lote=1234&data={0}",DateTime.Now.AddDays(45).ToString("yyyyMMdd"))};
                         request.DatasDisponiveis = new List<DatasDisponiveisMessage>();
                         request.DatasDisponiveis.Add(data15);
                         request.DatasDisponiveis.Add(data30);
