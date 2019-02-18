@@ -26,7 +26,7 @@ namespace EstoqueService.Controllers
         }
 
         // GET: Revendedor/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
             {
@@ -66,7 +66,7 @@ namespace EstoqueService.Controllers
         }
 
         // GET: Revendedor/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null)
             {
@@ -86,7 +86,7 @@ namespace EstoqueService.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("RevendedorId,Nome,Email")] Revendedor revendedor)
+        public async Task<IActionResult> Edit(Guid id, [Bind("RevendedorId,Nome,Email")] Revendedor revendedor)
         {
             if (id != revendedor.RevendedorId)
             {
@@ -117,7 +117,7 @@ namespace EstoqueService.Controllers
         }
 
         // GET: Revendedor/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null)
             {
@@ -137,7 +137,7 @@ namespace EstoqueService.Controllers
         // POST: Revendedor/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             var revendedor = await _context.Revendedores.SingleOrDefaultAsync(m => m.RevendedorId == id);
             _context.Revendedores.Remove(revendedor);
@@ -145,7 +145,7 @@ namespace EstoqueService.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool RevendedorExists(int id)
+        private bool RevendedorExists(Guid id)
         {
             return _context.Revendedores.Any(e => e.RevendedorId == id);
         }

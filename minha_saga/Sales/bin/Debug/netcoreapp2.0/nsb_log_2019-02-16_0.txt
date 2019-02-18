@@ -1,0 +1,10 @@
+﻿2019-02-16 21:07:48.070 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\minha_saga\Sales\bin\Debug\netcoreapp2.0\' with level Info
+2019-02-16 21:07:48.443 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-02-16 21:07:53.738 INFO  NServiceBus.RunningEndpointInstance Initiating shutdown.
+2019-02-16 21:07:53.763 INFO  NServiceBus.RunningEndpointInstance Shutdown complete.
+2019-02-16 21:09:23.217 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\minha_saga\Sales\bin\Debug\netcoreapp2.0\' with level Info
+2019-02-16 21:09:23.775 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+

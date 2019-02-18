@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace EstoqueService.Services.Messages
@@ -7,7 +8,7 @@ namespace EstoqueService.Services.Messages
     public class ProdutoMessage
     {
         [DataMember(Name = "idItemEstoque")]
-        public int IdItemEstoque { get; set; }
+        public Guid IdItemEstoque { get; set; }
 
         [DataMember(Name = "nomeProduto")]
         public string NomeProduto { get; set; }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using EstoqueService.Data.JoinFacade;
@@ -8,7 +9,7 @@ namespace EstoqueService.Data.Models
     public class Produto
     {
         [Key]
-        public int ProdutoId { get; set; }
+        public Guid ProdutoId { get; set; }
 
         [Required]
         [StringLength(255)]

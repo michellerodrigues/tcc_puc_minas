@@ -49,6 +49,10 @@ namespace EstoqueService.Data.Repository
             return _context.Set<T>().Find(id);
         }
 
+        public T GetById(Guid id)
+        {
+            return _context.Set<T>().Find(id);
+        }
         public void Update(T entity)
         {
             _context.Entry(entity).State = EntityState.Modified;

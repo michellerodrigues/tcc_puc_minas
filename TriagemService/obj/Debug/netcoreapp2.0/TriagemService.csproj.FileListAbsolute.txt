@@ -1,0 +1,11 @@
+D:\mica\tcc\tcc_puc_minas\TriagemService\obj\Debug\netcoreapp2.0\TriagemService.csprojAssemblyReference.cache
+D:\mica\tcc\tcc_puc_minas\TriagemService\obj\Debug\netcoreapp2.0\TriagemService.csproj.CoreCompileInputs.cache
+D:\mica\tcc\tcc_puc_minas\TriagemService\obj\Debug\netcoreapp2.0\TriagemService.AssemblyInfoInputs.cache
+D:\mica\tcc\tcc_puc_minas\TriagemService\obj\Debug\netcoreapp2.0\TriagemService.AssemblyInfo.cs
+D:\mica\tcc\tcc_puc_minas\TriagemService\bin\Debug\netcoreapp2.0\TriagemService.deps.json
+D:\mica\tcc\tcc_puc_minas\TriagemService\bin\Debug\netcoreapp2.0\TriagemService.runtimeconfig.json
+D:\mica\tcc\tcc_puc_minas\TriagemService\bin\Debug\netcoreapp2.0\TriagemService.runtimeconfig.dev.json
+D:\mica\tcc\tcc_puc_minas\TriagemService\bin\Debug\netcoreapp2.0\TriagemService.dll
+D:\mica\tcc\tcc_puc_minas\TriagemService\bin\Debug\netcoreapp2.0\TriagemService.pdb
+D:\mica\tcc\tcc_puc_minas\TriagemService\obj\Debug\netcoreapp2.0\TriagemService.dll
+D:\mica\tcc\tcc_puc_minas\TriagemService\obj\Debug\netcoreapp2.0\TriagemService.pdb

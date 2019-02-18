@@ -26,7 +26,7 @@ namespace DescarteService.Controllers
         }
 
         // GET: ProdutoDescarte/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
             {
@@ -66,7 +66,7 @@ namespace DescarteService.Controllers
         }
 
         // GET: ProdutoDescarte/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null)
             {
@@ -86,7 +86,7 @@ namespace DescarteService.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,IdITemEstoque,PesoCheio,PesoVazio,VolumeEmbalagem,DataVecimentoProduto")] ProdutoDescarte produtoDescarte)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Nome,IdITemEstoque,PesoCheio,PesoVazio,VolumeEmbalagem,DataVecimentoProduto")] ProdutoDescarte produtoDescarte)
         {
             if (id != produtoDescarte.Id)
             {
@@ -117,7 +117,7 @@ namespace DescarteService.Controllers
         }
 
         // GET: ProdutoDescarte/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null)
             {
@@ -137,7 +137,7 @@ namespace DescarteService.Controllers
         // POST: ProdutoDescarte/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             var produtoDescarte = await _context.ProdutoDescartes.SingleOrDefaultAsync(m => m.Id == id);
             _context.ProdutoDescartes.Remove(produtoDescarte);
@@ -145,7 +145,7 @@ namespace DescarteService.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ProdutoDescarteExists(int id)
+        private bool ProdutoDescarteExists(Guid id)
         {
             return _context.ProdutoDescartes.Any(e => e.Id == id);
         }

@@ -1,0 +1,116 @@
+﻿2019-02-16 20:20:03.261 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\minha_saga\ClientUI\bin\Debug\netcoreapp2.0\' with level Info
+2019-02-16 20:20:38.895 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\minha_saga\ClientUI\bin\Debug\netcoreapp2.0\' with level Info
+2019-02-16 20:21:26.514 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\minha_saga\ClientUI\bin\Debug\netcoreapp2.0\' with level Info
+2019-02-16 20:40:29.011 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\minha_saga\ClientUI\bin\Debug\netcoreapp2.0\' with level Info
+2019-02-16 20:41:05.371 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\minha_saga\ClientUI\bin\Debug\netcoreapp2.0\' with level Info
+2019-02-16 20:41:26.858 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\minha_saga\ClientUI\bin\Debug\netcoreapp2.0\' with level Info
+2019-02-16 20:41:27.595 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-02-16 20:41:28.354 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 20:41:36.869 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 3241d5f7-6f44-4102-bac9-fe7e89e68eae
+2019-02-16 20:41:37.050 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 3241d5f7-6f44-4102-bac9-fe7e89e68eae
+2019-02-16 20:41:37.098 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 20:41:40.884 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 9ac5d8ae-fbf9-45fb-b8a6-2a2390825d60
+2019-02-16 20:41:40.887 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 9ac5d8ae-fbf9-45fb-b8a6-2a2390825d60
+2019-02-16 20:41:41.016 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 20:47:04.253 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 940295a3-db64-40bb-91b9-d589b7b7192f
+2019-02-16 20:47:04.255 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 940295a3-db64-40bb-91b9-d589b7b7192f
+2019-02-16 20:47:04.379 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 20:47:04.412 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 8e8ee3a7-1996-4a2f-a5d6-abb162676291
+2019-02-16 20:47:04.415 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 8e8ee3a7-1996-4a2f-a5d6-abb162676291
+2019-02-16 20:47:04.438 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 20:47:04.597 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = c0dec87a-9b6c-4427-8c70-422484c08856
+2019-02-16 20:47:04.600 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = c0dec87a-9b6c-4427-8c70-422484c08856
+2019-02-16 20:47:04.629 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 20:47:04.749 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = ec3a39b2-dae1-445b-83c4-ab0496f8878a
+2019-02-16 20:47:04.751 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = ec3a39b2-dae1-445b-83c4-ab0496f8878a
+2019-02-16 20:47:04.776 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 20:47:04.900 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 4764d6af-0b25-4e4b-a8a1-496a70624f03
+2019-02-16 20:47:04.903 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 4764d6af-0b25-4e4b-a8a1-496a70624f03
+2019-02-16 20:47:04.934 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 20:47:05.060 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = af57972a-912f-42e3-ab7d-48398e90b84b
+2019-02-16 20:47:05.063 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = af57972a-912f-42e3-ab7d-48398e90b84b
+2019-02-16 20:47:05.093 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 20:47:05.213 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 0fcb234f-fab5-4786-bfe1-74887e8b53bd
+2019-02-16 20:47:05.215 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 0fcb234f-fab5-4786-bfe1-74887e8b53bd
+2019-02-16 20:47:05.239 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 20:47:05.348 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 93ec1554-83c1-4b50-9174-47a760c5e558
+2019-02-16 20:47:05.350 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 93ec1554-83c1-4b50-9174-47a760c5e558
+2019-02-16 20:47:05.374 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 20:47:05.476 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 2390e533-f395-4d23-ab42-0c80b44bbc76
+2019-02-16 20:47:05.479 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 2390e533-f395-4d23-ab42-0c80b44bbc76
+2019-02-16 20:47:05.511 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 20:53:29.112 INFO  NServiceBus.RunningEndpointInstance Initiating shutdown.
+2019-02-16 20:53:29.136 INFO  NServiceBus.RunningEndpointInstance Shutdown complete.
+2019-02-16 21:09:32.809 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\minha_saga\ClientUI\bin\Debug\netcoreapp2.0\' with level Info
+2019-02-16 21:09:33.275 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-02-16 21:09:33.724 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:45.677 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = bf301713-fcc1-483c-9591-38463d9dbc00
+2019-02-16 21:09:45.835 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = bf301713-fcc1-483c-9591-38463d9dbc00
+2019-02-16 21:09:45.889 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:46.980 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 0ce917c2-bd71-47d0-a0f3-0e382286ac53
+2019-02-16 21:09:46.984 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 0ce917c2-bd71-47d0-a0f3-0e382286ac53
+2019-02-16 21:09:47.104 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:47.116 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = be29a60a-e06e-49c3-896e-8ed88850fb0a
+2019-02-16 21:09:47.118 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = be29a60a-e06e-49c3-896e-8ed88850fb0a
+2019-02-16 21:09:47.159 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:47.268 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 5b3dbcef-6a35-4928-8380-d07b0652fdd6
+2019-02-16 21:09:47.270 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 5b3dbcef-6a35-4928-8380-d07b0652fdd6
+2019-02-16 21:09:47.297 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:47.412 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 9b4eb910-4dfc-41ab-82b4-ebfd0c2bcdde
+2019-02-16 21:09:47.414 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 9b4eb910-4dfc-41ab-82b4-ebfd0c2bcdde
+2019-02-16 21:09:47.447 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:47.912 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 31b8055c-ad2a-4e42-b6ca-8651134e57ce
+2019-02-16 21:09:47.914 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 31b8055c-ad2a-4e42-b6ca-8651134e57ce
+2019-02-16 21:09:47.940 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:47.952 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 8b6d8d27-73e4-4446-bf76-6351112e6bcd
+2019-02-16 21:09:47.955 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 8b6d8d27-73e4-4446-bf76-6351112e6bcd
+2019-02-16 21:09:47.987 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:47.988 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 1e072124-a1d5-4fd0-a875-7ffbbdccb281
+2019-02-16 21:09:47.991 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 1e072124-a1d5-4fd0-a875-7ffbbdccb281
+2019-02-16 21:09:48.023 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:48.025 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = cfa72c25-e51b-40ae-84c3-51c91a65123a
+2019-02-16 21:09:48.028 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = cfa72c25-e51b-40ae-84c3-51c91a65123a
+2019-02-16 21:09:48.060 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:48.062 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 343ef614-fc31-418d-845d-c5ffc47a0c25
+2019-02-16 21:09:48.065 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 343ef614-fc31-418d-845d-c5ffc47a0c25
+2019-02-16 21:09:48.094 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:48.097 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 366cfc56-eb44-4b45-bb21-fb58bfc3c2b5
+2019-02-16 21:09:48.100 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 366cfc56-eb44-4b45-bb21-fb58bfc3c2b5
+2019-02-16 21:09:48.130 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:48.132 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = a74ea137-46a7-4116-9178-76a7eca61a0d
+2019-02-16 21:09:48.134 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = a74ea137-46a7-4116-9178-76a7eca61a0d
+2019-02-16 21:09:48.165 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:48.167 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = a15236d4-8486-4251-9d79-3463da924222
+2019-02-16 21:09:48.170 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = a15236d4-8486-4251-9d79-3463da924222
+2019-02-16 21:09:48.201 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:48.202 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = a025a862-e047-4a11-afe1-6a52c06b21ae
+2019-02-16 21:09:48.204 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = a025a862-e047-4a11-afe1-6a52c06b21ae
+2019-02-16 21:09:48.237 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:48.238 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 9a18bd91-f7bd-46a9-9f96-591e8d298954
+2019-02-16 21:09:48.241 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 9a18bd91-f7bd-46a9-9f96-591e8d298954
+2019-02-16 21:09:48.272 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:48.274 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 0a266f59-5191-418b-b5de-5fb9aad44a41
+2019-02-16 21:09:48.276 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 0a266f59-5191-418b-b5de-5fb9aad44a41
+2019-02-16 21:09:48.308 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:48.310 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 52e7a47f-15f5-49d6-ad67-544b56913955
+2019-02-16 21:09:48.313 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 52e7a47f-15f5-49d6-ad67-544b56913955
+2019-02-16 21:09:48.344 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:48.346 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = cf0e7623-7be9-4513-b944-afce4b537f4c
+2019-02-16 21:09:48.348 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = cf0e7623-7be9-4513-b944-afce4b537f4c
+2019-02-16 21:09:48.382 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:48.384 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = a9653d91-f07a-44cd-808d-9adee2effe41
+2019-02-16 21:09:48.386 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = a9653d91-f07a-44cd-808d-9adee2effe41
+2019-02-16 21:09:48.415 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:48.417 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = f2d6f61c-4027-43f5-81ed-308974f3fc03
+2019-02-16 21:09:48.419 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = f2d6f61c-4027-43f5-81ed-308974f3fc03
+2019-02-16 21:09:48.440 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:48.442 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = 81d601d1-5d15-422d-8332-eaa4745bf4d4
+2019-02-16 21:09:48.445 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = 81d601d1-5d15-422d-8332-eaa4745bf4d4
+2019-02-16 21:09:48.476 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.
+2019-02-16 21:09:48.477 INFO  minha_saga.Program Sending PlaceOrder command, OrderId = eccc874a-dc72-48b4-9672-a40814256fdb
+2019-02-16 21:09:48.481 INFO  ClientUI.PlaceOrderHandler Received PlaceOrder, OrderId = eccc874a-dc72-48b4-9672-a40814256fdb
+2019-02-16 21:09:48.512 INFO  minha_saga.Program Press 'P' to place an order, or 'Q' to quit.

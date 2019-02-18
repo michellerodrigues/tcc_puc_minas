@@ -8,7 +8,7 @@ namespace EstoqueService.Data.Models
     public class Estoque
     {
         [Key]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         [Required]
         [StringLength(10)]

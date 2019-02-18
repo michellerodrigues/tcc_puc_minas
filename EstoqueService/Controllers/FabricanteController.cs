@@ -26,7 +26,7 @@ namespace EstoqueService.Controllers
         }
 
         // GET: Fabricante/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
             {
@@ -66,7 +66,7 @@ namespace EstoqueService.Controllers
         }
 
         // GET: Fabricante/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null)
             {
@@ -86,7 +86,7 @@ namespace EstoqueService.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("FabricanteId,Nome,Email")] Fabricante Fabricante)
+        public async Task<IActionResult> Edit(Guid id, [Bind("FabricanteId,Nome,Email")] Fabricante Fabricante)
         {
             if (id != Fabricante.FabricanteId)
             {
@@ -117,7 +117,7 @@ namespace EstoqueService.Controllers
         }
 
         // GET: Fabricante/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null)
             {
@@ -137,7 +137,7 @@ namespace EstoqueService.Controllers
         // POST: Fabricante/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             var Fabricante = await _context.Fabricantes.SingleOrDefaultAsync(m => m.FabricanteId == id);
             _context.Fabricantes.Remove(Fabricante);
@@ -145,7 +145,7 @@ namespace EstoqueService.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool FabricanteExists(int id)
+        private bool FabricanteExists(Guid id)
         {
             return _context.Fabricantes.Any(e => e.FabricanteId == id);
         }

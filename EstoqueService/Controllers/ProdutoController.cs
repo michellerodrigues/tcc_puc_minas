@@ -26,7 +26,7 @@ namespace EstoqueService.Controllers
         }
 
         // GET: Produto/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
             {
@@ -66,7 +66,7 @@ namespace EstoqueService.Controllers
         }
 
         // GET: Produto/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null)
             {
@@ -86,7 +86,7 @@ namespace EstoqueService.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Valor,PesoCheio,PesoVazio,VolumeEmbalagem")] Produto produto)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Nome,Valor,PesoCheio,PesoVazio,VolumeEmbalagem")] Produto produto)
         {
             if (id != produto.ProdutoId)
             {
@@ -117,7 +117,7 @@ namespace EstoqueService.Controllers
         }
 
         // GET: Produto/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null)
             {
@@ -137,7 +137,7 @@ namespace EstoqueService.Controllers
         // POST: Produto/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             var produto = await _context.Produtos.SingleOrDefaultAsync(m => m.ProdutoId == id);
             _context.Produtos.Remove(produto);
@@ -145,7 +145,7 @@ namespace EstoqueService.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ProdutoExists(int id)
+        private bool ProdutoExists(Guid id)
         {
             return _context.Produtos.Any(e => e.ProdutoId == id);
         }

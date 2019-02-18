@@ -9,7 +9,7 @@ namespace DescarteService.Data.Interfaces
 
         IEnumerable<T> Find(Func<T, bool> predicate);
 
-        T GetById(int id);
+        T GetById(Guid Id);
 
         void Create(T entity);
 

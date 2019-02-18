@@ -1,0 +1,187 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
+using System.Threading.Tasks;
+using AgendaService.Data.Interfaces;
+using AgendaService.Data.Models;
+using AgendaService.DataContext;
+
+namespace AgendaService.Services.Messages
+{
+    public class AgendaApiService
+    {
+
+        public AgendaCanceladaMessageResponse CancelarAgenda(Guid idAgenda, AppDataContext _context)
+        {
+            IAgendaRepository AgendaRepository = new AgendaRepository(_context);
+
+            AgendaCanceladaMessageResponse response = new AgendaCanceladaMessageResponse();
+            response.codRetorno = 0;
+            response.StatusRetorno = "Agenda Cancelada Com Sucesso";
+            response.AgendaCancelada = new AgendaMessage();
+
+            var Agenda = AgendaRepository.GetById(idAgenda);
+
+            if (Agenda == null)
+            {
+                response.codRetorno = 1;
+                response.StatusRetorno = "Agenda Não encontrada";
+                return response;
+            }
+
+            if (Agenda.StatusAgenda != "Pendente" && Agenda.StatusAgenda != "Confirmada")
+            {
+                response.codRetorno = 1;
+                response.StatusRetorno = "Agenda não pode ser cancelada. Veja seu Status";
+                response.AgendaCancelada =  PrepararAgendaRetorno(Agenda);;
+                return response;
+            }
+
+            var dataAgora = DateTime.Now;
+            Agenda.DataStatus = dataAgora;
+            Agenda.StatusAgenda = "Cancelada";
+
+            AgendaRepository.Update(Agenda);
+            response.AgendaCancelada =  PrepararAgendaRetorno(Agenda);
+            return response;
+        }
+
+        public AgendaConfirmadaMessageResponse ConfirmarAgenda(Guid idAgenda, AppDataContext _context)
+        {
+            IAgendaRepository AgendaRepository = new AgendaRepository(_context);
+
+            AgendaConfirmadaMessageResponse response = new AgendaConfirmadaMessageResponse();
+            response.codRetorno = 0;
+            response.StatusRetorno = "Agenda Confirmada Com Sucesso";
+            response.AgendaConfirmada = new AgendaMessage();
+
+            var Agenda = AgendaRepository.GetById(idAgenda);
+
+            if (Agenda == null)
+            {
+                response.codRetorno = 1;
+                response.StatusRetorno = "Agenda Não encontrada";
+                return response;
+            }
+
+
+            if (Agenda.StatusAgenda != "Pendente")
+            {
+                response.codRetorno = 1;
+                response.StatusRetorno = "Agenda não pode ser confirmada. Veja seu Status";
+                response.AgendaConfirmada = PrepararAgendaRetorno(Agenda);
+                return response;
+            }
+
+
+            var dataAgora = DateTime.Now;
+            Agenda.DataStatus = dataAgora;
+            Agenda.StatusAgenda = "Cancelada";
+
+            AgendaRepository.Update(Agenda);
+            response.AgendaConfirmada = PrepararAgendaRetorno(Agenda);
+            return response;
+        }
+
+        public AgendaFinalizadaMessageResponse FinalizarAgenda(Guid idAgenda, AppDataContext _context)
+        {
+            IAgendaRepository AgendaRepository = new AgendaRepository(_context);
+
+            AgendaFinalizadaMessageResponse response = new AgendaFinalizadaMessageResponse();
+            response.codRetorno = 0;
+            response.StatusRetorno = "Agenda Finalizada Com Sucesso";
+            response.AgendaFinalizada = new AgendaMessage();
+
+            var Agenda = AgendaRepository.GetById(idAgenda);
+
+            if (Agenda == null)
+            {
+                response.codRetorno = 1;
+                response.StatusRetorno = "Agenda Não encontrada";
+                return response;
+            }
+
+
+            if (Agenda.StatusAgenda != "Confirmada")
+            {
+                response.codRetorno = 1;
+                response.StatusRetorno = "Agenda não pode ser finalizada. Veja seu Status";
+                response.AgendaFinalizada = PrepararAgendaRetorno(Agenda);
+                return response;
+            }
+
+            var dataAgora = DateTime.Now;
+            Agenda.DataStatus = dataAgora;
+            Agenda.StatusAgenda = "Finalizada";
+
+            AgendaRepository.Update(Agenda);
+            response.AgendaFinalizada = PrepararAgendaRetorno(Agenda);
+            return response;
+        }
+
+        public ObterListaAgendaStatusMessageResponse ObterAgendasPorStatus(string status, AppDataContext _context)
+        {
+            IAgendaRepository estoqueRepository = new AgendaRepository(_context);
+
+            ObterListaAgendaStatusMessageResponse response = new ObterListaAgendaStatusMessageResponse();
+            response.codRetorno = 0;
+            response.StatusRetorno = String.Format("Agendas {0}s Retornados com sucesso", status);
+
+            var Agendas = estoqueRepository.FindAgendaStatus(status);
+
+            if (Agendas == null)
+            {
+                response.codRetorno = 1;
+                response.StatusRetorno = String.Format("Não existem Agendas com o status: {0}", status);
+            }
+
+            foreach (Agenda Agenda in Agendas)
+            {
+                response.ListaAgendaStatus.Add(PrepararAgendaRetorno(Agenda));
+            }
+
+            return response;
+        }
+
+        public ObterAgendaExpiradaMessageResponse ObterAgendaExpirada(AppDataContext _context)
+        {
+            IAgendaRepository estoqueRepository = new AgendaRepository(_context);
+
+            ObterAgendaExpiradaMessageResponse response = new ObterAgendaExpiradaMessageResponse();
+            response.codRetorno = 0;
+            response.StatusRetorno = "Agendas expiradas Retornadas com sucesso";
+
+            var Agendas = estoqueRepository.FindAgendaExpirada();
+
+            if (Agendas == null)
+            {
+                response.codRetorno = 1;
+                response.StatusRetorno = "Não existem Agendas expiradas";
+            }
+
+            foreach (Agenda Agenda in Agendas)
+            {
+                response.ListaAgendasExpiradas.Add(PrepararAgendaRetorno(Agenda));
+            }
+
+            return response;
+        }
+
+        private AgendaMessage PrepararAgendaRetorno(Agenda Agenda)
+        {
+            var AgendaMessage = new AgendaMessage()
+            {
+                DataCriacao = Agenda.DataCriacao,
+                DataStatus = Agenda.DataCriacao,
+                EmailResponsavel = Agenda.Responsavel.Email,
+                Responsavel = Agenda.Responsavel.NomeResponsavel,
+                IdAgenda = Agenda.Id,
+                LoteDescarte = Agenda.LoteDescarte,
+                StatusAgenda = Agenda.StatusAgenda
+            };
+
+            return AgendaMessage;
+        }
+    }
+}

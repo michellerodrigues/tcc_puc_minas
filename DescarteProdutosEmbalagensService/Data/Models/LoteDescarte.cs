@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using DescarteService.Data.JoinFacade;
@@ -8,7 +9,7 @@ namespace DescarteService.Data.Models
     public class LoteDescarte
     {
         [Key]
-        public int LoteDescarteId { get; set; }
+        public Guid LoteDescarteId { get; set; }
 
         [Required]
         [StringLength(255)]

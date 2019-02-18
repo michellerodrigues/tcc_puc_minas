@@ -26,7 +26,7 @@ namespace EstoqueService.Controllers
         }
 
         // GET: Estoque/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
             {
@@ -66,7 +66,7 @@ namespace EstoqueService.Controllers
         }
 
         // GET: Estoque/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null)
             {
@@ -86,7 +86,7 @@ namespace EstoqueService.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Lote,Serie,DataInclusao,DataVecimentoProduto,QtdeDispUnidade,Descartado")] Estoque estoque)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Lote,Serie,DataInclusao,DataVecimentoProduto,QtdeDispUnidade,Descartado")] Estoque estoque)
         {
             if (id != estoque.Id)
             {
@@ -117,7 +117,7 @@ namespace EstoqueService.Controllers
         }
 
         // GET: Estoque/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null)
             {
@@ -137,7 +137,7 @@ namespace EstoqueService.Controllers
         // POST: Estoque/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             var estoque = await _context.Estoques.SingleOrDefaultAsync(m => m.Id == id);
             _context.Estoques.Remove(estoque);
@@ -145,7 +145,7 @@ namespace EstoqueService.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool EstoqueExists(int id)
+        private bool EstoqueExists(Guid id)
         {
             return _context.Estoques.Any(e => e.Id == id);
         }

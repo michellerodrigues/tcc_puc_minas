@@ -6,7 +6,7 @@ namespace DescarteService.Data.Models
     public class AgendamentoDescarte
     {
         [Key]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         [Required]
         public LoteDescarte LoteDescarte { get; set; }

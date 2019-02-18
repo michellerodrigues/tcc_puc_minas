@@ -15,15 +15,16 @@ namespace DescarteService.Data
                 var context = serviceScope.ServiceProvider.GetService<AppDataContext>();
                 if(context.Database.EnsureCreated())
                 {
+
                     var lote1 = new LoteDescarte { NomeResponsavelDescarte="Michelle Rodrigues 1 ",EmailResponsavelDescarte="mica-revenda1@mailinator.com"};
                     var lote2 = new LoteDescarte { NomeResponsavelDescarte="Fornecedor 1",EmailResponsavelDescarte="mica-fornecedor1@mailinator.com"};
            
                     context.LoteDescartes.Add(lote1);
                     context.LoteDescartes.Add(lote2);
     
-                    var produto1 = new ProdutoDescarte { Nome="Cupinicida 3MAX ", PesoCheio=450, PesoVazio=10,VolumeEmbalagem=0.3M,DataVecimentoProduto = DateTime.Now.AddDays(45), IdITemEstoque = 1,LoteDescarte=lote1}; 
-                    var produto2 = new ProdutoDescarte { Nome="Herbicidas Hortalis", PesoCheio=450, PesoVazio=10,VolumeEmbalagem=0.3M,DataVecimentoProduto = DateTime.Now.AddDays(30), IdITemEstoque = 2,LoteDescarte=lote1}; 
-                    var produto3 = new ProdutoDescarte { Nome="Inseticida Fatalis", PesoCheio=450, PesoVazio=10,VolumeEmbalagem=0.3M,DataVecimentoProduto = DateTime.Now.AddDays(15), IdITemEstoque = 3,LoteDescarte=lote2}; 
+                    var produto1 = new ProdutoDescarte { Nome="Cupinicida 3MAX ", PesoCheio=450, PesoVazio=10,VolumeEmbalagem=0.3M,DataVecimentoProduto = DateTime.Now.AddDays(45), IdITemEstoque = new Guid(),LoteDescarte=lote1}; 
+                    var produto2 = new ProdutoDescarte { Nome="Herbicidas Hortalis", PesoCheio=450, PesoVazio=10,VolumeEmbalagem=0.3M,DataVecimentoProduto = DateTime.Now.AddDays(30), IdITemEstoque = new Guid(), LoteDescarte=lote1}; 
+                    var produto3 = new ProdutoDescarte { Nome="Inseticida Fatalis", PesoCheio=450, PesoVazio=10,VolumeEmbalagem=0.3M,DataVecimentoProduto = DateTime.Now.AddDays(15), IdITemEstoque = new Guid(),LoteDescarte=lote2}; 
                     
                     context.ProdutoDescartes.Add(produto1);
                     context.ProdutoDescartes.Add(produto2);

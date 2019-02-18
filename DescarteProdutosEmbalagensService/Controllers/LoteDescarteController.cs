@@ -26,7 +26,7 @@ namespace DescarteService.Controllers
         }
 
         // GET: LoteDescarte/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(Guid? id)
         {
             if (id == null)
             {
@@ -66,7 +66,7 @@ namespace DescarteService.Controllers
         }
 
         // GET: LoteDescarte/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null)
             {
@@ -86,7 +86,7 @@ namespace DescarteService.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("LoteDescarteId,NomeResponsavelDescarte,EmailResponsavelDescarte")] LoteDescarte loteDescarte)
+        public async Task<IActionResult> Edit(Guid? id, [Bind("LoteDescarteId,NomeResponsavelDescarte,EmailResponsavelDescarte")] LoteDescarte loteDescarte)
         {
             if (id != loteDescarte.LoteDescarteId)
             {
@@ -117,7 +117,7 @@ namespace DescarteService.Controllers
         }
 
         // GET: LoteDescarte/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null)
             {
@@ -137,7 +137,7 @@ namespace DescarteService.Controllers
         // POST: LoteDescarte/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(Guid? id)
         {
             var loteDescarte = await _context.LoteDescartes.SingleOrDefaultAsync(m => m.LoteDescarteId == id);
             _context.LoteDescartes.Remove(loteDescarte);
@@ -145,7 +145,7 @@ namespace DescarteService.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool LoteDescarteExists(int id)
+        private bool LoteDescarteExists(Guid? id)
         {
             return _context.LoteDescartes.Any(e => e.LoteDescarteId == id);
         }

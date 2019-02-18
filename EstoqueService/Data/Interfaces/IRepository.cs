@@ -11,6 +11,8 @@ namespace EstoqueService.Data.Interfaces
 
         T GetById(int id);
 
+        T GetById(Guid id);
+
         void Create(T entity);
 
         void Update(T entity);

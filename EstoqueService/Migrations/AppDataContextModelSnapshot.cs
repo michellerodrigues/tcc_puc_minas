@@ -22,7 +22,7 @@ namespace EstoqueService.Migrations
 
             modelBuilder.Entity("EstoqueService.Data.Models.Estoque", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
                     b.Property<DateTime>("DataInclusao");
@@ -37,7 +37,7 @@ namespace EstoqueService.Migrations
                         .IsRequired()
                         .HasMaxLength(10);
 
-                    b.Property<int?>("ProdutoId");
+                    b.Property<Guid?>("ProdutoId");
 
                     b.Property<decimal>("QtdeDispUnidade");
 
@@ -78,7 +78,7 @@ namespace EstoqueService.Migrations
 
             modelBuilder.Entity("EstoqueService.Data.Models.Produto", b =>
                 {
-                    b.Property<int>("ProdutoId")
+                    b.Property<Guid>("ProdutoId")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Nome")

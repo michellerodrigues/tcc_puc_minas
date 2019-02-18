@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+ <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <LangVersion>7.1</LangVersion> <!-- poderia ser lasted-->
+  </PropertyGroup>
+  
+  
+  <ItemGroup>
+    <!--<PackageReference Include="HangFire" Version="1.6.20" />-->
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="NServiceBus" Version="7.1.6" />
+    <PackageReference Include="NServiceBus.CustomChecks" Version="3.0.1" />
+    <PackageReference Include="NServiceBus.Heartbeat" Version="3.0.1" />
+    <PackageReference Include="NServiceBus.Persistence.Sql" Version="4.4.0" />
+    <PackageReference Include="NServiceBus.RabbitMQ" Version="5.0.2" />
+    <PackageReference Include="NServiceBus.SagaAudit" Version="3.0.1" />
+    <PackageReference Include="NServiceBus.Transport.Msmq" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+  <Reference Include="Messages">
+    <HintPath>D:\mica\tcc\tcc_puc_minas\minha_saga\Messages\bin\Debug\netstandard2.0\Messages.dll</HintPath>
+  </Reference>
+
+  <!--  <ProjectReference Include="..\Messages\Messages.csproj" />-->
+</ItemGroup>
+
+</Project>

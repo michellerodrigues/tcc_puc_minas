@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace DescarteService.Services.Messages
@@ -7,7 +8,7 @@ namespace DescarteService.Services.Messages
     public class DescartePendente
     {
         [DataMember(Name = "idItemEstoque")]
-        public int IdItemEstoque { get; set; }
+        public Guid IdItemEstoque { get; set; }
 
         [DataMember(Name = "nomeProduto")]
         public string NomeProduto { get; set; }
