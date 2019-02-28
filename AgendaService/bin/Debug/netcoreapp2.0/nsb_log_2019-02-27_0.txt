@@ -1,0 +1,5 @@
+﻿2019-02-27 21:53:53.492 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-02-27 21:53:54.229 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-02-27 21:53:54.769 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+

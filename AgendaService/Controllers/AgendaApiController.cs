@@ -6,6 +6,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using AgendaService.Services.Messages;
 using AgendaService.DataContext;
+using Messages.Descartes.Events;
+using AgendaService.Services;
+using NServiceBus;
 
 namespace AgendaService.Controllers
 {
@@ -34,8 +37,8 @@ namespace AgendaService.Controllers
             return response;
         }
 
-        [HttpPost]
-        [Route("/confirmar")]
+        [HttpGet]
+        [Route("/confirmar/{0}")]
         public AgendaConfirmadaMessageResponse ConfirmarAgenda(Guid Agenda)
         {
             AgendaConfirmadaMessageResponse response = new AgendaConfirmadaMessageResponse();
@@ -82,6 +85,24 @@ namespace AgendaService.Controllers
             AgendaApiService service = new AgendaApiService();
 
             response = service.ObterAgendasPorStatus(status,_context);
+
+            return response;
+        }
+
+        [HttpGet]
+        [Route("/confirmar")]
+        public AgendaConfirmadaMessageResponse ConfirmarAgendamentoRetirada(Guid Agenda, string email)
+        {
+
+
+            AgendaConfirmadaMessageResponse response = new AgendaConfirmadaMessageResponse();
+            response.codRetorno = 0;
+            response.StatusRetorno = "ok";
+            response.AgendaConfirmada = new AgendaMessage();
+
+            AgendaApiService service = new AgendaApiService();
+
+            response = service.ConfirmarAgenda(Agenda,_context);
 
             return response;
         }

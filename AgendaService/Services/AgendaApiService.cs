@@ -2,12 +2,17 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Threading.Tasks;
 using AgendaService.Data.Interfaces;
 using AgendaService.Data.Models;
 using AgendaService.DataContext;
+using AgendaService.Services.Messages;
+using Messages.Descartes.Events;
+using NServiceBus;
 
-namespace AgendaService.Services.Messages
+namespace AgendaService.Services
 {
     public class AgendaApiService
     {
@@ -48,7 +53,9 @@ namespace AgendaService.Services.Messages
         }
 
         public AgendaConfirmadaMessageResponse ConfirmarAgenda(Guid idAgenda, AppDataContext _context)
-        {
+        {              
+            var resposta = _context.SendLocal(new AgendamentoConfirmadoEvent(){ConfirmadoEm=DateTime.Now,Id=idAgenda, EmailConfirmacao=email});
+                   
             IAgendaRepository AgendaRepository = new AgendaRepository(_context);
 
             AgendaConfirmadaMessageResponse response = new AgendaConfirmadaMessageResponse();
@@ -183,5 +190,39 @@ namespace AgendaService.Services.Messages
 
             return AgendaMessage;
         }
+
+
+        public static Task EnviarEmailAgendamento(string remetente,string assunto, string mensagem)
+        {
+            try
+            {
+                var client = new SmtpClient(Startup.AppSettings.EnvioEmail.ServidorSMTP, Startup.AppSettings.EnvioEmail.PortaServidor)
+                {
+                    UseDefaultCredentials = false,
+                    Credentials = new NetworkCredential(Startup.AppSettings.EnvioEmail.UsuarioEmail, Startup.AppSettings.EnvioEmail.SenhaEmail),
+                    EnableSsl = true
+                };
+
+                MailMessage mail = new MailMessage();
+
+                mail.From = new MailAddress(Startup.AppSettings.EnvioEmail.UsuarioEmail);
+                mail.To.Add(remetente);
+                mail.Subject = String.Format("AgroPop informa: {0}",assunto);
+
+                mail.Body = mensagem;
+
+                mail.IsBodyHtml = true;
+                client.Send(mail);
+                
+                return Task.CompletedTask;
+
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidOperationException("Exception in sendEmail:" + ex.Message);
+            }
+        }
+        
+
     }
 }
