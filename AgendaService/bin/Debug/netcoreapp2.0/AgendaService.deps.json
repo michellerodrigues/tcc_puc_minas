@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "3460d85e8a24910bcdaa2de6f5383f63ab7c95ad"
+    "signature": "977dc482d574f079f056addf78203f44ff7ac671"
   },
   "compilationOptions": {
     "defines": [
@@ -32,6 +32,7 @@
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3",
           "NServiceBus": "7.1.6",
+          "NServiceBus.Autofac": "7.0.0",
           "NServiceBus.CustomChecks": "3.0.1",
           "NServiceBus.Heartbeat": "3.0.1",
           "NServiceBus.NHibernate": "8.1.1",
@@ -56,6 +57,18 @@
         },
         "compile": {
           "lib/netstandard1.1/Antlr3.Runtime.dll": {}
+        }
+      },
+      "Autofac/4.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "System.ComponentModel": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.1/Autofac.dll": {}
         }
       },
       "Dapper/1.50.1": {
@@ -2645,6 +2658,18 @@
           "lib/netstandard2.0/NServiceBus.Core.dll": {}
         }
       },
+      "NServiceBus.Autofac/7.0.0": {
+        "dependencies": {
+          "Autofac": "4.0.0",
+          "NServiceBus": "7.1.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NServiceBus.ObjectBuilder.Autofac.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/NServiceBus.ObjectBuilder.Autofac.dll": {}
+        }
+      },
       "NServiceBus.CustomChecks/3.0.1": {
         "dependencies": {
           "NServiceBus": "7.1.6"
@@ -4634,6 +4659,13 @@
       "path": "antlr3.runtime/3.5.1",
       "hashPath": "antlr3.runtime.3.5.1.nupkg.sha512"
     },
+    "Autofac/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cwQTYTfSVaklDZFitVwYpLT09Vb9ltiwpF4nSTIp14ZZk9JmkbsYJ2D+txcmuCaapKz72fNDzHDQNWoo0dzRFw==",
+      "path": "autofac/4.0.0",
+      "hashPath": "autofac.4.0.0.nupkg.sha512"
+    },
     "Dapper/1.50.1": {
       "type": "package",
       "serviceable": true,
@@ -5935,6 +5967,13 @@
       "sha512": "sha512-2ExEjVqsXomlYI3X52IrrGXn7yhr578Lni+jC1D/pmAdkun0pfaqITSRsLHcT07cnHrSu+JZAgsLeTQ/0j+GtA==",
       "path": "nservicebus/7.1.6",
       "hashPath": "nservicebus.7.1.6.nupkg.sha512"
+    },
+    "NServiceBus.Autofac/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BxD0IYNuS1oU7cZqb8O4hyxlNUV+tBG/8gmANbK08T9x0a9TfMyj22LK0+tRh5Sm84Fbnl2AgxXdjJZT2QI10Q==",
+      "path": "nservicebus.autofac/7.0.0",
+      "hashPath": "nservicebus.autofac.7.0.0.nupkg.sha512"
     },
     "NServiceBus.CustomChecks/3.0.1": {
       "type": "package",

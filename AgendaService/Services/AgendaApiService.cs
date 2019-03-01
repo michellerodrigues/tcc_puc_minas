@@ -54,7 +54,9 @@ namespace AgendaService.Services
 
         public AgendaConfirmadaMessageResponse ConfirmarAgenda(Guid idAgenda, AppDataContext _context)
         {              
-            var resposta = _context.SendLocal(new AgendamentoConfirmadoEvent(){ConfirmadoEm=DateTime.Now,Id=idAgenda, EmailConfirmacao=email});
+            var resposta = new AgendaConfirmadaMessageResponse();
+            
+            //_context.SendLocal(new AgendamentoConfirmadoEvent(){ConfirmadoEm=DateTime.Now,Id=idAgenda, EmailConfirmacao="meuemail"});
                    
             IAgendaRepository AgendaRepository = new AgendaRepository(_context);
 

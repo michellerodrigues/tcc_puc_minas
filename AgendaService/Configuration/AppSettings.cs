@@ -12,8 +12,6 @@ public class AppSettings
     public string MensagemPadraoDescarteProutoVencido{ get; set; }    
     public string MensagemPadraoDescarteEmbalagens{ get; set; }
     public string EstoqueServicesURL{ get; set; }
-
-    public string SagaDescarteDB{ get; set; }
 }
 
 public class EnvioEmail

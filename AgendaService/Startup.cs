@@ -12,6 +12,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Hangfire;
 using NServiceBus;
 using NServiceBus.Persistence;
+using Microsoft.Extensions.Logging;
+using AgendaService.Services;
+using System.Net;
+using Autofac;
 
 namespace AgendaService
 {
@@ -35,7 +39,7 @@ namespace AgendaService
 
             AppSettings = Configuration.GetSection("AppSettings").Get<AppSettings>();
 
-            ConfigurarNserviceBus();
+            //ConfigurarNserviceBus();
             
         }
 
@@ -44,36 +48,50 @@ namespace AgendaService
         {
             services.AddMvc();
             services.AddDbContext<AppDataContext>(option => option.UseSqlServer(Configuration.GetConnectionString("Default")));
-        }
-
-        public void ConfigurarNserviceBus()
-        {                     
-
-            EndpointConfiguration endpointConfiguration = new EndpointConfiguration("AgendaService");
-
+        
+            #region "Configuracao NService Bus"
+            
+            var endpointConfiguration = new EndpointConfiguration("DescarteMessages");
+            endpointConfiguration.UseContainer<AutofacBuilder>();
+            
+            
             var transport = endpointConfiguration.UseTransport<RabbitMQTransport>()
             //passar isso para o webconfig
             .ConnectionString("host=localhost;user=guest;password=guest")
             .UseDirectRoutingTopology();
+            
 
-            endpointConfiguration.SendFailedMessagesTo("Descarte_Error");
+
+            endpointConfiguration.SendFailedMessagesTo("Descarte.Error");
             endpointConfiguration.AuditProcessedMessagesTo("Descarte.Audit");
             endpointConfiguration.UseSerialization<NewtonsoftSerializer>();
 
             var persistence = endpointConfiguration.UsePersistence<NHibernatePersistence>();
-            persistence.ConnectionString(AppSettings.SagaDescarteDB); //@ na frente
+            persistence.ConnectionString(@"Server = DESKTOP-C8BIS20\MSSQLSERVER2;Database=SagaDescarteDB;Integrated Security=True;"); //@ na frente
                 
             endpointConfiguration.EnableInstallers();
 
            // var routing = transport.Routing();
           //  routing.RouteToEndpoint(typeof(PlaceOrder), "Sales");
 
-            Endpoint.Start(endpointConfiguration).ConfigureAwait(false).GetAwaiter().GetResult();
 
-           // var agendaConfirmada = new AgendamentoConfirmadoEvent(Agenda);
+            services.AddLogging(loggingBuilder => loggingBuilder.AddConsole());
+            
+            endpointConfiguration.RegisterComponents(
+                registration: components =>
+                {
+                    components.RegisterSingleton(new AgendaApiService());
+                });
 
-           //SendLocal(agendaConfirmada);
-           // BuildWebHost(args).Run();
+            services.AddSingleton(sp => endpointConfiguration);
+            services.AddSingleton<AgendaApiService>();
+         
+
+            Endpoint.Start(endpointConfiguration).GetAwaiter().GetResult();
+            
+            #endregion
+            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

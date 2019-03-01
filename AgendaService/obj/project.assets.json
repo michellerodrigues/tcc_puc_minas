@@ -14,6 +14,19 @@
           "lib/netstandard1.1/Antlr3.Runtime.dll": {}
         }
       },
+      "Autofac/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.ComponentModel": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        }
+      },
       "Dapper/1.50.1": {
         "type": "package",
         "dependencies": {
@@ -3049,6 +3062,19 @@
           "lib/netstandard2.0/NServiceBus.Core.dll": {}
         }
       },
+      "NServiceBus.Autofac/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "[4.0.0, 5.0.0)",
+          "NServiceBus": "[7.0.0, 8.0.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/NServiceBus.ObjectBuilder.Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NServiceBus.ObjectBuilder.Autofac.dll": {}
+        }
+      },
       "NServiceBus.CustomChecks/3.0.1": {
         "type": "package",
         "dependencies": {
@@ -5482,6 +5508,22 @@
         "lib/netstandard1.1/Antlr3.Runtime.xml",
         "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/Antlr3.Runtime.dll",
         "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/Antlr3.Runtime.xml"
+      ]
+    },
+    "Autofac/4.0.0": {
+      "sha512": "cwQTYTfSVaklDZFitVwYpLT09Vb9ltiwpF4nSTIp14ZZk9JmkbsYJ2D+txcmuCaapKz72fNDzHDQNWoo0dzRFw==",
+      "type": "package",
+      "path": "autofac/4.0.0",
+      "files": [
+        ".signature.p7s",
+        "autofac.4.0.0.nupkg.sha512",
+        "autofac.nuspec",
+        "lib/net451/Autofac.dll",
+        "lib/net451/Autofac.xml",
+        "lib/netstandard1.1/Autofac.dll",
+        "lib/netstandard1.1/Autofac.xml",
+        "lib/uap10.0/Autofac.dll",
+        "lib/uap10.0/Autofac.xml"
       ]
     },
     "Dapper/1.50.1": {
@@ -8748,6 +8790,22 @@
         "tools/init.ps1",
         "tools/install.ps1",
         "tools/uninstall.ps1"
+      ]
+    },
+    "NServiceBus.Autofac/7.0.0": {
+      "sha512": "BxD0IYNuS1oU7cZqb8O4hyxlNUV+tBG/8gmANbK08T9x0a9TfMyj22LK0+tRh5Sm84Fbnl2AgxXdjJZT2QI10Q==",
+      "type": "package",
+      "path": "nservicebus.autofac/7.0.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net452/NServiceBus.ObjectBuilder.Autofac.dll",
+        "lib/net452/NServiceBus.ObjectBuilder.Autofac.pdb",
+        "lib/net452/NServiceBus.ObjectBuilder.Autofac.xml",
+        "lib/netstandard2.0/NServiceBus.ObjectBuilder.Autofac.dll",
+        "lib/netstandard2.0/NServiceBus.ObjectBuilder.Autofac.pdb",
+        "lib/netstandard2.0/NServiceBus.ObjectBuilder.Autofac.xml",
+        "nservicebus.autofac.7.0.0.nupkg.sha512",
+        "nservicebus.autofac.nuspec"
       ]
     },
     "NServiceBus.CustomChecks/3.0.1": {
@@ -14299,6 +14357,7 @@
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.3",
       "NServiceBus >= 7.1.6",
+      "NServiceBus.Autofac >= 7.0.0",
       "NServiceBus.CustomChecks >= 3.0.1",
       "NServiceBus.Heartbeat >= 3.0.1",
       "NServiceBus.NHibernate >= 8.1.1",
@@ -14385,6 +14444,10 @@
           "NServiceBus": {
             "target": "Package",
             "version": "[7.1.6, )"
+          },
+          "NServiceBus.Autofac": {
+            "target": "Package",
+            "version": "[7.0.0, )"
           },
           "NServiceBus.CustomChecks": {
             "target": "Package",
