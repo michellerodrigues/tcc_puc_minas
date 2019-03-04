@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "977dc482d574f079f056addf78203f44ff7ac671"
+    "signature": "78a70698768d2be3c0246a1500fa4e48498c57ee"
   },
   "compilationOptions": {
     "defines": [
@@ -35,6 +35,8 @@
           "NServiceBus.Autofac": "7.0.0",
           "NServiceBus.CustomChecks": "3.0.1",
           "NServiceBus.Heartbeat": "3.0.1",
+          "NServiceBus.MSDependencyInjection": "0.1.3",
+          "NServiceBus.Metrics.ServiceControl": "3.0.2",
           "NServiceBus.NHibernate": "8.1.1",
           "NServiceBus.Newtonsoft.Json": "2.2.0",
           "NServiceBus.Persistence.Sql": "4.4.0",
@@ -400,7 +402,7 @@
           "Microsoft.Extensions.Configuration.Json": "2.0.1",
           "Microsoft.Extensions.Configuration.UserSecrets": "2.0.1",
           "Microsoft.Extensions.Configuration.Xml": "2.0.1",
-          "Microsoft.Extensions.DependencyInjection": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1",
           "Microsoft.Extensions.DiagnosticAdapter": "2.0.1",
           "Microsoft.Extensions.FileProviders.Abstractions": "2.0.1",
@@ -731,7 +733,7 @@
       "Microsoft.AspNetCore.DataProtection.Extensions/2.0.2": {
         "dependencies": {
           "Microsoft.AspNetCore.DataProtection": "2.0.2",
-          "Microsoft.Extensions.DependencyInjection": "2.0.0"
+          "Microsoft.Extensions.DependencyInjection": "2.1.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.DataProtection.Extensions.dll": {}
@@ -788,7 +790,7 @@
           "Microsoft.Extensions.Configuration": "2.1.1",
           "Microsoft.Extensions.Configuration.EnvironmentVariables": "2.0.1",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.0.1",
-          "Microsoft.Extensions.DependencyInjection": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
           "Microsoft.Extensions.FileProviders.Physical": "2.0.1",
           "Microsoft.Extensions.Logging": "2.0.1",
           "Microsoft.Extensions.Options": "2.1.1",
@@ -995,7 +997,7 @@
           "Microsoft.AspNetCore.Mvc.TagHelpers": "2.0.3",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.0.3",
           "Microsoft.Extensions.Caching.Memory": "2.0.1",
-          "Microsoft.Extensions.DependencyInjection": "2.0.0"
+          "Microsoft.Extensions.DependencyInjection": "2.1.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.dll": {}
@@ -1101,7 +1103,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Localization": "2.0.2",
           "Microsoft.AspNetCore.Mvc.Razor": "2.0.3",
-          "Microsoft.Extensions.DependencyInjection": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
           "Microsoft.Extensions.Localization": "2.0.2"
         },
         "runtime": {
@@ -1748,7 +1750,7 @@
       "Microsoft.EntityFrameworkCore/2.0.2": {
         "dependencies": {
           "Microsoft.Extensions.Caching.Memory": "2.0.1",
-          "Microsoft.Extensions.DependencyInjection": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
           "Microsoft.Extensions.Logging": "2.0.1",
           "Remotion.Linq": "2.1.2",
           "System.Collections.Immutable": "1.5.0",
@@ -2013,15 +2015,15 @@
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Xml.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/2.0.0": {
+      "Microsoft.Extensions.DependencyInjection/2.1.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.1"
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll": {}
         },
         "compile": {
-          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll": {}
+          "lib/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
@@ -2486,7 +2488,7 @@
       },
       "Microsoft.VisualStudio.Web.CodeGeneration/2.0.3": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": "2.0.3"
         },
         "runtime": {
@@ -2509,7 +2511,7 @@
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.Core/2.0.3": {
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "2.0.3",
           "Newtonsoft.Json": "12.0.1"
         },
@@ -2690,6 +2692,41 @@
         },
         "compile": {
           "lib/netstandard2.0/NServiceBus.Heartbeat.dll": {}
+        }
+      },
+      "NServiceBus.Metrics/3.0.0": {
+        "dependencies": {
+          "NServiceBus": "7.1.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NServiceBus.Metrics.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/NServiceBus.Metrics.dll": {}
+        }
+      },
+      "NServiceBus.Metrics.ServiceControl/3.0.2": {
+        "dependencies": {
+          "NServiceBus": "7.1.6",
+          "NServiceBus.Metrics": "3.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NServiceBus.Metrics.ServiceControl.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/NServiceBus.Metrics.ServiceControl.dll": {}
+        }
+      },
+      "NServiceBus.MSDependencyInjection/0.1.3": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "2.1.1",
+          "NServiceBus": "7.1.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NServiceBus.ObjectBuilder.MSDependencyInjection.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/NServiceBus.ObjectBuilder.MSDependencyInjection.dll": {}
         }
       },
       "NServiceBus.Newtonsoft.Json/2.2.0": {
@@ -5576,12 +5613,12 @@
       "path": "microsoft.extensions.configuration.xml/2.0.1",
       "hashPath": "microsoft.extensions.configuration.xml.2.0.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.DependencyInjection/2.0.0": {
+    "Microsoft.Extensions.DependencyInjection/2.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wakg18gHYiUL1pcjjyZuYk6OvDpbSw1E7IWxm78TMepsr+gQ8W0tWzuRm0q/9RFblngwPwo15rrgZSUV51W5Iw==",
-      "path": "microsoft.extensions.dependencyinjection/2.0.0",
-      "hashPath": "microsoft.extensions.dependencyinjection.2.0.0.nupkg.sha512"
+      "sha512": "sha512-2nshYaLTn73Ie+/yTkb7EZIXwQeFIXsYCBy/jSY9bMayYykGNjdWa25frayhuPAGVbZpEgfgp3d4JRVEuVyEqQ==",
+      "path": "microsoft.extensions.dependencyinjection/2.1.1",
+      "hashPath": "microsoft.extensions.dependencyinjection.2.1.1.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/2.1.1": {
       "type": "package",
@@ -5988,6 +6025,27 @@
       "sha512": "sha512-/7AwgGGnXMpFNqenNFNh9SpOqHB/ZB3QiijGFTTW87r4lTN2f7wekL+XpAn7JLW63BLfO4NW+fYjXOe/LcfiKg==",
       "path": "nservicebus.heartbeat/3.0.1",
       "hashPath": "nservicebus.heartbeat.3.0.1.nupkg.sha512"
+    },
+    "NServiceBus.Metrics/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3k2yQ8a7AYbGfafb3kD/sP9hRIV5cLl+CPxpfHEVLItCqOu7XSaoFxccLvWlxQ67hgKmce+AsbvPlBZsre+mwA==",
+      "path": "nservicebus.metrics/3.0.0",
+      "hashPath": "nservicebus.metrics.3.0.0.nupkg.sha512"
+    },
+    "NServiceBus.Metrics.ServiceControl/3.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6S6LrkVWI//weh2E3mIF9Jl7EzNM5WsitRA6pBfB5sOQ+weGJJuwSeWBSeT2AfMlRjOuh89/Oe3zNfe2Q5SlfA==",
+      "path": "nservicebus.metrics.servicecontrol/3.0.2",
+      "hashPath": "nservicebus.metrics.servicecontrol.3.0.2.nupkg.sha512"
+    },
+    "NServiceBus.MSDependencyInjection/0.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GxcXZg9vdfEh21lFY3RhXVmK2uuGaOUnsjk+bEyS3qN7KIcZ3p6YczGXjTvm2rPKexCBrw/Dr+uy4vB2F/zjIg==",
+      "path": "nservicebus.msdependencyinjection/0.1.3",
+      "hashPath": "nservicebus.msdependencyinjection.0.1.3.nupkg.sha512"
     },
     "NServiceBus.Newtonsoft.Json/2.2.0": {
       "type": "package",

@@ -1,0 +1,1303 @@
+﻿2019-03-03 17:18:28.127 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 17:18:28.486 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 17:18:28.664 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 17:21:35.721 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 17:21:36.098 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 17:21:36.285 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 17:25:25.360 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 17:25:25.705 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 17:25:25.922 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 17:28:04.209 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 17:28:04.517 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 17:28:04.681 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 17:29:47.224 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 17:29:47.490 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 17:29:47.648 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 17:31:32.622 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 17:31:32.892 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 17:31:33.047 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 17:33:49.249 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 17:33:49.562 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 17:33:49.756 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 18:18:00.581 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 18:18:01.236 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 18:18:01.524 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 18:25:13.694 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 18:25:13.951 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 18:25:14.106 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 18:41:04.700 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 18:41:04.964 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 18:41:05.117 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 18:43:10.099 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 18:43:10.404 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 18:43:10.557 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 18:45:46.895 WARN  NServiceBus.Transport.RabbitMQ.ChannelProvider Connection to the broker lost: End of stream
+2019-03-03 18:45:50.179 WARN  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agendamento MessagePump' is now in the armed state
+2019-03-03 18:45:50.178 ERROR NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport Error while sending metric data to NServiceBus.Routing.UnicastAddressTag.
+System.IO.IOException: Unable to write data to the transport connection: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrameSet(IList`1 frames)
+   at RabbitMQ.Client.Impl.Command.TransmitAsFrameSet(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at RabbitMQ.Client.Impl.ModelBase.ModelSend(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Impl.ModelBase.BasicPublish(String exchange, String routingKey, Boolean mandatory, IBasicProperties basicProperties, Byte[] body)
+   at NServiceBus.Transport.RabbitMQ.ConventionalRoutingTopology.Send(IModel channel, String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Routing\ConventionalRoutingTopology.cs:line 68
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel.SendMessage(String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ConfirmsAwareChannel.cs:line 66
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.SendMessage(UnicastTransportOperation transportOperation, ConfirmsAwareChannel channel) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 52
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 27
+   at NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport.<RunReportAsync>d__1.MoveNext() in C:\BuildAgent\work\6731e0de808b2e85\src\NServiceBus.Metrics.ServiceControl\ServiceControlReporting\NServiceBusMetadataReport.cs:line 41
+2019-03-03 18:45:50.254 INFO  NServiceBus.Transport.RabbitMQ.ChannelProvider Attempting to reconnect in 10 seconds.
+2019-03-03 18:45:58.685 INFO  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agendamento MessagePump' is now disarmed
+2019-03-03 18:46:00.279 ERROR NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport Error while sending metric data to NServiceBus.Routing.UnicastAddressTag.
+RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Library, code=0, text="End of stream", classId=0, methodId=0, cause=System.IO.IOException: Unable to write data to the transport connection: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrame(Frame frame)
+   at RabbitMQ.Client.Framing.Impl.Connection.HeartbeatWriteTimerCallback(Object state)
+   at RabbitMQ.Client.Framing.Impl.Connection.EnsureIsOpen()
+   at RabbitMQ.Client.Framing.Impl.Connection.CreateModel()
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel..ctor(IConnection connection, IRoutingTopology routingTopology, Boolean usePublisherConfirms) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ConfirmsAwareChannel.cs:line 15
+   at NServiceBus.Transport.RabbitMQ.ChannelProvider.GetPublishChannel() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ChannelProvider.cs:line 68
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 18
+   at NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport.<RunReportAsync>d__1.MoveNext() in C:\BuildAgent\work\6731e0de808b2e85\src\NServiceBus.Metrics.ServiceControl\ServiceControlReporting\NServiceBusMetadataReport.cs:line 41
+2019-03-03 18:46:07.958 INFO  NServiceBus.Transport.RabbitMQ.ChannelProvider Connection to the broker reestablished successfully.
+2019-03-03 18:51:12.602 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 18:51:12.861 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 18:51:13.011 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 18:55:55.756 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 18:55:56.011 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 18:55:56.163 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 19:06:42.088 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 19:06:42.399 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 19:06:42.570 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 19:07:43.801 WARN  NServiceBus.Transport.RabbitMQ.ChannelProvider Connection to the broker lost: Unexpected Exception
+2019-03-03 19:07:43.806 INFO  NServiceBus.Transport.RabbitMQ.ChannelProvider Attempting to reconnect in 10 seconds.
+2019-03-03 19:07:43.854 WARN  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agendamento MessagePump' is now in the armed state
+2019-03-03 19:07:43.953 ERROR NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport Error while sending metric data to NServiceBus.Routing.UnicastAddressTag.
+System.IO.IOException: Unable to write data to the transport connection: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrame(Frame frame)
+   at RabbitMQ.Client.Impl.Command.TransmitAsSingleFrame(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at RabbitMQ.Client.Impl.ModelBase.ModelRpc(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Framing.Impl.Model._Private_ChannelOpen(String outOfBand)
+   at RabbitMQ.Client.Framing.Impl.Connection.CreateModel()
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel..ctor(IConnection connection, IRoutingTopology routingTopology, Boolean usePublisherConfirms) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ConfirmsAwareChannel.cs:line 15
+   at NServiceBus.Transport.RabbitMQ.ChannelProvider.GetPublishChannel() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ChannelProvider.cs:line 68
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 18
+   at NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport.<RunReportAsync>d__1.MoveNext() in C:\BuildAgent\work\6731e0de808b2e85\src\NServiceBus.Metrics.ServiceControl\ServiceControlReporting\NServiceBusMetadataReport.cs:line 41
+2019-03-03 19:07:53.840 INFO  NServiceBus.Transport.RabbitMQ.ChannelProvider Connection to the broker reestablished successfully.
+2019-03-03 19:07:53.892 INFO  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agendamento MessagePump' is now disarmed
+2019-03-03 19:12:29.412 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 19:12:29.702 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 19:12:29.870 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 19:13:53.175 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 19:13:53.466 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 19:13:53.637 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 19:30:34.257 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 19:30:34.523 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 19:30:34.704 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 19:30:34.777 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:30:34.781 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:30:34.786 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:30:34.789 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:30:34.791 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:30:34.794 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:30:34.797 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:32:42.896 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 19:32:43.290 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 19:32:43.498 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 19:32:43.558 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:32:43.562 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:32:43.565 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:32:43.569 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:32:43.571 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:32:43.573 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:32:43.575 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:38:29.005 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 19:38:29.255 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 19:38:29.421 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 19:38:29.483 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:38:29.488 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:38:29.491 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:38:29.493 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:38:29.496 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:38:29.498 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:38:29.500 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:40:08.659 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 19:40:08.904 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 19:40:09.066 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 19:40:09.124 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:40:09.126 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:40:09.128 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:40:09.130 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:40:09.131 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:40:09.133 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 19:40:09.134 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:07:29.202 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 20:07:29.467 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 20:07:29.635 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 20:07:29.693 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:07:29.696 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:07:29.698 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:07:29.700 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:07:29.701 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:07:29.703 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:07:29.705 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:14:57.118 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 20:14:57.373 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 20:14:57.539 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 20:14:57.602 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:14:57.605 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:14:57.607 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:14:57.610 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:14:57.612 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:14:57.614 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:14:57.616 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:16:02.421 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 20:16:02.671 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 20:16:02.833 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 20:16:02.894 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:16:02.896 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:16:02.898 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:16:02.900 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:16:02.902 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:16:02.904 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:16:02.905 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:16:19.046 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MutateIncomingMessageBehavior.<InvokeIncomingMessageMutators>d__2.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\MessageMutators\MutateInstanceMessage\MutateIncomingMessageBehavior.cs:line 60
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.UnitOfWorkBehavior.<InvokeUnitsOfWork>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\UnitOfWork\UnitOfWorkBehavior.cs:line 40
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at NServiceBus.UnitOfWorkBehavior.<InvokeUnitsOfWork>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\UnitOfWork\UnitOfWorkBehavior.cs:line 63
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.<InvokeIncomingTransportMessagesMutators>d__2.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\MessageMutators\MutateTransportMessage\MutateIncomingTransportMessageBehavior.cs:line 59
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:19.074 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:19.094 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:19.116 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:19.136 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:19.166 WARN  NServiceBus.RecoverabilityExecutor Delayed Retry will reschedule message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' after a delay of 00:00:10 because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:29.210 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:29.254 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:29.274 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:29.350 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:29.369 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:29.430 WARN  NServiceBus.RecoverabilityExecutor Delayed Retry will reschedule message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' after a delay of 00:00:20 because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:49.468 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:49.486 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:49.507 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:49.528 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:49.546 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:16:49.565 WARN  NServiceBus.RecoverabilityExecutor Delayed Retry will reschedule message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' after a delay of 00:00:30 because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:17:19.642 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:17:19.667 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:17:19.687 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:17:19.705 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:17:19.723 INFO  NServiceBus.RecoverabilityExecutor Immediate Retry is going to retry message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' because of an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:17:19.745 ERROR NServiceBus.RecoverabilityExecutor Moving message 'd3767243-2b99-4ace-90fe-aa05017f7dcd' to the error queue 'Descarte.Error' because processing failed due to an exception:
+System.InvalidOperationException: Unable to resolve service for type 'AgendaService.Services.AgendaApiService' while attempting to activate 'AgendaService.Saga.AgendaSaga'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at NServiceBus.LoadHandlersConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LoadHandlersConnector.cs:line 45
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeSagaNotFoundBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Sagas\InvokeSagaNotFoundBehavior.cs:line 18
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 33
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-03-03 20:21:24.273 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 20:21:24.557 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 20:21:24.746 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 20:21:24.804 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:21:24.807 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:21:24.810 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:21:24.812 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:21:24.814 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:21:24.816 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:21:24.817 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:24:12.157 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 20:24:12.420 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 20:24:12.598 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 20:24:12.655 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:24:12.658 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:24:12.660 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:24:12.662 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:24:12.664 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:24:12.667 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:24:12.670 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:24:59.580 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-03 20:24:59.837 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Descarte.Audit'
+2019-03-03 20:25:00.001 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-14
+
+2019-03-03 20:25:00.059 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:25:00.062 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:25:00.064 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:25:00.066 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:25:00.068 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:25:00.071 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-03 20:25:00.073 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.

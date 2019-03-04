@@ -8,16 +8,37 @@ using System.Threading.Tasks;
 using AgendaService.Data.Interfaces;
 using AgendaService.Data.Models;
 using AgendaService.DataContext;
+using AgendaService.Services.Interfaces;
 using AgendaService.Services.Messages;
+using Messages.Descartes.Commands;
 using Messages.Descartes.Events;
 using NServiceBus;
 
 namespace AgendaService.Services
 {
-    public class AgendaApiService
+    public class AgendaApiService : IAgendaApiService
     {
+        IEndpointInstance _endpointInstance;
 
-        public AgendaCanceladaMessageResponse CancelarAgenda(Guid idAgenda, AppDataContext _context)
+        AppDataContext _context;
+ 
+        public AgendaApiService(IEndpointInstance endpointInstance, AppDataContext context)
+        {
+            this._endpointInstance = endpointInstance;
+            this._context = context;
+        }
+
+        public AgendaApiService()
+        {
+        }
+
+        public async Task AgendarRetirada(AgendamentoMessage agendamento)
+        {              
+            await _endpointInstance.SendLocal(new AgendarRetiradaCommand()
+            {DataAgendamento=DateTime.Now,DataRegistro=DateTime.Now.AddDays(15),EmailAgente=agendamento.Email,Id=agendamento.IdAgendamento});      
+        }
+
+        public AgendaCanceladaMessageResponse CancelarAgenda(Guid idAgenda)
         {
             IAgendaRepository AgendaRepository = new AgendaRepository(_context);
 
@@ -52,7 +73,8 @@ namespace AgendaService.Services
             return response;
         }
 
-        public AgendaConfirmadaMessageResponse ConfirmarAgenda(Guid idAgenda, AppDataContext _context)
+
+        public AgendaConfirmadaMessageResponse ConfirmarAgenda(Guid idAgenda)
         {              
             var resposta = new AgendaConfirmadaMessageResponse();
             
@@ -93,7 +115,7 @@ namespace AgendaService.Services
             return response;
         }
 
-        public AgendaFinalizadaMessageResponse FinalizarAgenda(Guid idAgenda, AppDataContext _context)
+        public AgendaFinalizadaMessageResponse FinalizarAgenda(Guid idAgenda)
         {
             IAgendaRepository AgendaRepository = new AgendaRepository(_context);
 
@@ -129,7 +151,7 @@ namespace AgendaService.Services
             return response;
         }
 
-        public ObterListaAgendaStatusMessageResponse ObterAgendasPorStatus(string status, AppDataContext _context)
+        public ObterListaAgendaStatusMessageResponse ObterAgendasPorStatus(string status)
         {
             IAgendaRepository estoqueRepository = new AgendaRepository(_context);
 
@@ -153,7 +175,7 @@ namespace AgendaService.Services
             return response;
         }
 
-        public ObterAgendaExpiradaMessageResponse ObterAgendaExpirada(AppDataContext _context)
+        public ObterAgendaExpiradaMessageResponse ObterAgendaExpirada()
         {
             IAgendaRepository estoqueRepository = new AgendaRepository(_context);
 

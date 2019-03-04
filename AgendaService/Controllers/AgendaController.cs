@@ -9,88 +9,121 @@ using AgendaService.DataContext;
 using Messages.Descartes.Events;
 using AgendaService.Services;
 using NServiceBus;
+using Messages.Descartes.Commands;
+using NServiceBus.Routing;
+using AgendaService.Services.Interfaces;
+using Microsoft.AspNetCore.Builder.Internal;
+
 
 namespace AgendaService.Controllers
 {
     [Produces("application/json")]
     [Route("api/[controller]")]
-    public class AgendaApiController : ControllerBase
+    public class AgendaController : Controller
     {     
         private readonly AppDataContext _context;
-
-        public AgendaApiController(AppDataContext context)
+        private readonly IMessageSession _messageSession;
+        public AgendaController(AppDataContext context, IMessageSession messageSession)
         {
             _context = context;
+
+            _messageSession = messageSession;
         }
 
+        [HttpGet]
+        [Route("agendar")]
+        public async Task<string> Agendar()
+        {      
+            AgendamentoMessage agendamento = new AgendamentoMessage(){};
+            var message = new AgendarRetiradaCommand(){Id = Guid.NewGuid()};
+
+            await _messageSession.Send(message).ConfigureAwait(false);
+            
+            return "Message sent to endpoint";
+       }                   
 
         [HttpGet]
-        [Route("/cancelar")]
+        [Route("ping")]
+        public JsonResult Ping()
+        {            
+            return new JsonResult("pong");
+        }                   
+
+/* 
+        [HttpGet]
+        [Route("agendarRetirada/{email}/{id}")]
+        public Task AgendarRetirada(string email, Guid id)
+        {
+           return _endpoint.SendLocal(new AgendarRetiradaCommand(){Id=id,EmailAgente=email,DataAgendamento=DateTime.Now.AddDays(15)});
+        }
+ */
+        [HttpGet]
+        [Route("cancelar")]
         public AgendaCanceladaMessageResponse CancelarAgenda(Guid Agenda)
         {
             AgendaCanceladaMessageResponse response = new AgendaCanceladaMessageResponse();
 
-            AgendaApiService service = new AgendaApiService();
+            IAgendaApiService agendaService = new AgendaApiService();
 
-            response = service.CancelarAgenda(Agenda,_context);
+            response = agendaService.CancelarAgenda(Agenda);
 
             return response;
         }
 
         [HttpGet]
-        [Route("/confirmar/{0}")]
+        [Route("confirmar/{Agenda}")]
         public AgendaConfirmadaMessageResponse ConfirmarAgenda(Guid Agenda)
         {
             AgendaConfirmadaMessageResponse response = new AgendaConfirmadaMessageResponse();
 
             AgendaApiService service = new AgendaApiService();
 
-            response = service.ConfirmarAgenda(Agenda,_context);
+            response = service.ConfirmarAgenda(Agenda);
 
             return response;
         }
 
         [HttpPost]
-        [Route("/finalizar")]
+        [Route("finalizar/{Agenda}")]
         public AgendaFinalizadaMessageResponse ConfirmarRetiradaAgenda(Guid Agenda)
         {
             AgendaFinalizadaMessageResponse response = new AgendaFinalizadaMessageResponse();
 
             AgendaApiService service = new AgendaApiService();
 
-            response = service.FinalizarAgenda(Agenda,_context);
+            response = service.FinalizarAgenda(Agenda);
 
             return response;
         }
 
         [HttpGet]
-        [Route("/expirada")]
+        [Route("expirada")]
         public ObterAgendaExpiradaMessageResponse ObterAgendaExpirada()
         {
             ObterAgendaExpiradaMessageResponse response = new ObterAgendaExpiradaMessageResponse();
 
             AgendaApiService service = new AgendaApiService();
 
-            response = service.ObterAgendaExpirada(_context);
+            response = service.ObterAgendaExpirada();
 
             return response;
         }
 
         [HttpGet]
-        [Route("/obter/status")]
+        [Route("obter/status/{status}")]
         public ObterListaAgendaStatusMessageResponse ObterAgendasStatus(string status)
         {
             ObterListaAgendaStatusMessageResponse response = new ObterListaAgendaStatusMessageResponse();
 
             AgendaApiService service = new AgendaApiService();
 
-            response = service.ObterAgendasPorStatus(status,_context);
+            response = service.ObterAgendasPorStatus(status);
 
             return response;
         }
 
         [HttpGet]
-        [Route("/confirmar")]
+        [Route("confirmar/{Agenda}/{email}")]
         public AgendaConfirmadaMessageResponse ConfirmarAgendamentoRetirada(Guid Agenda, string email)
         {
 
@@ -102,7 +135,7 @@ namespace AgendaService.Controllers
 
             AgendaApiService service = new AgendaApiService();
 
-            response = service.ConfirmarAgenda(Agenda,_context);
+            response = service.ConfirmarAgenda(Agenda);
 
             return response;
         }

@@ -1,32 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AgendaService.DataContext;
 using AgendaService.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Hangfire;
 using NServiceBus;
 using NServiceBus.Persistence;
 using Microsoft.Extensions.Logging;
 using AgendaService.Services;
-using System.Net;
-using Autofac;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.AspNetCore.Http;
+using AgendaService.Services.Interfaces;
+using NServiceBus.Routing;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Messages.Descartes.Commands;
 
 namespace AgendaService
 {
     public class Startup
     {
-         public IConfiguration Configuration { get; set; }
-         public static AppSettings AppSettings { get; private set; }
-/*         public Startup(IConfiguration configuration)
+        public IConfiguration Configuration { get; set; }
+        public static AppSettings AppSettings { get; private set; }
+
+        public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-        } */
+
+        } 
 
 
         public Startup(IHostingEnvironment env)
@@ -43,24 +44,47 @@ namespace AgendaService
             
         }
 
+        
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddRouting();
             services.AddDbContext<AppDataContext>(option => option.UseSqlServer(Configuration.GetConnectionString("Default")));
+            
+            ConfigureNserviceBus(services);
+            
         
-            #region "Configuracao NService Bus"
-            
-            var endpointConfiguration = new EndpointConfiguration("DescarteMessages");
-            endpointConfiguration.UseContainer<AutofacBuilder>();
-            
-            
-            var transport = endpointConfiguration.UseTransport<RabbitMQTransport>()
-            //passar isso para o webconfig
-            .ConnectionString("host=localhost;user=guest;password=guest")
-            .UseDirectRoutingTopology();
-            
+        }
 
+        public void ConfigureNserviceBus(IServiceCollection services)
+        {
+                        /* 
+            var endpointName = "Descarte.Messages";
+            var machineName = $"{Dns.GetHostName()}.{IPGlobalProperties.GetIPGlobalProperties().DomainName}";
+            var instanceIdentifier = $"{endpointName}@{machineName}";*/
+            var endpointConfiguration = new EndpointConfiguration("Descarte.Agendamento");
+
+
+            var transport = endpointConfiguration.UseTransport<RabbitMQTransport>()
+            //passar isso para o webconfig  
+            .ConnectionString("host=localhost;user=guest;password=guest")
+            .UseConventionalRoutingTopology();
+            
+            //
+            const string SERVICE_CONTROL_METRICS_ADDRESS = "Descarte.Monitoring";
+
+            var hostId = new Guid();
+            endpointConfiguration.UniquelyIdentifyRunningInstance()
+                .UsingCustomIdentifier(hostId);
+
+            var metrics = endpointConfiguration.EnableMetrics();
+
+            metrics.SendMetricDataToServiceControl(
+                serviceControlMetricsAddress: SERVICE_CONTROL_METRICS_ADDRESS,
+                interval: TimeSpan.FromSeconds(10),
+                instanceId: "Descarte.Agendamento");
 
             endpointConfiguration.SendFailedMessagesTo("Descarte.Error");
             endpointConfiguration.AuditProcessedMessagesTo("Descarte.Audit");
@@ -73,24 +97,31 @@ namespace AgendaService
 
            // var routing = transport.Routing();
           //  routing.RouteToEndpoint(typeof(PlaceOrder), "Sales");
+            IEndpointInstance endpoint = null;
+
+           
+            endpointConfiguration.UseContainer<ServicesBuilder>(
+            customizations: customizations =>
+            {
+                customizations.ExistingServices(services);
+            });
+           
+            //endpointConfiguration.SendOnly();  
+
+            /* 
+            var routing = transport.Routing();
+            routing.RouteToEndpoint(
+                assembly: typeof(AgendarRetiradaCommand).Assembly,
+                destination: "Descarte.Agendamento");*/
 
 
-            services.AddLogging(loggingBuilder => loggingBuilder.AddConsole());
-            
-            endpointConfiguration.RegisterComponents(
-                registration: components =>
-                {
-                    components.RegisterSingleton(new AgendaApiService());
-                });
+            endpoint = Endpoint.Start(endpointConfiguration).GetAwaiter().GetResult();   
+                         
+            services.AddSingleton<IMessageSession>(endpoint);
+            services.AddSingleton<IAgendaApiService>(new AgendaApiService()); 
 
-            services.AddSingleton(sp => endpointConfiguration);
-            services.AddSingleton<AgendaApiService>();
-         
 
-            Endpoint.Start(endpointConfiguration).GetAwaiter().GetResult();
-            
-            #endregion
-            
+
 
         }
 
@@ -108,12 +139,39 @@ namespace AgendaService
 
             app.UseStaticFiles();
 
+           
+           /* 
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+            });*/
+
+            var trackPackageRouteHandler = new RouteHandler(context =>
+            {
+                var routeValues = context.GetRouteData().Values;
+                return context.Response.WriteAsync(
+                    $"Hello! Route values: {string.Join(", ", routeValues)}");
             });
+
+            var routeBuilder = new RouteBuilder(app, trackPackageRouteHandler);
+
+            routeBuilder.MapRoute(
+                "Track Package Route",
+                "package/{operation:regex(^track|create|detonate$)}/{id:int}");
+
+            routeBuilder.MapGet("hello/{name}", context =>
+            {
+                var name = context.GetRouteValue("name");
+                return context.Response.WriteAsync($"Hi, {name}!");
+            });
+
+            var routes = routeBuilder.Build();
+
+            app.UseMvcWithDefaultRoute();
+
+            app.UseRouter(routes);
 
             DBInicializar.StartDataBase(app);          
         }
