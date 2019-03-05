@@ -18,13 +18,13 @@ namespace AgendaService.Services
 {
     public class AgendaApiService : IAgendaApiService
     {
-        IEndpointInstance _endpointInstance;
+        IMessageSession _messageSession;
 
         AppDataContext _context;
  
-        public AgendaApiService(IEndpointInstance endpointInstance, AppDataContext context)
+        public AgendaApiService(IMessageSession messageSession, AppDataContext context)
         {
-            this._endpointInstance = endpointInstance;
+            this._messageSession = messageSession;
             this._context = context;
         }
 
@@ -34,7 +34,7 @@ namespace AgendaService.Services
 
         public async Task AgendarRetirada(AgendamentoMessage agendamento)
         {              
-            await _endpointInstance.SendLocal(new AgendarRetiradaCommand()
+            await _messageSession.SendLocal(new AgendarRetiradaCommand()
             {DataAgendamento=DateTime.Now,DataRegistro=DateTime.Now.AddDays(15),EmailAgente=agendamento.Email,Id=agendamento.IdAgendamento});      
         }
 

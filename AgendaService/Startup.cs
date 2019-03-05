@@ -15,6 +15,8 @@ using NServiceBus.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Messages.Descartes.Commands;
+using AgendaService.Saga;
+using System.Collections.Generic;
 
 namespace AgendaService
 {
@@ -53,12 +55,14 @@ namespace AgendaService
             services.AddRouting();
             services.AddDbContext<AppDataContext>(option => option.UseSqlServer(Configuration.GetConnectionString("Default")));
             
-            ConfigureNserviceBus(services);
-            
+
+            var context = services.BuildServiceProvider().GetService<AppDataContext>();
+
+            ConfigureNserviceBus(services,context);            
         
         }
 
-        public void ConfigureNserviceBus(IServiceCollection services)
+        public void ConfigureNserviceBus(IServiceCollection services, AppDataContext context)
         {
                         /* 
             var endpointName = "Descarte.Messages";
@@ -89,6 +93,7 @@ namespace AgendaService
             endpointConfiguration.SendFailedMessagesTo("Descarte.Error");
             endpointConfiguration.AuditProcessedMessagesTo("Descarte.Audit");
             endpointConfiguration.UseSerialization<NewtonsoftSerializer>();
+            endpointConfiguration.AuditSagaStateChanges(serviceControlQueue: "DescarteServiceMonitoring");
 
             var persistence = endpointConfiguration.UsePersistence<NHibernatePersistence>();
             persistence.ConnectionString(@"Server = DESKTOP-C8BIS20\MSSQLSERVER2;Database=SagaDescarteDB;Integrated Security=True;"); //@ na frente
@@ -118,11 +123,7 @@ namespace AgendaService
             endpoint = Endpoint.Start(endpointConfiguration).GetAwaiter().GetResult();   
                          
             services.AddSingleton<IMessageSession>(endpoint);
-            services.AddSingleton<IAgendaApiService>(new AgendaApiService()); 
-
-
-
-
+            services.AddSingleton<IAgendaApiService>(new AgendaApiService(endpoint,context)); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

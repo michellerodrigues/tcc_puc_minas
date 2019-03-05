@@ -21,25 +21,46 @@ namespace AgendaService.Controllers
     [Route("api/[controller]")]
     public class AgendaController : Controller
     {     
-        private readonly AppDataContext _context;
-        private readonly IMessageSession _messageSession;
-        public AgendaController(AppDataContext context, IMessageSession messageSession)
+     //   private readonly AppDataContext _context;
+       // private readonly IMessageSession _messageSession;
+//
+        private readonly IAgendaApiService _agendaApiService;
+        /* public AgendaController(AppDataContext context, IMessageSession messageSession)
         {
             _context = context;
 
             _messageSession = messageSession;
+        }*/
+
+        public AgendaController(IAgendaApiService agendaApiService)
+        {
+            _agendaApiService = agendaApiService;
         }
 
+
+        /*
         [HttpGet]
         [Route("agendar")]
         public async Task<string> Agendar()
         {      
             AgendamentoMessage agendamento = new AgendamentoMessage(){};
-            var message = new AgendarRetiradaCommand(){Id = Guid.NewGuid()};
 
-            await _messageSession.Send(message).ConfigureAwait(false);
+            return _agendaApiService.AgendarRetirada(agendamento);
+          //  var message = new AgendarRetiradaCommand(){Id = Guid.NewGuid()};
+
+           // await _messageSession.Send(message).ConfigureAwait(false);
             
             return "Message sent to endpoint";
+       }   */
+
+
+        [HttpGet]
+        [Route("agendar")]
+        public async Task Agendar()
+        {      
+            AgendamentoMessage agendamento = new AgendamentoMessage(){IdAgendamento=Guid.NewGuid()};
+
+            await _agendaApiService.AgendarRetirada(agendamento);
        }                   
 
         [HttpGet]

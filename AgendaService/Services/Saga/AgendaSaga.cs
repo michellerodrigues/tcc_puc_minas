@@ -19,7 +19,6 @@ namespace AgendaService.Saga
         IHandleMessages<CancelarAgendamentoConfirmadoRetiradaCommand>,
         IHandleMessages<AgendamentoConfirmadoCanceladoEvent>
     {
-        AgendaApiService agendaService;
         protected override void ConfigureHowToFindSaga(SagaPropertyMapper<AgendaSagaData> mapper)
         {
             mapper.ConfigureMapping<AgendarRetiradaCommand>(message => message.Id).ToSaga(saga => saga.AgendaId);
@@ -32,19 +31,16 @@ namespace AgendaService.Saga
             mapper.ConfigureMapping<AgendamentoConfirmadoCanceladoEvent>(message => message.Id).ToSaga(saga => saga.AgendaId);   
         }
 
-        public AgendaSaga(AgendaApiService agendaService)
-        {
-            this.agendaService = agendaService;
-        }
-
         public Task Handle(AgendarRetiradaCommand message, IMessageHandlerContext context)
         {
             return context.Publish(new AgendamentoRealizadoEvent(message.Id,message.EmailAgente));
         }
 
         public Task Handle(AgendamentoRealizadoEvent message, IMessageHandlerContext context)
-        {
-            return context.Publish(new ConfirmarAgendamentoCommand(message.Id,message.DataRegistro,message.EmailSolicitante));
+        {            
+            return context.SendLocal(new ConfirmarAgendamentoCommand()
+            {SolicitadoEm=message.DataRegistro,EmailSolicitacao=message.EmailSolicitante,Id=message.Id});        
+            // context.Publish(new ConfirmarAgendamentoCommand(message.Id,message.DataRegistro,message.EmailSolicitante));
         }
 
         public Task Handle(ConfirmarAgendamentoCommand message, IMessageHandlerContext context)
