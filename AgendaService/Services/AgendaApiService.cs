@@ -35,7 +35,7 @@ namespace AgendaService.Services
         public async Task AgendarRetirada(AgendamentoMessage agendamento)
         {              
             await _messageSession.SendLocal(new AgendarRetiradaCommand()
-            {DataAgendamento=DateTime.Now,DataRegistro=DateTime.Now.AddDays(15),EmailAgente=agendamento.Email,Id=agendamento.IdAgendamento});      
+            {DataAgendamento=DateTime.Now,DataRegistro=agendamento.DataRegistro,EmailAgente=agendamento.Email,Id=agendamento.IdAgendamento});      
         }
 
         public AgendaCanceladaMessageResponse CancelarAgenda(Guid idAgenda)

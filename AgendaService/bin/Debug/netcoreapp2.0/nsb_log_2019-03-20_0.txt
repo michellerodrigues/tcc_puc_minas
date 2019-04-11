@@ -1,0 +1,12 @@
+﻿2019-03-20 17:51:06.960 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-03-20 17:51:07.166 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Particular.ServiceControl.Audit'
+2019-03-20 17:51:07.350 INFO  NServiceBus.LicenseManager Selected active license from C:\ProgramData\ParticularSoftware\license.xml
+License Expiration: 2019-03-25
+
+2019-03-20 17:51:07.387 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-20 17:51:07.390 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-20 17:51:07.391 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-20 17:51:07.395 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-20 17:51:07.396 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-20 17:51:07.397 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-03-20 17:51:07.398 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.

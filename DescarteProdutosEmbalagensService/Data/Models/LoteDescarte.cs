@@ -18,6 +18,6 @@ namespace DescarteService.Data.Models
         [Required]
         [StringLength(255)]
         public string EmailResponsavelDescarte { get; set; }
-        private ICollection<ProdutoDescarte> ProdutosDescartes { get; } = new List<ProdutoDescarte>();
+        ICollection<ProdutoDescarte> ProdutosDescartes { get;} = new List<ProdutoDescarte>();
     }
 }

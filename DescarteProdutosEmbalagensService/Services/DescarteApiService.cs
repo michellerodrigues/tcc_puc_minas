@@ -13,8 +13,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DescarteService.Services
 {
-    public class DescarteApiService
-    {   
+    public class DescarteApiService : IDescarteApiService
+    {  
+        ILoteDescarteRepository _repository = null;
+        IAgendamentoDescarteRepository _repositoryAgenda = null;
+        public DescarteApiService(LoteDescarteRepository repository,IAgendamentoDescarteRepository repositoryAgenda)
+        {
+            this._repository = repository;
+            this._repositoryAgenda = repositoryAgenda;
+        }
         static string EstoqueServicesURL = Startup.AppSettings.EstoqueServicesURL;
         public ObterProdutosVencidosMessageResponse ObterProdutosVencidos()
         {
@@ -35,6 +42,7 @@ namespace DescarteService.Services
                     
                     foreach(string emailFabricante in listaFabricantes)
                     {
+                        
                         ComunicarDescartePendenteMessageRequest request = new ComunicarDescartePendenteMessageRequest();
                         DatasDisponiveisMessage data15 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(15),LinkAgendamento=String.Format("http://localhost:9009/agendar?lote=1234&data={0}",DateTime.Now.AddDays(15).ToString("yyyyMMdd"))};
                         DatasDisponiveisMessage data30 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(30),LinkAgendamento=String.Format("http://localhost:9009/agendar?lote=1234&data={0}",DateTime.Now.AddDays(30).ToString("yyyyMMdd"))};
@@ -70,6 +78,32 @@ namespace DescarteService.Services
                 }
             }
             return response;
+        }
+
+        public void SalvarLotesDescartePendentes(ObterProdutosVencidosMessageResponse produtosVencidos)
+        {
+            if ((produtosVencidos != null) && (produtosVencidos.codRetorno!=1))
+            {          
+                var listaFabricantes = produtosVencidos.LoteProdutosVecidos.Select(x => x.EmailFabricante).Distinct().ToList();  
+                
+                foreach(string emailFabricante in listaFabricantes)
+                {
+                     var loteDescarte = new LoteDescarte(){EmailResponsavelDescarte=emailFabricante,NomeResponsavelDescarte=emailFabricante.Split('@')[0]};
+                     
+                     var listaProdutos = produtosVencidos.LoteProdutosVecidos.Where(f=>f.EmailFabricante==emailFabricante).ToList();
+                     _repository.Create(new LoteDescarte(){EmailResponsavelDescarte=emailFabricante,NomeResponsavelDescarte=emailFabricante.Split('@')[0]});
+                     foreach(ProdutoMessage produto in listaProdutos)
+                     {
+                         var produtoDescarte = new ProdutoDescarte(){
+                             LoteDescarte = loteDescarte,
+                             DataVecimentoProduto = Convert.ToDateTime(produto.DataVencimento),
+                             IdITemEstoque = produto.IdItemEstoque
+                         };
+                       
+                     }
+
+                }                
+            }
         }      
     }
 }

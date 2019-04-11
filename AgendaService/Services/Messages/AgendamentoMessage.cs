@@ -14,6 +14,7 @@ namespace AgendaService.Services.Messages
         [DataMember(Name = "Email")]
         public string Email { get; set; } 
 
-
+        [DataMember(Name = "DataRegistro")]
+        public DateTime DataRegistro { get; set; }  = DateTime.Now.AddDays(15);
     }
 }

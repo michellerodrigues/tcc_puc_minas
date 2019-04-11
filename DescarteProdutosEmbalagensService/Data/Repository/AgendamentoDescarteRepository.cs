@@ -6,16 +6,16 @@ using DescarteService.Data.Interfaces;
 using DescarteService.Data.Models;
 using DescarteService.Data.Repository;
 
-public class AgendamentoDescarteRepository : Repository<AgendamentoDescarte>, IAgendamentoDescarteRepository
+public class AgendamentoDescarteRepository : Repository<ComunicadosDeAgendamentoEnviados>, IAgendamentoDescarteRepository
     {
     public AgendamentoDescarteRepository(AppDataContext context) : base(context)
     {
        
     }
 
-    public IEnumerable<AgendamentoDescarte> FindAgendamentoEmAndamento()
+    public IEnumerable<ComunicadosDeAgendamentoEnviados> FindAgendamentoEmAndamento()
     {
-         return _context.AgendamentoDescartes.Where(a=>a.DataAgendamento!=null && a.StatusAgendamento!="Cancelado" && a.StatusAgendamento!="Finalizado");
+         return _context.AgendamentoDescartes.Where(a=>a.DataEnvioEmail!=null && a.StatusProposta!="Cancelado" && a.StatusProposta!="Finalizado");
     }
 
 }

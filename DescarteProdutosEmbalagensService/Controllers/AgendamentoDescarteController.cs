@@ -54,8 +54,9 @@ namespace DescarteService.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,DataRegistro,DataAgendamento,StatusAgendamento")] AgendamentoDescarte agendamentoDescarte)
+        public async Task<IActionResult> Create([Bind("Id,DataEnvioEmail,DataPropostaAgendamento,StatusProposta")] ComunicadosDeAgendamentoEnviados agendamentoDescarte)
         {
+
             if (ModelState.IsValid)
             {
                 _context.Add(agendamentoDescarte);
@@ -86,7 +87,7 @@ namespace DescarteService.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,DataRegistro,DataAgendamento,StatusAgendamento")] AgendamentoDescarte agendamentoDescarte)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,DataEnvioEmail,DataPropostaAgendamento,StatusProposta")] ComunicadosDeAgendamentoEnviados agendamentoDescarte)
         {
             if (id != agendamentoDescarte.Id)
             {

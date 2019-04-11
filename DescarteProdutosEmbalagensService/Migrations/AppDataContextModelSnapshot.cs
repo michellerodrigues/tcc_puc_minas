@@ -4,8 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Microsoft.EntityFrameworkCore.Storage;
-using Microsoft.EntityFrameworkCore.Storage.Internal;
 using System;
 
 namespace DescarteService.Migrations
@@ -25,13 +23,13 @@ namespace DescarteService.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<DateTime>("DataAgendamento");
+                    b.Property<DateTime>("DataPropostaAgendamento");
 
-                    b.Property<DateTime>("DataRegistro");
+                    b.Property<DateTime>("DataEnvioEmail");
 
                     b.Property<Guid>("LoteDescarteId");
 
-                    b.Property<string>("StatusAgendamento")
+                    b.Property<string>("StatusProposta")
                         .IsRequired();
 
                     b.HasKey("Id");

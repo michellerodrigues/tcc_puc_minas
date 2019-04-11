@@ -10,6 +10,7 @@ public class LoteDescarteRepository : Repository<LoteDescarte>, ILoteDescarteRep
 {
     public LoteDescarteRepository(AppDataContext context) : base(context)
     {
+        string mica = "";
     }
 
     public IEnumerable<LoteDescarte> FindLoteDescartePorResponsavel(string nomeResponsavel)

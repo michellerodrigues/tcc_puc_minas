@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DescarteService.Data.Models
 {
-    public class AgendamentoDescarte
+    public class ComunicadosDeAgendamentoEnviados
     {
         [Key]
         public Guid Id { get; set; }
@@ -12,12 +12,12 @@ namespace DescarteService.Data.Models
         public LoteDescarte LoteDescarte { get; set; }
 
         [Required]
-        public DateTime DataRegistro { get; set; }
+        public DateTime DataEnvioEmail { get; set; }
 
-        public DateTime DataAgendamento { get; set; }
+        public DateTime DataPropostaAgendamento { get; set; }
 
         [Required]
-        public string StatusAgendamento { get; set; } = "Pendente";
+        public string StatusProposta { get; set; } = "Enviado";
 
     }
 }

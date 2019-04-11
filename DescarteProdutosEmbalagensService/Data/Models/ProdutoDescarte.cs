@@ -19,15 +19,6 @@ namespace DescarteService.Data.Models
         public Guid IdITemEstoque { get; set; }
 
         [Required]
-        public decimal PesoCheio { get; set; }
-
-        [Required]
-        public decimal PesoVazio { get; set; }
-
-        [Required]
-        public decimal VolumeEmbalagem { get; set; }
-
-        [Required]
         public DateTime DataVecimentoProduto { get; set; }
 
         [Required]

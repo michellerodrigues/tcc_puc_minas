@@ -22,16 +22,16 @@ namespace DescarteService.Data
                     context.LoteDescartes.Add(lote1);
                     context.LoteDescartes.Add(lote2);
     
-                    var produto1 = new ProdutoDescarte { Nome="Cupinicida 3MAX ", PesoCheio=450, PesoVazio=10,VolumeEmbalagem=0.3M,DataVecimentoProduto = DateTime.Now.AddDays(45), IdITemEstoque = new Guid(),LoteDescarte=lote1}; 
-                    var produto2 = new ProdutoDescarte { Nome="Herbicidas Hortalis", PesoCheio=450, PesoVazio=10,VolumeEmbalagem=0.3M,DataVecimentoProduto = DateTime.Now.AddDays(30), IdITemEstoque = new Guid(), LoteDescarte=lote1}; 
-                    var produto3 = new ProdutoDescarte { Nome="Inseticida Fatalis", PesoCheio=450, PesoVazio=10,VolumeEmbalagem=0.3M,DataVecimentoProduto = DateTime.Now.AddDays(15), IdITemEstoque = new Guid(),LoteDescarte=lote2}; 
+                    var produto1 = new ProdutoDescarte { Nome="Cupinicida 3MAX ", DataVecimentoProduto = DateTime.Now.AddDays(45), IdITemEstoque = new Guid(),LoteDescarte=lote1}; 
+                    var produto2 = new ProdutoDescarte { Nome="Herbicidas Hortalis", DataVecimentoProduto = DateTime.Now.AddDays(30), IdITemEstoque = new Guid(), LoteDescarte=lote1}; 
+                    var produto3 = new ProdutoDescarte { Nome="Inseticida Fatalis",DataVecimentoProduto = DateTime.Now.AddDays(15), IdITemEstoque = new Guid(),LoteDescarte=lote2}; 
                     
                     context.ProdutoDescartes.Add(produto1);
                     context.ProdutoDescartes.Add(produto2);
                     context.ProdutoDescartes.Add(produto3);
 
-                    var agendamento1 = new AgendamentoDescarte {DataAgendamento = DateTime.Now.AddDays(90), DataRegistro = DateTime.Now,LoteDescarte = lote1,StatusAgendamento="Pendente Despacho"};
-                    var agendamento2 = new AgendamentoDescarte { DataRegistro = DateTime.Now,LoteDescarte = lote2};
+                    var agendamento1 = new ComunicadosDeAgendamentoEnviados {DataPropostaAgendamento = DateTime.Now.AddDays(90), DataEnvioEmail = DateTime.Now,LoteDescarte = lote1,StatusProposta="Pendente Despacho"};
+                    var agendamento2 = new ComunicadosDeAgendamentoEnviados { DataPropostaAgendamento = DateTime.Now.AddDays(90), DataEnvioEmail = DateTime.Now,LoteDescarte = lote2};
                     
                     context.AgendamentoDescartes.Add(agendamento1);
                     context.AgendamentoDescartes.Add(agendamento2);

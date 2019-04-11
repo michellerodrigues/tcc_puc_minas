@@ -8,7 +8,7 @@ namespace DescarteService.DataContext{
         {
 
         }
-        public DbSet<AgendamentoDescarte> AgendamentoDescartes {get;set;}
+        public DbSet<ComunicadosDeAgendamentoEnviados> AgendamentoDescartes {get;set;}
         public DbSet<LoteDescarte> LoteDescartes {get;set;}
         public DbSet<ProdutoDescarte> ProdutoDescartes {get;set;}
 

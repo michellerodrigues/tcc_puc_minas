@@ -13,6 +13,7 @@ using Hangfire;
 using DescarteServices.Jobs;
 using DescarteService.Services.Messages;
 using DescarteService.Services;
+using DescarteService.Data.Interfaces;
 
 namespace DescarteService
 {
@@ -43,7 +44,13 @@ namespace DescarteService
         
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
 
-             services.AddHangfire(config => config.UseSqlServerStorage(Configuration.GetConnectionString("Jobs")));
+            var context = services.BuildServiceProvider().GetService<AppDataContext>();
+
+            services.AddHangfire(config => config.UseSqlServerStorage(Configuration.GetConnectionString("Jobs")));
+
+            services.AddSingleton<ILoteDescarteRepository>();
+
+            services.AddSingleton<IDescarteApiService>();
 
         }
 
