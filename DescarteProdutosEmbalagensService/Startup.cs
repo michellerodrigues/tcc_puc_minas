@@ -48,10 +48,6 @@ namespace DescarteService
 
             services.AddHangfire(config => config.UseSqlServerStorage(Configuration.GetConnectionString("Jobs")));
 
-            services.AddSingleton<ILoteDescarteRepository>();
-
-            services.AddSingleton<IDescarteApiService>();
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

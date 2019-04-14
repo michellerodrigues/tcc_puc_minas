@@ -15,19 +15,21 @@ namespace DescarteService.Services
 {
     public class DescarteApiService : IDescarteApiService
     {  
-        ILoteDescarteRepository _repository = null;
-        IAgendamentoDescarteRepository _repositoryAgenda = null;
-        public DescarteApiService(LoteDescarteRepository repository,IAgendamentoDescarteRepository repositoryAgenda)
+        AppDataContext _context;
+ 
+        public DescarteApiService( AppDataContext context)
         {
-            this._repository = repository;
-            this._repositoryAgenda = repositoryAgenda;
+            this._context = context;
         }
+
+
+
         static string EstoqueServicesURL = Startup.AppSettings.EstoqueServicesURL;
         public ObterProdutosVencidosMessageResponse ObterProdutosVencidos()
         {
            // var _factory = new DesignTimeDbContextFactory();
 
-           // var repository = new AgendamentoDescarteRepository(_factory.CreateDbContext(new string[1]));
+           var repository = new AgendamentoDescarteRepository(_context);
 
 
             ObterProdutosVencidosMessageResponse response = HttpRestClient.GetAsync<ObterProdutosVencidosMessageResponse>(string.Format("{0}/{1}", EstoqueServicesURL, (object)"vencidos")).GetAwaiter().GetResult();
@@ -82,6 +84,8 @@ namespace DescarteService.Services
 
         public void SalvarLotesDescartePendentes(ObterProdutosVencidosMessageResponse produtosVencidos)
         {
+            var repository = new LoteDescarteRepository(_context);
+
             if ((produtosVencidos != null) && (produtosVencidos.codRetorno!=1))
             {          
                 var listaFabricantes = produtosVencidos.LoteProdutosVecidos.Select(x => x.EmailFabricante).Distinct().ToList();  
@@ -91,7 +95,7 @@ namespace DescarteService.Services
                      var loteDescarte = new LoteDescarte(){EmailResponsavelDescarte=emailFabricante,NomeResponsavelDescarte=emailFabricante.Split('@')[0]};
                      
                      var listaProdutos = produtosVencidos.LoteProdutosVecidos.Where(f=>f.EmailFabricante==emailFabricante).ToList();
-                     _repository.Create(new LoteDescarte(){EmailResponsavelDescarte=emailFabricante,NomeResponsavelDescarte=emailFabricante.Split('@')[0]});
+                     repository.Create(new LoteDescarte(){EmailResponsavelDescarte=emailFabricante,NomeResponsavelDescarte=emailFabricante.Split('@')[0]});
                      foreach(ProdutoMessage produto in listaProdutos)
                      {
                          var produtoDescarte = new ProdutoDescarte(){
