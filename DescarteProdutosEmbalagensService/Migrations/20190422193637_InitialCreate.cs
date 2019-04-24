@@ -26,10 +26,10 @@ namespace DescarteService.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
-                    DataAgendamento = table.Column<DateTime>(nullable: false),
-                    DataRegistro = table.Column<DateTime>(nullable: false),
+                    DataEnvioEmail = table.Column<DateTime>(nullable: false),
+                    DataPropostaAgendamento = table.Column<DateTime>(nullable: false),
                     LoteDescarteId = table.Column<Guid>(nullable: false),
-                    StatusAgendamento = table.Column<string>(nullable: false)
+                    StatusProposta = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -51,9 +51,7 @@ namespace DescarteService.Migrations
                     IdITemEstoque = table.Column<Guid>(nullable: false),
                     LoteDescarteId = table.Column<Guid>(nullable: false),
                     Nome = table.Column<string>(maxLength: 255, nullable: false),
-                    PesoCheio = table.Column<decimal>(nullable: false),
-                    PesoVazio = table.Column<decimal>(nullable: false),
-                    VolumeEmbalagem = table.Column<decimal>(nullable: false)
+                    QtdeDisponivelEstoque = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {

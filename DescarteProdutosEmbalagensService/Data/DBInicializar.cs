@@ -12,7 +12,7 @@ namespace DescarteService.Data
         {
             using (var serviceScope = app.ApplicationServices.CreateScope())
             {
-                var context = serviceScope.ServiceProvider.GetService<AppDataContext>();
+                /* var context = serviceScope.ServiceProvider.GetService<AppDataContext>();
                 if(context.Database.EnsureCreated())
                 {
 
@@ -36,7 +36,7 @@ namespace DescarteService.Data
                     context.AgendamentoDescartes.Add(agendamento1);
                     context.AgendamentoDescartes.Add(agendamento2);
                     context.SaveChanges();
-                }
+                } */
                 
             }
         }

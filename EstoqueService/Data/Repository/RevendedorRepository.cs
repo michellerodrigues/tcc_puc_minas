@@ -7,7 +7,7 @@ using EstoqueService.Data.Models;
 using EstoqueService.Data.Repository;
 using Microsoft.EntityFrameworkCore;
 
-public class RevendedorRepository : Repository<Revendedor>, IRevendedorRepository
+    public class RevendedorRepository : Repository<Revendedor>, IRevendedorRepository
     {
     public RevendedorRepository(AppDataContext context) : base(context)
     {

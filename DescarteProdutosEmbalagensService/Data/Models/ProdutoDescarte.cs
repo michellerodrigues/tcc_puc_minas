@@ -23,5 +23,9 @@ namespace DescarteService.Data.Models
 
         [Required]
         public LoteDescarte LoteDescarte { get;set;  }
+
+
+        [Required]
+        public decimal QtdeDispUnidade { get;set;  }
     }
 }

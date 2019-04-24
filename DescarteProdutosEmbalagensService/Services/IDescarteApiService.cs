@@ -6,5 +6,6 @@ namespace DescarteService.Services
     {
         ObterProdutosVencidosMessageResponse ObterProdutosVencidos();
 
+        ObterProdutosFinalizadosMessageResponse ObterProdutosFinalizados();
     }
 }

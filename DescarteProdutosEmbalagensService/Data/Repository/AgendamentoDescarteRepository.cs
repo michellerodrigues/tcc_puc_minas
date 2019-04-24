@@ -18,4 +18,9 @@ public class AgendamentoDescarteRepository : Repository<ComunicadosDeAgendamento
          return _context.AgendamentoDescartes.Where(a=>a.DataEnvioEmail!=null && a.StatusProposta!="Cancelado" && a.StatusProposta!="Finalizado");
     }
 
+    public IEnumerable<ComunicadosDeAgendamentoEnviados> FindAgendamentoPendenteEnvioEmail()
+    {
+         return _context.AgendamentoDescartes.Where(a=>a.DataEnvioEmail!=null && a.StatusProposta!="Pendente Envio Email").ToList();
+    }
+
 }

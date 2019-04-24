@@ -99,7 +99,15 @@ namespace DescarteService
 
             GlobalJobFilters.Filters.Add(new AutomaticRetryAttribute { Attempts = retries}); 
 
-            RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosVencidos", js => js.ObterProdutosVencidos(), Cron.MinuteInterval(GetIntervaloLeitura(intervaloLeituraJob.ToString())));         
+            //RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosVencidos", js => js.ObterProdutosVencidos(), Cron.MinuteInterval(GetIntervaloLeitura(intervaloLeituraJob.ToString())));     
+
+           // RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosFinalizados", js => js.ObterProdutosFinalizados(), Cron.MinuteInterval(GetIntervaloLeitura(intervaloLeituraJob.ToString())));         
+
+            RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosVencidos", js => js.ObterProdutosVencidos(), Cron.MinuteInterval(60));    
+
+            RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosFinalizados", js => js.ObterProdutosFinalizados(), Cron.MinuteInterval(120));         
+
+
 
         }
 

@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using EstoqueService.Services.Interfaces;
+using EstoqueService.Services.Messages;
+using EstoqueService.Data.Interfaces;
 
 namespace EstoqueService
 {
@@ -24,8 +27,20 @@ namespace EstoqueService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
+            services.AddDbContext<AppDataContext>(
+                
+                option => option.UseSqlServer(Configuration.GetConnectionString("Default")),
+                ServiceLifetime.Transient
+            );
+             
+            var context = services.BuildServiceProvider().GetService<AppDataContext>();
+
+            services.AddSingleton<IEstoqueRepository>(new EstoqueRepository(context));
+
+            services.RegisterServices();
+
             services.AddMvc();
-            services.AddDbContext<AppDataContext>(option => option.UseSqlServer(Configuration.GetConnectionString("Default")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

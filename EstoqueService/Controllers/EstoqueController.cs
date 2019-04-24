@@ -2,152 +2,47 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using EstoqueService.Data.Models;
+using Microsoft.AspNetCore.Mvc;
+using EstoqueService.Services.Messages;
 using EstoqueService.DataContext;
+using EstoqueService.Services.Interfaces;
 
 namespace EstoqueService.Controllers
 {
+    [Produces("application/json")]
+    [Route("api/[controller]")]
     public class EstoqueController : Controller
-    {
-        private readonly AppDataContext _context;
+    {     
+        private readonly IEstoqueApiService _service;
 
-        public EstoqueController(AppDataContext context)
+        public EstoqueController(IEstoqueApiService service)
         {
-            _context = context;
+            _service = service;
         }
 
-        // GET: Estoque
-        public async Task<IActionResult> Index()
+
+        [HttpGet]
+        [Route("vencidos")]
+        public ObterProdutosVencidosMessageResponse ObterProdutosVencidos()
         {
-            return View(await _context.Estoques.ToListAsync());
+            ObterProdutosVencidosMessageResponse response = new ObterProdutosVencidosMessageResponse();
+
+            response = _service.ObterProdutosVencidos();
+
+            return response;
         }
 
-        // GET: Estoque/Details/5
-        public async Task<IActionResult> Details(Guid? id)
+        [HttpGet]
+        [Route("finalizados")]
+        public ObterProdutosFinalizadosMessageResponse ObterProdutosFinalizados()
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            ObterProdutosFinalizadosMessageResponse response = new ObterProdutosFinalizadosMessageResponse();
 
-            var estoque = await _context.Estoques
-                .SingleOrDefaultAsync(m => m.Id == id);
-            if (estoque == null)
-            {
-                return NotFound();
-            }
+            response = _service.ObterProdutosFinalizados();
 
-            return View(estoque);
+            return response;
         }
 
-        // GET: Estoque/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Estoque/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Lote,Serie,DataInclusao,DataVecimentoProduto,QtdeDispUnidade,Descartado")] Estoque estoque)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(estoque);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(estoque);
-        }
-
-        // GET: Estoque/Edit/5
-        public async Task<IActionResult> Edit(Guid? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var estoque = await _context.Estoques.SingleOrDefaultAsync(m => m.Id == id);
-            if (estoque == null)
-            {
-                return NotFound();
-            }
-            return View(estoque);
-        }
-
-        // POST: Estoque/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Lote,Serie,DataInclusao,DataVecimentoProduto,QtdeDispUnidade,Descartado")] Estoque estoque)
-        {
-            if (id != estoque.Id)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(estoque);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!EstoqueExists(estoque.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(estoque);
-        }
-
-        // GET: Estoque/Delete/5
-        public async Task<IActionResult> Delete(Guid? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var estoque = await _context.Estoques
-                .SingleOrDefaultAsync(m => m.Id == id);
-            if (estoque == null)
-            {
-                return NotFound();
-            }
-
-            return View(estoque);
-        }
-
-        // POST: Estoque/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(Guid id)
-        {
-            var estoque = await _context.Estoques.SingleOrDefaultAsync(m => m.Id == id);
-            _context.Estoques.Remove(estoque);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-        private bool EstoqueExists(Guid id)
-        {
-            return _context.Estoques.Any(e => e.Id == id);
-        }
     }
 }

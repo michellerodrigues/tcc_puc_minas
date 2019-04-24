@@ -15,4 +15,6 @@ public class ProdutoDescarteRepository : Repository<ProdutoDescarte>, IProdutoDe
     {
         return _context.ProdutoDescartes.Where(pd=>pd.DataVecimentoProduto<=DateTime.Now);
     }
+
+
 }

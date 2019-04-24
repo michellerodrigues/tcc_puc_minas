@@ -7,10 +7,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("EstoqueService")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("DescarteService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("EstoqueService")]
-[assembly: System.Reflection.AssemblyTitleAttribute("EstoqueService")]
+[assembly: System.Reflection.AssemblyProductAttribute("DescarteService")]
+[assembly: System.Reflection.AssemblyTitleAttribute("DescarteService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

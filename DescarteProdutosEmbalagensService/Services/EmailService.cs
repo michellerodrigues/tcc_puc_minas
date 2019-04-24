@@ -1,6 +1,7 @@
 ﻿using DescarteService.Services.Messages;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Net;
 using System.Net.Mail;
@@ -55,8 +56,9 @@ namespace DescarteService.Services
                     mail.Body = PrepararMensagemCorpoEmail(request.DatasDisponiveis, Startup.AppSettings.MensagemPadraoDescarteEmbalagens);
                 }
 
-                string nomeArq = PrepararAnexoEmail(request.ListaProdutos, DateTime.Now.ToString("yyyyMMddHHmmss"), request.NomeResponsavel, request.NomeArquivo);
-
+                string nomeArq = PrepararAnexoEmail(request.ListaProdutos, DateTime.UtcNow.ToString("yyyyMMddHHmmssfff",
+                                            CultureInfo.InvariantCulture), request.NomeResponsavel, request.NomeArquivo);
+                                            
                 mail.Attachments.Add(new Attachment(@nomeArq));
                 mail.IsBodyHtml = true;
                 client.Send(mail);
@@ -64,6 +66,7 @@ namespace DescarteService.Services
             }
             catch (Exception ex)
             {
+                //resolver este problema aqui
                 throw new InvalidOperationException("Exception in sendEmail:" + ex.Message);
             }
         }

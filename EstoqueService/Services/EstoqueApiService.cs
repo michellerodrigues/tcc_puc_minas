@@ -3,25 +3,38 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
+using EstoqueService.Services.Interfaces;
 using EstoqueService.Data.Interfaces;
 using EstoqueService.Data.Models;
 using EstoqueService.DataContext;
+using EstoqueService.Services.Util;
 
 namespace EstoqueService.Services.Messages
 {
-    public class EstoqueApiService
+    public class EstoqueApiService: IEstoqueApiService
     {
-
-        public ObterProdutosVencidosMessageResponse ObterProdutosVencidos(AppDataContext _context)
+       private readonly IUnitOfWork _uow;
+      
+        public EstoqueApiService(IUnitOfWork unit )
         {
-            IEstoqueRepository estoqueRepository = new EstoqueRepository(_context);
+            _uow = unit;
+        }
+    
+        public void SomeMethod(SomeClass entity)
+        {
+            _uow.GetRepository<SomeClass>().Add(entity);
+            _uow.Commit();
+            
+        }
 
+        public ObterProdutosVencidosMessageResponse ObterProdutosVencidos()
+        {
             ObterProdutosVencidosMessageResponse response = new ObterProdutosVencidosMessageResponse();
             response.codRetorno = 0;
             response.StatusRetorno = "Produtos Vencidos Retornados com sucesso";
             response.LoteProdutosVecidos = new List<ProdutoMessage>();
 
-            var itensEstoqueVencidos = estoqueRepository.FindItensVencidosEstoque();
+            var itensEstoqueVencidos = _estoqueRepository.FindItensVencidosEstoque();
 
             if (itensEstoqueVencidos == null)
             {
@@ -49,16 +62,16 @@ namespace EstoqueService.Services.Messages
             return response;
         }
 
-        public ObterProdutosFinalizadosMessageResponse ObterProdutosFinalizados(AppDataContext _context)
+        public ObterProdutosFinalizadosMessageResponse ObterProdutosFinalizados()
         {
-            IEstoqueRepository estoqueRepository = new EstoqueRepository(_context);
+            //_estoqueRepository = new EstoqueRepository(_context);
         
             ObterProdutosFinalizadosMessageResponse response = new ObterProdutosFinalizadosMessageResponse();
             response.codRetorno = 0;
             response.StatusRetorno = "Produtos Vazios Retornados com sucesso";
             response.LoteProdutosFinalizados = new List<ProdutoMessage>();
 
-            var itensEstoqueFinalizados = estoqueRepository.FindItensFinalizadosEstoque();
+            var itensEstoqueFinalizados = _estoqueRepository.FindItensFinalizadosEstoque().ToList();
 
             if (itensEstoqueFinalizados == null)
             {
@@ -80,7 +93,7 @@ namespace EstoqueService.Services.Messages
                     PesoVazio = estoque.Produto.PesoVazio,
                     VolumeEmbalagem = estoque.Produto.VolumeEmbalagem
                 };
-                response.LoteProdutosFinalizados.Append(produtoMessage);
+                response.LoteProdutosFinalizados.Add(produtoMessage);
             }
 
             return response;

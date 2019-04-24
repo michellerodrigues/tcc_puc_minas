@@ -4,60 +4,44 @@ using System.Linq;
 using EstoqueService.DataContext;
 using EstoqueService.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
+using Microsoft.EntityFrameworkCore.Query;
+using EstoqueService.Services.Util;
 
 namespace EstoqueService.Data.Repository
 {
-    public class Repository<T> : IRepository<T> where T: class
+   public class Repository<T> : IRepository<T> where T : class
     {
-        protected readonly AppDataContext _context;
-
-        public Repository(AppDataContext context)
+       private readonly IUnitOfWork _unitOfWork;
+        public Repository(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
-        protected void Save() => _context.SaveChanges();
-
-        public int Count(Func<T, bool> predicate)
+        public void Add(T entity)
         {
-            return _context.Set<T>().Where(predicate).Count();
+            _unitOfWork.Context.Set<T>().Add(entity);
         }
-
-        public void Create(T entity)
-        {
-            _context.Add(entity);
-            Save();
-        }
-
+ 
         public void Delete(T entity)
         {
-            _context.Remove(entity);
-            Save();
+            T existing = _unitOfWork.Context.Set<T>().Find(entity);
+            if (existing != null) _unitOfWork.Context.Set<T>().Remove(existing);
         }
-
-        public IEnumerable<T> Find(Func<T, bool> predicate)
+ 
+        public IEnumerable<T> Get()
         {
-            return _context.Set<T>().Where(predicate);
+            return _unitOfWork.Context.Set<T>().AsEnumerable<T>();
         }
-
-        public IEnumerable<T> GetAll()
+ 
+        public IEnumerable<T> Get(System.Linq.Expressions.Expression<Func<T, bool>> predicate)
         {
-            return _context.Set<T>();
+            return _unitOfWork.Context.Set<T>().Where(predicate).AsEnumerable<T>();
         }
-
-        public T GetById(int id)
-        {
-            return _context.Set<T>().Find(id);
-        }
-
-        public T GetById(Guid id)
-        {
-            return _context.Set<T>().Find(id);
-        }
+ 
         public void Update(T entity)
         {
-            _context.Entry(entity).State = EntityState.Modified;
-            Save();
-        }       
+            _unitOfWork.Context.Entry(entity).State = EntityState.Modified;
+            _unitOfWork.Context.Set<T>().Attach(entity);
+        }
     }
-    
 }

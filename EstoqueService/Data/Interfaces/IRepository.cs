@@ -1,24 +1,15 @@
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace EstoqueService.Data.Interfaces
 {
     public interface IRepository<T>
     {
-        IEnumerable<T> GetAll();
-
-        IEnumerable<T> Find(Func<T, bool> predicate);
-
-        T GetById(int id);
-
-        T GetById(Guid id);
-
-        void Create(T entity);
-
-        void Update(T entity);
-
+        IEnumerable<T> Get();
+        IEnumerable<T> Get(Expression<Func<T, bool>> predicate);
+        void Add(T entity);
         void Delete(T entity);
-
-        int Count(Func<T, bool> predicate);
-    }
+        void Update(T entity);
+    }    
 }

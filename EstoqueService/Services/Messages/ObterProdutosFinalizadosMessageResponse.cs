@@ -8,6 +8,6 @@ namespace EstoqueService.Services.Messages
     public class ObterProdutosFinalizadosMessageResponse: BaseResponseMessage
     {
         [DataMember(Name = "loteProdutosFinalizados")]
-        public IEnumerable<ProdutoMessage> LoteProdutosFinalizados { get; set; } = new List<ProdutoMessage>();
+        public List<ProdutoMessage> LoteProdutosFinalizados { get; set; } = new List<ProdutoMessage>();
     }
 }

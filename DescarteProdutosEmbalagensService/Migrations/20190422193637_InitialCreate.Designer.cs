@@ -11,7 +11,7 @@ using System;
 namespace DescarteService.Migrations
 {
     [DbContext(typeof(AppDataContext))]
-    [Migration("20190210222251_InitialCreate")]
+    [Migration("20190422193637_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,18 +21,18 @@ namespace DescarteService.Migrations
                 .HasAnnotation("ProductVersion", "2.0.2-rtm-10011")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("DescarteService.Data.Models.AgendamentoDescarte", b =>
+            modelBuilder.Entity("DescarteService.Data.Models.ComunicadosDeAgendamentoEnviados", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<DateTime>("DataAgendamento");
+                    b.Property<DateTime>("DataEnvioEmail");
 
-                    b.Property<DateTime>("DataRegistro");
+                    b.Property<DateTime>("DataPropostaAgendamento");
 
                     b.Property<Guid>("LoteDescarteId");
 
-                    b.Property<string>("StatusAgendamento")
+                    b.Property<string>("StatusProposta")
                         .IsRequired();
 
                     b.HasKey("Id");
@@ -75,11 +75,8 @@ namespace DescarteService.Migrations
                         .IsRequired()
                         .HasMaxLength(255);
 
-                    b.Property<decimal>("PesoCheio");
-
-                    b.Property<decimal>("PesoVazio");
-
-                    b.Property<decimal>("VolumeEmbalagem");
+                    b.Property<string>("QtdeDisponivelEstoque")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
@@ -88,7 +85,7 @@ namespace DescarteService.Migrations
                     b.ToTable("ProdutoDescartes");
                 });
 
-            modelBuilder.Entity("DescarteService.Data.Models.AgendamentoDescarte", b =>
+            modelBuilder.Entity("DescarteService.Data.Models.ComunicadosDeAgendamentoEnviados", b =>
                 {
                     b.HasOne("DescarteService.Data.Models.LoteDescarte", "LoteDescarte")
                         .WithMany()
@@ -99,7 +96,7 @@ namespace DescarteService.Migrations
             modelBuilder.Entity("DescarteService.Data.Models.ProdutoDescarte", b =>
                 {
                     b.HasOne("DescarteService.Data.Models.LoteDescarte", "LoteDescarte")
-                        .WithMany()
+                        .WithMany("ProdutosDescartes")
                         .HasForeignKey("LoteDescarteId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

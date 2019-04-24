@@ -20,6 +20,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.NetworkInformation;
 using Newtonsoft.Json;
+NServiceBus.ConfigureLicenseExtensions
 
 namespace AgendaService
 {
