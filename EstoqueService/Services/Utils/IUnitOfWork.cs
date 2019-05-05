@@ -6,9 +6,11 @@ namespace EstoqueService.Services.Util
 {
     public interface IUnitOfWork : IDisposable
     {
-        IRepository<TEntity> GetRepository<TEntity>() where TEntity : class;
-
-        int Commit();
+        IEstoqueRepository Estoque { get; }
+        IProdutoRepository Produto { get; }
+        IFabricanteRepository Fabricante { get; }
+        IRevendedorRepository Revendedor { get; }
+        void Save();
     }
 
     public interface IUnitOfWork<TContext> : IUnitOfWork where TContext : DbContext

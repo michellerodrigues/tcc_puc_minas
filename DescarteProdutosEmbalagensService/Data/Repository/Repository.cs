@@ -4,6 +4,7 @@ using System.Linq;
 using DescarteService.DataContext;
 using DescarteService.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace DescarteService.Data.Repository
 {
@@ -53,7 +54,9 @@ namespace DescarteService.Data.Repository
         {
             _context.Entry(entity).State = EntityState.Modified;
             Save();
-        }       
+        }
+
+        
     }
     
 }

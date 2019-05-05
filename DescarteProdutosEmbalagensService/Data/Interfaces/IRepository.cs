@@ -6,10 +6,13 @@ namespace DescarteService.Data.Interfaces
 {
     public interface IRepository<T> where T : class
     {
-        IEnumerable<T> Get();
-        IEnumerable<T> Get(Expression<Func<T, bool>> predicate);
-        void Add(T entity);
         void Delete(T entity);
         void Update(T entity);
+        int Count(Func<T, bool> predicate);
+        void Create(T entity);
+        IEnumerable<T> Find(Func<T, bool> predicate);
+        IEnumerable<T> GetAll();        
+        T GetById(Guid id);
+
       }
 }

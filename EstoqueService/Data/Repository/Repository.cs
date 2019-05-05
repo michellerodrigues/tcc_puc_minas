@@ -10,38 +10,33 @@ using EstoqueService.Services.Util;
 
 namespace EstoqueService.Data.Repository
 {
-   public class Repository<T> : IRepository<T> where T : class
+    public abstract class Repository<T> : IRepository<T> where T : class
     {
-       private readonly IUnitOfWork _unitOfWork;
-        public Repository(IUnitOfWork unitOfWork)
+
+        protected DbSet<T> _dbSet;
+        public Repository(DbSet<T> dbSet)
         {
-            _unitOfWork = unitOfWork;
+            _dbSet = dbSet;
         }
-        public void Add(T entity)
+
+        public virtual void Add(T entity)
         {
-            _unitOfWork.Context.Set<T>().Add(entity);
+            _dbSet.Add(entity);
         }
- 
-        public void Delete(T entity)
+
+        public virtual void Delete(T entity)
         {
-            T existing = _unitOfWork.Context.Set<T>().Find(entity);
-            if (existing != null) _unitOfWork.Context.Set<T>().Remove(existing);
+            _dbSet.Remove(entity);
         }
- 
-        public IEnumerable<T> Get()
+
+        public virtual IEnumerable<T> GetAll()
         {
-            return _unitOfWork.Context.Set<T>().AsEnumerable<T>();
+            return _dbSet.AsEnumerable();
         }
- 
-        public IEnumerable<T> Get(System.Linq.Expressions.Expression<Func<T, bool>> predicate)
+
+        public virtual void Remove(T entity)
         {
-            return _unitOfWork.Context.Set<T>().Where(predicate).AsEnumerable<T>();
-        }
- 
-        public void Update(T entity)
-        {
-            _unitOfWork.Context.Entry(entity).State = EntityState.Modified;
-            _unitOfWork.Context.Set<T>().Attach(entity);
+            _dbSet.Remove(entity);
         }
     }
 }

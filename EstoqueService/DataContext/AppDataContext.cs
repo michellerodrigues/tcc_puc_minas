@@ -18,14 +18,14 @@ namespace EstoqueService.DataContext{
 
         protected override void OnModelCreating(ModelBuilder builder) {
             base.OnModelCreating(builder);
-            /* 
+            /*
             builder.Entity<Estoque>().HasOne(p => p.Produto).WithMany(e => e.Estoques);
             builder.Entity<Estoque>().HasOne(p => p.Revendedor).WithMany(e => e.Estoques);
-            builder.Entity<Estoque>().HasOne(p => p.Fornecedor).WithMany(e => e.Estoques);
+            builder.Entity<Estoque>().HasOne(p => p.Fabricante).WithMany(e => e.Estoques);
 
             builder.Entity<Produto>().HasMany(p => p.Estoques).WithOne(e => e.Produto);
-            builder.Entity<Fornecedor>().HasMany(p => p.Estoques).WithOne(e => e.Fornecedor);
-            builder.Entity<Revendedor>().HasMany(p => p.Estoques).WithOne(e => e.Revendedor);*/
+            builder.Entity<Fabricante>().HasMany(p => p.Estoques).WithOne(e => e.Fabricante);
+            builder.Entity<Revendedor>().HasMany(p => p.Estoques).WithOne(e => e.Revendedor); */
         }
     }
 }

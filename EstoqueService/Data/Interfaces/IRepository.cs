@@ -4,12 +4,10 @@ using System.Linq.Expressions;
 
 namespace EstoqueService.Data.Interfaces
 {
-    public interface IRepository<T>
+    public interface IRepository<T> where T : class
     {
-        IEnumerable<T> Get();
-        IEnumerable<T> Get(Expression<Func<T, bool>> predicate);
+        IEnumerable<T> GetAll();
         void Add(T entity);
-        void Delete(T entity);
-        void Update(T entity);
+        void Remove(T entity);
     }    
 }

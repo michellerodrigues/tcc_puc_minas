@@ -103,9 +103,9 @@ namespace DescarteService
 
            // RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosFinalizados", js => js.ObterProdutosFinalizados(), Cron.MinuteInterval(GetIntervaloLeitura(intervaloLeituraJob.ToString())));         
 
-            RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosVencidos", js => js.ObterProdutosVencidos(), Cron.MinuteInterval(60));    
+            RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosVencidos", js => js.ObterProdutosVencidos(), Cron.MinuteInterval(2));    
 
-            RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosFinalizados", js => js.ObterProdutosFinalizados(), Cron.MinuteInterval(120));         
+            RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosFinalizados", js => js.ObterProdutosFinalizados(), Cron.MinuteInterval(2));         
 
 
 

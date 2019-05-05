@@ -9,12 +9,13 @@ using Microsoft.EntityFrameworkCore;
 
 public class ProdutoRepository : Repository<Produto>, IProdutoRepository
 {
-    public ProdutoRepository(AppDataContext context) : base(context)
-    {
+    public ProdutoRepository(DbSet<Produto> dbSet) : base(dbSet) 
+    { 
+        dbSet.Include(e=>e.Estoques);
     }
 
     public IEnumerable<Produto> FindProdutos(Func<Produto, bool> predicate)
     {
-        return _context.Produtos.Where(predicate);
+        throw new NotImplementedException();
     }
 }

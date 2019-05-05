@@ -9,11 +9,10 @@ using Microsoft.EntityFrameworkCore;
 
 public class FabricanteRepository : Repository<Fabricante>, IFabricanteRepository
     {
-    public FabricanteRepository(AppDataContext context) : base(context)
-    {
-    }
+    public FabricanteRepository(DbSet<Fabricante> dbSet):base(dbSet){}
+
     IEnumerable<Fabricante> IFabricanteRepository.FindFabricantes(Func<Fabricante, bool> predicate)
     {
-         return _context.Fabricantes.Where(predicate);
+         return _dbSet.Where(predicate);
     }
 }

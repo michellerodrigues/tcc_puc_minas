@@ -8,8 +8,6 @@ namespace EstoqueService.Data.Interfaces
 {
     public interface IEstoqueRepository : IRepository<Estoque>
     {
-        IEnumerable<Estoque> FindItensEstoque(Func<Estoque, bool> predicate);
-
         IEnumerable<Estoque> FindItensVencidosEstoque();
 
         IEnumerable<Estoque> FindItensFinalizadosEstoque();

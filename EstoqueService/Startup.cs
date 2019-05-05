@@ -36,11 +36,18 @@ namespace EstoqueService
              
             var context = services.BuildServiceProvider().GetService<AppDataContext>();
 
-            services.AddSingleton<IEstoqueRepository>(new EstoqueRepository(context));
-
-            services.RegisterServices();
-
+            
+             services.AddTransient<UnitOfWork>();
+             var unit = services.BuildServiceProvider().GetService<UnitOfWork>();
+         
+            //services.AddSingleton<IEstoqueApiService>(new unit);
+            //services.RegisterServices();
+            services.AddSingleton<IEstoqueApiService>(new EstoqueApiService(unit)); 
             services.AddMvc();
+
+ 
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

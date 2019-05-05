@@ -20,13 +20,6 @@ namespace EstoqueService.Services.Messages
             _uow = unit;
         }
     
-        public void SomeMethod(SomeClass entity)
-        {
-            _uow.GetRepository<SomeClass>().Add(entity);
-            _uow.Commit();
-            
-        }
-
         public ObterProdutosVencidosMessageResponse ObterProdutosVencidos()
         {
             ObterProdutosVencidosMessageResponse response = new ObterProdutosVencidosMessageResponse();
@@ -34,7 +27,7 @@ namespace EstoqueService.Services.Messages
             response.StatusRetorno = "Produtos Vencidos Retornados com sucesso";
             response.LoteProdutosVecidos = new List<ProdutoMessage>();
 
-            var itensEstoqueVencidos = _estoqueRepository.FindItensVencidosEstoque();
+            var itensEstoqueVencidos = _uow.Estoque.FindItensVencidosEstoque();
 
             if (itensEstoqueVencidos == null)
             {
@@ -64,14 +57,13 @@ namespace EstoqueService.Services.Messages
 
         public ObterProdutosFinalizadosMessageResponse ObterProdutosFinalizados()
         {
-            //_estoqueRepository = new EstoqueRepository(_context);
-        
+            
             ObterProdutosFinalizadosMessageResponse response = new ObterProdutosFinalizadosMessageResponse();
             response.codRetorno = 0;
             response.StatusRetorno = "Produtos Vazios Retornados com sucesso";
             response.LoteProdutosFinalizados = new List<ProdutoMessage>();
 
-            var itensEstoqueFinalizados = _estoqueRepository.FindItensFinalizadosEstoque().ToList();
+            var itensEstoqueFinalizados = _uow.Estoque.FindItensFinalizadosEstoque().ToList();
 
             if (itensEstoqueFinalizados == null)
             {

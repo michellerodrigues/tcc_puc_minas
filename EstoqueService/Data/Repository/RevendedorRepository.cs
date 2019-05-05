@@ -9,12 +9,11 @@ using Microsoft.EntityFrameworkCore;
 
     public class RevendedorRepository : Repository<Revendedor>, IRevendedorRepository
     {
-    public RevendedorRepository(AppDataContext context) : base(context)
-    {
-    }
+     public RevendedorRepository(DbSet<Revendedor> dbSet):base(dbSet){}
+    
 
     public IEnumerable<Revendedor> FindRevendedor(Func<Revendedor, bool> predicate)
     {
-        return _context.Revendedores.Where(predicate);
+        return _dbSet.Where(predicate);
     }
 }
