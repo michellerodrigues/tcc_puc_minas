@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\Messages\\Messages.csproj": {}
+  },
+  "projects": {
+    "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\Messages\\Messages.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\Messages\\Messages.csproj",
+        "projectName": "Messages",
+        "projectPath": "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\Messages\\Messages.csproj",
+        "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\Messages\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\mica\\bkp_note_sys\\users\\miche\\source\\repos": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[7.1.6, )"
+            },
+            "NServiceBus.CustomChecks": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "NServiceBus.Heartbeat": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "NServiceBus.Persistence.Sql": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "NServiceBus.RabbitMQ": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "NServiceBus.SagaAudit": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

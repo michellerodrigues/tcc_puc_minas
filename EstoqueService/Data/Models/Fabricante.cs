@@ -9,7 +9,7 @@ namespace EstoqueService.Data.Models
     public class Fabricante
     {
         [Key]
-        public Guid FabricanteId { get; set; }
+        public Guid Id { get; set; }
 
         [Required]
         [StringLength(255)]
@@ -19,6 +19,6 @@ namespace EstoqueService.Data.Models
         [StringLength(255)]
         public string Email { get; set; }
      
-        public virtual ICollection<Estoque> Estoques { get; } = new List<Estoque>();
+        public ICollection<Estoque> Estoques { get; } = new List<Estoque>();
     }
 }

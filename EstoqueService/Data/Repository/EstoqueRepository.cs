@@ -17,11 +17,15 @@ public class EstoqueRepository : Repository<Estoque>, IEstoqueRepository
     
     public IEnumerable<Estoque> FindItensFinalizadosEstoque()
     {
-        return _dbSet.Where(e=>e.Descartado==false && e.QtdeDispUnidade<=0).OrderBy(e=>e.Revendedor).AsEnumerable();
+        return _dbSet.Where(e => e.Descartado == false && e.QtdeDispUnidade <= 0)
+            .Include(c => c.Fabricante).Include(e => e.Revendedor).Include(e => e.Produto)
+            .OrderBy(e => e.Revendedor).ToList();
     }
 
     public IEnumerable<Estoque> FindItensVencidosEstoque()
     {
-        return _dbSet.Where(e=>e.Descartado==false && e.DataVecimentoProduto.ToOADate()<=DateTime.Now.ToOADate() && e.QtdeDispUnidade>0).OrderBy(e=>e.Fabricante);
+        return _dbSet.Where(e=>e.Descartado==false && e.DataVecimentoProduto.ToOADate()<=DateTime.Now.ToOADate() && e.QtdeDispUnidade>0)
+            .Include(c => c.Fabricante).Include(e=>e.Revendedor).Include(e=>e.Produto)
+            .OrderBy(e=>e.Fabricante).ToList();
     }
 }

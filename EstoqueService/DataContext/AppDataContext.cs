@@ -8,7 +8,7 @@ namespace EstoqueService.DataContext{
 
         public AppDataContext(DbContextOptions<AppDataContext> options) : base (options)
         {
-
+            // modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
         public DbSet<Produto> Produtos {get;set;}
 
@@ -18,8 +18,8 @@ namespace EstoqueService.DataContext{
 
         protected override void OnModelCreating(ModelBuilder builder) {
             base.OnModelCreating(builder);
-            /*
-            builder.Entity<Estoque>().HasOne(p => p.Produto).WithMany(e => e.Estoques);
+
+            /*builder.Entity<Estoque>().HasOne(p => p.Produto).WithMany(e => e.Estoques);
             builder.Entity<Estoque>().HasOne(p => p.Revendedor).WithMany(e => e.Estoques);
             builder.Entity<Estoque>().HasOne(p => p.Fabricante).WithMany(e => e.Estoques);
 

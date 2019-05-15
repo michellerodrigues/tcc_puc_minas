@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using EstoqueService.Services.Interfaces;
 using EstoqueService.Services.Messages;
 using EstoqueService.Data.Interfaces;
+using EstoqueService.Services.Util;
 
 namespace EstoqueService
 {
@@ -26,28 +27,22 @@ namespace EstoqueService
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-            
+        {            
             services.AddDbContext<AppDataContext>(
                 
                 option => option.UseSqlServer(Configuration.GetConnectionString("Default")),
                 ServiceLifetime.Transient
             );
              
-            var context = services.BuildServiceProvider().GetService<AppDataContext>();
+            services.AddTransient<IUnitOfWork,UnitOfWork>();
 
-            
-             services.AddTransient<UnitOfWork>();
-             var unit = services.BuildServiceProvider().GetService<UnitOfWork>();
-         
-            //services.AddSingleton<IEstoqueApiService>(new unit);
-            //services.RegisterServices();
-            services.AddSingleton<IEstoqueApiService>(new EstoqueApiService(unit)); 
-            services.AddMvc();
+            services.AddScoped<IEstoqueApiService,EstoqueApiService>();
+         //  services.AddScoped<IEstoqueRepository, EstoqueRepository>();
+          //  services.AddScoped<IProdutoRepository, ProdutoRepository>();
+         //   services.AddScoped<IRevendedorRepository, RevendedorRepository>();
+         //   services.AddScoped<IFabricanteRepository, FabricanteRepository>();
 
- 
-
-
+            services.AddMvc(); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

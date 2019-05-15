@@ -45,12 +45,12 @@ namespace EstoqueService.Data
                                        
                     //context.SaveChanges();
 
-                    var estoque = new Estoque{DataInclusao=DateTime.Now,DataVecimentoProduto=DateTime.Now.AddDays(15),Descartado=false, Fabricante = fabricante3,Revendedor=revendedor1, Produto = produto1, QtdeDispUnidade=20,Lote="001",Serie="aab"};
-                    var estoque1 = new Estoque{DataInclusao=DateTime.Now.AddHours(-1),DataVecimentoProduto=DateTime.Now.AddDays(15),Descartado=false, Fabricante = fabricante3,Revendedor=revendedor3,Produto = produto1,QtdeDispUnidade=20,Lote="001",Serie="axb"};
-                    var estoque2 = new Estoque{DataInclusao=DateTime.Now.AddHours(-2),DataVecimentoProduto=DateTime.Now.AddDays(45),Descartado=false, Fabricante = fabricante1,Revendedor=revendedor1,Produto = produto2,QtdeDispUnidade=0,Lote="001",Serie="aab"};
-                    var estoque3 = new Estoque{DataInclusao=DateTime.Now.AddHours(-3),DataVecimentoProduto=DateTime.Now.AddDays(5),Descartado=false, Fabricante = fabricante1,Revendedor=revendedor2,Produto = produto2,QtdeDispUnidade=65,Lote="001",Serie="aab"};
-                    var estoque4 = new Estoque{DataInclusao=DateTime.Now.AddHours(-4),DataVecimentoProduto=DateTime.Now.AddDays(13),Descartado=false, Fabricante = fabricante3,Revendedor=revendedor3,Produto = produto3,QtdeDispUnidade=67,Lote="003",Serie="aax"};
-                    var estoque5 = new Estoque{DataInclusao=DateTime.Now.AddHours(-5),DataVecimentoProduto=DateTime.Now.AddDays(22),Descartado=false, Fabricante = fabricante3,Revendedor=revendedor2,Produto = produto3,QtdeDispUnidade=56,Lote="002",Serie="aac"};
+                    var estoque = new Estoque{DataInclusao=DateTime.Now,DataVecimentoProduto=DateTime.Now.AddDays(-15),Descartado=false, Fabricante = fabricante3,Revendedor=revendedor1, Produto = produto1, QtdeDispUnidade=20,Lote="001",Serie="aab"};
+                    var estoque1 = new Estoque{DataInclusao=DateTime.Now.AddHours(-1),DataVecimentoProduto=DateTime.Now.AddDays(-15),Descartado=false, Fabricante = fabricante3,Revendedor=revendedor3,Produto = produto1,QtdeDispUnidade=20,Lote="001",Serie="axb"};
+                    var estoque2 = new Estoque{DataInclusao=DateTime.Now.AddHours(-2),DataVecimentoProduto=DateTime.Now.AddDays(-45),Descartado=false, Fabricante = fabricante1,Revendedor=revendedor1,Produto = produto2,QtdeDispUnidade=0,Lote="001",Serie="aab"};
+                    var estoque3 = new Estoque{DataInclusao=DateTime.Now.AddHours(-3),DataVecimentoProduto=DateTime.Now.AddDays(-5),Descartado=false, Fabricante = fabricante1,Revendedor=revendedor2,Produto = produto2,QtdeDispUnidade=65,Lote="001",Serie="aab"};
+                    var estoque4 = new Estoque{DataInclusao=DateTime.Now.AddHours(-4),DataVecimentoProduto=DateTime.Now.AddDays(-13),Descartado=false, Fabricante = fabricante3,Revendedor=revendedor3,Produto = produto3,QtdeDispUnidade=67,Lote="003",Serie="aax"};
+                    var estoque5 = new Estoque{DataInclusao=DateTime.Now.AddHours(-5),DataVecimentoProduto=DateTime.Now.AddDays(-22),Descartado=false, Fabricante = fabricante3,Revendedor=revendedor2,Produto = produto3,QtdeDispUnidade=56,Lote="002",Serie="aac"};
                     
                     context.Estoques.Add(estoque);
                     context.Estoques.Add(estoque1);

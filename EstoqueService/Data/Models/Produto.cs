@@ -9,7 +9,7 @@ namespace EstoqueService.Data.Models
     public class Produto
     {
         [Key]
-        public Guid ProdutoId { get; set; }
+        public Guid Id { get; set; }
 
         [Required]
         [StringLength(255)]
@@ -27,7 +27,7 @@ namespace EstoqueService.Data.Models
         [Required]
         public decimal VolumeEmbalagem { get; set; } 
 
-        public ICollection<Estoque> Estoques { get; } = new List<Estoque>();
+        public virtual ICollection<Estoque> Estoques { get; } = new List<Estoque>();
 
     }
 }

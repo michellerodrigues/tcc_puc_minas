@@ -21,11 +21,10 @@ public class UnitOfWork : IUnitOfWork
     public IFabricanteRepository Fabricante {get {return _fabricante;}}
 
 
-    public UnitOfWork(AppDataContext context)
+    public UnitOfWork(AppDataContext context)//, IEstoqueRepository estoque)
     {
-        context.Estoques.Include(e=>e.Revendedor).Include(e=>e.Fabricante).Include(e=>e.Produto);
+       
         _context = context;
-
         _estoque = new EstoqueRepository(_context.Estoques);
         _produto = new ProdutoRepository(_context.Produtos);
         _fabricante = new FabricanteRepository(_context.Fabricantes);
