@@ -5,22 +5,24 @@ using DescarteService.DataContext;
 using DescarteService.Data.Interfaces;
 using DescarteService.Data.Models;
 using DescarteService.Data.Repository;
+using Microsoft.EntityFrameworkCore;
 
-public class AgendamentoDescarteRepository : Repository<ComunicadosDeAgendamentoEnviados>, IAgendamentoDescarteRepository
+public class AgendamentoDescarteRepository : Repository<AgendamentoDescarteSolicitado>, IAgendamentoDescarteRepository
     {
+     private AppDataContext _context = null;
     public AgendamentoDescarteRepository(AppDataContext context) : base(context)
     {
-       
+         this._context = context;
     }
 
-    public IEnumerable<ComunicadosDeAgendamentoEnviados> FindAgendamentoEmAndamento()
+    public IEnumerable<AgendamentoDescarteSolicitado> FindAgendamentoEmAndamento()
     {
-         return _context.AgendamentoDescartes.Where(a=>a.DataEnvioEmail!=null && a.StatusProposta!="Cancelado" && a.StatusProposta!="Finalizado");
+         return this._context .AgendamentoDescarteSolicitados.Where(a=>a.DataEnvioEmail!=null && a.StatusProposta!="Cancelado" && a.StatusProposta!="Finalizado").Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes);;
     }
 
-    public IEnumerable<ComunicadosDeAgendamentoEnviados> FindAgendamentoPendenteEnvioEmail()
+    public IEnumerable<AgendamentoDescarteSolicitado> FindAgendamentoPendenteEnvioEmail()
     {
-         return _context.AgendamentoDescartes.Where(a=>a.DataEnvioEmail!=null && a.StatusProposta!="Pendente Envio Email").ToList();
+         return this._context .AgendamentoDescarteSolicitados.Where(a=>a.DataEnvioEmail!=null && a.StatusProposta!="Pendente Envio Email").Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).ToList();
     }
 
 }

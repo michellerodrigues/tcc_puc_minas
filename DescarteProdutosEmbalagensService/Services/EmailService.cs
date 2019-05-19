@@ -67,7 +67,7 @@ namespace DescarteService.Services
             catch (Exception ex)
             {
                 //resolver este problema aqui
-                throw new InvalidOperationException("Exception in sendEmail:" + ex.Message);
+                throw new InvalidOperationException("Exception in sendEmail:" + ex.StackTrace);
             }
         }
 

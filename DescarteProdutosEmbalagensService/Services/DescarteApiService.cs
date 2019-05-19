@@ -93,7 +93,7 @@ namespace DescarteService.Services
                          loteDescarte.ProdutosDescartes.Add(produtoDescarte);                       
                      }
 
-                    var agendamento = new ComunicadosDeAgendamentoEnviados()
+                    var agendamento = new AgendamentoDescarteSolicitado()
                     {
                             DataEnvioEmail = DateTime.Now,
                             DataPropostaAgendamento = DateTime.Now.AddDays(15),
@@ -136,7 +136,7 @@ namespace DescarteService.Services
                          loteDescarte.ProdutosDescartes.Add(produtoDescarte);                       
                      }
 
-                    var agendamento = new ComunicadosDeAgendamentoEnviados()
+                    var agendamento = new AgendamentoDescarteSolicitado()
                     {
                             DataEnvioEmail = DateTime.Now,
                             DataPropostaAgendamento = DateTime.Now.AddDays(15),
@@ -157,28 +157,29 @@ namespace DescarteService.Services
 
               var listaEmailParaEnviar = repository.FindAgendamentoPendenteEnvioEmail();
 
-              foreach(ComunicadosDeAgendamentoEnviados agendamento in listaEmailParaEnviar)
+              foreach(AgendamentoDescarteSolicitado agendamento in listaEmailParaEnviar)
               {
                     var loteDescarte = agendamento.LoteDescarte;
 
                     var produtos = loteDescarte.ProdutosDescartes;
 
                     ComunicarDescartePendenteMessageRequest request = new ComunicarDescartePendenteMessageRequest();
-                    DatasDisponiveisMessage data15 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(15),LinkAgendamento=String.Format("http://localhost:9009/agendar?lote={0}&data={1}",loteDescarte.LoteDescarteId, DateTime.Now.AddDays(15).ToString("yyyyMMdd"))};
-                    DatasDisponiveisMessage data30 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(30),LinkAgendamento=String.Format("http://localhost:9009/agendar?lote={0}&data={1}",loteDescarte.LoteDescarteId, DateTime.Now.AddDays(30).ToString("yyyyMMdd"))};
-                    DatasDisponiveisMessage data45 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(45),LinkAgendamento=String.Format("http://localhost:9009/agendar?lote={0}&data={1}",loteDescarte.LoteDescarteId, DateTime.Now.AddDays(45).ToString("yyyyMMdd"))};
+                    DatasDisponiveisMessage data15 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(15),LinkAgendamento=String.Format("http://localhost:9009/agendar?lote={0}&data={1}",loteDescarte.Id, DateTime.Now.AddDays(15).ToString("yyyyMMdd"))};
+                    DatasDisponiveisMessage data30 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(30),LinkAgendamento=String.Format("http://localhost:9009/agendar?lote={0}&data={1}",loteDescarte.Id, DateTime.Now.AddDays(30).ToString("yyyyMMdd"))};
+                    DatasDisponiveisMessage data45 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(45),LinkAgendamento=String.Format("http://localhost:9009/agendar?lote={0}&data={1}",loteDescarte.Id, DateTime.Now.AddDays(45).ToString("yyyyMMdd"))};
                     request.DatasDisponiveis = new List<DatasDisponiveisMessage>();
                     request.DatasDisponiveis.Add(data15);
                     request.DatasDisponiveis.Add(data30);
                     request.DatasDisponiveis.Add(data45);
 
-
+                    request.ListaProdutos  = new List<DescartePendente>();
+                    
                     foreach(ProdutoDescarte produto in produtos)
                     {
                         DescartePendente descarte = new DescartePendente(){DataVencimento=produto.DataVecimentoProduto.ToShortDateString(), IdItemEstoque=produto.IdITemEstoque, NomeProduto=produto.Nome};
                         request.ListaProdutos.Add(descarte);
                     }
-
+                             
                     request.EmailRemetente = agendamento.LoteDescarte.EmailResponsavelDescarte;
                     request.NomeArquivo=tipoEmail;
                    

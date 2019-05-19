@@ -6,11 +6,11 @@ using DescarteService.Data.Models;
 
 namespace DescarteService.Data.Interfaces
 {
-    public interface IAgendamentoDescarteRepository : IRepository<ComunicadosDeAgendamentoEnviados>
+    public interface IAgendamentoDescarteRepository : IRepository<AgendamentoDescarteSolicitado>
     {
-        IEnumerable<ComunicadosDeAgendamentoEnviados> FindAgendamentoEmAndamento();
+        IEnumerable<AgendamentoDescarteSolicitado> FindAgendamentoEmAndamento();
 
-        IEnumerable<ComunicadosDeAgendamentoEnviados> FindAgendamentoPendenteEnvioEmail();
+        IEnumerable<AgendamentoDescarteSolicitado> FindAgendamentoPendenteEnvioEmail();
     }
 
 }

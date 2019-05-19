@@ -34,7 +34,7 @@ namespace DescarteService.Controllers
             }
 
             var loteDescarte = await _context.LoteDescartes
-                .SingleOrDefaultAsync(m => m.LoteDescarteId == id);
+                .SingleOrDefaultAsync(m => m.Id == id);
             if (loteDescarte == null)
             {
                 return NotFound();
@@ -73,7 +73,7 @@ namespace DescarteService.Controllers
                 return NotFound();
             }
 
-            var loteDescarte = await _context.LoteDescartes.SingleOrDefaultAsync(m => m.LoteDescarteId == id);
+            var loteDescarte = await _context.LoteDescartes.SingleOrDefaultAsync(m => m.Id == id);
             if (loteDescarte == null)
             {
                 return NotFound();
@@ -88,7 +88,7 @@ namespace DescarteService.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid? id, [Bind("LoteDescarteId,NomeResponsavelDescarte,EmailResponsavelDescarte")] LoteDescarte loteDescarte)
         {
-            if (id != loteDescarte.LoteDescarteId)
+            if (id != loteDescarte.Id)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace DescarteService.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!LoteDescarteExists(loteDescarte.LoteDescarteId))
+                    if (!LoteDescarteExists(loteDescarte.Id))
                     {
                         return NotFound();
                     }
@@ -125,7 +125,7 @@ namespace DescarteService.Controllers
             }
 
             var loteDescarte = await _context.LoteDescartes
-                .SingleOrDefaultAsync(m => m.LoteDescarteId == id);
+                .SingleOrDefaultAsync(m => m.Id == id);
             if (loteDescarte == null)
             {
                 return NotFound();
@@ -139,7 +139,7 @@ namespace DescarteService.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid? id)
         {
-            var loteDescarte = await _context.LoteDescartes.SingleOrDefaultAsync(m => m.LoteDescarteId == id);
+            var loteDescarte = await _context.LoteDescartes.SingleOrDefaultAsync(m => m.Id == id);
             _context.LoteDescartes.Remove(loteDescarte);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -147,7 +147,7 @@ namespace DescarteService.Controllers
 
         private bool LoteDescarteExists(Guid? id)
         {
-            return _context.LoteDescartes.Any(e => e.LoteDescarteId == id);
+            return _context.LoteDescartes.Any(e => e.Id == id);
         }
     }
 }

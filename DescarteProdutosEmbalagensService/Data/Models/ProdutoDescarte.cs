@@ -22,6 +22,8 @@ namespace DescarteService.Data.Models
         public DateTime DataVecimentoProduto { get; set; }
 
         [Required]
+        public Guid LoteDescarteId { get; set; }
+        
         public LoteDescarte LoteDescarte { get;set;  }
 
 

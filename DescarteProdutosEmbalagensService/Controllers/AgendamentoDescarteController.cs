@@ -22,7 +22,7 @@ namespace DescarteService.Controllers
         // GET: AgendamentoDescarte
         public async Task<IActionResult> Index()
         {
-            return View(await _context.AgendamentoDescartes.ToListAsync());
+            return View(await _context.AgendamentoDescarteSolicitados.ToListAsync());
         }
 
         // GET: AgendamentoDescarte/Details/5
@@ -33,7 +33,7 @@ namespace DescarteService.Controllers
                 return NotFound();
             }
 
-            var agendamentoDescarte = await _context.AgendamentoDescartes
+            var agendamentoDescarte = await _context.AgendamentoDescarteSolicitados
                 .SingleOrDefaultAsync(m => m.Id == id);
             if (agendamentoDescarte == null)
             {
@@ -54,7 +54,7 @@ namespace DescarteService.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,DataEnvioEmail,DataPropostaAgendamento,StatusProposta")] ComunicadosDeAgendamentoEnviados agendamentoDescarte)
+        public async Task<IActionResult> Create([Bind("Id,DataEnvioEmail,DataPropostaAgendamento,StatusProposta")] AgendamentoDescarteSolicitado agendamentoDescarte)
         {
 
             if (ModelState.IsValid)
@@ -74,7 +74,7 @@ namespace DescarteService.Controllers
                 return NotFound();
             }
 
-            var agendamentoDescarte = await _context.AgendamentoDescartes.SingleOrDefaultAsync(m => m.Id == id);
+            var agendamentoDescarte = await _context.AgendamentoDescarteSolicitados.SingleOrDefaultAsync(m => m.Id == id);
             if (agendamentoDescarte == null)
             {
                 return NotFound();
@@ -87,7 +87,7 @@ namespace DescarteService.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,DataEnvioEmail,DataPropostaAgendamento,StatusProposta")] ComunicadosDeAgendamentoEnviados agendamentoDescarte)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,DataEnvioEmail,DataPropostaAgendamento,StatusProposta")] AgendamentoDescarteSolicitado agendamentoDescarte)
         {
             if (id != agendamentoDescarte.Id)
             {
@@ -125,7 +125,7 @@ namespace DescarteService.Controllers
                 return NotFound();
             }
 
-            var agendamentoDescarte = await _context.AgendamentoDescartes
+            var agendamentoDescarte = await _context.AgendamentoDescarteSolicitados
                 .SingleOrDefaultAsync(m => m.Id == id);
             if (agendamentoDescarte == null)
             {
@@ -140,15 +140,15 @@ namespace DescarteService.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            var agendamentoDescarte = await _context.AgendamentoDescartes.SingleOrDefaultAsync(m => m.Id == id);
-            _context.AgendamentoDescartes.Remove(agendamentoDescarte);
+            var agendamentoDescarte = await _context.AgendamentoDescarteSolicitados.SingleOrDefaultAsync(m => m.Id == id);
+            _context.AgendamentoDescarteSolicitados.Remove(agendamentoDescarte);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool AgendamentoDescarteExists(Guid id)
         {
-            return _context.AgendamentoDescartes.Any(e => e.Id == id);
+            return _context.AgendamentoDescarteSolicitados.Any(e => e.Id == id);
         }
     }
 }
