@@ -21,38 +21,12 @@ namespace AgendaService.Controllers
     [Route("api/[controller]")]
     public class AgendaController : Controller
     {     
-     //   private readonly AppDataContext _context;
-       // private readonly IMessageSession _messageSession;
-//
         private readonly IAgendaApiService _agendaApiService;
-        /* public AgendaController(AppDataContext context, IMessageSession messageSession)
-        {
-            _context = context;
-
-            _messageSession = messageSession;
-        }*/
 
         public AgendaController(IAgendaApiService agendaApiService)
         {
             _agendaApiService = agendaApiService;
         }
-
-
-        /*
-        [HttpGet]
-        [Route("agendar")]
-        public async Task<string> Agendar()
-        {      
-            AgendamentoMessage agendamento = new AgendamentoMessage(){};
-
-            return _agendaApiService.AgendarRetirada(agendamento);
-          //  var message = new AgendarRetiradaCommand(){Id = Guid.NewGuid()};
-
-           // await _messageSession.Send(message).ConfigureAwait(false);
-            
-            return "Message sent to endpoint";
-       }   */
-
 
         [HttpGet]
         [Route("agendar")]
@@ -70,14 +44,8 @@ namespace AgendaService.Controllers
             return new JsonResult("pong");
         }                   
 
-/* 
-        [HttpGet]
-        [Route("agendarRetirada/{email}/{id}")]
-        public Task AgendarRetirada(string email, Guid id)
-        {
-           return _endpoint.SendLocal(new AgendarRetiradaCommand(){Id=id,EmailAgente=email,DataAgendamento=DateTime.Now.AddDays(15)});
-        }
- */
+
+
         [HttpGet]
         [Route("cancelar")]
         public AgendaCanceladaMessageResponse CancelarAgenda(Guid Agenda)
@@ -160,5 +128,19 @@ namespace AgendaService.Controllers
 
             return response;
         }
+
+        [HttpGet]
+        [Route("agendarRetirada")]
+        public AgendaConfirmadaMessageResponse AgendarRetirada(Guid lote, string data)
+        {
+            AgendaConfirmadaMessageResponse response = new AgendaConfirmadaMessageResponse();
+
+            AgendaApiService service = new AgendaApiService();
+
+            response = service.ObterAgendamentoEnviado(lote, data);
+
+            return response;
+        }
+
     }
 }

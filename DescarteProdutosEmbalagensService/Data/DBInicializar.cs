@@ -24,7 +24,7 @@ namespace DescarteService.Data
 
                     context.ProdutoDescartes.Add(produto1);
 
-                    var agendamento1 = new AgendamentoDescarteSolicitado {DataPropostaAgendamento = DateTime.Now.AddDays(90), DataEnvioEmail = DateTime.Now,LoteDescarte = lote1,StatusProposta="Pendente Despacho"};
+                    var agendamento1 = new AgendamentoDescarteSolicitado {DataPropostaAgendamento = DateTime.Now.AddDays(90).ToString("yyyyMMdd"), DataEnvioEmail = DateTime.Now,LoteDescarte = lote1,StatusProposta="Pendente Despacho"};
 
                     context.AgendamentoDescarteSolicitados.Add(agendamento1);
                     context.SaveChanges();

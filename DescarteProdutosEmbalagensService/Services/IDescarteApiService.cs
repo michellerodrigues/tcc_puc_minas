@@ -1,3 +1,4 @@
+using System;
 using DescarteService.Services.Messages;
 
 namespace DescarteService.Services
@@ -7,5 +8,8 @@ namespace DescarteService.Services
         ObterProdutosVencidosMessageResponse ObterProdutosVencidos();
 
         ObterProdutosFinalizadosMessageResponse ObterProdutosFinalizados();
+    
+        ObterAgendamentoEnviadoMessageResponse ObterAgendamentoEnviado(Guid lote, string Data);
+        
     }
 }

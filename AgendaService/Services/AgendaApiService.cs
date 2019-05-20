@@ -38,6 +38,26 @@ namespace AgendaService.Services
             {DataAgendamento=DateTime.Now,DataRegistro=agendamento.DataRegistro,EmailAgente=agendamento.Email,Id=agendamento.IdAgendamento});      
         }
 
+        
+        public ObterProdutosVencidosMessageResponse ObterAgendamentoEnviado(Guid lote, string Data)
+        {
+           var repository = new AgendamentoDescarteRepository(_context);
+           var loteRepository = new LoteDescarteRepository(_context);
+
+            ObterProdutosVencidosMessageResponse response = HttpRestClient.GetAsync<ObterProdutosVencidosMessageResponse>(string.Format("{0}/{1}", EstoqueServicesURL, (object)"vencidos")).GetAwaiter().GetResult();
+            if ((response != null) &&  (response.codRetorno!=1))
+            {            
+                SalvarLotesDescartePendentes(response);
+                var jobid = BackgroundJob.Enqueue<DescarteApiService>(js => js.ComunicarLotesParaRetirada("DescarteProdutoVencido"));
+
+                //colocar uma lista e jobs aqui com os emails...
+                response.codRetorno = 0;
+                response.StatusRetorno = String.Format("Podutos Vencidos enviados para a fila de notificação. Job: {0}. Por favor, aguarde.",jobid);
+
+            }
+            return response;
+        }
+
         public AgendaCanceladaMessageResponse CancelarAgenda(Guid idAgenda)
         {
             IAgendaRepository AgendaRepository = new AgendaRepository(_context);

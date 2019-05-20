@@ -48,6 +48,7 @@ namespace DescarteService
 
             services.AddHangfire(config => config.UseSqlServerStorage(Configuration.GetConnectionString("Jobs")));
 
+            services.AddScoped<IDescarteApiService,DescarteApiService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -98,10 +99,6 @@ namespace DescarteService
             int intervaloLeituraJob = AppSettings.IntervaloLeituraJob;
 
             GlobalJobFilters.Filters.Add(new AutomaticRetryAttribute { Attempts = retries}); 
-
-            //RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosVencidos", js => js.ObterProdutosVencidos(), Cron.MinuteInterval(GetIntervaloLeitura(intervaloLeituraJob.ToString())));     
-
-           // RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosFinalizados", js => js.ObterProdutosFinalizados(), Cron.MinuteInterval(GetIntervaloLeitura(intervaloLeituraJob.ToString())));         
 
             RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosVencidos", js => js.ObterProdutosVencidos(), Cron.MinuteInterval(2));    
 

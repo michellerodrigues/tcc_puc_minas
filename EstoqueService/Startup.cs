@@ -37,10 +37,6 @@ namespace EstoqueService
             services.AddTransient<IUnitOfWork,UnitOfWork>();
 
             services.AddScoped<IEstoqueApiService,EstoqueApiService>();
-         //  services.AddScoped<IEstoqueRepository, EstoqueRepository>();
-          //  services.AddScoped<IProdutoRepository, ProdutoRepository>();
-         //   services.AddScoped<IRevendedorRepository, RevendedorRepository>();
-         //   services.AddScoped<IFabricanteRepository, FabricanteRepository>();
 
             services.AddMvc(); 
         }

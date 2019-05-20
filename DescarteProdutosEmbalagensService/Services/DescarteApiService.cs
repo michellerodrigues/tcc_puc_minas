@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using DescarteService.Data.Interfaces;
@@ -14,10 +15,10 @@ using Microsoft.EntityFrameworkCore;
 namespace DescarteService.Services
 {
     public class DescarteApiService : IDescarteApiService
-    {  
+    {
         private readonly AppDataContext _context;
- 
-        public DescarteApiService( AppDataContext context)
+
+        public DescarteApiService(AppDataContext context)
         {
             this._context = context;
         }
@@ -25,166 +26,216 @@ namespace DescarteService.Services
         static string EstoqueServicesURL = Startup.AppSettings.EstoqueServicesURL;
         public ObterProdutosFinalizadosMessageResponse ObterProdutosFinalizados()
         {
-           // var _factory = new DesignTimeDbContextFactory();
+            // var _factory = new DesignTimeDbContextFactory();
 
-           var repository = new AgendamentoDescarteRepository(_context);
-           var loteRepository = new LoteDescarteRepository(_context);
+            var repository = new AgendamentoDescarteRepository(_context);
+            var loteRepository = new LoteDescarteRepository(_context);
 
             ObterProdutosFinalizadosMessageResponse response = HttpRestClient.GetAsync<ObterProdutosFinalizadosMessageResponse>(string.Format("{0}/{1}", EstoqueServicesURL, (object)"finalizados")).GetAwaiter().GetResult();
-            if ((response != null) &&  (response.codRetorno!=1))
-            {            
+            if ((response != null) && (response.codRetorno != 1))
+            {
                 SalvarLotesDescartePendentesFinalizados(response);
                 var jobid = BackgroundJob.Enqueue<DescarteApiService>(js => js.ComunicarLotesParaRetirada("DescarteProdutoFinalizado"));
 
                 //colocar uma lista e jobs aqui com os emails...
                 response.codRetorno = 0;
-                response.StatusRetorno = String.Format("Podutos Finalizados enviados para a fila de notificação. Job: {0}. Por favor, aguarde.",jobid);
+                response.StatusRetorno = String.Format("Podutos Finalizados enviados para a fila de notificação. Job: {0}. Por favor, aguarde.", jobid);
 
             }
             return response;
         }
         public ObterProdutosVencidosMessageResponse ObterProdutosVencidos()
         {
-           // var _factory = new DesignTimeDbContextFactory();
-
-           var repository = new AgendamentoDescarteRepository(_context);
-           var loteRepository = new LoteDescarteRepository(_context);
+            var repository = new AgendamentoDescarteRepository(_context);
+            var loteRepository = new LoteDescarteRepository(_context);
 
             ObterProdutosVencidosMessageResponse response = HttpRestClient.GetAsync<ObterProdutosVencidosMessageResponse>(string.Format("{0}/{1}", EstoqueServicesURL, (object)"vencidos")).GetAwaiter().GetResult();
-            if ((response != null) &&  (response.codRetorno!=1))
-            {            
+            response.DatasOfertadas = new List<string>(){
+                DateTime.Now.AddDays(15).ToString("yyyyMMdd"),
+                DateTime.Now.AddDays(30).ToString("yyyyMMdd"),
+                DateTime.Now.AddDays(45).ToString("yyyyMMdd")
+            };
+
+
+            if ((response != null) && (response.codRetorno != 1))
+            {
                 SalvarLotesDescartePendentes(response);
                 var jobid = BackgroundJob.Enqueue<DescarteApiService>(js => js.ComunicarLotesParaRetirada("DescarteProdutoVencido"));
 
                 //colocar uma lista e jobs aqui com os emails...
                 response.codRetorno = 0;
-                response.StatusRetorno = String.Format("Podutos Vencidos enviados para a fila de notificação. Job: {0}. Por favor, aguarde.",jobid);
+                response.StatusRetorno = String.Format("Podutos Vencidos enviados para a fila de notificação. Job: {0}. Por favor, aguarde.", jobid);
 
             }
             return response;
         }
-        
-        public void SalvarLotesDescartePendentes(BaseResponseMessage descarteResponse)
+
+        public ObterAgendamentoEnviadoMessageResponse ObterAgendamentoEnviado(Guid lote, string data)
+        {
+            var repository = new AgendamentoDescarteRepository(_context);
+            var loteRepository = new LoteDescarteRepository(_context);
+
+            var response = new ObterAgendamentoEnviadoMessageResponse()
+            {
+                codRetorno = 0,
+                StatusRetorno = "ok"
+            };
+
+          //  DateTime dataAgendamento = DateTime.ParseExact(data, "yyyyMMdd",
+            //    CultureInfo.InvariantCulture);//.ToString("yyyy-MM-dd");
+
+
+            var agendamentoEnviado = repository.FindAgendamentoEnviado(lote, data);
+
+            if (agendamentoEnviado != null)
+            {
+                 response.DataEnvioEmail=agendamentoEnviado.DataEnvioEmail;
+                 response.DataProposta=agendamentoEnviado.DataPropostaAgendamento;
+                 response.EmailResponsavel=agendamentoEnviado.LoteDescarte.EmailResponsavelDescarte;
+                 response.Lote=agendamentoEnviado.LoteDescarte.Id;
+                 response.NomeResponsavel=agendamentoEnviado.LoteDescarte.NomeResponsavelDescarte;
+                 response.StatusProposta=agendamentoEnviado.StatusProposta;
+
+                 return response;
+
+            }
+            else
+            {
+                response.codRetorno = -1;
+                response.StatusRetorno = "Agendamento não encontrado";
+
+                return response;
+            }
+            
+        }
+
+        private void SalvarLotesDescartePendentes(BaseResponseMessage descarteResponse)
         {
             var repository = new LoteDescarteRepository(_context);
             var repositoryAgendamento = new AgendamentoDescarteRepository(_context);
 
             var produtosVencidos = descarteResponse as ObterProdutosVencidosMessageResponse;
 
-            if ((produtosVencidos != null) && (produtosVencidos.codRetorno!=1))
-            {          
-                var listaFabricantes = produtosVencidos.LoteProdutosVecidos.Select(x => x.EmailFabricante).Distinct().ToList();  
-                
-                foreach(string emailFabricante in listaFabricantes)
-                {
-                     var loteDescarte = new LoteDescarte(){EmailResponsavelDescarte=emailFabricante,NomeResponsavelDescarte=emailFabricante.Split('@')[0]};
-                     
-                     var listaProdutos = produtosVencidos.LoteProdutosVecidos.Where(f=>f.EmailFabricante==emailFabricante).ToList();
-                   
-                     foreach(ProdutoMessage produto in listaProdutos)
-                     {
-                         var produtoDescarte = new ProdutoDescarte(){
-                             Nome = produto.NomeProduto,
-                             LoteDescarte = loteDescarte,
-                             DataVecimentoProduto = Convert.ToDateTime(produto.DataVencimento),
-                             IdITemEstoque = produto.IdItemEstoque,
-                             QtdeDispUnidade = Convert.ToDecimal(produto.QtdeprodutoDisponivel)
-                         };
-                         loteDescarte.ProdutosDescartes.Add(produtoDescarte);                       
-                     }
+            if ((produtosVencidos != null) && (produtosVencidos.codRetorno != 1))
+            {
+                var listaFabricantes = produtosVencidos.LoteProdutosVecidos.Select(x => x.EmailFabricante).Distinct().ToList();
 
-                    var agendamento = new AgendamentoDescarteSolicitado()
+                foreach (string emailFabricante in listaFabricantes)
+                {
+                    var loteDescarte = new LoteDescarte() { EmailResponsavelDescarte = emailFabricante, NomeResponsavelDescarte = emailFabricante.Split('@')[0] };
+
+                    var listaProdutos = produtosVencidos.LoteProdutosVecidos.Where(f => f.EmailFabricante == emailFabricante).ToList();
+
+                    foreach (ProdutoMessage produto in listaProdutos)
                     {
-                            DataEnvioEmail = DateTime.Now,
-                            DataPropostaAgendamento = DateTime.Now.AddDays(15),
+                        var produtoDescarte = new ProdutoDescarte()
+                        {
+                            Nome = produto.NomeProduto,
+                            LoteDescarte = loteDescarte,
+                            DataVecimentoProduto = Convert.ToDateTime(produto.DataVencimento),
+                            IdITemEstoque = produto.IdItemEstoque,
+                            QtdeDispUnidade = Convert.ToDecimal(produto.QtdeprodutoDisponivel)
+                        };
+                        loteDescarte.ProdutosDescartes.Add(produtoDescarte);
+                    }
+
+                    foreach( string data in produtosVencidos.DatasOfertadas)
+                    {
+                        var agendamento = new AgendamentoDescarteSolicitado()
+                        {
+                            DataPropostaAgendamento = data,
                             Id = Guid.NewGuid(),
                             LoteDescarte = loteDescarte,
                             StatusProposta = "Pendente Envio Email"
-                    };
-
-                    repositoryAgendamento.Create(agendamento);
-                }                
+                        };
+                        repositoryAgendamento.Create(agendamento);
+                    }
+                   
+                }
             }
-        }      
+        }
 
-        public void SalvarLotesDescartePendentesFinalizados(BaseResponseMessage descarteResponse)
+        private void SalvarLotesDescartePendentesFinalizados(BaseResponseMessage descarteResponse)
         {
             var repository = new LoteDescarteRepository(_context);
             var repositoryAgendamento = new AgendamentoDescarteRepository(_context);
 
             var produtosFinalizados = descarteResponse as ObterProdutosFinalizadosMessageResponse;
 
-            if ((produtosFinalizados != null) && (produtosFinalizados.codRetorno!=1))
-            {          
-                var listaRevendedores = produtosFinalizados.LoteProdutosFinalizados.Select(x => x.EmailRevendedor).Distinct().ToList();  
-                
-                foreach(string emailRevendedor in listaRevendedores)
+            if ((produtosFinalizados != null) && (produtosFinalizados.codRetorno != 1))
+            {
+                var listaRevendedores = produtosFinalizados.LoteProdutosFinalizados.Select(x => x.EmailRevendedor).Distinct().ToList();
+
+                foreach (string emailRevendedor in listaRevendedores)
                 {
-                     var loteDescarte = new LoteDescarte(){EmailResponsavelDescarte=emailRevendedor,NomeResponsavelDescarte=emailRevendedor.Split('@')[0]};
-                     
-                     var listaProdutos = produtosFinalizados.LoteProdutosFinalizados.Where(f=>f.EmailRevendedor==emailRevendedor).ToList();
-                   
-                     foreach(ProdutoMessage produto in listaProdutos)
-                     {
-                         var produtoDescarte = new ProdutoDescarte(){
-                             Nome = produto.NomeProduto,
-                             LoteDescarte = loteDescarte,
-                             DataVecimentoProduto = Convert.ToDateTime(produto.DataVencimento),
-                             IdITemEstoque = produto.IdItemEstoque,
-                              QtdeDispUnidade = Convert.ToDecimal(produto.QtdeprodutoDisponivel)
-                         };
-                         loteDescarte.ProdutosDescartes.Add(produtoDescarte);                       
-                     }
+                    var loteDescarte = new LoteDescarte() { EmailResponsavelDescarte = emailRevendedor, NomeResponsavelDescarte = emailRevendedor.Split('@')[0] };
+
+                    var listaProdutos = produtosFinalizados.LoteProdutosFinalizados.Where(f => f.EmailRevendedor == emailRevendedor).ToList();
+
+                    foreach (ProdutoMessage produto in listaProdutos)
+                    {
+                        var produtoDescarte = new ProdutoDescarte()
+                        {
+                            Nome = produto.NomeProduto,
+                            LoteDescarte = loteDescarte,
+                            DataVecimentoProduto = Convert.ToDateTime(produto.DataVencimento),
+                            IdITemEstoque = produto.IdItemEstoque,
+                            QtdeDispUnidade = Convert.ToDecimal(produto.QtdeprodutoDisponivel)
+                        };
+                        loteDescarte.ProdutosDescartes.Add(produtoDescarte);
+                    }
 
                     var agendamento = new AgendamentoDescarteSolicitado()
                     {
-                            DataEnvioEmail = DateTime.Now,
-                            DataPropostaAgendamento = DateTime.Now.AddDays(15),
-                            Id = Guid.NewGuid(),
-                            LoteDescarte = loteDescarte,
-                            StatusProposta = "Pendente Envio Email"
+                        DataEnvioEmail = DateTime.Now,
+                        DataPropostaAgendamento = DateTime.Now.AddDays(15).ToString("yyyyMMdd"),
+                        Id = Guid.NewGuid(),
+                        LoteDescarte = loteDescarte,
+                        StatusProposta = "Pendente Envio Email"
                     };
 
                     repositoryAgendamento.Create(agendamento);
-                }                
+                }
             }
-        }      
-    
+        }
+
         public void ComunicarLotesParaRetirada(string tipoEmail)
         {
-              var repository = new AgendamentoDescarteRepository(_context);
-              var repositoryLote = new LoteDescarteRepository(_context);
+            var repository = new AgendamentoDescarteRepository(_context);
+            var repositoryLote = new LoteDescarteRepository(_context);
 
-              var listaEmailParaEnviar = repository.FindAgendamentoPendenteEnvioEmail();
+            var listaEmailParaEnviar = repository.FindAgendamentoPendenteEnvioEmail();
 
-              foreach(AgendamentoDescarteSolicitado agendamento in listaEmailParaEnviar)
-              {
-                    var loteDescarte = agendamento.LoteDescarte;
+            foreach (AgendamentoDescarteSolicitado agendamento in listaEmailParaEnviar)
+            {
+                var loteDescarte = agendamento.LoteDescarte;
+                //colocar as 3 datas automaticame
 
-                    var produtos = loteDescarte.ProdutosDescartes;
+                //pesquisar groupby lote
+                var produtos = loteDescarte.ProdutosDescartes;
 
-                    ComunicarDescartePendenteMessageRequest request = new ComunicarDescartePendenteMessageRequest();
-                    DatasDisponiveisMessage data15 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(15),LinkAgendamento=String.Format("http://localhost:9009/agendar?lote={0}&data={1}",loteDescarte.Id, DateTime.Now.AddDays(15).ToString("yyyyMMdd"))};
-                    DatasDisponiveisMessage data30 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(30),LinkAgendamento=String.Format("http://localhost:9009/agendar?lote={0}&data={1}",loteDescarte.Id, DateTime.Now.AddDays(30).ToString("yyyyMMdd"))};
-                    DatasDisponiveisMessage data45 = new  DatasDisponiveisMessage(){Data=DateTime.Now.AddDays(45),LinkAgendamento=String.Format("http://localhost:9009/agendar?lote={0}&data={1}",loteDescarte.Id, DateTime.Now.AddDays(45).ToString("yyyyMMdd"))};
-                    request.DatasDisponiveis = new List<DatasDisponiveisMessage>();
-                    request.DatasDisponiveis.Add(data15);
-                    request.DatasDisponiveis.Add(data30);
-                    request.DatasDisponiveis.Add(data45);
+                ComunicarDescartePendenteMessageRequest request = new ComunicarDescartePendenteMessageRequest();
+                DatasDisponiveisMessage data15 = new DatasDisponiveisMessage() { Data = DateTime.Now.AddDays(15), LinkAgendamento = String.Format("http://localhost:9010/api/agenda/agendar?lote={0}&data={1}", loteDescarte.Id, DateTime.Now.AddDays(15).ToString("yyyyMMdd")) };
+                DatasDisponiveisMessage data30 = new DatasDisponiveisMessage() { Data = DateTime.Now.AddDays(30), LinkAgendamento = String.Format("http://localhost:9010/api/agenda/agendar?lote={0}&data={1}", loteDescarte.Id, DateTime.Now.AddDays(30).ToString("yyyyMMdd")) };
+                DatasDisponiveisMessage data45 = new DatasDisponiveisMessage() { Data = DateTime.Now.AddDays(45), LinkAgendamento = String.Format("http://localhost:9010/api/agenda/agendar?lote={0}&data={1}", loteDescarte.Id, DateTime.Now.AddDays(45).ToString("yyyyMMdd")) };
+                request.DatasDisponiveis = new List<DatasDisponiveisMessage>();
+                request.DatasDisponiveis.Add(data15);
+                request.DatasDisponiveis.Add(data30);
+                request.DatasDisponiveis.Add(data45);
 
-                    request.ListaProdutos  = new List<DescartePendente>();
-                    
-                    foreach(ProdutoDescarte produto in produtos)
-                    {
-                        DescartePendente descarte = new DescartePendente(){DataVencimento=produto.DataVecimentoProduto.ToShortDateString(), IdItemEstoque=produto.IdITemEstoque, NomeProduto=produto.Nome};
-                        request.ListaProdutos.Add(descarte);
-                    }
-                             
-                    request.EmailRemetente = agendamento.LoteDescarte.EmailResponsavelDescarte;
-                    request.NomeArquivo=tipoEmail;
-                   
-                   BackgroundJob.Enqueue<EmailService>(js => js.EnviarDescarteProdutoPendente(request));         
-              }
+                request.ListaProdutos = new List<DescartePendente>();
+
+                foreach (ProdutoDescarte produto in produtos)
+                {
+                    DescartePendente descarte = new DescartePendente() { DataVencimento = produto.DataVecimentoProduto.ToShortDateString(), IdItemEstoque = produto.IdITemEstoque, NomeProduto = produto.Nome };
+                    request.ListaProdutos.Add(descarte);
+                }
+
+                request.EmailRemetente = agendamento.LoteDescarte.EmailResponsavelDescarte;
+                request.NomeArquivo = tipoEmail;
+
+                BackgroundJob.Enqueue<EmailService>(js => js.EnviarDescarteProdutoPendente(request));
+            }
         }
     }
 }

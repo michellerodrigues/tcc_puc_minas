@@ -13,11 +13,9 @@ namespace DescarteService.Data.Models
         
         public LoteDescarte LoteDescarte { get; set;} 
 
-
-        [Required]
         public DateTime DataEnvioEmail { get; set; }
 
-        public DateTime DataPropostaAgendamento { get; set; }
+        public string DataPropostaAgendamento { get; set; }
 
         [Required]
         public string StatusProposta { get; set; } = "Enviado";

@@ -1,38 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\EstoqueService\\EstoqueService.csproj": {}
+    "D:\\mica\\tcc\\tcc_puc_minas\\EstoqueService\\EstoqueService.csproj": {}
   },
   "projects": {
-    "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\EstoqueService\\EstoqueService.csproj": {
+    "D:\\mica\\tcc\\tcc_puc_minas\\EstoqueService\\EstoqueService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\EstoqueService\\EstoqueService.csproj",
+        "projectUniqueName": "D:\\mica\\tcc\\tcc_puc_minas\\EstoqueService\\EstoqueService.csproj",
         "projectName": "EstoqueService",
-        "projectPath": "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\EstoqueService\\EstoqueService.csproj",
-        "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\EstoqueService\\obj\\",
+        "projectPath": "D:\\mica\\tcc\\tcc_puc_minas\\EstoqueService\\EstoqueService.csproj",
+        "packagesPath": "C:\\Users\\Michelle Rodrigues\\.nuget\\packages\\",
+        "outputPath": "D:\\mica\\tcc\\tcc_puc_minas\\EstoqueService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "D:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Michelle Rodrigues\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\mica\\bkp_note_sys\\users\\miche\\source\\repos": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.0": {
             "projectReferences": {
-              "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\Messages\\Messages.csproj": {
-                "projectPath": "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\Messages\\Messages.csproj"
+              "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj": {
+                "projectPath": "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj"
               }
             }
           }
@@ -67,7 +66,6 @@
               "version": "[2.1.1, )"
             },
             "Microsoft.NETCore.App": {
-              "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.0, )",
               "autoReferenced": true
@@ -129,28 +127,27 @@
         }
       }
     },
-    "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\Messages\\Messages.csproj": {
+    "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\Messages\\Messages.csproj",
+        "projectUniqueName": "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj",
         "projectName": "Messages",
-        "projectPath": "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\Messages\\Messages.csproj",
-        "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\miche\\mica_tcc\\tcc_puc_minas\\Messages\\obj\\",
+        "projectPath": "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj",
+        "packagesPath": "C:\\Users\\Michelle Rodrigues\\.nuget\\packages\\",
+        "outputPath": "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "D:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Michelle Rodrigues\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\mica\\bkp_note_sys\\users\\miche\\source\\repos": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
