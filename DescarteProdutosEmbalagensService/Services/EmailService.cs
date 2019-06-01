@@ -87,8 +87,12 @@ namespace DescarteService.Services
 
         private string PrepararMensagemCorpoEmail(List<DatasDisponiveisMessage> datasDisp, string mensagem)
         {
-            string data1, link1, data2, link2, data3, link3;
 
+            //verificar porque não está chegando as 3 datas disponíveis conforme implementado
+            //as datas já estão no banco de dados
+            
+            string data1, link1, data2, link2, data3, link3;
+            
             data1 = datasDisp[0].Data.ToString();
             link1 = datasDisp[0].LinkAgendamento.ToString();
 
