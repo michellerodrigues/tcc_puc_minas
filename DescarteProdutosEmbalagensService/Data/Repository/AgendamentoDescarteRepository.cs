@@ -35,4 +35,16 @@ public class AgendamentoDescarteRepository : Repository<AgendamentoDescarteSolic
     {
          return this._context.AgendamentoDescarteSolicitados.Where(a=>a.LoteDescarteId.Equals(lote) && a.DataPropostaAgendamento==data && a.DataEnvioEmail!=null).Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).FirstOrDefault();
     }
+
+    public void AtualizarAgendamentoEnviado(AgendamentoDescarteSolicitado agendamento)
+    {
+         this._context.AgendamentoDescarteSolicitados.Update(agendamento);
+    }
+
+
+    public IEnumerable<AgendamentoDescarteSolicitado> FindAgendamentoPorLote(Guid LoteId)
+    {
+         //pesquisar groupby
+         return this._context.AgendamentoDescarteSolicitados.Where(a=>a.LoteDescarteId==LoteId).Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).OrderBy(e=>e.LoteDescarteId).ToList();
+    }
 }

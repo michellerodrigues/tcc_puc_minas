@@ -19,4 +19,9 @@ public class LoteDescarteRepository : Repository<LoteDescarte>, ILoteDescarteRep
           return _context.LoteDescartes.Where(l=>l.NomeResponsavelDescarte.Equals(nomeResponsavel));
     }
 
+    public IEnumerable<LoteDescarte> FindLoteDescartePorId(Guid idLote)
+    {
+          return _context.LoteDescartes.Where(l=>l.Id==idLote);
+    }
+
 }

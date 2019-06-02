@@ -1,4 +1,6 @@
-﻿using DescarteService.Services.Messages;
+﻿using DescarteService.Data.Models;
+using DescarteService.DataContext;
+using DescarteService.Services.Messages;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -10,6 +12,8 @@ namespace DescarteService.Services
 {
     public class EmailService
     {
+        private readonly AppDataContext _context;
+
         public void NotificarStatusJob(string para, string nomeJob, string link)
         {
 
@@ -28,7 +32,7 @@ namespace DescarteService.Services
             mail.Body = String.Format(Startup.AppSettings.MensagemPadraoErroJob, link);
         }
 
-        public void EnviarDescarteProdutoPendente(ComunicarDescartePendenteMessageRequest request)
+        public void EnviarDescarteProdutoPendente(ComunicarDescartePendenteMessageRequest request, Guid IdLoteAgendamento )
         {
             try
             {
@@ -61,12 +65,24 @@ namespace DescarteService.Services
                                             
                 mail.Attachments.Add(new Attachment(@nomeArq));
                 mail.IsBodyHtml = true;
-                client.Send(mail);
+                client.Send(mail); 
+             
+                var repositoryAgendamento = new AgendamentoDescarteRepository(_context);
+                
+                var agendamentosPorLote = repositoryAgendamento.FindAgendamentoPorLote(IdLoteAgendamento);
+
+                              
+                foreach (AgendamentoDescarteSolicitado agendamento in agendamentosPorLote)
+                {  
+                    agendamento.StatusProposta="Email Enviado";
+                    agendamento.DataEnvioEmail = DateTime.Now;
+                    repositoryAgendamento.AtualizarAgendamentoEnviado(agendamento);
+                } 
 
             }
             catch (Exception ex)
             {
-                //resolver este problema aqui
+                //resolver este problema aqui ajustar injeção de dependência do repositório para o service
                 throw new InvalidOperationException("Exception in sendEmail:" + ex.StackTrace);
             }
         }
@@ -90,7 +106,7 @@ namespace DescarteService.Services
 
             //verificar porque não está chegando as 3 datas disponíveis conforme implementado
             //as datas já estão no banco de dados
-            
+
             string data1, link1, data2, link2, data3, link3;
             
             data1 = datasDisp[0].Data.ToString();

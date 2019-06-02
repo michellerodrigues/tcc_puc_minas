@@ -209,7 +209,7 @@ namespace DescarteService.Services
 
             foreach(var lote in lotes)
             {
-                var agendamentosPorLote = agendamentos.Where(a=>a.LoteDescarteId==lote.Key.Id).OrderBy(a=>a.DataPropostaAgendamento);
+                var agendamentosPorLote = agendamentos.Where(a=>a.LoteDescarteId==lote.Key.Id).OrderBy(a=>a.DataPropostaAgendamento).ToList();
                 
                 ComunicarDescartePendenteMessageRequest request = new ComunicarDescartePendenteMessageRequest();
                 request.ListaProdutos = new List<DescartePendente>();           
@@ -232,9 +232,8 @@ namespace DescarteService.Services
                 }
                 
                 request.NomeArquivo = tipoEmail;
-                BackgroundJob.Enqueue<EmailService>(js => js.EnviarDescarteProdutoPendente(request)); 
-            }
-            
+                BackgroundJob.Enqueue<EmailService>(js => js.EnviarDescarteProdutoPendente(request, lote.Key.Id)); 
+            }           
         }
     }
 }
