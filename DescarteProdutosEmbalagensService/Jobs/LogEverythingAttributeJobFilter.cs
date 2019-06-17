@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 using System.Net;
+using System.Net.Mail;
 using System.Net.Sockets;
 using System.Web;
 
@@ -58,9 +59,7 @@ namespace DescarteServices.Jobs
                     Url = String.Format("{0}/jobs/jobs/details/{1}", Startup.AppSettings.HostJobAplicacao, context.BackgroundJob.Id);
                 }
 
-                EmailService emailService = new EmailService();
-
-                emailService.NotificarStatusJob(Startup.AppSettings.ReplyJobCC, nomeJob, Url);
+                NotificarStatusJob(Startup.AppSettings.ReplyJobCC, nomeJob, Url);
             }
         }
         public void OnStateElection(ElectStateContext context)
@@ -78,5 +77,24 @@ namespace DescarteServices.Jobs
         {
             //throw new NotImplementedException();
         }
+
+        private void NotificarStatusJob(string para, string nomeJob, string link)
+        {
+
+            SmtpClient client = new SmtpClient(Startup.AppSettings.EnvioEmail.ServidorSMTP);
+            client.UseDefaultCredentials = false;
+            client.Credentials = new NetworkCredential(Startup.AppSettings.EnvioEmail.UsuarioEmail, Startup.AppSettings.EnvioEmail.SenhaEmail);
+            client.DeliveryMethod = SmtpDeliveryMethod.Network; // modo de envio
+            client.EnableSsl = true; // GMail requer SSL
+            client.Port = Startup.AppSettings.EnvioEmail.PortaServidor;
+
+            MailMessage mail = new MailMessage();
+
+            mail.From = new MailAddress(Startup.AppSettings.EnvioEmail.UsuarioEmail);
+            mail.To.Add(para);
+            mail.Subject = String.Format("Falha ao Executar Job: {0}", nomeJob);
+            mail.Body = String.Format(Startup.AppSettings.MensagemPadraoErroJob, link);
+        }
+
     }
 }

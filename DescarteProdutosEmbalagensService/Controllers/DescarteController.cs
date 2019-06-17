@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using DescarteService.Services.Messages;
 using DescarteService.DataContext;
 using DescarteService.Services;
+using DescarteService.Data.Models;
 
 namespace DescarteService.Controllers
 {
@@ -23,15 +24,27 @@ namespace DescarteService.Controllers
 
 
         [HttpGet]
-        [Route("notificacao")]
-        public ObterAgendamentoEnviadoMessageResponse ObterNotificacaoDescarte(Guid lote, string data)
+        [Route("agendamento/enviado")]
+        public ObterAgendamentoMessageResponse ObterNotificacaoDescarte(Guid lote, string data)
         {
-            ObterAgendamentoEnviadoMessageResponse response = new ObterAgendamentoEnviadoMessageResponse();
+            ObterAgendamentoMessageResponse response = new ObterAgendamentoMessageResponse();
 
             response = _service.ObterAgendamentoEnviado(lote, data);
 
             return response;
         }
+
+        [HttpGet]
+        [Route("agendamento/pendente")]
+        public ObterAgendamentoPendenteMessageResponse ObterNotificacaoDescartePendente()
+        {
+            ObterAgendamentoPendenteMessageResponse response = new ObterAgendamentoPendenteMessageResponse();
+
+            response = _service.ObterAgendamentoPendente();
+
+            return response;
+        }
+
 
         [HttpGet]
         [Route("finalizados")]
@@ -40,6 +53,18 @@ namespace DescarteService.Controllers
             ObterProdutosFinalizadosMessageResponse response = new ObterProdutosFinalizadosMessageResponse();
 
             response = _service.ObterProdutosFinalizados();
+
+            return response;
+        }
+
+        
+        [HttpGet]
+        [Route("vencidos")]
+        public ObterProdutosVencidosMessageResponse ObterProdutosVencidos()
+        {
+            ObterProdutosVencidosMessageResponse response = new ObterProdutosVencidosMessageResponse();
+
+            response = _service.ObterProdutosVencidos();
 
             return response;
         }

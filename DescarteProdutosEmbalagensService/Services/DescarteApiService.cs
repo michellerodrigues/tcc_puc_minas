@@ -64,20 +64,16 @@ namespace DescarteService.Services
             return response;
         }
 
-        public ObterAgendamentoEnviadoMessageResponse ObterAgendamentoEnviado(Guid lote, string data)
+        public ObterAgendamentoMessageResponse ObterAgendamentoEnviado(Guid lote, string data)
         {
             var repository = new AgendamentoDescarteRepository(_context);
             var loteRepository = new LoteDescarteRepository(_context);
 
-            var response = new ObterAgendamentoEnviadoMessageResponse()
+            var response = new ObterAgendamentoMessageResponse()
             {
                 codRetorno = 0,
                 StatusRetorno = "ok"
             };
-
-          //  DateTime dataAgendamento = DateTime.ParseExact(data, "yyyyMMdd",
-            //    CultureInfo.InvariantCulture);//.ToString("yyyy-MM-dd");
-
 
             var agendamentoEnviado = repository.FindAgendamentoEnviado(lote, data);
 
@@ -99,8 +95,7 @@ namespace DescarteService.Services
                 response.StatusRetorno = "Agendamento não encontrado";
 
                 return response;
-            }
-            
+            }            
         }
 
         private void SalvarLotesDescartePendentes(BaseResponseMessage descarteResponse)
@@ -234,6 +229,37 @@ namespace DescarteService.Services
                 request.NomeArquivo = tipoEmail;
                 BackgroundJob.Enqueue<EmailService>(js => js.EnviarDescarteProdutoPendente(request, lote.Key.Id)); 
             }           
+        }
+
+
+        public ObterAgendamentoPendenteMessageResponse ObterAgendamentoPendente()
+        {
+            var repository = new AgendamentoDescarteRepository(_context);
+            var loteRepository = new LoteDescarteRepository(_context);
+
+            var response = new ObterAgendamentoPendenteMessageResponse()
+            {
+                codRetorno = 0,
+                StatusRetorno = "ok",
+                listaPendencias = new List<ObterAgendamentoMessageResponse>()
+            };
+
+            var agendamentoPendentes = repository.FindAgendamentoPendenteEnvioEmail();
+
+            foreach(AgendamentoDescarteSolicitado agendamentoPendente in agendamentoPendentes)
+            {
+                 ObterAgendamentoMessageResponse agendamento = new ObterAgendamentoMessageResponse()
+                 {
+                     DataProposta = agendamentoPendente.DataPropostaAgendamento,
+                     EmailResponsavel = agendamentoPendente.LoteDescarte.EmailResponsavelDescarte,
+                     Lote=agendamentoPendente.LoteDescarte.Id,
+                     NomeResponsavel=agendamentoPendente.LoteDescarte.NomeResponsavelDescarte,
+                     StatusProposta=agendamentoPendente.StatusProposta
+                 };
+
+                 response.listaPendencias.Add(agendamento);
+            }
+            return response;                   
         }
     }
 }

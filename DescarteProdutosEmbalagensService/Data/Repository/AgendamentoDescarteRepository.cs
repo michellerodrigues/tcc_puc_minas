@@ -23,25 +23,14 @@ public class AgendamentoDescarteRepository : Repository<AgendamentoDescarteSolic
     public IEnumerable<AgendamentoDescarteSolicitado> FindAgendamentoPendenteEnvioEmail()
     {
          //pesquisar groupby
-         return this._context .AgendamentoDescarteSolicitados.Where(a=>a.DataEnvioEmail!=null && a.StatusProposta!="Pendente Envio Email").Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).OrderBy(e=>e.LoteDescarteId).ToList();
-    }
-
-    public AgendamentoDescarteSolicitado FindAgendamentoPendenteEnvioEmail(Guid lote, string data)
-    {
-         return this._context.AgendamentoDescarteSolicitados.Where(a=>a.LoteDescarteId==lote && a.DataPropostaAgendamento==data &&  a.DataEnvioEmail==null && a.StatusProposta=="Pendente Envio Email").Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).FirstOrDefault();
+         return this._context .AgendamentoDescarteSolicitados.Where(a=> a.StatusProposta=="Pendente Envio Email").Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).OrderBy(e=>e.LoteDescarteId).ToList();
     }
 
     public AgendamentoDescarteSolicitado FindAgendamentoEnviado(Guid lote, string data)
     {
-         return this._context.AgendamentoDescarteSolicitados.Where(a=>a.LoteDescarteId.Equals(lote) && a.DataPropostaAgendamento==data && a.DataEnvioEmail!=null).Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).FirstOrDefault();
+         return this._context.AgendamentoDescarteSolicitados.Where(a=>a.LoteDescarteId.Equals(lote) && a.DataPropostaAgendamento==data && a.DataEnvioEmail!=null && a.StatusProposta=="Email Enviado").Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).FirstOrDefault();
     }
-
-    public void AtualizarAgendamentoEnviado(AgendamentoDescarteSolicitado agendamento)
-    {
-         this._context.AgendamentoDescarteSolicitados.Update(agendamento);
-    }
-
-
+    
     public IEnumerable<AgendamentoDescarteSolicitado> FindAgendamentoPorLote(Guid LoteId)
     {
          //pesquisar groupby

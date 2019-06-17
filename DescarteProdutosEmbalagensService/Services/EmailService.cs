@@ -1,6 +1,7 @@
 ﻿using DescarteService.Data.Models;
 using DescarteService.DataContext;
 using DescarteService.Services.Messages;
+using Hangfire;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -10,63 +11,57 @@ using System.Net.Mail;
 
 namespace DescarteService.Services
 {
-    public class EmailService
+    public class EmailService:IEmailService
     {
         private readonly AppDataContext _context;
 
-        public void NotificarStatusJob(string para, string nomeJob, string link)
+        public EmailService(AppDataContext context)
         {
+            this._context = context;
+        }
 
-            SmtpClient client = new SmtpClient(Startup.AppSettings.EnvioEmail.ServidorSMTP);
-            client.UseDefaultCredentials = false;
-            client.Credentials = new NetworkCredential(Startup.AppSettings.EnvioEmail.UsuarioEmail, Startup.AppSettings.EnvioEmail.SenhaEmail);
-            client.DeliveryMethod = SmtpDeliveryMethod.Network; // modo de envio
-            client.EnableSsl = true; // GMail requer SSL
-            client.Port = Startup.AppSettings.EnvioEmail.PortaServidor;
+
+        public void EnviarEmailDescartePendente(string emailRemetente, string body, string nomeAnexo, string assunto)
+        {            
+            var client = new SmtpClient(Startup.AppSettings.EnvioEmail.ServidorSMTP, Startup.AppSettings.EnvioEmail.PortaServidor)
+            {
+                UseDefaultCredentials = false,
+                Credentials = new NetworkCredential(Startup.AppSettings.EnvioEmail.UsuarioEmail, Startup.AppSettings.EnvioEmail.SenhaEmail),
+                EnableSsl = true
+            };
 
             MailMessage mail = new MailMessage();
 
             mail.From = new MailAddress(Startup.AppSettings.EnvioEmail.UsuarioEmail);
-            mail.To.Add(para);
-            mail.Subject = String.Format("Falha ao Executar Job: {0}", nomeJob);
-            mail.Body = String.Format(Startup.AppSettings.MensagemPadraoErroJob, link);
+            mail.To.Add(emailRemetente);
+            mail.Subject = assunto;
+            mail.Body = body;
+            mail.Attachments.Add(new Attachment(@nomeAnexo));
+            mail.IsBodyHtml = true;
+            client.Send(mail); 
         }
+
 
         public void EnviarDescarteProdutoPendente(ComunicarDescartePendenteMessageRequest request, Guid IdLoteAgendamento )
         {
             try
             {
-                var client = new SmtpClient(Startup.AppSettings.EnvioEmail.ServidorSMTP, Startup.AppSettings.EnvioEmail.PortaServidor)
-                {
-                    UseDefaultCredentials = false,
-                    Credentials = new NetworkCredential(Startup.AppSettings.EnvioEmail.UsuarioEmail, Startup.AppSettings.EnvioEmail.SenhaEmail),
-                    EnableSsl = true
-                };
-
-                MailMessage mail = new MailMessage();
-
-                mail.From = new MailAddress(Startup.AppSettings.EnvioEmail.UsuarioEmail);
-                mail.To.Add(request.EmailRemetente);
-                mail.Subject = String.Format("AgroPop informa: Descarte Pendentes");
-
-                //client.Send(mail);
-
+                var body="";
                 if (request.NomeArquivo == "DescarteProdutoVencido")
                 {
-                    mail.Body = PrepararMensagemCorpoEmail(request.DatasDisponiveis, Startup.AppSettings.MensagemPadraoDescarteProutoVencido);
+                    body = PrepararMensagemCorpoEmail(request.DatasDisponiveis, Startup.AppSettings.MensagemPadraoDescarteProutoVencido);
                 }
                 else
                 {
-                    mail.Body = PrepararMensagemCorpoEmail(request.DatasDisponiveis, Startup.AppSettings.MensagemPadraoDescarteEmbalagens);
+                    body = PrepararMensagemCorpoEmail(request.DatasDisponiveis, Startup.AppSettings.MensagemPadraoDescarteEmbalagens);
                 }
 
                 string nomeArq = PrepararAnexoEmail(request.ListaProdutos, DateTime.UtcNow.ToString("yyyyMMddHHmmssfff",
                                             CultureInfo.InvariantCulture), request.NomeResponsavel, request.NomeArquivo);
-                                            
-                mail.Attachments.Add(new Attachment(@nomeArq));
-                mail.IsBodyHtml = true;
-                client.Send(mail); 
              
+                
+                BackgroundJob.Enqueue(() => EnviarEmailDescartePendente(request.EmailRemetente, body, nomeArq,"AgroPop informa: Descarte Pendentes"));
+
                 var repositoryAgendamento = new AgendamentoDescarteRepository(_context);
                 
                 var agendamentosPorLote = repositoryAgendamento.FindAgendamentoPorLote(IdLoteAgendamento);
@@ -76,13 +71,12 @@ namespace DescarteService.Services
                 {  
                     agendamento.StatusProposta="Email Enviado";
                     agendamento.DataEnvioEmail = DateTime.Now;
-                    repositoryAgendamento.AtualizarAgendamentoEnviado(agendamento);
+                    repositoryAgendamento.Update(agendamento);
                 } 
 
             }
             catch (Exception ex)
             {
-                //resolver este problema aqui ajustar injeção de dependência do repositório para o service
                 throw new InvalidOperationException("Exception in sendEmail:" + ex.StackTrace);
             }
         }

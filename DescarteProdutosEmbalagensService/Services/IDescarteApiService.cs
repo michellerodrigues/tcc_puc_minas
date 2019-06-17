@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using DescarteService.Data.Models;
 using DescarteService.Services.Messages;
 
 namespace DescarteService.Services
@@ -9,7 +11,8 @@ namespace DescarteService.Services
 
         ObterProdutosFinalizadosMessageResponse ObterProdutosFinalizados();
     
-        ObterAgendamentoEnviadoMessageResponse ObterAgendamentoEnviado(Guid lote, string Data);
-        
+        ObterAgendamentoMessageResponse ObterAgendamentoEnviado(Guid lote, string Data);
+
+        ObterAgendamentoPendenteMessageResponse ObterAgendamentoPendente();        
     }
 }

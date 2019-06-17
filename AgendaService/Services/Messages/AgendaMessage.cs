@@ -10,8 +10,8 @@ namespace AgendaService.Services.Messages
         [DataMember(Name = "idAgenda")]
         public Guid IdAgenda { get; set; }
 
-        [DataMember(Name = "dataCriacao")]
-        public DateTime DataCriacao { get; set; }
+        [DataMember(Name = "dataAgenda")]
+        public DateTime DataAgenda { get; set; }
 
         [DataMember(Name = "loteAgenda")]
         public string LoteDescarte { get; set; }

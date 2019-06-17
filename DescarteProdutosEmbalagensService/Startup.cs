@@ -44,11 +44,11 @@ namespace DescarteService
         
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
 
-            var context = services.BuildServiceProvider().GetService<AppDataContext>();
-
             services.AddHangfire(config => config.UseSqlServerStorage(Configuration.GetConnectionString("Jobs")));
 
-            services.AddScoped<IDescarteApiService,DescarteApiService>();
+            services.AddScoped<IDescarteApiService,DescarteApiService>();  
+
+            services.AddScoped<IEmailService,EmailService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -100,9 +100,9 @@ namespace DescarteService
 
             GlobalJobFilters.Filters.Add(new AutomaticRetryAttribute { Attempts = retries}); 
 
-            RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosVencidos", js => js.ObterProdutosVencidos(), Cron.MinuteInterval(2));    
+            RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosVencidos", js => js.ObterProdutosVencidos(), Cron.DayInterval(7));    
 
-            RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosFinalizados", js => js.ObterProdutosFinalizados(), Cron.MinuteInterval(2));         
+            RecurringJob.AddOrUpdate<DescarteApiService>("VerificarProdutosFinalizados", js => js.ObterProdutosFinalizados(),  Cron.DayInterval(7));   
 
 
 

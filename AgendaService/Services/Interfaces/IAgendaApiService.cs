@@ -17,7 +17,7 @@ namespace AgendaService.Services.Interfaces
 {
     public interface IAgendaApiService
     {
-        Task AgendarRetirada(AgendamentoMessage agendamento);
+        Task AgendarRetirada(Guid lote, string Data);
         AgendaCanceladaMessageResponse CancelarAgenda(Guid idAgenda);
         AgendaFinalizadaMessageResponse FinalizarAgenda(Guid idAgenda);
         ObterListaAgendaStatusMessageResponse ObterAgendasPorStatus(string status);

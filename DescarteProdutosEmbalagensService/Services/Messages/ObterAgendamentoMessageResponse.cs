@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 namespace DescarteService.Services.Messages
 {
     [DataContract]
-    public class ObterAgendamentoEnviadoMessageResponse:BaseResponseMessage
+    public class ObterAgendamentoMessageResponse:BaseResponseMessage
     {
       
         [DataMember(Name = "lote")]

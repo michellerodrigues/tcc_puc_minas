@@ -30,12 +30,19 @@ namespace AgendaService.Controllers
 
         [HttpGet]
         [Route("agendar")]
-        public async Task Agendar()
-        {      
-            AgendamentoMessage agendamento = new AgendamentoMessage(){IdAgendamento=Guid.NewGuid()};
+        public async Task Agendar(Guid lote, string Data)
+        {   
+            await _agendaApiService.AgendarRetirada(lote, Data);
+        }                   
 
-            await _agendaApiService.AgendarRetirada(agendamento);
-       }                   
+        
+        /* [HttpGet]
+        [Route("obterAgendamento")]
+        public ObterAgendamentoMessageResponse Agendar(Guid lote, string data)
+        {   
+            await _agendaApiService.VerificarAgendamentoSolicitado(agendamento);
+        }  */               
+
 
         [HttpGet]
         [Route("ping")]

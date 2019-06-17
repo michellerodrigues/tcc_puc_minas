@@ -32,30 +32,38 @@ namespace AgendaService.Services
         {
         }
 
-        public async Task AgendarRetirada(AgendamentoMessage agendamento)
-        {              
+        public async Task AgendarRetirada(Guid lote, string Data)
+        {     
+            AgendamentoMessage agendamento = VerificarAgendamentoSolicitado(lote, Data);
+
+            if(agendamento==null)
+            {
+                return null;
+            }
+            //consertar isso, o agendamento esta vazio         
             await _messageSession.SendLocal(new AgendarRetiradaCommand()
             {DataAgendamento=DateTime.Now,DataRegistro=agendamento.DataRegistro,EmailAgente=agendamento.Email,Id=agendamento.IdAgendamento});      
         }
 
         
-        public ObterProdutosVencidosMessageResponse ObterAgendamentoEnviado(Guid lote, string Data)
-        {
-           var repository = new AgendamentoDescarteRepository(_context);
-           var loteRepository = new LoteDescarteRepository(_context);
-
-            ObterProdutosVencidosMessageResponse response = HttpRestClient.GetAsync<ObterProdutosVencidosMessageResponse>(string.Format("{0}/{1}", EstoqueServicesURL, (object)"vencidos")).GetAwaiter().GetResult();
+        private AgendamentoMessage VerificarAgendamentoSolicitado(Guid lote, string Data)
+        {  
+            ObterAgendamentoMessageResponse response = HttpRestClient.GetAsync<ObterAgendamentoMessageResponse>(string.Format("{0}/{1}?lote={2}&data={3}", DescarteeServicesURL, (object)"/agendamento/enviado",lote, data)).GetAwaiter().GetResult();
             if ((response != null) &&  (response.codRetorno!=1))
-            {            
-                SalvarLotesDescartePendentes(response);
-                var jobid = BackgroundJob.Enqueue<DescarteApiService>(js => js.ComunicarLotesParaRetirada("DescarteProdutoVencido"));
-
-                //colocar uma lista e jobs aqui com os emails...
-                response.codRetorno = 0;
-                response.StatusRetorno = String.Format("Podutos Vencidos enviados para a fila de notificação. Job: {0}. Por favor, aguarde.",jobid);
+            {
+                 AgendamentoMessage agendamento = new AgendamentoMessage()
+                 {
+                    IdAgenda=lote,
+                    DataAgenda = Data,
+                    LoteDescarte = response.LoteDescarte,
+                    DataStatus = DateTime.Now,      
+                    StatusAgenda = "Agendamento Solicitado",
+                    Responsavel = response.NomeResponsavel,
+                    EmailResponsavel = response.EmailResponsavel
+                 };
 
             }
-            return response;
+            return agendamento;
         }
 
         public AgendaCanceladaMessageResponse CancelarAgenda(Guid idAgenda)
