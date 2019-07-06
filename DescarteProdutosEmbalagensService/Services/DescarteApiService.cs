@@ -8,9 +8,10 @@ using DescarteService.Data.Interfaces;
 using DescarteService.Data.Models;
 using DescarteService.DataContext;
 using DescarteService.Service.Utils;
-using DescarteService.Services.Messages;
+using Messages.Descartes.Messages;
 using Hangfire;
 using Microsoft.EntityFrameworkCore;
+using Messages.Services.Messages;
 
 namespace DescarteService.Services
 {

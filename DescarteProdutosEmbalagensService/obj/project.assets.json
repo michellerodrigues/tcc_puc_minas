@@ -5509,6 +5509,24 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "Messages/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "NServiceBus": "7.1.6",
+          "NServiceBus.CustomChecks": "3.0.1",
+          "NServiceBus.Heartbeat": "3.0.1",
+          "NServiceBus.Persistence.Sql": "4.4.0",
+          "NServiceBus.RabbitMQ": "5.0.2",
+          "NServiceBus.SagaAudit": "3.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Messages.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Messages.dll": {}
+        }
       }
     }
   },
@@ -14816,11 +14834,17 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "Messages/1.0.0": {
+      "type": "project",
+      "path": "../Messages/Messages.csproj",
+      "msbuildProject": "../Messages/Messages.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "HangFire >= 1.6.20",
+      "Messages >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.6",
       "Microsoft.EntityFrameworkCore.Design >= 2.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.0.2",
@@ -14869,7 +14893,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj": {
+              "projectPath": "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

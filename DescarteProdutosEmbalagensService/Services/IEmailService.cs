@@ -1,5 +1,5 @@
 using System;
-using DescarteService.Services.Messages;
+using Messages.Services.Messages;
 
 namespace DescarteService.Services
 {

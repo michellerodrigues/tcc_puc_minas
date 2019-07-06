@@ -1,3 +1,7 @@
+D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\obj\Debug\netcoreapp2.0\DescarteService.csprojAssemblyReference.cache
+D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\obj\Debug\netcoreapp2.0\DescarteService.csproj.CoreCompileInputs.cache
+D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\obj\Debug\netcoreapp2.0\DescarteService.AssemblyInfoInputs.cache
+D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\obj\Debug\netcoreapp2.0\DescarteService.AssemblyInfo.cs
 D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\bin\Debug\netcoreapp2.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql
 D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\bin\Debug\netcoreapp2.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Drop.sql
 D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\bin\Debug\netcoreapp2.0\NServiceBus.Persistence.Sql\MsSqlServer\Subscription_Create.sql
@@ -27,9 +31,8 @@ D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\bin\Debug\netcoreapp
 D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\bin\Debug\netcoreapp2.0\DescarteService.runtimeconfig.dev.json
 D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\bin\Debug\netcoreapp2.0\DescarteService.dll
 D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\bin\Debug\netcoreapp2.0\DescarteService.pdb
-D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\obj\Debug\netcoreapp2.0\DescarteService.csprojAssemblyReference.cache
-D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\obj\Debug\netcoreapp2.0\DescarteService.csproj.CoreCompileInputs.cache
-D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\obj\Debug\netcoreapp2.0\DescarteService.AssemblyInfoInputs.cache
-D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\obj\Debug\netcoreapp2.0\DescarteService.AssemblyInfo.cs
+D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\bin\Debug\netcoreapp2.0\Messages.dll
+D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\bin\Debug\netcoreapp2.0\Messages.pdb
+D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\obj\Debug\netcoreapp2.0\DescarteService.csproj.CopyComplete
 D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\obj\Debug\netcoreapp2.0\DescarteService.dll
 D:\mica\tcc\tcc_puc_minas\DescarteProdutosEmbalagensService\obj\Debug\netcoreapp2.0\DescarteService.pdb

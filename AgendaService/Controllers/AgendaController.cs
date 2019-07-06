@@ -4,12 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using AgendaService.Services.Messages;
 using AgendaService.DataContext;
 using Messages.Descartes.Events;
 using AgendaService.Services;
 using NServiceBus;
 using Messages.Descartes.Commands;
+using Messages.Descartes.Messages;
 using NServiceBus.Routing;
 using AgendaService.Services.Interfaces;
 using Microsoft.AspNetCore.Builder.Internal;
@@ -138,14 +138,14 @@ namespace AgendaService.Controllers
 
         [HttpGet]
         [Route("agendarRetirada")]
-        public AgendaConfirmadaMessageResponse AgendarRetirada(Guid lote, string data)
+        public AgendamentoMessage AgendarRetirada(Guid lote, string data)
         {
-            AgendaConfirmadaMessageResponse response = new AgendaConfirmadaMessageResponse();
+            AgendamentoMessage response = new AgendamentoMessage();
 
             AgendaApiService service = new AgendaApiService();
 
-            response = service.ObterAgendamentoEnviado(lote, data);
-
+            response = service.AgendarRetirada(lote, data).GetAwaiter().GetResult();
+            
             return response;
         }
 

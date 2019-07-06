@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using DescarteService.Services.Messages;
+using Messages.Descartes.Messages;
 using DescarteService.DataContext;
 using DescarteService.Services;
 using DescarteService.Data.Models;

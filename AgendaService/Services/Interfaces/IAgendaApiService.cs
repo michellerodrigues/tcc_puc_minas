@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using AgendaService.Data.Interfaces;
 using AgendaService.Data.Models;
 using AgendaService.DataContext;
-using AgendaService.Services.Messages;
+using Messages.Descartes.Messages;
 using Messages.Descartes.Commands;
 using Messages.Descartes.Events;
 using NServiceBus;

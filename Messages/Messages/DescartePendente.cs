@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace DescarteService.Services.Messages
+namespace Messages.Services.Messages
 {
     [DataContract]
     public class DescartePendente

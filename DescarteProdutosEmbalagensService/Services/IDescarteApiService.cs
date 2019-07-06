@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using DescarteService.Data.Models;
-using DescarteService.Services.Messages;
+using Messages.Descartes.Messages;
 
 namespace DescarteService.Services
 {

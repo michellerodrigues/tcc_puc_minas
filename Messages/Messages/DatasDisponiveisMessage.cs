@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace DescarteService.Services.Messages
+namespace Messages.Services.Messages
 {
     [DataContract]
     public class DatasDisponiveisMessage

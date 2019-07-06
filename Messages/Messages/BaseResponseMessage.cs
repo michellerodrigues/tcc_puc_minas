@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace AgendaService.Services.Messages
+namespace Messages.Descartes.Messages
 {
     [DataContract]
     public class BaseResponseMessage

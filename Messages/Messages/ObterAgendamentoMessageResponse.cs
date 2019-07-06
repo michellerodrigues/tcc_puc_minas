@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using Messages.Descartes.Messages;
 
-namespace DescarteService.Services.Messages
+namespace Messages.Descartes.Messages
 {
     [DataContract]
     public class ObterAgendamentoMessageResponse:BaseResponseMessage

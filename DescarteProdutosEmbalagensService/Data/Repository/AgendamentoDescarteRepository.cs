@@ -36,4 +36,9 @@ public class AgendamentoDescarteRepository : Repository<AgendamentoDescarteSolic
          //pesquisar groupby
          return this._context.AgendamentoDescarteSolicitados.Where(a=>a.LoteDescarteId==LoteId).Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).OrderBy(e=>e.LoteDescarteId).ToList();
     }
+
+    public AgendamentoDescarteSolicitado FindAgendamentoPendenteEnvioEmail(Guid lote, string data)
+    {
+        throw new NotImplementedException();
+    }
 }

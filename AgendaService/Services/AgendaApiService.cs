@@ -1,18 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
 using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
 using AgendaService.Data.Interfaces;
 using AgendaService.Data.Models;
 using AgendaService.DataContext;
+using AgendaService.Service.Utils;
 using AgendaService.Services.Interfaces;
-using AgendaService.Services.Messages;
 using Messages.Descartes.Commands;
-using Messages.Descartes.Events;
 using NServiceBus;
+using Messages.Descartes.Messages;
 
 namespace AgendaService.Services
 {
@@ -32,36 +29,44 @@ namespace AgendaService.Services
         {
         }
 
-        public async Task AgendarRetirada(Guid lote, string Data)
+        public async Task<AgendamentoMessage> AgendarRetirada(Guid lote, string Data)
         {     
+            //tentar diferenciar o sistema desligado ou inexistente
             AgendamentoMessage agendamento = VerificarAgendamentoSolicitado(lote, Data);
 
-            if(agendamento==null)
-            {
-                return null;
-            }
-            //consertar isso, o agendamento esta vazio         
-            await _messageSession.SendLocal(new AgendarRetiradaCommand()
-            {DataAgendamento=DateTime.Now,DataRegistro=agendamento.DataRegistro,EmailAgente=agendamento.Email,Id=agendamento.IdAgendamento});      
+            if(agendamento!=null)
+            {  
+                await _messageSession.SendLocal(new AgendarRetiradaCommand()
+                {DataAgendamento=DateTime.Now,DataRegistro=agendamento.DataRegistro,EmailAgente=agendamento.Email,Id=agendamento.IdAgendamento});      
+            }   
+            return await Task.FromResult(agendamento);
         }
 
         
-        private AgendamentoMessage VerificarAgendamentoSolicitado(Guid lote, string Data)
+        private AgendamentoMessage VerificarAgendamentoSolicitado(Guid lote, string data)
         {  
-            ObterAgendamentoMessageResponse response = HttpRestClient.GetAsync<ObterAgendamentoMessageResponse>(string.Format("{0}/{1}?lote={2}&data={3}", DescarteeServicesURL, (object)"/agendamento/enviado",lote, data)).GetAwaiter().GetResult();
+            ObterAgendamentoMessageResponse response = HttpRestClient.GetAsync<ObterAgendamentoMessageResponse>(string.Format("{0}/{1}?lote={2}&data={3}", "DescarteeServicesURL", (object)"/agendamento/enviado",lote, data)).GetAwaiter().GetResult();
+           
+            AgendamentoMessage agendamento = null;
+            
             if ((response != null) &&  (response.codRetorno!=1))
             {
-                 AgendamentoMessage agendamento = new AgendamentoMessage()
+                 agendamento = new AgendamentoMessage()
                  {
-                    IdAgenda=lote,
-                    DataAgenda = Data,
-                    LoteDescarte = response.LoteDescarte,
-                    DataStatus = DateTime.Now,      
-                    StatusAgenda = "Agendamento Solicitado",
-                    Responsavel = response.NomeResponsavel,
-                    EmailResponsavel = response.EmailResponsavel
+                    IdAgendamento=lote,
+                    DataRegistro=DateTime.Now,   
+                    Email=response.EmailResponsavel,
+                    codRetorno=response.codRetorno                    
                  };
 
+            }
+            else
+            {
+                 agendamento = new AgendamentoMessage()
+                {
+                    codRetorno=1,
+                    StatusRetorno="Agendamento Não localizado"
+                };
             }
             return agendamento;
         }
@@ -231,7 +236,6 @@ namespace AgendaService.Services
         {
             var AgendaMessage = new AgendaMessage()
             {
-                DataCriacao = Agenda.DataCriacao,
                 DataStatus = Agenda.DataCriacao,
                 EmailResponsavel = Agenda.Responsavel.Email,
                 Responsavel = Agenda.Responsavel.NomeResponsavel,
@@ -274,7 +278,25 @@ namespace AgendaService.Services
                 throw new InvalidOperationException("Exception in sendEmail:" + ex.Message);
             }
         }
-        
 
+        AgendaCanceladaMessageResponse IAgendaApiService.CancelarAgenda(Guid idAgenda)
+        {
+            throw new NotImplementedException();
+        }
+
+        AgendaFinalizadaMessageResponse IAgendaApiService.FinalizarAgenda(Guid idAgenda)
+        {
+            throw new NotImplementedException();
+        }
+
+        ObterListaAgendaStatusMessageResponse IAgendaApiService.ObterAgendasPorStatus(string status)
+        {
+            throw new NotImplementedException();
+        }
+
+        ObterAgendaExpiradaMessageResponse IAgendaApiService.ObterAgendaExpirada()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

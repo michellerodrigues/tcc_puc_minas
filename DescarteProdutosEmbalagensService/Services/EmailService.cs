@@ -1,7 +1,7 @@
 ﻿using DescarteService.Data.Models;
 using DescarteService.DataContext;
-using DescarteService.Services.Messages;
 using Hangfire;
+using Messages.Services.Messages;
 using System;
 using System.Collections.Generic;
 using System.Globalization;

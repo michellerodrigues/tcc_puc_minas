@@ -12,8 +12,6 @@ namespace DescarteService.Data.Interfaces
 
         IEnumerable<AgendamentoDescarteSolicitado> FindAgendamentoPendenteEnvioEmail();
 
-        AgendamentoDescarteSolicitado FindAgendamentoPendenteEnvioEmail(Guid lote, string data);
-
         AgendamentoDescarteSolicitado FindAgendamentoEnviado(Guid lote, string data);
     }
 

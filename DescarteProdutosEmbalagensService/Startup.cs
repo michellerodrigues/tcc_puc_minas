@@ -11,7 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Hangfire;
 using DescarteServices.Jobs;
-using DescarteService.Services.Messages;
+using Messages.Descartes.Messages;
 using DescarteService.Services;
 using DescarteService.Data.Interfaces;
 
