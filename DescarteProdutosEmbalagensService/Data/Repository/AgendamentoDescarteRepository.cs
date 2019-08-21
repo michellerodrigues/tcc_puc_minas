@@ -28,13 +28,13 @@ public class AgendamentoDescarteRepository : Repository<AgendamentoDescarteSolic
 
     public AgendamentoDescarteSolicitado FindAgendamentoEnviado(Guid lote, string data)
     {
-         return this._context.AgendamentoDescarteSolicitados.Where(a=>a.LoteDescarteId.Equals(lote) && a.DataPropostaAgendamento==data && a.DataEnvioEmail!=null && a.StatusProposta=="Email Enviado").Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).FirstOrDefault();
+         return this._context.AgendamentoDescarteSolicitados.Where(a=>a.Id.Equals(lote) && a.DataPropostaAgendamento==data && a.DataEnvioEmail!=null && a.StatusProposta=="Email Enviado").Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).FirstOrDefault();
     }
     
     public IEnumerable<AgendamentoDescarteSolicitado> FindAgendamentoPorLote(Guid LoteId)
     {
          //pesquisar groupby
-         return this._context.AgendamentoDescarteSolicitados.Where(a=>a.LoteDescarteId==LoteId).Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).OrderBy(e=>e.LoteDescarteId).ToList();
+         return this._context.AgendamentoDescarteSolicitados.Where(a=>a.Id==LoteId).Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).OrderBy(e=>e.LoteDescarteId).ToList();
     }
 
     public AgendamentoDescarteSolicitado FindAgendamentoPendenteEnvioEmail(Guid lote, string data)

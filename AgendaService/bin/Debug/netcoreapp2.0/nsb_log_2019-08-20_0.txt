@@ -1,0 +1,908 @@
+﻿2019-08-20 18:46:04.053 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-08-20 18:46:04.315 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Particular.ServiceControl.Audit'
+2019-08-20 18:46:04.523 INFO  NServiceBus.LicenseManager Selected active license from C:\Users\Michelle Rodrigues\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2019-09-18
+
+2019-08-20 18:46:04.561 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 18:46:04.564 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 18:46:04.566 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 18:46:04.569 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 18:46:04.571 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 18:46:04.573 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 18:46:04.575 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:32:30.573 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-08-20 19:32:30.814 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Particular.ServiceControl.Audit'
+2019-08-20 19:32:30.981 INFO  NServiceBus.LicenseManager Selected active license from C:\Users\Michelle Rodrigues\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2019-09-18
+
+2019-08-20 19:32:31.016 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:32:31.020 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:32:31.023 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:32:31.025 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:32:31.028 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:32:31.030 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:32:31.032 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:40:52.409 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-08-20 19:40:52.700 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Particular.ServiceControl.Audit'
+2019-08-20 19:40:52.856 INFO  NServiceBus.LicenseManager Selected active license from C:\Users\Michelle Rodrigues\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2019-09-18
+
+2019-08-20 19:40:52.900 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:40:52.903 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:40:52.905 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:40:52.908 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:40:52.911 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:40:52.913 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:40:52.916 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:45:32.101 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-08-20 19:45:32.339 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Particular.ServiceControl.Audit'
+2019-08-20 19:45:32.488 INFO  NServiceBus.LicenseManager Selected active license from C:\Users\Michelle Rodrigues\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2019-09-18
+
+2019-08-20 19:45:32.529 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:45:32.533 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:45:32.536 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:45:32.538 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:45:32.540 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:45:32.542 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:45:32.544 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:53:20.930 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-08-20 19:53:21.191 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Particular.ServiceControl.Audit'
+2019-08-20 19:53:21.358 INFO  NServiceBus.LicenseManager Selected active license from C:\Users\Michelle Rodrigues\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2019-09-18
+
+2019-08-20 19:53:21.401 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:53:21.405 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:53:21.408 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:53:21.411 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:53:21.413 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:53:21.415 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:53:21.418 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:54:42.898 WARN  NServiceBus.Transport.RabbitMQ.ChannelProvider Connection to the broker lost: Unexpected Exception
+2019-08-20 19:54:42.911 INFO  NServiceBus.Transport.RabbitMQ.ChannelProvider Attempting to reconnect in 10 seconds.
+2019-08-20 19:54:42.915 ERROR NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport Error while sending metric data to NServiceBus.Routing.UnicastAddressTag.
+System.IO.IOException: Unable to write data to the transport connection: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrameSet(IList`1 frames)
+   at RabbitMQ.Client.Impl.Command.TransmitAsFrameSet(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at RabbitMQ.Client.Impl.ModelBase.ModelSend(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Impl.ModelBase.BasicPublish(String exchange, String routingKey, Boolean mandatory, IBasicProperties basicProperties, Byte[] body)
+   at NServiceBus.Transport.RabbitMQ.ConventionalRoutingTopology.Send(IModel channel, String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Routing\ConventionalRoutingTopology.cs:line 68
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel.SendMessage(String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ConfirmsAwareChannel.cs:line 66
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.SendMessage(UnicastTransportOperation transportOperation, ConfirmsAwareChannel channel) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 52
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 27
+   at NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport.<RunReportAsync>d__1.MoveNext() in C:\BuildAgent\work\6731e0de808b2e85\src\NServiceBus.Metrics.ServiceControl\ServiceControlReporting\NServiceBusMetadataReport.cs:line 41
+2019-08-20 19:54:42.911 WARN  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agenda MessagePump' is now in the armed state
+2019-08-20 19:54:52.971 INFO  NServiceBus.Transport.RabbitMQ.ChannelProvider Connection to the broker reestablished successfully.
+2019-08-20 19:54:53.014 ERROR NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport Error while sending metric data to NServiceBus.Routing.UnicastAddressTag.
+RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Library, code=541, text="Unexpected Exception", classId=0, methodId=0, cause=System.IO.IOException: Unable to read data from the transport connection: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at RabbitMQ.Client.Impl.Frame.ReadFrom(NetworkBinaryReader reader)
+   at RabbitMQ.Client.Impl.SocketFrameHandler.ReadFrame()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoopIteration()
+   at RabbitMQ.Client.Framing.Impl.Connection.MainLoop()
+   at RabbitMQ.Client.Framing.Impl.Connection.EnsureIsOpen()
+   at RabbitMQ.Client.Framing.Impl.Connection.CreateModel()
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel..ctor(IConnection connection, IRoutingTopology routingTopology, Boolean usePublisherConfirms) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ConfirmsAwareChannel.cs:line 15
+   at NServiceBus.Transport.RabbitMQ.ChannelProvider.GetPublishChannel() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ChannelProvider.cs:line 68
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 18
+   at NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport.<RunReportAsync>d__1.MoveNext() in C:\BuildAgent\work\6731e0de808b2e85\src\NServiceBus.Metrics.ServiceControl\ServiceControlReporting\NServiceBusMetadataReport.cs:line 41
+2019-08-20 19:54:53.039 INFO  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agenda MessagePump' is now disarmed
+2019-08-20 19:58:49.085 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-08-20 19:58:49.323 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Particular.ServiceControl.Audit'
+2019-08-20 19:58:49.468 INFO  NServiceBus.LicenseManager Selected active license from C:\Users\Michelle Rodrigues\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2019-09-18
+
+2019-08-20 19:58:49.504 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:58:49.509 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:58:49.513 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:58:49.515 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:58:49.517 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:58:49.519 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:58:49.521 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 19:59:57.352 WARN  NServiceBus.Transport.RabbitMQ.ChannelProvider Connection to the broker lost: End of stream
+2019-08-20 19:59:57.404 INFO  NServiceBus.Transport.RabbitMQ.ChannelProvider Attempting to reconnect in 10 seconds.
+2019-08-20 20:00:01.645 WARN  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agenda MessagePump' is now in the armed state
+2019-08-20 20:00:01.731 ERROR NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport Error while sending metric data to NServiceBus.Routing.UnicastAddressTag.
+System.IO.IOException: Unable to write data to the transport connection: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrameSet(IList`1 frames)
+   at RabbitMQ.Client.Impl.Command.TransmitAsFrameSet(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at RabbitMQ.Client.Impl.ModelBase.ModelSend(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Impl.ModelBase.BasicPublish(String exchange, String routingKey, Boolean mandatory, IBasicProperties basicProperties, Byte[] body)
+   at NServiceBus.Transport.RabbitMQ.ConventionalRoutingTopology.Send(IModel channel, String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Routing\ConventionalRoutingTopology.cs:line 68
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel.SendMessage(String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ConfirmsAwareChannel.cs:line 66
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.SendMessage(UnicastTransportOperation transportOperation, ConfirmsAwareChannel channel) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 52
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 27
+   at NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport.<RunReportAsync>d__1.MoveNext() in C:\BuildAgent\work\6731e0de808b2e85\src\NServiceBus.Metrics.ServiceControl\ServiceControlReporting\NServiceBusMetadataReport.cs:line 41
+2019-08-20 20:00:01.731 WARN  NServiceBus.Heartbeat.HeartbeatSender Unable to send heartbeat to ServiceControl.
+System.IO.IOException: Unable to write data to the transport connection: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrameSet(IList`1 frames)
+   at RabbitMQ.Client.Impl.Command.TransmitAsFrameSet(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at RabbitMQ.Client.Impl.ModelBase.ModelSend(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Impl.ModelBase.BasicPublish(String exchange, String routingKey, Boolean mandatory, IBasicProperties basicProperties, Byte[] body)
+   at NServiceBus.Transport.RabbitMQ.ConventionalRoutingTopology.Send(IModel channel, String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Routing\ConventionalRoutingTopology.cs:line 68
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel.SendMessage(String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ConfirmsAwareChannel.cs:line 66
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.SendMessage(UnicastTransportOperation transportOperation, ConfirmsAwareChannel channel) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 52
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 27
+   at NServiceBus.Heartbeat.ServiceControlBackend.Send(Byte[] body, String messageType, TimeSpan timeToBeReceived, IDispatchMessages dispatcher) in C:\BuildAgent\work\84d62cfe063c7531\src\NServiceBus.Heartbeat\ServiceControlBackend.cs:line 52
+   at NServiceBus.Heartbeat.ServiceControlBackend.Send(Object messageToSend, TimeSpan timeToBeReceived, IDispatchMessages dispatcher) in C:\BuildAgent\work\84d62cfe063c7531\src\NServiceBus.Heartbeat\ServiceControlBackend.cs:line 25
+   at NServiceBus.Heartbeat.HeartbeatSender.<SendHeartbeatMessage>d__7.MoveNext() in C:\BuildAgent\work\84d62cfe063c7531\src\NServiceBus.Heartbeat\HeartbeatSender.cs:line 97
+2019-08-20 20:00:53.225 INFO  NServiceBus.Transport.RabbitMQ.ChannelProvider Connection to the broker reestablished successfully.
+2019-08-20 20:00:53.231 WARN  NServiceBus.Heartbeat.HeartbeatSender Unable to send heartbeat to ServiceControl.
+RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Library, code=0, text="End of stream", classId=0, methodId=0, cause=System.IO.IOException: Unable to write data to the transport connection: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrame(Frame frame)
+   at RabbitMQ.Client.Framing.Impl.Connection.HeartbeatWriteTimerCallback(Object state)
+   at RabbitMQ.Client.Framing.Impl.Connection.EnsureIsOpen()
+   at RabbitMQ.Client.Framing.Impl.Connection.CreateModel()
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel..ctor(IConnection connection, IRoutingTopology routingTopology, Boolean usePublisherConfirms) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ConfirmsAwareChannel.cs:line 15
+   at NServiceBus.Transport.RabbitMQ.ChannelProvider.GetPublishChannel() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ChannelProvider.cs:line 68
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 18
+   at NServiceBus.Heartbeat.ServiceControlBackend.Send(Byte[] body, String messageType, TimeSpan timeToBeReceived, IDispatchMessages dispatcher) in C:\BuildAgent\work\84d62cfe063c7531\src\NServiceBus.Heartbeat\ServiceControlBackend.cs:line 52
+   at NServiceBus.Heartbeat.ServiceControlBackend.Send(Object messageToSend, TimeSpan timeToBeReceived, IDispatchMessages dispatcher) in C:\BuildAgent\work\84d62cfe063c7531\src\NServiceBus.Heartbeat\ServiceControlBackend.cs:line 25
+   at NServiceBus.Heartbeat.HeartbeatSender.<SendHeartbeatMessage>d__7.MoveNext() in C:\BuildAgent\work\84d62cfe063c7531\src\NServiceBus.Heartbeat\HeartbeatSender.cs:line 97
+2019-08-20 20:00:53.231 ERROR NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport Error while sending metric data to NServiceBus.Routing.UnicastAddressTag.
+RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Library, code=0, text="End of stream", classId=0, methodId=0, cause=System.IO.IOException: Unable to write data to the transport connection: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrame(Frame frame)
+   at RabbitMQ.Client.Framing.Impl.Connection.HeartbeatWriteTimerCallback(Object state)
+   at RabbitMQ.Client.Framing.Impl.Connection.EnsureIsOpen()
+   at RabbitMQ.Client.Framing.Impl.Connection.CreateModel()
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel..ctor(IConnection connection, IRoutingTopology routingTopology, Boolean usePublisherConfirms) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ConfirmsAwareChannel.cs:line 15
+   at NServiceBus.Transport.RabbitMQ.ChannelProvider.GetPublishChannel() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ChannelProvider.cs:line 68
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 18
+   at NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport.<RunReportAsync>d__1.MoveNext() in C:\BuildAgent\work\6731e0de808b2e85\src\NServiceBus.Metrics.ServiceControl\ServiceControlReporting\NServiceBusMetadataReport.cs:line 41
+2019-08-20 20:00:53.295 INFO  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agenda MessagePump' is now disarmed
+2019-08-20 20:02:09.332 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-08-20 20:02:09.569 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Particular.ServiceControl.Audit'
+2019-08-20 20:02:09.754 INFO  NServiceBus.LicenseManager Selected active license from C:\Users\Michelle Rodrigues\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2019-09-18
+
+2019-08-20 20:02:09.791 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:02:09.794 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:02:09.796 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:02:09.798 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:02:09.800 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:02:09.803 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:02:09.806 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:17:21.604 WARN  NServiceBus.Transport.RabbitMQ.ChannelProvider Connection to the broker lost: Unexpected Exception
+2019-08-20 20:17:21.650 WARN  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agenda MessagePump' is now in the armed state
+2019-08-20 20:17:21.675 INFO  NServiceBus.Transport.RabbitMQ.ChannelProvider Attempting to reconnect in 10 seconds.
+2019-08-20 20:17:23.527 ERROR NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport Error while sending metric data to NServiceBus.Routing.UnicastAddressTag.
+System.IO.IOException: Unable to write data to the transport connection: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrameSet(IList`1 frames)
+   at RabbitMQ.Client.Impl.Command.TransmitAsFrameSet(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at RabbitMQ.Client.Impl.ModelBase.ModelSend(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Impl.ModelBase.BasicPublish(String exchange, String routingKey, Boolean mandatory, IBasicProperties basicProperties, Byte[] body)
+   at NServiceBus.Transport.RabbitMQ.ConventionalRoutingTopology.Send(IModel channel, String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Routing\ConventionalRoutingTopology.cs:line 68
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel.SendMessage(String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ConfirmsAwareChannel.cs:line 66
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.SendMessage(UnicastTransportOperation transportOperation, ConfirmsAwareChannel channel) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 52
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 27
+   at NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport.<RunReportAsync>d__1.MoveNext() in C:\BuildAgent\work\6731e0de808b2e85\src\NServiceBus.Metrics.ServiceControl\ServiceControlReporting\NServiceBusMetadataReport.cs:line 41
+2019-08-20 20:17:23.527 WARN  NServiceBus.Heartbeat.HeartbeatSender Unable to send heartbeat to ServiceControl.
+System.IO.IOException: Unable to write data to the transport connection: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrameSet(IList`1 frames)
+   at RabbitMQ.Client.Impl.Command.TransmitAsFrameSet(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at RabbitMQ.Client.Impl.ModelBase.ModelSend(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Impl.ModelBase.BasicPublish(String exchange, String routingKey, Boolean mandatory, IBasicProperties basicProperties, Byte[] body)
+   at NServiceBus.Transport.RabbitMQ.ConventionalRoutingTopology.Send(IModel channel, String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Routing\ConventionalRoutingTopology.cs:line 68
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel.SendMessage(String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ConfirmsAwareChannel.cs:line 66
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.SendMessage(UnicastTransportOperation transportOperation, ConfirmsAwareChannel channel) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 52
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 27
+   at NServiceBus.Heartbeat.ServiceControlBackend.Send(Byte[] body, String messageType, TimeSpan timeToBeReceived, IDispatchMessages dispatcher) in C:\BuildAgent\work\84d62cfe063c7531\src\NServiceBus.Heartbeat\ServiceControlBackend.cs:line 52
+   at NServiceBus.Heartbeat.ServiceControlBackend.Send(Object messageToSend, TimeSpan timeToBeReceived, IDispatchMessages dispatcher) in C:\BuildAgent\work\84d62cfe063c7531\src\NServiceBus.Heartbeat\ServiceControlBackend.cs:line 25
+   at NServiceBus.Heartbeat.HeartbeatSender.<SendHeartbeatMessage>d__7.MoveNext() in C:\BuildAgent\work\84d62cfe063c7531\src\NServiceBus.Heartbeat\HeartbeatSender.cs:line 97
+2019-08-20 20:17:31.732 INFO  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agenda MessagePump' is now disarmed
+2019-08-20 20:17:33.519 INFO  NServiceBus.Transport.RabbitMQ.ChannelProvider Connection to the broker reestablished successfully.
+2019-08-20 20:22:42.754 WARN  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agenda MessagePump' is now in the armed state
+2019-08-20 20:23:01.723 INFO  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agenda MessagePump' is now disarmed
+2019-08-20 20:37:46.910 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-08-20 20:37:47.148 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Particular.ServiceControl.Audit'
+2019-08-20 20:37:47.325 INFO  NServiceBus.LicenseManager Selected active license from C:\Users\Michelle Rodrigues\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2019-09-18
+
+2019-08-20 20:37:47.362 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:37:47.366 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:37:47.369 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:37:47.371 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:37:47.373 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:37:47.376 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:37:47.378 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:59:05.157 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-08-20 20:59:05.446 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Particular.ServiceControl.Audit'
+2019-08-20 20:59:05.618 INFO  NServiceBus.LicenseManager Selected active license from C:\Users\Michelle Rodrigues\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2019-09-18
+
+2019-08-20 20:59:05.656 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:59:05.659 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:59:05.661 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:59:05.665 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:59:05.671 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:59:05.674 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 20:59:05.676 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:00:59.547 ERROR NServiceBus.Transport.RabbitMQ.MessagePump Failed to retrieve ID from poison message. Moving message to queue 'Particular.ServiceControl.Error'...
+System.InvalidOperationException: A non-empty 'message-id' property is required when running NServiceBus on top of RabbitMQ. If this is an interop message, then set the 'message-id' property before publishing the message.
+   at NServiceBus.Transport.RabbitMQ.MessageConverter.DefaultMessageIdStrategy(BasicDeliverEventArgs message) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessageConverter.cs:line 86
+   at NServiceBus.Transport.RabbitMQ.MessageConverter.RetrieveMessageId(BasicDeliverEventArgs message, Dictionary`2 headers) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessageConverter.cs:line 23
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 219
+2019-08-20 21:15:27.138 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-08-20 21:15:27.392 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Particular.ServiceControl.Audit'
+2019-08-20 21:15:27.541 INFO  NServiceBus.LicenseManager Selected active license from C:\Users\Michelle Rodrigues\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2019-09-18
+
+2019-08-20 21:15:27.583 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:15:27.586 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:15:27.588 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:15:27.591 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:15:27.593 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:15:27.596 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:15:27.598 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:16:25.158 WARN  NServiceBus.Transport.RabbitMQ.ChannelProvider Connection to the broker lost: End of stream
+2019-08-20 21:16:25.280 INFO  NServiceBus.Transport.RabbitMQ.ChannelProvider Attempting to reconnect in 10 seconds.
+2019-08-20 21:16:25.346 WARN  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agenda MessagePump' is now in the armed state
+2019-08-20 21:16:25.395 WARN  NServiceBus.Heartbeat.HeartbeatSender Unable to send heartbeat to ServiceControl.
+System.IO.IOException: Unable to write data to the transport connection: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrameSet(IList`1 frames)
+   at RabbitMQ.Client.Impl.Command.TransmitAsFrameSet(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at RabbitMQ.Client.Impl.ModelBase.ModelSend(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Impl.ModelBase.BasicPublish(String exchange, String routingKey, Boolean mandatory, IBasicProperties basicProperties, Byte[] body)
+   at NServiceBus.Transport.RabbitMQ.ConventionalRoutingTopology.Send(IModel channel, String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Routing\ConventionalRoutingTopology.cs:line 68
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel.SendMessage(String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ConfirmsAwareChannel.cs:line 66
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.SendMessage(UnicastTransportOperation transportOperation, ConfirmsAwareChannel channel) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 52
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 27
+   at NServiceBus.Heartbeat.ServiceControlBackend.Send(Byte[] body, String messageType, TimeSpan timeToBeReceived, IDispatchMessages dispatcher) in C:\BuildAgent\work\84d62cfe063c7531\src\NServiceBus.Heartbeat\ServiceControlBackend.cs:line 52
+   at NServiceBus.Heartbeat.ServiceControlBackend.Send(Object messageToSend, TimeSpan timeToBeReceived, IDispatchMessages dispatcher) in C:\BuildAgent\work\84d62cfe063c7531\src\NServiceBus.Heartbeat\ServiceControlBackend.cs:line 25
+   at NServiceBus.Heartbeat.HeartbeatSender.<SendHeartbeatMessage>d__7.MoveNext() in C:\BuildAgent\work\84d62cfe063c7531\src\NServiceBus.Heartbeat\HeartbeatSender.cs:line 97
+2019-08-20 21:16:35.065 ERROR NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport Error while sending metric data to NServiceBus.Routing.UnicastAddressTag.
+RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Library, code=0, text="End of stream", classId=0, methodId=0, cause=System.IO.IOException: Unable to write data to the transport connection: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrame(Frame frame)
+   at RabbitMQ.Client.Framing.Impl.Connection.HeartbeatWriteTimerCallback(Object state)
+   at RabbitMQ.Client.Framing.Impl.Connection.EnsureIsOpen()
+   at RabbitMQ.Client.Framing.Impl.Connection.CreateModel()
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel..ctor(IConnection connection, IRoutingTopology routingTopology, Boolean usePublisherConfirms) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ConfirmsAwareChannel.cs:line 15
+   at NServiceBus.Transport.RabbitMQ.ChannelProvider.GetPublishChannel() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ChannelProvider.cs:line 68
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 18
+   at NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport.<RunReportAsync>d__1.MoveNext() in C:\BuildAgent\work\6731e0de808b2e85\src\NServiceBus.Metrics.ServiceControl\ServiceControlReporting\NServiceBusMetadataReport.cs:line 41
+2019-08-20 21:16:35.227 INFO  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agenda MessagePump' is now disarmed
+2019-08-20 21:16:35.334 INFO  NServiceBus.Transport.RabbitMQ.ChannelProvider Connection to the broker reestablished successfully.
+2019-08-20 21:26:29.361 WARN  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agenda MessagePump' is now in the armed state
+2019-08-20 21:26:39.387 INFO  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agenda MessagePump' is now disarmed
+2019-08-20 21:37:20.649 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-08-20 21:37:20.967 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Particular.ServiceControl.Audit'
+2019-08-20 21:37:21.127 INFO  NServiceBus.LicenseManager Selected active license from C:\Users\Michelle Rodrigues\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2019-09-18
+
+2019-08-20 21:37:21.177 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:37:21.180 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:37:21.184 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:37:21.187 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:37:21.191 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:37:21.194 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:37:21.197 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:37:23.568 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'ServiceControl.Plugin.Heartbeat.Messages.RegisterEndpointStartup'. MessageId: 41463a1d-cab8-4b53-a95f-a39307816081
+2019-08-20 21:37:23.822 ERROR NServiceBus.RecoverabilityExecutor Moving message '41463a1d-cab8-4b53-a95f-a39307816081' to the error queue 'Particular.ServiceControl.Error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 41463a1d-cab8-4b53-a95f-a39307816081 ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Unicast\Messages\MessageMetadataRegistry.cs:line 26
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LogicalMessageFactory.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 123
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 47
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.UnitOfWorkBehavior.<InvokeUnitsOfWork>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\UnitOfWork\UnitOfWorkBehavior.cs:line 52
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MutateIncomingTransportMessageBehavior.<InvokeIncomingTransportMessagesMutators>d__2.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\MessageMutators\MutateTransportMessage\MutateIncomingTransportMessageBehavior.cs:line 59
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-08-20 21:37:38.466 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'ServiceControl.Plugin.Heartbeat.Messages.EndpointHeartbeat'. MessageId: f6f7fba3-47dc-40ef-9d21-89cc3a9af5ce
+2019-08-20 21:37:38.476 ERROR NServiceBus.RecoverabilityExecutor Moving message 'f6f7fba3-47dc-40ef-9d21-89cc3a9af5ce' to the error queue 'Particular.ServiceControl.Error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message f6f7fba3-47dc-40ef-9d21-89cc3a9af5ce ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Unicast\Messages\MessageMetadataRegistry.cs:line 26
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LogicalMessageFactory.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 123
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 47
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-08-20 21:37:47.536 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'ServiceControl.EndpointPlugin.Messages.SagaState.SagaUpdatedMessage'. MessageId: 982bf6b6-cae4-43db-8d6f-098207593436
+2019-08-20 21:37:47.549 ERROR NServiceBus.RecoverabilityExecutor Moving message '982bf6b6-cae4-43db-8d6f-098207593436' to the error queue 'Particular.ServiceControl.Error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 982bf6b6-cae4-43db-8d6f-098207593436 ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Unicast\Messages\MessageMetadataRegistry.cs:line 26
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LogicalMessageFactory.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 123
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 47
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-08-20 21:37:47.730 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'ServiceControl.EndpointPlugin.Messages.SagaState.SagaUpdatedMessage'. MessageId: 1019ccaa-03c0-4d41-aac0-592ecd4d68b0
+2019-08-20 21:37:47.745 ERROR NServiceBus.RecoverabilityExecutor Moving message '1019ccaa-03c0-4d41-aac0-592ecd4d68b0' to the error queue 'Particular.ServiceControl.Error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 1019ccaa-03c0-4d41-aac0-592ecd4d68b0 ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Unicast\Messages\MessageMetadataRegistry.cs:line 26
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LogicalMessageFactory.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 123
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 47
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-08-20 21:37:50.913 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'ServiceControl.EndpointPlugin.Messages.SagaState.SagaUpdatedMessage'. MessageId: 28b56993-c86b-4733-b313-ffc4ebd7e892
+2019-08-20 21:37:50.929 ERROR NServiceBus.RecoverabilityExecutor Moving message '28b56993-c86b-4733-b313-ffc4ebd7e892' to the error queue 'Particular.ServiceControl.Error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 28b56993-c86b-4733-b313-ffc4ebd7e892 ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Unicast\Messages\MessageMetadataRegistry.cs:line 26
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LogicalMessageFactory.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 123
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 47
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-08-20 21:37:53.485 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'ServiceControl.Plugin.Heartbeat.Messages.EndpointHeartbeat'. MessageId: 1b6fb64f-2569-4c63-878f-86cb9668b8ba
+2019-08-20 21:37:53.495 ERROR NServiceBus.RecoverabilityExecutor Moving message '1b6fb64f-2569-4c63-878f-86cb9668b8ba' to the error queue 'Particular.ServiceControl.Error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 1b6fb64f-2569-4c63-878f-86cb9668b8ba ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Unicast\Messages\MessageMetadataRegistry.cs:line 26
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LogicalMessageFactory.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 123
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 47
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-08-20 21:38:08.499 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'ServiceControl.Plugin.Heartbeat.Messages.EndpointHeartbeat'. MessageId: f2a2bd25-668b-4a8f-afd1-e85b114cf041
+2019-08-20 21:38:08.541 ERROR NServiceBus.RecoverabilityExecutor Moving message 'f2a2bd25-668b-4a8f-afd1-e85b114cf041' to the error queue 'Particular.ServiceControl.Error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message f2a2bd25-668b-4a8f-afd1-e85b114cf041 ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Unicast\Messages\MessageMetadataRegistry.cs:line 26
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LogicalMessageFactory.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 123
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 47
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-08-20 21:38:23.501 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'ServiceControl.Plugin.Heartbeat.Messages.EndpointHeartbeat'. MessageId: ea002180-917f-4f45-9fb4-ea30765e212b
+2019-08-20 21:38:23.520 ERROR NServiceBus.RecoverabilityExecutor Moving message 'ea002180-917f-4f45-9fb4-ea30765e212b' to the error queue 'Particular.ServiceControl.Error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message ea002180-917f-4f45-9fb4-ea30765e212b ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Unicast\Messages\MessageMetadataRegistry.cs:line 26
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LogicalMessageFactory.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 123
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 47
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-08-20 21:38:38.520 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'ServiceControl.Plugin.Heartbeat.Messages.EndpointHeartbeat'. MessageId: 802112c4-4fd1-4af2-8292-39e733f0f984
+2019-08-20 21:38:38.530 ERROR NServiceBus.RecoverabilityExecutor Moving message '802112c4-4fd1-4af2-8292-39e733f0f984' to the error queue 'Particular.ServiceControl.Error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 802112c4-4fd1-4af2-8292-39e733f0f984 ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Unicast\Messages\MessageMetadataRegistry.cs:line 26
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LogicalMessageFactory.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 123
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 47
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-08-20 21:38:53.531 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'ServiceControl.Plugin.Heartbeat.Messages.EndpointHeartbeat'. MessageId: 6da4a7ee-514d-4fc7-86af-b3056d3ab99e
+2019-08-20 21:38:53.547 ERROR NServiceBus.RecoverabilityExecutor Moving message '6da4a7ee-514d-4fc7-86af-b3056d3ab99e' to the error queue 'Particular.ServiceControl.Error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 6da4a7ee-514d-4fc7-86af-b3056d3ab99e ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Unicast\Messages\MessageMetadataRegistry.cs:line 26
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LogicalMessageFactory.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 123
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 47
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-08-20 21:39:08.554 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'ServiceControl.Plugin.Heartbeat.Messages.EndpointHeartbeat'. MessageId: 76f382b8-27d5-440e-93fe-6cdf75499db4
+2019-08-20 21:39:08.577 ERROR NServiceBus.RecoverabilityExecutor Moving message '76f382b8-27d5-440e-93fe-6cdf75499db4' to the error queue 'Particular.ServiceControl.Error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 76f382b8-27d5-440e-93fe-6cdf75499db4 ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Unicast\Messages\MessageMetadataRegistry.cs:line 26
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LogicalMessageFactory.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 123
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 47
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-08-20 21:39:23.579 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'ServiceControl.Plugin.Heartbeat.Messages.EndpointHeartbeat'. MessageId: 58216bd1-08af-43d5-a1a2-9c22729a305c
+2019-08-20 21:39:23.590 ERROR NServiceBus.RecoverabilityExecutor Moving message '58216bd1-08af-43d5-a1a2-9c22729a305c' to the error queue 'Particular.ServiceControl.Error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 58216bd1-08af-43d5-a1a2-9c22729a305c ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Unicast\Messages\MessageMetadataRegistry.cs:line 26
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LogicalMessageFactory.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 123
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 47
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-08-20 21:39:38.605 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'ServiceControl.Plugin.Heartbeat.Messages.EndpointHeartbeat'. MessageId: 5f30bae8-0f0c-429c-9cae-4035ef93ab08
+2019-08-20 21:39:38.626 ERROR NServiceBus.RecoverabilityExecutor Moving message '5f30bae8-0f0c-429c-9cae-4035ef93ab08' to the error queue 'Particular.ServiceControl.Error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 5f30bae8-0f0c-429c-9cae-4035ef93ab08 ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Unicast\Messages\MessageMetadataRegistry.cs:line 26
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LogicalMessageFactory.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 123
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 47
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-08-20 21:39:53.629 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'ServiceControl.Plugin.Heartbeat.Messages.EndpointHeartbeat'. MessageId: 76bc63a3-8e93-4262-95b2-a3c83afabe0a
+2019-08-20 21:39:53.641 ERROR NServiceBus.RecoverabilityExecutor Moving message '76bc63a3-8e93-4262-95b2-a3c83afabe0a' to the error queue 'Particular.ServiceControl.Error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 76bc63a3-8e93-4262-95b2-a3c83afabe0a ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Unicast\Messages\MessageMetadataRegistry.cs:line 26
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LogicalMessageFactory.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 123
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 47
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-08-20 21:40:08.639 WARN  NServiceBus.DeserializeLogicalMessagesConnector Could not determine message type from message header 'ServiceControl.Plugin.Heartbeat.Messages.EndpointHeartbeat'. MessageId: 57e56bd1-a56f-411c-81f2-061297b913e4
+2019-08-20 21:40:08.650 ERROR NServiceBus.RecoverabilityExecutor Moving message '57e56bd1-a56f-411c-81f2-061297b913e4' to the error queue 'Particular.ServiceControl.Error' because processing failed due to an exception:
+NServiceBus.MessageDeserializationException: An error occurred while attempting to extract logical messages from incoming physical message 57e56bd1-a56f-411c-81f2-061297b913e4 ---> System.Exception: Could not find metadata for 'Newtonsoft.Json.Linq.JObject'.
+Ensure the following:
+1. 'Newtonsoft.Json.Linq.JObject' is included in initial scanning. 
+2. 'Newtonsoft.Json.Linq.JObject' implements either 'IMessage', 'IEvent' or 'ICommand' or alternatively, if you don't want to implement an interface, you can use 'Unobtrusive Mode'.
+   at NServiceBus.Unicast.Messages.MessageMetadataRegistry.GetMessageMetadata(Type messageType) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Unicast\Messages\MessageMetadataRegistry.cs:line 26
+   at NServiceBus.Pipeline.LogicalMessageFactory.Create(Type messageType, Object message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\LogicalMessageFactory.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.Extract(IncomingMessage physicalMessage) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 123
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 47
+   --- End of inner exception stack trace ---
+   at NServiceBus.DeserializeLogicalMessagesConnector.ExtractWithExceptionHandling(IncomingMessage message) in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 51
+   at NServiceBus.DeserializeLogicalMessagesConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\DeserializeLogicalMessagesConnector.cs:line 31
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at ReceivePerformanceDiagnosticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\787321b4324eeb26\src\NServiceBus.Metrics\ProbeBuilders\ReceivePerformanceDiagnosticsBehavior.cs:line 23
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.InvokeAuditPipelineBehavior.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Audit\InvokeAuditPipelineBehavior.cs:line 20
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.ProcessingStatisticsBehavior.<Invoke>d__0.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Performance\Statistics\ProcessingStatisticsBehavior.cs:line 25
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.TransportReceiveToPhysicalMessageProcessingConnector.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\Incoming\TransportReceiveToPhysicalMessageProcessingConnector.cs:line 39
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.MainPipelineExecutor.<Invoke>d__1.MoveNext() in C:\BuildAgent\work\ed946b9f0e4aae01\src\NServiceBus.Core\Pipeline\MainPipelineExecutor.cs:line 34
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NServiceBus.Transport.RabbitMQ.MessagePump.<Process>d__28.MoveNext() in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Receiving\MessagePump.cs:line 248
+2019-08-20 21:40:24.451 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-08-20 21:40:24.693 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Particular.ServiceControl.Audit'
+2019-08-20 21:40:24.849 INFO  NServiceBus.LicenseManager Selected active license from C:\Users\Michelle Rodrigues\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2019-09-18
+
+2019-08-20 21:40:24.890 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:40:24.894 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:40:24.896 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:40:24.899 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:40:24.901 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:40:24.903 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:40:24.906 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:43:58.399 INFO  DefaultFactory Logging to 'D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\' with level Info
+2019-08-20 21:43:58.662 INFO  NServiceBus.Features.Audit Auditing processed messages to 'Particular.ServiceControl.Audit'
+2019-08-20 21:43:58.831 INFO  NServiceBus.LicenseManager Selected active license from C:\Users\Michelle Rodrigues\AppData\Local\ParticularSoftware\license.xml
+License Expiration: 2019-09-18
+
+2019-08-20 21:43:58.873 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:43:58.876 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:43:58.878 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:43:58.881 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:43:58.885 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:43:58.888 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.
+2019-08-20 21:43:58.890 INFO  NServiceBus.ObjectBuilder.MSDependencyInjection.ServicesObjectBuilder Component NServiceBus.PropertySagaFinder`1[[AgendaService.Data.SagaData.AgendaSagaData, AgendaService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] was already registered in the container.

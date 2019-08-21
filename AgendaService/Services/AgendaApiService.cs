@@ -19,6 +19,8 @@ namespace AgendaService.Services
 
         AppDataContext _context;
  
+        static string DescarteServicesURL = Startup.AppSettings.DescarteServicesURL;
+
         public AgendaApiService(IMessageSession messageSession, AppDataContext context)
         {
             this._messageSession = messageSession;
@@ -34,7 +36,7 @@ namespace AgendaService.Services
             //tentar diferenciar o sistema desligado ou inexistente
             AgendamentoMessage agendamento = VerificarAgendamentoSolicitado(lote, Data);
 
-            if(agendamento!=null)
+            if(agendamento!=null && agendamento.codRetorno==0)
             {  
                 await _messageSession.SendLocal(new AgendarRetiradaCommand()
                 {DataAgendamento=DateTime.Now,DataRegistro=agendamento.DataRegistro,EmailAgente=agendamento.Email,Id=agendamento.IdAgendamento});      
@@ -45,7 +47,7 @@ namespace AgendaService.Services
         
         private AgendamentoMessage VerificarAgendamentoSolicitado(Guid lote, string data)
         {  
-            ObterAgendamentoMessageResponse response = HttpRestClient.GetAsync<ObterAgendamentoMessageResponse>(string.Format("{0}/{1}?lote={2}&data={3}", "DescarteeServicesURL", (object)"/agendamento/enviado",lote, data)).GetAwaiter().GetResult();
+            ObterAgendamentoMessageResponse response = HttpRestClient.GetAsync<ObterAgendamentoMessageResponse>(string.Format("{0}/{1}?lote={2}&data={3}", DescarteServicesURL, (object)"agendamento/enviado",lote, data)).GetAwaiter().GetResult();
            
             AgendamentoMessage agendamento = null;
             

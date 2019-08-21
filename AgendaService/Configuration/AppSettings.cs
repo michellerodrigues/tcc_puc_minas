@@ -11,7 +11,8 @@ public class AppSettings
     public string HostJobAplicacao{ get; set; }
     public string MensagemPadraoDescarteProutoVencido{ get; set; }    
     public string MensagemPadraoDescarteEmbalagens{ get; set; }
-    public string EstoqueServicesURL{ get; set; }
+    public string EstoqueServicesURL{ get; set; }    
+    public string DescarteServicesURL{ get; set; }
 }
 
 public class EnvioEmail

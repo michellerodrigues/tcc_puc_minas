@@ -1,0 +1,38 @@
+﻿2019-07-08 22:16:58.805 WARN  NServiceBus.Transport.RabbitMQ.ChannelProvider Connection to the broker lost: End of stream
+2019-07-08 22:17:09.222 WARN  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agenda MessagePump' is now in the armed state
+2019-07-08 22:17:10.200 INFO  NServiceBus.Transport.RabbitMQ.ChannelProvider Attempting to reconnect in 10 seconds.
+2019-07-08 22:17:10.311 INFO  NServiceBus.Transport.RabbitMQ.MessagePumpConnectionFailedCircuitBreaker The circuit breaker for 'Descarte.Agenda MessagePump' is now disarmed
+2019-07-08 22:17:10.311 ERROR NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport Error while sending metric data to NServiceBus.Routing.UnicastAddressTag.
+System.IO.IOException: Unable to write data to the transport connection: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrameSet(IList`1 frames)
+   at RabbitMQ.Client.Impl.Command.TransmitAsFrameSet(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at RabbitMQ.Client.Impl.ModelBase.ModelSend(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Impl.ModelBase.BasicPublish(String exchange, String routingKey, Boolean mandatory, IBasicProperties basicProperties, Byte[] body)
+   at NServiceBus.Transport.RabbitMQ.ConventionalRoutingTopology.Send(IModel channel, String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Routing\ConventionalRoutingTopology.cs:line 68
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel.SendMessage(String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ConfirmsAwareChannel.cs:line 66
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.SendMessage(UnicastTransportOperation transportOperation, ConfirmsAwareChannel channel) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 52
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 27
+   at NServiceBus.Metrics.ServiceControl.ServiceControlReporting.NServiceBusMetadataReport.<RunReportAsync>d__1.MoveNext() in C:\BuildAgent\work\6731e0de808b2e85\src\NServiceBus.Metrics.ServiceControl\ServiceControlReporting\NServiceBusMetadataReport.cs:line 41
+2019-07-08 22:17:10.311 WARN  NServiceBus.Heartbeat.HeartbeatSender Unable to send heartbeat to ServiceControl.
+System.IO.IOException: Unable to write data to the transport connection: Foi forçado o cancelamento de uma conexão existente pelo host remoto. ---> System.Net.Sockets.SocketException: Foi forçado o cancelamento de uma conexão existente pelo host remoto
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.BufferedStream.Flush()
+   at RabbitMQ.Client.Impl.SocketFrameHandler.WriteFrameSet(IList`1 frames)
+   at RabbitMQ.Client.Impl.Command.TransmitAsFrameSet(Int32 channelNumber, Connection connection)
+   at RabbitMQ.Client.Impl.SessionBase.Transmit(Command cmd)
+   at RabbitMQ.Client.Impl.ModelBase.ModelSend(MethodBase method, ContentHeaderBase header, Byte[] body)
+   at RabbitMQ.Client.Impl.ModelBase.BasicPublish(String exchange, String routingKey, Boolean mandatory, IBasicProperties basicProperties, Byte[] body)
+   at NServiceBus.Transport.RabbitMQ.ConventionalRoutingTopology.Send(IModel channel, String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Routing\ConventionalRoutingTopology.cs:line 68
+   at NServiceBus.Transport.RabbitMQ.ConfirmsAwareChannel.SendMessage(String address, OutgoingMessage message, IBasicProperties properties) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Connection\ConfirmsAwareChannel.cs:line 66
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.SendMessage(UnicastTransportOperation transportOperation, ConfirmsAwareChannel channel) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 52
+   at NServiceBus.Transport.RabbitMQ.MessageDispatcher.Dispatch(TransportOperations outgoingMessages, TransportTransaction transaction, ContextBag context) in C:\BuildAgent\work\15dcdbe5f88af6ed\src\NServiceBus.Transport.RabbitMQ\Sending\MessageDispatcher.cs:line 27
+   at NServiceBus.Heartbeat.ServiceControlBackend.Send(Byte[] body, String messageType, TimeSpan timeToBeReceived, IDispatchMessages dispatcher) in C:\BuildAgent\work\84d62cfe063c7531\src\NServiceBus.Heartbeat\ServiceControlBackend.cs:line 52
+   at NServiceBus.Heartbeat.ServiceControlBackend.Send(Object messageToSend, TimeSpan timeToBeReceived, IDispatchMessages dispatcher) in C:\BuildAgent\work\84d62cfe063c7531\src\NServiceBus.Heartbeat\ServiceControlBackend.cs:line 25
+   at NServiceBus.Heartbeat.HeartbeatSender.<SendHeartbeatMessage>d__7.MoveNext() in C:\BuildAgent\work\84d62cfe063c7531\src\NServiceBus.Heartbeat\HeartbeatSender.cs:line 97

@@ -12,6 +12,7 @@ using Messages.Descartes.Messages;
 using Hangfire;
 using Microsoft.EntityFrameworkCore;
 using Messages.Services.Messages;
+using System.Runtime.CompilerServices;
 
 namespace DescarteService.Services
 {
@@ -51,7 +52,7 @@ namespace DescarteService.Services
             var loteRepository = new LoteDescarteRepository(_context);
 
             ObterProdutosVencidosMessageResponse response = HttpRestClient.GetAsync<ObterProdutosVencidosMessageResponse>(string.Format("{0}/{1}", EstoqueServicesURL, (object)"vencidos")).GetAwaiter().GetResult();
-           
+
             if ((response != null) && (response.codRetorno != 1))
             {
                 SalvarLotesDescartePendentes(response);
@@ -80,14 +81,14 @@ namespace DescarteService.Services
 
             if (agendamentoEnviado != null)
             {
-                 response.DataEnvioEmail=agendamentoEnviado.DataEnvioEmail;
-                 response.DataProposta=agendamentoEnviado.DataPropostaAgendamento;
-                 response.EmailResponsavel=agendamentoEnviado.LoteDescarte.EmailResponsavelDescarte;
-                 response.Lote=agendamentoEnviado.LoteDescarte.Id;
-                 response.NomeResponsavel=agendamentoEnviado.LoteDescarte.NomeResponsavelDescarte;
-                 response.StatusProposta=agendamentoEnviado.StatusProposta;
+                response.DataEnvioEmail = agendamentoEnviado.DataEnvioEmail;
+                response.DataProposta = agendamentoEnviado.DataPropostaAgendamento;
+                response.EmailResponsavel = agendamentoEnviado.LoteDescarte.EmailResponsavelDescarte;
+                response.Lote = agendamentoEnviado.LoteDescarte.Id;
+                response.NomeResponsavel = agendamentoEnviado.LoteDescarte.NomeResponsavelDescarte;
+                response.StatusProposta = agendamentoEnviado.StatusProposta;
 
-                 return response;
+                return response;
 
             }
             else
@@ -96,7 +97,7 @@ namespace DescarteService.Services
                 response.StatusRetorno = "Agendamento não encontrado";
 
                 return response;
-            }            
+            }
         }
 
         private void SalvarLotesDescartePendentes(BaseResponseMessage descarteResponse)
@@ -128,13 +129,13 @@ namespace DescarteService.Services
                         };
                         loteDescarte.ProdutosDescartes.Add(produtoDescarte);
                     }
- 
+
                     produtosVencidos.DatasOfertadas = new List<string>(){
                     DateTime.Now.AddDays(15).ToString("yyyyMMdd"),
                     DateTime.Now.AddDays(30).ToString("yyyyMMdd"),
                     DateTime.Now.AddDays(45).ToString("yyyyMMdd")
                     };
-                    foreach( string data in produtosVencidos.DatasOfertadas)
+                    foreach (string data in produtosVencidos.DatasOfertadas)
                     {
                         var agendamento = new AgendamentoDescarteSolicitado()
                         {
@@ -145,7 +146,7 @@ namespace DescarteService.Services
                         };
                         repositoryAgendamento.Create(agendamento);
                     }
-                   
+
                 }
             }
         }
@@ -180,56 +181,68 @@ namespace DescarteService.Services
                         loteDescarte.ProdutosDescartes.Add(produtoDescarte);
                     }
 
-                    var agendamento = new AgendamentoDescarteSolicitado()
-                    {
-                        DataEnvioEmail = DateTime.Now,
-                        DataPropostaAgendamento = DateTime.Now.AddDays(15).ToString("yyyyMMdd"),
-                        Id = Guid.NewGuid(),
-                        LoteDescarte = loteDescarte,
-                        StatusProposta = "Pendente Envio Email"
+                    produtosFinalizados.DatasOfertadas = new List<string>(){
+                        DateTime.Now.AddDays(15).ToString("yyyyMMdd"),
+                        DateTime.Now.AddDays(30).ToString("yyyyMMdd"),
+                        DateTime.Now.AddDays(45).ToString("yyyyMMdd")
                     };
 
-                    repositoryAgendamento.Create(agendamento);
+                    foreach (string data in produtosFinalizados.DatasOfertadas)
+                    {
+                        var agendamento = new AgendamentoDescarteSolicitado()
+                        {
+                            DataPropostaAgendamento = data,
+                            Id = Guid.NewGuid(),
+                            LoteDescarte = loteDescarte,
+                            StatusProposta = "Pendente Envio Email"
+                        };
+                        repositoryAgendamento.Create(agendamento);
+                    }
                 }
             }
         }
 
+
+        [MethodImpl(MethodImplOptions.Synchronized)]
         public void ComunicarLotesParaRetirada(string tipoEmail)
         {
-            var repository = new AgendamentoDescarteRepository(_context);
-            var repositoryLote = new LoteDescarteRepository(_context);
-
-            var agendamentos = repository.FindAgendamentoPendenteEnvioEmail();
-
-            var lotes = agendamentos.GroupBy(l=>l.LoteDescarte);
-
-            foreach(var lote in lotes)
+            lock(typeof(EmailService))
             {
-                var agendamentosPorLote = agendamentos.Where(a=>a.LoteDescarteId==lote.Key.Id).OrderBy(a=>a.DataPropostaAgendamento).ToList();
-                
-                ComunicarDescartePendenteMessageRequest request = new ComunicarDescartePendenteMessageRequest();
-                request.ListaProdutos = new List<DescartePendente>();           
-                request.DatasDisponiveis = new List<DatasDisponiveisMessage>();
-                
-                foreach (AgendamentoDescarteSolicitado agendamento in agendamentosPorLote)
-                {  
-                    DatasDisponiveisMessage data = new DatasDisponiveisMessage() { Data = DateTime.Now, LinkAgendamento = String.Format("http://localhost:9010/api/agenda/agendar?lote={0}&data={1}", agendamento.Id, agendamento.DataPropostaAgendamento) };
-                    request.DatasDisponiveis.Add(data); 
-                    
-                    var produtos = agendamento.LoteDescarte.ProdutosDescartes;                    
+                var repository = new AgendamentoDescarteRepository(_context);
+                var repositoryLote = new LoteDescarteRepository(_context);
 
-                    foreach (ProdutoDescarte produto in produtos)
+                var agendamentos = repository.FindAgendamentoPendenteEnvioEmail();
+
+                var lotes = agendamentos.GroupBy(l => l.LoteDescarte);
+
+                foreach (var lote in lotes)
+                {
+                    var agendamentosPorLote = agendamentos.Where(a => a.LoteDescarteId == lote.Key.Id).OrderBy(a => a.DataPropostaAgendamento).ToList();
+
+                    ComunicarDescartePendenteMessageRequest request = new ComunicarDescartePendenteMessageRequest();
+                    request.ListaProdutos = new List<DescartePendente>();
+                    request.DatasDisponiveis = new List<DatasDisponiveisMessage>();
+
+                    foreach (AgendamentoDescarteSolicitado agendamento in agendamentosPorLote)
                     {
-                        DescartePendente descarte = new DescartePendente() { DataVencimento = produto.DataVecimentoProduto.ToShortDateString(), IdItemEstoque = produto.IdITemEstoque, NomeProduto = produto.Nome };
-                        request.ListaProdutos.Add(descarte);
+                        DatasDisponiveisMessage data = new DatasDisponiveisMessage() { Data = DateTime.Now, LinkAgendamento = String.Format("http://localhost:9010/api/agenda/agendar?lote={0}&data={1}", agendamento.Id, agendamento.DataPropostaAgendamento) };
+                        request.DatasDisponiveis.Add(data);
+
+                        var produtos = agendamento.LoteDescarte.ProdutosDescartes.ToList();
+
+                        foreach (ProdutoDescarte produto in produtos)
+                        {
+                            DescartePendente descarte = new DescartePendente() { DataVencimento = produto.DataVecimentoProduto.ToShortDateString(), IdItemEstoque = produto.IdITemEstoque, NomeProduto = produto.Nome, QtdeprodutoDisponivel=produto.QtdeDispUnidade.ToString() };
+                            request.ListaProdutos.Add(descarte);
+                        }
+                        request.EmailRemetente = agendamento.LoteDescarte.EmailResponsavelDescarte;
+                        request.NomeResponsavel = agendamento.LoteDescarte.NomeResponsavelDescarte;
                     }
-                    request.EmailRemetente = agendamento.LoteDescarte.EmailResponsavelDescarte;
-                    request.NomeResponsavel = agendamento.LoteDescarte.NomeResponsavelDescarte;
+
+                    request.NomeArquivo = tipoEmail;
+                    BackgroundJob.Enqueue<EmailService>(js => js.EnviarDescarteProdutoPendente(request, lote.Key.Id));
                 }
-                
-                request.NomeArquivo = tipoEmail;
-                BackgroundJob.Enqueue<EmailService>(js => js.EnviarDescarteProdutoPendente(request, lote.Key.Id)); 
-            }           
+            }            
         }
 
 
@@ -247,20 +260,20 @@ namespace DescarteService.Services
 
             var agendamentoPendentes = repository.FindAgendamentoPendenteEnvioEmail();
 
-            foreach(AgendamentoDescarteSolicitado agendamentoPendente in agendamentoPendentes)
+            foreach (AgendamentoDescarteSolicitado agendamentoPendente in agendamentoPendentes)
             {
-                 ObterAgendamentoMessageResponse agendamento = new ObterAgendamentoMessageResponse()
-                 {
-                     DataProposta = agendamentoPendente.DataPropostaAgendamento,
-                     EmailResponsavel = agendamentoPendente.LoteDescarte.EmailResponsavelDescarte,
-                     Lote=agendamentoPendente.LoteDescarte.Id,
-                     NomeResponsavel=agendamentoPendente.LoteDescarte.NomeResponsavelDescarte,
-                     StatusProposta=agendamentoPendente.StatusProposta
-                 };
+                ObterAgendamentoMessageResponse agendamento = new ObterAgendamentoMessageResponse()
+                {
+                    DataProposta = agendamentoPendente.DataPropostaAgendamento,
+                    EmailResponsavel = agendamentoPendente.LoteDescarte.EmailResponsavelDescarte,
+                    Lote = agendamentoPendente.LoteDescarte.Id,
+                    NomeResponsavel = agendamentoPendente.LoteDescarte.NomeResponsavelDescarte,
+                    StatusProposta = agendamentoPendente.StatusProposta
+                };
 
-                 response.listaPendencias.Add(agendamento);
+                response.listaPendencias.Add(agendamento);
             }
-            return response;                   
+            return response;
         }
     }
 }

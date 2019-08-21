@@ -28,13 +28,13 @@ namespace AgendaService.Controllers
             _agendaApiService = agendaApiService;
         }
 
-        [HttpGet]
+/*         [HttpGet]
         [Route("agendar")]
         public async Task Agendar(Guid lote, string Data)
         {   
             await _agendaApiService.AgendarRetirada(lote, Data);
         }                   
-
+ */
         
         /* [HttpGet]
         [Route("obterAgendamento")]
@@ -59,9 +59,9 @@ namespace AgendaService.Controllers
         {
             AgendaCanceladaMessageResponse response = new AgendaCanceladaMessageResponse();
 
-            IAgendaApiService agendaService = new AgendaApiService();
+            //IAgendaApiService agendaService = new AgendaApiService();
 
-            response = agendaService.CancelarAgenda(Agenda);
+            response = _agendaApiService.CancelarAgenda(Agenda);
 
             return response;
         }
@@ -72,9 +72,9 @@ namespace AgendaService.Controllers
         {
             AgendaConfirmadaMessageResponse response = new AgendaConfirmadaMessageResponse();
 
-            AgendaApiService service = new AgendaApiService();
+            //AgendaApiService service = new AgendaApiService();
 
-            response = service.ConfirmarAgenda(Agenda);
+         //   response = _agendaApiService.ConfirmarAgenda(Agenda);
 
             return response;
         }
@@ -85,9 +85,9 @@ namespace AgendaService.Controllers
         {
             AgendaFinalizadaMessageResponse response = new AgendaFinalizadaMessageResponse();
 
-            AgendaApiService service = new AgendaApiService();
+            //AgendaApiService service = new AgendaApiService();
 
-            response = service.FinalizarAgenda(Agenda);
+            response = _agendaApiService.FinalizarAgenda(Agenda);
 
             return response;
         }
@@ -98,9 +98,9 @@ namespace AgendaService.Controllers
         {
             ObterAgendaExpiradaMessageResponse response = new ObterAgendaExpiradaMessageResponse();
 
-            AgendaApiService service = new AgendaApiService();
+            //AgendaApiService service = new AgendaApiService();
 
-            response = service.ObterAgendaExpirada();
+            response = _agendaApiService.ObterAgendaExpirada();
 
             return response;
         }
@@ -111,9 +111,9 @@ namespace AgendaService.Controllers
         {
             ObterListaAgendaStatusMessageResponse response = new ObterListaAgendaStatusMessageResponse();
 
-            AgendaApiService service = new AgendaApiService();
+            //AgendaApiService service = new AgendaApiService();
 
-            response = service.ObterAgendasPorStatus(status);
+            response = _agendaApiService.ObterAgendasPorStatus(status);
 
             return response;
         }
@@ -129,22 +129,22 @@ namespace AgendaService.Controllers
             response.StatusRetorno = "ok";
             response.AgendaConfirmada = new AgendaMessage();
 
-            AgendaApiService service = new AgendaApiService();
+            //AgendaApiService service = new AgendaApiService();
 
-            response = service.ConfirmarAgenda(Agenda);
+            //response = _agendaApiService.ConfirmarAgenda(Agenda);
 
             return response;
         }
 
         [HttpGet]
-        [Route("agendarRetirada")]
+        [Route("agendar")]
         public AgendamentoMessage AgendarRetirada(Guid lote, string data)
         {
-            AgendamentoMessage response = new AgendamentoMessage();
+            AgendamentoMessage response = new AgendamentoMessage(); 
 
-            AgendaApiService service = new AgendaApiService();
+            //AgendaApiService service = new AgendaApiService();
 
-            response = service.AgendarRetirada(lote, data).GetAwaiter().GetResult();
+            response = _agendaApiService.AgendarRetirada(lote, data).GetAwaiter().GetResult();
             
             return response;
         }

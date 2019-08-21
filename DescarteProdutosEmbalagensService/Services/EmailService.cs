@@ -6,8 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Mail;
+using System.Runtime.CompilerServices;
 
 namespace DescarteService.Services
 {
@@ -21,24 +23,28 @@ namespace DescarteService.Services
         }
 
 
-        public void EnviarEmailDescartePendente(string emailRemetente, string body, string nomeAnexo, string assunto)
-        {            
-            var client = new SmtpClient(Startup.AppSettings.EnvioEmail.ServidorSMTP, Startup.AppSettings.EnvioEmail.PortaServidor)
-            {
-                UseDefaultCredentials = false,
-                Credentials = new NetworkCredential(Startup.AppSettings.EnvioEmail.UsuarioEmail, Startup.AppSettings.EnvioEmail.SenhaEmail),
-                EnableSsl = true
-            };
+        [MethodImpl(MethodImplOptions.Synchronized)]
+        public void  EnviarEmailDescartePendente(string emailRemetente, string body, string nomeAnexo, string assunto)
+        {   
+            lock(typeof(EmailService))
+            {                     
+                var client = new SmtpClient(Startup.AppSettings.EnvioEmail.ServidorSMTP, Startup.AppSettings.EnvioEmail.PortaServidor)
+                {
+                    UseDefaultCredentials = false,
+                    Credentials = new NetworkCredential(Startup.AppSettings.EnvioEmail.UsuarioEmail, Startup.AppSettings.EnvioEmail.SenhaEmail),
+                    EnableSsl = true
+                };
 
-            MailMessage mail = new MailMessage();
+                MailMessage mail = new MailMessage();
 
-            mail.From = new MailAddress(Startup.AppSettings.EnvioEmail.UsuarioEmail);
-            mail.To.Add(emailRemetente);
-            mail.Subject = assunto;
-            mail.Body = body;
-            mail.Attachments.Add(new Attachment(@nomeAnexo));
-            mail.IsBodyHtml = true;
-            client.Send(mail); 
+                mail.From = new MailAddress(Startup.AppSettings.EnvioEmail.UsuarioEmail);
+                mail.To.Add(emailRemetente);
+                mail.Subject = assunto;
+                mail.Body = body;
+                mail.Attachments.Add(new Attachment(@nomeAnexo));
+                mail.IsBodyHtml = true;
+                client.Send(mail); 
+            }
         }
 
 
@@ -47,20 +53,23 @@ namespace DescarteService.Services
             try
             {
                 var body="";
+                string assuntoEmail="";
                 if (request.NomeArquivo == "DescarteProdutoVencido")
                 {
                     body = PrepararMensagemCorpoEmail(request.DatasDisponiveis, Startup.AppSettings.MensagemPadraoDescarteProutoVencido);
+                    assuntoEmail="Produtos Vencidos Disponíveis para Retirada";
                 }
                 else
                 {
                     body = PrepararMensagemCorpoEmail(request.DatasDisponiveis, Startup.AppSettings.MensagemPadraoDescarteEmbalagens);
+                    assuntoEmail="Produtos Finalizados Disponíveis para Retirada";
                 }
 
                 string nomeArq = PrepararAnexoEmail(request.ListaProdutos, DateTime.UtcNow.ToString("yyyyMMddHHmmssfff",
                                             CultureInfo.InvariantCulture), request.NomeResponsavel, request.NomeArquivo);
              
                 
-                BackgroundJob.Enqueue(() => EnviarEmailDescartePendente(request.EmailRemetente, body, nomeArq,"AgroPop informa: Descarte Pendentes"));
+                BackgroundJob.Enqueue(() => EnviarEmailDescartePendente(request.EmailRemetente, body, nomeArq, assuntoEmail));
 
                 var repositoryAgendamento = new AgendamentoDescarteRepository(_context);
                 
@@ -86,11 +95,14 @@ namespace DescarteService.Services
         {
             var delimiter = "\t";
             string nomeArq = String.Format("{0}{1}_{2}_{3}.{4}", "c:\\temp\\", data, FabricanteNome, nomeArquivo, "txt");
+              
+            var descartePendente = ListaProdutos.GroupBy(p=>new {p.NomeProduto, p.QtdeprodutoDisponivel, p.DataVencimento}).Select(global=>global.First()).ToList();
+            
             using (TextWriter tw = new StreamWriter(nomeArq))
             {
-                tw.WriteLine(String.Format("{0}{1}{2}", "Produto", delimiter, "QuantidadeEmEstoque"));
-                foreach (var produtoFinalizado in ListaProdutos)
-                    tw.WriteLine(String.Format("{0}{1}{2}", produtoFinalizado.NomeProduto, delimiter, produtoFinalizado.QtdeprodutoDisponivel));
+                tw.WriteLine(String.Format("{0}{1}{2}{3}{4}", "Produto", delimiter, "QuantidadeEmEstoque", delimiter, "DataVencimento"));
+                foreach (var produtoAptoDescarte in descartePendente)
+                    tw.WriteLine(String.Format("{0}{1}{2}{3}{4}", produtoAptoDescarte.NomeProduto, delimiter, produtoAptoDescarte.QtdeprodutoDisponivel, delimiter, produtoAptoDescarte.DataVencimento));
             }
             return nomeArq;
         }

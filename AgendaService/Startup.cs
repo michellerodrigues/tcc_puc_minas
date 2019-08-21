@@ -27,13 +27,13 @@ namespace AgendaService
     {
         public IConfiguration Configuration { get; set; }
         public static AppSettings AppSettings { get; private set; }
+       
 
-        public Startup(IConfiguration configuration)
+       /* public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
 
-        } 
-
+        } */ 
 
         public Startup(IHostingEnvironment env)
         {
@@ -47,9 +47,7 @@ namespace AgendaService
 
             //ConfigurarNserviceBus();
             
-        }
-
-        
+        }        
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -61,6 +59,8 @@ namespace AgendaService
 
             var context = services.BuildServiceProvider().GetService<AppDataContext>();
 
+            services.AddScoped<IAgendaApiService,AgendaApiService>();  
+
             ConfigureNserviceBus(services,context);            
         
         }
@@ -71,7 +71,7 @@ namespace AgendaService
             var endpointName = "Descarte.Agenda";
             var conexaoQueue = "host=localhost;user=guest;password=guest";
             var sendFailedMessagesTo = "Particular.ServiceControl.Error";
-           var auditProcessedMessagesTo = "Particular.ServiceControl.Audit";
+            var auditProcessedMessagesTo = "Particular.ServiceControl.Audit";
             var serviceControlQueueName = "Particular.ServiceControl";
             const string SERVICE_CONTROL_METRICS_ADDRESS = "Particular.Monitoring";
 
@@ -120,7 +120,7 @@ namespace AgendaService
             var persistence = endpointConfiguration.UsePersistence<NHibernatePersistence>();
             persistence.ConnectionString(@"Server = DESKTOP-C8BIS20\MSSQLSERVER2;Database=SagaDescarteDB;Integrated Security=True;"); //@ na frente
             
-         //   endpointConfiguration.SendOnly();  
+            //endpointConfiguration.SendOnly();  
 
 
             var routing = transport.Routing();
