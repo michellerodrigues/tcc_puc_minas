@@ -37,7 +37,8 @@ namespace AgendaService.Saga
         }
 
         public Task Handle(AgendamentoRealizadoEvent message, IMessageHandlerContext context)
-        {            
+        {  
+            //aqui deverá ficar o código que envia um email com o link do proximo passo para o cliente, no caso, a confirmação;          
             return context.SendLocal(new ConfirmarAgendamentoCommand()
             {SolicitadoEm=message.DataRegistro,EmailSolicitacao=message.EmailSolicitante,Id=message.Id});        
             // context.Publish(new ConfirmarAgendamentoCommand(message.Id,message.DataRegistro,message.EmailSolicitante));
@@ -46,19 +47,24 @@ namespace AgendaService.Saga
         public Task Handle(ConfirmarAgendamentoCommand message, IMessageHandlerContext context)
         {
             //incluir link para cancelamento.
-            string mensagem= String.Format("Para confirmar o agendamento, clique no link abaixo</br> http://linkAplicacaoAgenda/agenda/confirmar?Agenda={0}&email={1},",message.Id, message.EmailSolicitacao);
+            string mensagem= String.Format("Para CONFIRMAR o agendamento, clique no link abaixo</br> http://localhost:9009/api/agenda/confirmar?Agenda={0}&email={1}. Para CANCELAR, clique:http://localhost:9009/api/agenda/cancelar?Agenda={2}&email={3}",message.Id, message.EmailSolicitacao,message.Id, message.EmailSolicitacao);
             return Task.Factory.StartNew(async() => { await AgendaApiService.EnviarEmailAgendamento(message.EmailSolicitacao,"Favor Confirmar Agendamento",mensagem);}); 
         }
 
         public Task Handle(AgendamentoConfirmadoEvent message, IMessageHandlerContext context)
         {
-            //colocar hangle pra Triagem
+            //colocar handle pra Triagem
             string mensagem= String.Format("Agendamento Confirmado com sucesso. Seu descarte será encaminhado para a triagem",message.Id);
-            return Task.Factory.StartNew(async() => { await AgendaApiService.EnviarEmailAgendamento(message.EmailConfirmacao,"Agendamento Confirmado",mensagem);}); 
+            Task.Factory.StartNew(async() => { await AgendaApiService.EnviarEmailAgendamento(message.EmailConfirmacao,"Agendamento Confirmado",mensagem);});     
+
+            return context.SendLocal(new ConfirmarAgendamentoCommand()
+            {SolicitadoEm=message.DataRegistro,EmailSolicitacao=message.EmailSolicitante,Id=message.Id}); 
         }
         public Task Handle(CancelarAgendamentoConfirmadoRetiradaCommand message, IMessageHandlerContext context)
         {
-            throw new NotImplementedException();
+            string mensagem= String.Format("Agendamento CANCELADO com sucesso.",message.Id);
+            
+            return Task.Factory.StartNew(async() => { await AgendaApiService.EnviarEmailAgendamento(message.EmailConfirmacao,"Agendamento Cancelado",mensagem);}); 
         }
 
         public Task Handle(AgendamentoConfirmadoCanceladoEvent message, IMessageHandlerContext context)

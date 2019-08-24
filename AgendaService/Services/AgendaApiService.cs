@@ -40,10 +40,14 @@ namespace AgendaService.Services
             {  
                 await _messageSession.SendLocal(new AgendarRetiradaCommand()
                 {DataAgendamento=DateTime.Now,DataRegistro=agendamento.DataRegistro,EmailAgente=agendamento.Email,Id=agendamento.IdAgendamento});      
+
+                agendamento.StatusRetorno="Agendamento recebido. Você receberá um e-mail para confirmação.";
             }   
             return await Task.FromResult(agendamento);
         }
 
+        //fazer mais um com publish EVENTO D AGENDA CONFIRMADA
+        //incluir no handle do event, outros commands/events/funções
         
         private AgendamentoMessage VerificarAgendamentoSolicitado(Guid lote, string data)
         {  

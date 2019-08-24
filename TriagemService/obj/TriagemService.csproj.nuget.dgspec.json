@@ -1,0 +1,119 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\mica\\tcc\\tcc_puc_minas\\TriagemService\\TriagemService.csproj": {}
+  },
+  "projects": {
+    "D:\\mica\\tcc\\tcc_puc_minas\\TriagemService\\TriagemService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\mica\\tcc\\tcc_puc_minas\\TriagemService\\TriagemService.csproj",
+        "projectName": "TriagemService",
+        "projectPath": "D:\\mica\\tcc\\tcc_puc_minas\\TriagemService\\TriagemService.csproj",
+        "packagesPath": "C:\\Users\\Michelle Rodrigues\\.nuget\\packages\\",
+        "outputPath": "D:\\mica\\tcc\\tcc_puc_minas\\TriagemService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Michelle Rodrigues\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "HangFire": {
+              "target": "Package",
+              "version": "[1.6.20, )"
+            },
+            "Microsoft.AspNetCore.All": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[7.1.6, )"
+            },
+            "NServiceBus.CustomChecks": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "NServiceBus.Heartbeat": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "NServiceBus.Metrics.ServiceControl": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "NServiceBus.NHibernate": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "NServiceBus.Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NServiceBus.Persistence.Sql": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "NServiceBus.RabbitMQ": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "NServiceBus.SagaAudit": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
