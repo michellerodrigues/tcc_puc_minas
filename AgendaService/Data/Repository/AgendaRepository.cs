@@ -8,10 +8,11 @@ using AgendaService.Data.Repository;
 using Microsoft.EntityFrameworkCore;
 
 public class AgendaRepository : Repository<Agenda>, IAgendaRepository
-{
-    
-    public AgendaRepository(AppDataContext context) : base(context)
+{ 
+    private new AppDataContext _context;
+    public AgendaRepository(AppDataContext context):base(context)
     {
+        _context = context;
         _context.Agendas.Include(t=>t.Responsavel);
     }
 

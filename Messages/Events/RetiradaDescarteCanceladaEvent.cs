@@ -3,16 +3,16 @@ using NServiceBus;
 
 namespace Messages.Descartes.Commands
 {
-    public class DescarteRealizadoCanceladaEvent : ICommand
+    public class RetiradaDescarteCanceladaEvent : ICommand
     {
         public Guid Id { get; set; }
         public DateTime DataCancelamento { get; set; }
 
-        public DescarteRealizadoCanceladaEvent()
+        public RetiradaDescarteCanceladaEvent()
         {
             
         }
-        public DescarteRealizadoCanceladaEvent(Guid id, DateTime dataCancelamento)
+        public RetiradaDescarteCanceladaEvent(Guid id, DateTime dataCancelamento)
         {
             this.Id = id;
             this.DataCancelamento = DateTime.Now;

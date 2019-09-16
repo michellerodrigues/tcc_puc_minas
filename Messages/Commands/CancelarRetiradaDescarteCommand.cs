@@ -3,17 +3,17 @@ using NServiceBus;
 
 namespace Messages.Descartes.Commands
 {
-    public class CancelarRealizacaoTriagemCommand : ICommand
+    public class CancelarRetiradaDescarteCommand : ICommand
     {
         public Guid Id { get; set; }
         public string EmailSolicitante { get; set; }
         public DateTime DataSolicitacao { get; set; }
 
-        public CancelarRealizacaoTriagemCommand()
+        public CancelarRetiradaDescarteCommand()
         {
             
         }
-        public CancelarRealizacaoTriagemCommand(Guid id, string emailSolicitante, DateTime dataSolicitacao)
+        public CancelarRetiradaDescarteCommand(Guid id, string emailSolicitante, DateTime dataSolicitacao)
         {
             this.Id = id;
             this.EmailSolicitante = emailSolicitante;

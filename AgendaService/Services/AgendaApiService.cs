@@ -16,28 +16,23 @@ namespace AgendaService.Services
     public class AgendaApiService : IAgendaApiService
     {
         IMessageSession _messageSession;
-
-        AppDataContext _context;
+        IAgendaRepository _repository;
  
         static string DescarteServicesURL = Startup.AppSettings.DescarteServicesURL;
 
-        public AgendaApiService(IMessageSession messageSession, AppDataContext context)
+        public AgendaApiService(IMessageSession messageSession, IAgendaRepository repository)
         {
             this._messageSession = messageSession;
-            this._context = context;
-        }
-
-        public AgendaApiService()
-        {
+            _repository = repository;
         }
 
         public async Task<AgendamentoMessage> AgendarRetirada(Guid lote, string Data)
         {     
-            //tentar diferenciar o sistema desligado ou inexistente
             AgendamentoMessage agendamento = VerificarAgendamentoSolicitado(lote, Data);
 
             if(agendamento!=null && agendamento.codRetorno==0)
-            {  
+            {   
+                //salvar no banco               
                 await _messageSession.SendLocal(new AgendarRetiradaCommand()
                 {DataAgendamento=DateTime.Now,DataRegistro=agendamento.DataRegistro,EmailAgente=agendamento.Email,Id=agendamento.IdAgendamento});      
 
@@ -46,9 +41,6 @@ namespace AgendaService.Services
             return await Task.FromResult(agendamento);
         }
 
-        //fazer mais um com publish EVENTO D AGENDA CONFIRMADA
-        //incluir no handle do event, outros commands/events/funções
-        
         private AgendamentoMessage VerificarAgendamentoSolicitado(Guid lote, string data)
         {  
             ObterAgendamentoMessageResponse response = HttpRestClient.GetAsync<ObterAgendamentoMessageResponse>(string.Format("{0}/{1}?lote={2}&data={3}", DescarteServicesURL, (object)"agendamento/enviado",lote, data)).GetAwaiter().GetResult();
@@ -79,14 +71,14 @@ namespace AgendaService.Services
 
         public AgendaCanceladaMessageResponse CancelarAgenda(Guid idAgenda)
         {
-            IAgendaRepository AgendaRepository = new AgendaRepository(_context);
+         //   IAgendaRepository AgendaRepository = new AgendaRepository(_context);
 
             AgendaCanceladaMessageResponse response = new AgendaCanceladaMessageResponse();
             response.codRetorno = 0;
             response.StatusRetorno = "Agenda Cancelada Com Sucesso";
             response.AgendaCancelada = new AgendaMessage();
 
-            var Agenda = AgendaRepository.GetById(idAgenda);
+            var Agenda = _repository.GetById(idAgenda);
 
             if (Agenda == null)
             {
@@ -107,32 +99,30 @@ namespace AgendaService.Services
             Agenda.DataStatus = dataAgora;
             Agenda.StatusAgenda = "Cancelada";
 
-            AgendaRepository.Update(Agenda);
+            _repository.Update(Agenda);
             response.AgendaCancelada =  PrepararAgendaRetorno(Agenda);
             return response;
         }
 
 
-        public AgendaConfirmadaMessageResponse ConfirmarAgenda(Guid idAgenda)
+        public async Task<AgendaConfirmadaMessageResponse> ConfirmarAgendamento(Guid lote, string email)
         {              
             var resposta = new AgendaConfirmadaMessageResponse();
             
-            //_context.SendLocal(new AgendamentoConfirmadoEvent(){ConfirmadoEm=DateTime.Now,Id=idAgenda, EmailConfirmacao="meuemail"});
-                   
-            IAgendaRepository AgendaRepository = new AgendaRepository(_context);
+            //IAgendaRepository AgendaRepository = new AgendaRepository(_context);
 
             AgendaConfirmadaMessageResponse response = new AgendaConfirmadaMessageResponse();
             response.codRetorno = 0;
             response.StatusRetorno = "Agenda Confirmada Com Sucesso";
             response.AgendaConfirmada = new AgendaMessage();
 
-            var Agenda = AgendaRepository.GetById(idAgenda);
+            var Agenda = _repository.GetById(lote);
 
             if (Agenda == null)
             {
                 response.codRetorno = 1;
                 response.StatusRetorno = "Agenda Não encontrada";
-                return response;
+                return await Task.FromResult(response);
             }
 
 
@@ -141,7 +131,7 @@ namespace AgendaService.Services
                 response.codRetorno = 1;
                 response.StatusRetorno = "Agenda não pode ser confirmada. Veja seu Status";
                 response.AgendaConfirmada = PrepararAgendaRetorno(Agenda);
-                return response;
+                return await Task.FromResult(response);
             }
 
 
@@ -149,21 +139,22 @@ namespace AgendaService.Services
             Agenda.DataStatus = dataAgora;
             Agenda.StatusAgenda = "Cancelada";
 
-            AgendaRepository.Update(Agenda);
+            _repository.Update(Agenda);
             response.AgendaConfirmada = PrepararAgendaRetorno(Agenda);
-            return response;
+            
+            return await Task.FromResult(response);
         }
 
         public AgendaFinalizadaMessageResponse FinalizarAgenda(Guid idAgenda)
         {
-            IAgendaRepository AgendaRepository = new AgendaRepository(_context);
+         //   IAgendaRepository AgendaRepository = new AgendaRepository(_context);
 
             AgendaFinalizadaMessageResponse response = new AgendaFinalizadaMessageResponse();
             response.codRetorno = 0;
             response.StatusRetorno = "Agenda Finalizada Com Sucesso";
             response.AgendaFinalizada = new AgendaMessage();
 
-            var Agenda = AgendaRepository.GetById(idAgenda);
+            var Agenda = _repository.GetById(idAgenda);
 
             if (Agenda == null)
             {
@@ -185,20 +176,20 @@ namespace AgendaService.Services
             Agenda.DataStatus = dataAgora;
             Agenda.StatusAgenda = "Finalizada";
 
-            AgendaRepository.Update(Agenda);
+            _repository.Update(Agenda);
             response.AgendaFinalizada = PrepararAgendaRetorno(Agenda);
             return response;
         }
 
         public ObterListaAgendaStatusMessageResponse ObterAgendasPorStatus(string status)
         {
-            IAgendaRepository estoqueRepository = new AgendaRepository(_context);
+          //  IAgendaRepository estoqueRepository = new AgendaRepository(_context);
 
             ObterListaAgendaStatusMessageResponse response = new ObterListaAgendaStatusMessageResponse();
             response.codRetorno = 0;
             response.StatusRetorno = String.Format("Agendas {0}s Retornados com sucesso", status);
 
-            var Agendas = estoqueRepository.FindAgendaStatus(status);
+            var Agendas = _repository.FindAgendaStatus(status);
 
             if (Agendas == null)
             {
@@ -216,13 +207,13 @@ namespace AgendaService.Services
 
         public ObterAgendaExpiradaMessageResponse ObterAgendaExpirada()
         {
-            IAgendaRepository estoqueRepository = new AgendaRepository(_context);
+            //IAgendaRepository estoqueRepository = new AgendaRepository(_context);
 
             ObterAgendaExpiradaMessageResponse response = new ObterAgendaExpiradaMessageResponse();
             response.codRetorno = 0;
             response.StatusRetorno = "Agendas expiradas Retornadas com sucesso";
 
-            var Agendas = estoqueRepository.FindAgendaExpirada();
+            var Agendas = _repository.FindAgendaExpirada();
 
             if (Agendas == null)
             {
@@ -283,26 +274,6 @@ namespace AgendaService.Services
             {
                 throw new InvalidOperationException("Exception in sendEmail:" + ex.Message);
             }
-        }
-
-        AgendaCanceladaMessageResponse IAgendaApiService.CancelarAgenda(Guid idAgenda)
-        {
-            throw new NotImplementedException();
-        }
-
-        AgendaFinalizadaMessageResponse IAgendaApiService.FinalizarAgenda(Guid idAgenda)
-        {
-            throw new NotImplementedException();
-        }
-
-        ObterListaAgendaStatusMessageResponse IAgendaApiService.ObterAgendasPorStatus(string status)
-        {
-            throw new NotImplementedException();
-        }
-
-        ObterAgendaExpiradaMessageResponse IAgendaApiService.ObterAgendaExpirada()
-        {
-            throw new NotImplementedException();
         }
     }
 }

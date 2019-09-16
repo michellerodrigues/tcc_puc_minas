@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.0": {
             "projectReferences": {
-              "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj": {
-                "projectPath": "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj"
+              "d:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj": {
+                "projectPath": "d:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj"
               }
             }
           }
@@ -127,14 +127,14 @@
         }
       }
     },
-    "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj": {
+    "d:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj",
+        "projectUniqueName": "d:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj",
         "projectName": "Messages",
-        "projectPath": "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj",
+        "projectPath": "d:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj",
         "packagesPath": "C:\\Users\\Michelle Rodrigues\\.nuget\\packages\\",
-        "outputPath": "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\obj\\",
+        "outputPath": "d:\\mica\\tcc\\tcc_puc_minas\\Messages\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -22,5 +22,6 @@ namespace AgendaService.Services.Interfaces
         AgendaFinalizadaMessageResponse FinalizarAgenda(Guid idAgenda);
         ObterListaAgendaStatusMessageResponse ObterAgendasPorStatus(string status);
         ObterAgendaExpiradaMessageResponse ObterAgendaExpirada();
+        Task<AgendaConfirmadaMessageResponse> ConfirmarAgendamento(Guid lote, string Email);
     }
 }

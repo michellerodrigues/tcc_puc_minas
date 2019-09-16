@@ -18,20 +18,18 @@ namespace DescarteService.Services
 {
     public class DescarteApiService : IDescarteApiService
     {
-        private readonly AppDataContext _context;
-
-        public DescarteApiService(AppDataContext context)
+        private readonly IAgendamentoDescarteRepository _agendamentoDescarteRepository;
+        private readonly ILoteDescarteRepository _loteDescarteRepository;
+        
+        public DescarteApiService(IAgendamentoDescarteRepository agendamentoDescarteRepository,ILoteDescarteRepository loteDescarteRepository)
         {
-            this._context = context;
+            _agendamentoDescarteRepository = agendamentoDescarteRepository;
+            _loteDescarteRepository = loteDescarteRepository;
         }
 
         static string EstoqueServicesURL = Startup.AppSettings.EstoqueServicesURL;
         public ObterProdutosFinalizadosMessageResponse ObterProdutosFinalizados()
         {
-            // var _factory = new DesignTimeDbContextFactory();
-
-            var repository = new AgendamentoDescarteRepository(_context);
-            var loteRepository = new LoteDescarteRepository(_context);
 
             ObterProdutosFinalizadosMessageResponse response = HttpRestClient.GetAsync<ObterProdutosFinalizadosMessageResponse>(string.Format("{0}/{1}", EstoqueServicesURL, (object)"finalizados")).GetAwaiter().GetResult();
             if ((response != null) && (response.codRetorno != 1))
@@ -48,9 +46,6 @@ namespace DescarteService.Services
         }
         public ObterProdutosVencidosMessageResponse ObterProdutosVencidos()
         {
-            var repository = new AgendamentoDescarteRepository(_context);
-            var loteRepository = new LoteDescarteRepository(_context);
-
             ObterProdutosVencidosMessageResponse response = HttpRestClient.GetAsync<ObterProdutosVencidosMessageResponse>(string.Format("{0}/{1}", EstoqueServicesURL, (object)"vencidos")).GetAwaiter().GetResult();
 
             if ((response != null) && (response.codRetorno != 1))
@@ -68,16 +63,13 @@ namespace DescarteService.Services
 
         public ObterAgendamentoMessageResponse ObterAgendamentoEnviado(Guid lote, string data)
         {
-            var repository = new AgendamentoDescarteRepository(_context);
-            var loteRepository = new LoteDescarteRepository(_context);
-
             var response = new ObterAgendamentoMessageResponse()
             {
                 codRetorno = 0,
                 StatusRetorno = "ok"
             };
 
-            var agendamentoEnviado = repository.FindAgendamentoEnviado(lote, data);
+            var agendamentoEnviado = _agendamentoDescarteRepository.FindAgendamentoEnviado(lote, data);
 
             if (agendamentoEnviado != null)
             {
@@ -102,9 +94,6 @@ namespace DescarteService.Services
 
         private void SalvarLotesDescartePendentes(BaseResponseMessage descarteResponse)
         {
-            var repository = new LoteDescarteRepository(_context);
-            var repositoryAgendamento = new AgendamentoDescarteRepository(_context);
-
             var produtosVencidos = descarteResponse as ObterProdutosVencidosMessageResponse;
 
             if ((produtosVencidos != null) && (produtosVencidos.codRetorno != 1))
@@ -144,7 +133,7 @@ namespace DescarteService.Services
                             LoteDescarte = loteDescarte,
                             StatusProposta = "Pendente Envio Email"
                         };
-                        repositoryAgendamento.Create(agendamento);
+                        _agendamentoDescarteRepository.Create(agendamento);
                     }
 
                 }
@@ -153,9 +142,6 @@ namespace DescarteService.Services
 
         private void SalvarLotesDescartePendentesFinalizados(BaseResponseMessage descarteResponse)
         {
-            var repository = new LoteDescarteRepository(_context);
-            var repositoryAgendamento = new AgendamentoDescarteRepository(_context);
-
             var produtosFinalizados = descarteResponse as ObterProdutosFinalizadosMessageResponse;
 
             if ((produtosFinalizados != null) && (produtosFinalizados.codRetorno != 1))
@@ -196,7 +182,7 @@ namespace DescarteService.Services
                             LoteDescarte = loteDescarte,
                             StatusProposta = "Pendente Envio Email"
                         };
-                        repositoryAgendamento.Create(agendamento);
+                        _agendamentoDescarteRepository.Create(agendamento);
                     }
                 }
             }
@@ -207,11 +193,8 @@ namespace DescarteService.Services
         public void ComunicarLotesParaRetirada(string tipoEmail)
         {
             lock(typeof(EmailService))
-            {
-                var repository = new AgendamentoDescarteRepository(_context);
-                var repositoryLote = new LoteDescarteRepository(_context);
-
-                var agendamentos = repository.FindAgendamentoPendenteEnvioEmail();
+            {  
+                var agendamentos = _agendamentoDescarteRepository.FindAgendamentoPendenteEnvioEmail();
 
                 var lotes = agendamentos.GroupBy(l => l.LoteDescarte);
 
@@ -225,7 +208,7 @@ namespace DescarteService.Services
 
                     foreach (AgendamentoDescarteSolicitado agendamento in agendamentosPorLote)
                     {
-                        DatasDisponiveisMessage data = new DatasDisponiveisMessage() { Data = DateTime.Now, LinkAgendamento = String.Format("http://localhost:9010/api/agenda/agendar?lote={0}&data={1}", agendamento.Id, agendamento.DataPropostaAgendamento) };
+                        DatasDisponiveisMessage data = new DatasDisponiveisMessage() { Data = DateTime.Now, LinkAgendamento = String.Format("{0}/agendar?lote={1}&data={2}", Startup.AppSettings.AgendaServicesURL, agendamento.Id, agendamento.DataPropostaAgendamento) };
                         request.DatasDisponiveis.Add(data);
 
                         var produtos = agendamento.LoteDescarte.ProdutosDescartes.ToList();
@@ -248,8 +231,6 @@ namespace DescarteService.Services
 
         public ObterAgendamentoPendenteMessageResponse ObterAgendamentoPendente()
         {
-            var repository = new AgendamentoDescarteRepository(_context);
-            var loteRepository = new LoteDescarteRepository(_context);
 
             var response = new ObterAgendamentoPendenteMessageResponse()
             {
@@ -258,7 +239,7 @@ namespace DescarteService.Services
                 listaPendencias = new List<ObterAgendamentoMessageResponse>()
             };
 
-            var agendamentoPendentes = repository.FindAgendamentoPendenteEnvioEmail();
+            var agendamentoPendentes = _agendamentoDescarteRepository.FindAgendamentoPendenteEnvioEmail();
 
             foreach (AgendamentoDescarteSolicitado agendamentoPendente in agendamentoPendentes)
             {

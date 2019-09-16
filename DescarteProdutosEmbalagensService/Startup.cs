@@ -14,6 +14,8 @@ using DescarteServices.Jobs;
 using Messages.Descartes.Messages;
 using DescarteService.Services;
 using DescarteService.Data.Interfaces;
+using DescarteService.Data.Models;
+using DescarteService.Data.Repository;
 
 namespace DescarteService
 {
@@ -47,8 +49,16 @@ namespace DescarteService
             services.AddHangfire(config => config.UseSqlServerStorage(Configuration.GetConnectionString("Jobs")));
 
             services.AddScoped<IDescarteApiService,DescarteApiService>();  
-
             services.AddScoped<IEmailService,EmailService>();
+            
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IRepository<AgendamentoDescarteSolicitado>), typeof(Repository<AgendamentoDescarteSolicitado>));
+            services.AddScoped(typeof(IRepository<LoteDescarte>), typeof(Repository<LoteDescarte>));
+            services.AddScoped<IAgendamentoDescarteRepository,AgendamentoDescarteRepository>(); 
+            services.AddScoped<ILoteDescarteRepository,LoteDescarteRepository>(); 
+            
+            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

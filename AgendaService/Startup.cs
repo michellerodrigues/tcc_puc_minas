@@ -20,6 +20,9 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.NetworkInformation;
 using Newtonsoft.Json;
+using AgendaService.Data.Interfaces;
+using AgendaService.Data.Repository;
+using AgendaService.Data.Models;
 
 namespace AgendaService
 {
@@ -60,6 +63,9 @@ namespace AgendaService
             var context = services.BuildServiceProvider().GetService<AppDataContext>();
 
             services.AddScoped<IAgendaApiService,AgendaApiService>();  
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IRepository<Agenda>), typeof(Repository<Agenda>));
+            services.AddScoped<IAgendaRepository,AgendaRepository>();  
 
             ConfigureNserviceBus(services,context);            
         
@@ -125,9 +131,9 @@ namespace AgendaService
 
             var routing = transport.Routing();
             routing.RouteToEndpoint(typeof(AgendarRetiradaCommand), endpointName);
-            routing.RouteToEndpoint(typeof(ConfirmarAgendamentoCommand), endpointName);
+            routing.RouteToEndpoint(typeof(ConfirmarAgendamentoRetiradaCommand), endpointName);
             routing.RouteToEndpoint(typeof(CancelarAgendamentoRetiradaCommand), endpointName);
-            routing.RouteToEndpoint(typeof(CancelarAgendamentoConfirmadoRetiradaCommand), endpointName);
+            routing.RouteToEndpoint(typeof(CancelarAgendamentoRetiradaConfirmadaCommand), endpointName);
 
             IEndpointInstance endpoint = null;
 
@@ -142,7 +148,7 @@ namespace AgendaService
             endpoint = Endpoint.Start(endpointConfiguration).GetAwaiter().GetResult();   
                          
             services.AddSingleton<IMessageSession>(endpoint);
-            services.AddSingleton<IAgendaApiService>(new AgendaApiService(endpoint,context)); 
+            //ervices.AddSingleton<IAgendaApiService>(new AgendaApiService(endpoint,services
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

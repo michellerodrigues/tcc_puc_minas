@@ -14523,8 +14523,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj": {
-              "projectPath": "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj"
+            "d:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj": {
+              "projectPath": "d:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj"
             }
           }
         }

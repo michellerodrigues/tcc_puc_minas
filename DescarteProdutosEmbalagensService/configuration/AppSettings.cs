@@ -12,7 +12,8 @@
     public string MensagemPadraoDescarteProutoVencido{ get; set; }    
     public string MensagemPadraoDescarteEmbalagens{ get; set; }
     public string EstoqueServicesURL{ get; set; }
-
+    public string AgendaServicesURL{ get; set; }
+    public string DescarteeServicesURL{ get; set; }
 }
 
 public class EnvioEmail

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 public class AgendamentoDescarteRepository : Repository<AgendamentoDescarteSolicitado>, IAgendamentoDescarteRepository
 {
-     private AppDataContext _context = null;
+     private new AppDataContext _context = null;
     public AgendamentoDescarteRepository(AppDataContext context) : base(context)
     {
          this._context = context;
@@ -17,13 +17,13 @@ public class AgendamentoDescarteRepository : Repository<AgendamentoDescarteSolic
 
     public IEnumerable<AgendamentoDescarteSolicitado> FindAgendamentoEmAndamento()
     {
-         return this._context .AgendamentoDescarteSolicitados.Where(a=>a.DataEnvioEmail!=null && a.StatusProposta!="Cancelado" && a.StatusProposta!="Finalizado").Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes);;
+         return this._context.AgendamentoDescarteSolicitados.Where(a=>a.DataEnvioEmail!=null && a.StatusProposta!="Cancelado" && a.StatusProposta!="Finalizado").Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes);;
     }
 
     public IEnumerable<AgendamentoDescarteSolicitado> FindAgendamentoPendenteEnvioEmail()
     {
          //pesquisar groupby
-         return this._context .AgendamentoDescarteSolicitados.Where(a=> a.StatusProposta=="Pendente Envio Email").Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).OrderBy(e=>e.LoteDescarteId).ToList();
+         return this._context.AgendamentoDescarteSolicitados.Where(a=> a.StatusProposta=="Pendente Envio Email").Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).OrderBy(e=>e.LoteDescarteId).ToList();
     }
 
     public AgendamentoDescarteSolicitado FindAgendamentoEnviado(Guid lote, string data)
@@ -34,7 +34,7 @@ public class AgendamentoDescarteRepository : Repository<AgendamentoDescarteSolic
     public IEnumerable<AgendamentoDescarteSolicitado> FindAgendamentoPorLote(Guid LoteId)
     {
          //pesquisar groupby
-         return this._context.AgendamentoDescarteSolicitados.Where(a=>a.Id==LoteId).Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).OrderBy(e=>e.LoteDescarteId).ToList();
+         return this._context.AgendamentoDescarteSolicitados.Where(a=>a.LoteDescarteId==LoteId).Include(e=>e.LoteDescarte).ThenInclude(e=>e.ProdutosDescartes).OrderBy(e=>e.LoteDescarteId).ToList();
     }
 
     public AgendamentoDescarteSolicitado FindAgendamentoPendenteEnvioEmail(Guid lote, string data)

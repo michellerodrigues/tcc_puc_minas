@@ -3,18 +3,18 @@ using NServiceBus;
 
 namespace Messages.Descartes.Commands
 {
-    public class TriagemFinalizadaCanceladaEvent : IEvent
+    public class TriagemCanceladaEvent : IEvent
     {
         public Guid Id { get; set; }
 
         public string EmailRealizador { get; set; }
 
         public DateTime DataCancelamento { get; set; }
-        public TriagemFinalizadaCanceladaEvent()
+        public TriagemCanceladaEvent()
         {
             
         }
-        public TriagemFinalizadaCanceladaEvent(Guid id, string emailRealizador)
+        public TriagemCanceladaEvent(Guid id, string emailRealizador)
         {
             this.Id = id;
             this.EmailRealizador = emailRealizador;

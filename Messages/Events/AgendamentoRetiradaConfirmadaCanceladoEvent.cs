@@ -1,18 +1,17 @@
 using System;
 using NServiceBus;
 
-namespace Messages.Descartes.Commands
+namespace Messages.Descartes.Events
 {
-    public class RealizarTriagemCanceladaEvent : ICommand
+    public class AgendamentoRetiradaConfirmadaCanceladoEvent : IEvent
     {
         public Guid Id { get; set; }
         public DateTime DataCancelamento { get; set; }
-
-        public RealizarTriagemCanceladaEvent()
+        public AgendamentoRetiradaConfirmadaCanceladoEvent()
         {
             
         }
-        public RealizarTriagemCanceladaEvent(Guid id, DateTime dataCancelamento)
+        public AgendamentoRetiradaConfirmadaCanceladoEvent(Guid id)
         {
             this.Id = id;
             this.DataCancelamento = DateTime.Now;

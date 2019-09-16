@@ -13,7 +13,7 @@ using Messages.Descartes.Messages;
 using NServiceBus.Routing;
 using AgendaService.Services.Interfaces;
 using Microsoft.AspNetCore.Builder.Internal;
-
+using AgendaService.Data.Interfaces;
 
 namespace AgendaService.Controllers
 {
@@ -22,27 +22,10 @@ namespace AgendaService.Controllers
     public class AgendaController : Controller
     {     
         private readonly IAgendaApiService _agendaApiService;
-
         public AgendaController(IAgendaApiService agendaApiService)
         {
             _agendaApiService = agendaApiService;
         }
-
-/*         [HttpGet]
-        [Route("agendar")]
-        public async Task Agendar(Guid lote, string Data)
-        {   
-            await _agendaApiService.AgendarRetirada(lote, Data);
-        }                   
- */
-        
-        /* [HttpGet]
-        [Route("obterAgendamento")]
-        public ObterAgendamentoMessageResponse Agendar(Guid lote, string data)
-        {   
-            await _agendaApiService.VerificarAgendamentoSolicitado(agendamento);
-        }  */               
-
 
         [HttpGet]
         [Route("ping")]
@@ -59,46 +42,17 @@ namespace AgendaService.Controllers
         {
             AgendaCanceladaMessageResponse response = new AgendaCanceladaMessageResponse();
 
-            //IAgendaApiService agendaService = new AgendaApiService();
-
             response = _agendaApiService.CancelarAgenda(Agenda);
 
             return response;
         }
 
-        [HttpGet]
-        [Route("confirmar/{Agenda}")]
-        public AgendaConfirmadaMessageResponse ConfirmarAgenda(Guid Agenda)
-        {
-            AgendaConfirmadaMessageResponse response = new AgendaConfirmadaMessageResponse();
-
-            //AgendaApiService service = new AgendaApiService();
-
-         //   response = _agendaApiService.ConfirmarAgenda(Agenda);
-
-            return response;
-        }
-
-        [HttpPost]
-        [Route("finalizar/{Agenda}")]
-        public AgendaFinalizadaMessageResponse ConfirmarRetiradaAgenda(Guid Agenda)
-        {
-            AgendaFinalizadaMessageResponse response = new AgendaFinalizadaMessageResponse();
-
-            //AgendaApiService service = new AgendaApiService();
-
-            response = _agendaApiService.FinalizarAgenda(Agenda);
-
-            return response;
-        }
 
         [HttpGet]
         [Route("expirada")]
         public ObterAgendaExpiradaMessageResponse ObterAgendaExpirada()
         {
             ObterAgendaExpiradaMessageResponse response = new ObterAgendaExpiradaMessageResponse();
-
-            //AgendaApiService service = new AgendaApiService();
 
             response = _agendaApiService.ObterAgendaExpirada();
 
@@ -111,8 +65,6 @@ namespace AgendaService.Controllers
         {
             ObterListaAgendaStatusMessageResponse response = new ObterListaAgendaStatusMessageResponse();
 
-            //AgendaApiService service = new AgendaApiService();
-
             response = _agendaApiService.ObterAgendasPorStatus(status);
 
             return response;
@@ -122,16 +74,12 @@ namespace AgendaService.Controllers
         [Route("confirmar/{Agenda}/{email}")]
         public AgendaConfirmadaMessageResponse ConfirmarAgendamentoRetirada(Guid Agenda, string email)
         {
-
-
             AgendaConfirmadaMessageResponse response = new AgendaConfirmadaMessageResponse();
             response.codRetorno = 0;
             response.StatusRetorno = "ok";
             response.AgendaConfirmada = new AgendaMessage();
 
-            //AgendaApiService service = new AgendaApiService();
-
-            //response = _agendaApiService.ConfirmarAgenda(Agenda);
+            response = _agendaApiService.ConfirmarAgendamento(Agenda, email).GetAwaiter().GetResult();
 
             return response;
         }
@@ -142,12 +90,9 @@ namespace AgendaService.Controllers
         {
             AgendamentoMessage response = new AgendamentoMessage(); 
 
-            //AgendaApiService service = new AgendaApiService();
-
             response = _agendaApiService.AgendarRetirada(lote, data).GetAwaiter().GetResult();
             
             return response;
         }
-
     }
 }
