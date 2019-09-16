@@ -25,10 +25,10 @@ public class UnitOfWork : IUnitOfWork
     {
        
         _context = context;
-        _estoque = new EstoqueRepository(_context.Estoques);
-        _produto = new ProdutoRepository(_context.Produtos);
-        _fabricante = new FabricanteRepository(_context.Fabricantes);
-        _revendedor = new RevendedorRepository(_context.Revendedores);
+        _estoque = new EstoqueRepository(_context);
+        _produto = new ProdutoRepository(_context);
+        _fabricante = new FabricanteRepository(_context);
+        _revendedor = new RevendedorRepository(_context);
     }
     public void Save()
     {
@@ -38,6 +38,5 @@ public class UnitOfWork : IUnitOfWork
     public void Dispose()
     {
         _context.Dispose();
-
     }
 }

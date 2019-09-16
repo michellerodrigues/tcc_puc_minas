@@ -9,9 +9,10 @@ using Microsoft.EntityFrameworkCore;
 
 public class ProdutoRepository : Repository<Produto>, IProdutoRepository
 {
-    public ProdutoRepository(DbSet<Produto> dbSet) : base(dbSet) 
-    { 
-        dbSet.Include(e=>e.Estoques);
+    private new AppDataContext _context;
+    public ProdutoRepository(AppDataContext context) : base(context)
+    {
+        _context = context;
     }
 
     public IEnumerable<Produto> FindProdutos(Func<Produto, bool> predicate)

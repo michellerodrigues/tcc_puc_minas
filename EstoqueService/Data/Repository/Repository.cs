@@ -10,33 +10,57 @@ using EstoqueService.Services.Util;
 
 namespace EstoqueService.Data.Repository
 {
-    public abstract class Repository<T> : IRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T: class
     {
+        protected readonly AppDataContext _context;
 
-        protected DbSet<T> _dbSet;
-        public Repository(DbSet<T> dbSet)
+        public Repository(AppDataContext context)
         {
-            _dbSet = dbSet;
+            _context = context;
+        }
+        protected void Save() => _context.SaveChanges();
+
+        public int Count(Func<T, bool> predicate)
+        {
+            return _context.Set<T>().Where(predicate).Count();
         }
 
-        public virtual void Add(T entity)
+        public void Create(T entity)
         {
-            _dbSet.Add(entity);
+            _context.Add(entity);
+            Save();
         }
 
-        public virtual void Delete(T entity)
+        public void Remove(T entity)
         {
-            _dbSet.Remove(entity);
+            _context.Remove(entity);
+            Save();
         }
 
-        public virtual IEnumerable<T> GetAll()
+        public IEnumerable<T> Find(Func<T, bool> predicate)
         {
-            return _dbSet.AsEnumerable();
+            return _context.Set<T>().Where(predicate);
         }
 
-        public virtual void Remove(T entity)
+        public IEnumerable<T> GetAll()
         {
-            _dbSet.Remove(entity);
+            return _context.Set<T>();
+        }
+
+        public T GetById(int id)
+        {
+            return _context.Set<T>().Find(id);
+        }
+
+        public T GetById(Guid id)
+        {
+            return _context.Set<T>().Find(id);
+        }
+
+        public void Update(T entity)
+        {
+            _context.Entry(entity).State = EntityState.Modified;
+            Save();
         }
     }
 }

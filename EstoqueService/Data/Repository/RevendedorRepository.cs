@@ -7,13 +7,16 @@ using EstoqueService.Data.Models;
 using EstoqueService.Data.Repository;
 using Microsoft.EntityFrameworkCore;
 
-    public class RevendedorRepository : Repository<Revendedor>, IRevendedorRepository
+public class RevendedorRepository : Repository<Revendedor>, IRevendedorRepository
+{
+    private new AppDataContext _context;
+    public RevendedorRepository(AppDataContext context) : base(context)
     {
-     public RevendedorRepository(DbSet<Revendedor> dbSet):base(dbSet){}
-    
+        _context = context;
+    }
 
     public IEnumerable<Revendedor> FindRevendedor(Func<Revendedor, bool> predicate)
     {
-        return _dbSet.Where(predicate);
+        return _context.Revendedores.Where(predicate);
     }
 }

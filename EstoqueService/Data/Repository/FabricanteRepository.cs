@@ -8,11 +8,16 @@ using EstoqueService.Data.Repository;
 using Microsoft.EntityFrameworkCore;
 
 public class FabricanteRepository : Repository<Fabricante>, IFabricanteRepository
+{
+
+    private new AppDataContext _context;
+    public FabricanteRepository(AppDataContext context) : base(context)
     {
-    public FabricanteRepository(DbSet<Fabricante> dbSet):base(dbSet){}
+        _context = context;
+    }
 
     IEnumerable<Fabricante> IFabricanteRepository.FindFabricantes(Func<Fabricante, bool> predicate)
     {
-         return _dbSet.Where(predicate);
+         return _context.Fabricantes.Where(predicate);
     }
 }
