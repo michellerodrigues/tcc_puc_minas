@@ -7,7 +7,6 @@ namespace Messages.Descartes.Events
     {
         public Guid Id { get; set; }
         public DateTime DataRegistro { get; set; }
-
         public string EmailSolicitante { get; set; }
         public RetiradaAgendadaEvent()
         {

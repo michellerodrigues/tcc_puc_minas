@@ -10,14 +10,12 @@ namespace AgendaService.Data.Models
         public Guid Id { get; set; }
 
         [Required]
-        [StringLength(10)]
         public string LoteDescarte { get; set; }
 
         [Required]
         public DateTime DataStatus { get; set; }
 
         [Required]
-        [StringLength(3)]
         public string StatusAgenda { get; set; }
 
         [Required]
@@ -34,7 +32,6 @@ namespace AgendaService.Data.Models
 
         [Required]
          public bool Verificada { get; set; }  
-
 
     }
 }

@@ -30,4 +30,10 @@ public class AgendaRepository : Repository<Agenda>, IAgendaRepository
     {
          return _context.Agendas.Include(t=>t.Responsavel).Where(t=>t.StatusAgenda==status && t.DataExpiracao<DateTime.Now);
     }
+
+    public IEnumerable<Agenda> FindAgendaByLoteAgendamento(string loteDescarte)
+    {
+         return _context.Agendas.Include(t=>t.Responsavel).Where(t=>t.LoteDescarte==loteDescarte).ToList();
+    }
+
 }

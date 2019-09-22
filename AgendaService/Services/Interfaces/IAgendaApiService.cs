@@ -17,11 +17,11 @@ namespace AgendaService.Services.Interfaces
 {
     public interface IAgendaApiService
     {
-        Task<AgendamentoMessage> AgendarRetirada(Guid lote, string Data);
+        AgendamentoMessage AgendarRetirada(Guid lote, string Data);
         AgendaCanceladaMessageResponse CancelarAgenda(Guid idAgenda);
         AgendaFinalizadaMessageResponse FinalizarAgenda(Guid idAgenda);
         ObterListaAgendaStatusMessageResponse ObterAgendasPorStatus(string status);
         ObterAgendaExpiradaMessageResponse ObterAgendaExpirada();
-        Task<AgendaConfirmadaMessageResponse> ConfirmarAgendamento(Guid lote, string Email);
+        AgendaConfirmadaMessageResponse ConfirmarAgendamento(Guid lote, string Email);
     }
 }

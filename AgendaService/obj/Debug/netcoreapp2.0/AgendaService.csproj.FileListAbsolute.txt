@@ -1,7 +1,3 @@
-D:\mica\tcc\tcc_puc_minas\AgendaService\obj\Debug\netcoreapp2.0\AgendaService.csprojAssemblyReference.cache
-D:\mica\tcc\tcc_puc_minas\AgendaService\obj\Debug\netcoreapp2.0\AgendaService.csproj.CoreCompileInputs.cache
-D:\mica\tcc\tcc_puc_minas\AgendaService\obj\Debug\netcoreapp2.0\AgendaService.AssemblyInfoInputs.cache
-D:\mica\tcc\tcc_puc_minas\AgendaService\obj\Debug\netcoreapp2.0\AgendaService.AssemblyInfo.cs
 D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Create.sql
 D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\NServiceBus.Persistence.Sql\MsSqlServer\Outbox_Drop.sql
 D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\NServiceBus.Persistence.Sql\MsSqlServer\Sagas\AgendaSaga_Create.sql
@@ -41,6 +37,10 @@ D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\AgendaService.dl
 D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\AgendaService.pdb
 D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\Messages.dll
 D:\mica\tcc\tcc_puc_minas\AgendaService\bin\Debug\netcoreapp2.0\Messages.pdb
+D:\mica\tcc\tcc_puc_minas\AgendaService\obj\Debug\netcoreapp2.0\AgendaService.csprojAssemblyReference.cache
+D:\mica\tcc\tcc_puc_minas\AgendaService\obj\Debug\netcoreapp2.0\AgendaService.csproj.CoreCompileInputs.cache
+D:\mica\tcc\tcc_puc_minas\AgendaService\obj\Debug\netcoreapp2.0\AgendaService.AssemblyInfoInputs.cache
+D:\mica\tcc\tcc_puc_minas\AgendaService\obj\Debug\netcoreapp2.0\AgendaService.AssemblyInfo.cs
 D:\mica\tcc\tcc_puc_minas\AgendaService\obj\Debug\netcoreapp2.0\AgendaService.csproj.CopyComplete
 D:\mica\tcc\tcc_puc_minas\AgendaService\obj\Debug\netcoreapp2.0\AgendaService.dll
 D:\mica\tcc\tcc_puc_minas\AgendaService\obj\Debug\netcoreapp2.0\AgendaService.pdb

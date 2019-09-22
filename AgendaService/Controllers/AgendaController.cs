@@ -22,9 +22,11 @@ namespace AgendaService.Controllers
     public class AgendaController : Controller
     {     
         private readonly IAgendaApiService _agendaApiService;
-        public AgendaController(IAgendaApiService agendaApiService)
+        private readonly IMessageSession _messageSession;
+        public AgendaController(IAgendaApiService agendaApiService, IMessageSession messageSession)
         {
             _agendaApiService = agendaApiService;
+            _messageSession = messageSession;
         }
 
         [HttpGet]
@@ -72,26 +74,45 @@ namespace AgendaService.Controllers
 
         [HttpGet]
         [Route("confirmar/{Agenda}/{email}")]
-        public AgendaConfirmadaMessageResponse ConfirmarAgendamentoRetirada(Guid Agenda, string email)
+        public async Task<AgendaConfirmadaMessageResponse> ConfirmarAgendamentoRetirada(Guid Agenda, string email)
         {
-            AgendaConfirmadaMessageResponse response = new AgendaConfirmadaMessageResponse();
+            /* AgendaConfirmadaMessageResponse response = new AgendaConfirmadaMessageResponse();
             response.codRetorno = 0;
             response.StatusRetorno = "ok";
-            response.AgendaConfirmada = new AgendaMessage();
+            response.AgendaConfirmada = new AgendaMessage(); 
 
-            response = _agendaApiService.ConfirmarAgendamento(Agenda, email).GetAwaiter().GetResult();
+            response = _agendaApiService.ConfirmarAgendamento(Agenda, email).GetAwaiter().GetResult();*/
+            await _messageSession.SendLocal(
+                new ConfirmarAgendamentoRetiradaCommand()
+                {       
+                    EmailSolicitacao = email,
+                    Id = Agenda,
+                    SolicitadoEm = DateTime.Now
+                });
+
+            AgendaConfirmadaMessageResponse response = new AgendaConfirmadaMessageResponse();
+            response.codRetorno = 0;
+            response.StatusRetorno = "Solicitação de Confrirmação Recebida. Por Favor, Aguarde o processamento";
 
             return response;
         }
 
         [HttpGet]
         [Route("agendar")]
-        public AgendamentoMessage AgendarRetirada(Guid lote, string data)
-        {
+        public async Task<AgendamentoMessage> AgendarRetirada(Guid lote, string data)
+        {            
             AgendamentoMessage response = new AgendamentoMessage(); 
-
-            response = _agendaApiService.AgendarRetirada(lote, data).GetAwaiter().GetResult();
-            
+            response.codRetorno = 0;
+            response.StatusRetorno = "Solicitação de Agendamento de Retirada Recebida. Por Favor, Aguarde o processamento";
+            response.IdAgendamento = lote;
+            await _messageSession.SendLocal(
+                new AgendarRetiradaCommand()
+                {       
+                    DataAgendamento=data,
+                    DataRegistro=DateTime.Now,
+                    Id = lote,
+                    LoteRetirada = lote.ToString()
+                });
             return response;
         }
     }

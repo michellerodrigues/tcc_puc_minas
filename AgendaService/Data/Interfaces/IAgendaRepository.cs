@@ -13,6 +13,9 @@ namespace AgendaService.Data.Interfaces
         IEnumerable<Agenda> FindAgendaExpirada();
 
         IEnumerable<Agenda> FindAgendaStatus(string status);
+
+        IEnumerable<Agenda> FindAgendaByLoteAgendamento(string loteDescarte);
+
     }
 
 }

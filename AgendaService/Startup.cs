@@ -61,12 +61,13 @@ namespace AgendaService
             
 
             var context = services.BuildServiceProvider().GetService<AppDataContext>();
-
-            services.AddScoped<IAgendaApiService,AgendaApiService>();  
+         
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IRepository<Agenda>), typeof(Repository<Agenda>));
+            services.AddScoped(typeof(IRepository<Responsavel>), typeof(Repository<Responsavel>));
+            services.AddScoped<IResponsavelRepository,ResponsavelRepository>();  
             services.AddScoped<IAgendaRepository,AgendaRepository>();  
-
+            services.AddScoped<IAgendaApiService,AgendaApiService>();
             ConfigureNserviceBus(services,context);            
         
         }
@@ -137,7 +138,6 @@ namespace AgendaService
 
             IEndpointInstance endpoint = null;
 
-           
             endpointConfiguration.UseContainer<ServicesBuilder>(
             customizations: customizations =>
             {
@@ -146,9 +146,8 @@ namespace AgendaService
            
             endpointConfiguration.EnableInstallers();
             endpoint = Endpoint.Start(endpointConfiguration).GetAwaiter().GetResult();   
-                         
-            services.AddSingleton<IMessageSession>(endpoint);
-            //ervices.AddSingleton<IAgendaApiService>(new AgendaApiService(endpoint,services
+
+            services.AddSingleton<IMessageSession>(endpoint);           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

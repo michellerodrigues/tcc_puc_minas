@@ -10,35 +10,68 @@ using AgendaService.Services.Interfaces;
 using Messages.Descartes.Commands;
 using NServiceBus;
 using Messages.Descartes.Messages;
+using System.Linq;
 
 namespace AgendaService.Services
 {
     public class AgendaApiService : IAgendaApiService
     {
-        IMessageSession _messageSession;
-        IAgendaRepository _repository;
+   //     IMessageSession _messageSession;
+        IAgendaRepository _agendaRepository;
+        IResponsavelRepository _responsavelRepository;
  
         static string DescarteServicesURL = Startup.AppSettings.DescarteServicesURL;
 
-        public AgendaApiService(IMessageSession messageSession, IAgendaRepository repository)
+      //  public AgendaApiService(IMessageSession messageSession, IAgendaRepository agendaRepository, IResponsavelRepository responsavelRepository)
+        public AgendaApiService(IAgendaRepository agendaRepository, IResponsavelRepository responsavelRepository)      
         {
-            this._messageSession = messageSession;
-            _repository = repository;
+         //   this._messageSession = messageSession;
+            _agendaRepository = agendaRepository;
+            _responsavelRepository = responsavelRepository;
+ 
         }
 
-        public async Task<AgendamentoMessage> AgendarRetirada(Guid lote, string Data)
+        public AgendamentoMessage AgendarRetirada(Guid lote, string Data)
         {     
             AgendamentoMessage agendamento = VerificarAgendamentoSolicitado(lote, Data);
+            
+            DateTime registro=DateTime.Now;
 
             if(agendamento!=null && agendamento.codRetorno==0)
-            {   
-                //salvar no banco               
-                await _messageSession.SendLocal(new AgendarRetiradaCommand()
-                {DataAgendamento=DateTime.Now,DataRegistro=agendamento.DataRegistro,EmailAgente=agendamento.Email,Id=agendamento.IdAgendamento});      
+            { 
+                //buscar o responsável pelo agendamento pelo email informado
+                var responsavel = _responsavelRepository.FindResponsavelByEmail(agendamento.Email).ToList().FirstOrDefault();
+
+                if(responsavel==null)
+                {
+                    agendamento.codRetorno=1;
+                    agendamento.StatusRetorno="Email do Responsavel Inválido";
+                    return agendamento;
+                }
+
+                //salvar no banco   
+                //lote do descarte ou id do agendamento: agendamento deverá pertencer a uma só pessoa? 
+                //Na realidade sim...mas podem ter outros posto que o agendamento não confirmado pode 
+                //ser cancelado
+                _agendaRepository.Create(new Agenda(){
+                    DataAgenda=agendamento.DataRegistro,
+                    DataExpiracao=registro.AddDays(7),
+                    DataCriacao = registro,
+                    DataStatus = registro,
+                    StatusAgenda="Agendamento Requisitado",
+                    LoteDescarte = lote.ToString(),
+                    Verificada=true,
+                    Responsavel = responsavel
+                });
 
                 agendamento.StatusRetorno="Agendamento recebido. Você receberá um e-mail para confirmação.";
+            }
+            else
+            {
+                agendamento.codRetorno=1;
+                agendamento.StatusRetorno="Agendamento Não encontrado";
             }   
-            return await Task.FromResult(agendamento);
+            return agendamento;
         }
 
         private AgendamentoMessage VerificarAgendamentoSolicitado(Guid lote, string data)
@@ -54,7 +87,7 @@ namespace AgendaService.Services
                     IdAgendamento=lote,
                     DataRegistro=DateTime.Now,   
                     Email=response.EmailResponsavel,
-                    codRetorno=response.codRetorno                    
+                    codRetorno=response.codRetorno           
                  };
 
             }
@@ -78,7 +111,7 @@ namespace AgendaService.Services
             response.StatusRetorno = "Agenda Cancelada Com Sucesso";
             response.AgendaCancelada = new AgendaMessage();
 
-            var Agenda = _repository.GetById(idAgenda);
+            var Agenda = _agendaRepository.GetById(idAgenda);
 
             if (Agenda == null)
             {
@@ -99,50 +132,50 @@ namespace AgendaService.Services
             Agenda.DataStatus = dataAgora;
             Agenda.StatusAgenda = "Cancelada";
 
-            _repository.Update(Agenda);
+            _agendaRepository.Update(Agenda);
             response.AgendaCancelada =  PrepararAgendaRetorno(Agenda);
             return response;
         }
 
 
-        public async Task<AgendaConfirmadaMessageResponse> ConfirmarAgendamento(Guid lote, string email)
+        public AgendaConfirmadaMessageResponse ConfirmarAgendamento(Guid lote, string email)
         {              
             var resposta = new AgendaConfirmadaMessageResponse();
-            
-            //IAgendaRepository AgendaRepository = new AgendaRepository(_context);
 
             AgendaConfirmadaMessageResponse response = new AgendaConfirmadaMessageResponse();
             response.codRetorno = 0;
             response.StatusRetorno = "Agenda Confirmada Com Sucesso";
             response.AgendaConfirmada = new AgendaMessage();
 
-            var Agenda = _repository.GetById(lote);
+            var Agenda = _agendaRepository.FindAgendaByLoteAgendamento(lote.ToString());
 
-            if (Agenda == null)
+            if (Agenda == null || Agenda.Count()==0) 
             {
                 response.codRetorno = 1;
                 response.StatusRetorno = "Agenda Não encontrada";
-                return await Task.FromResult(response);
+                return response;
             }
 
+            var agenda = Agenda.LastOrDefault();
 
-            if (Agenda.StatusAgenda != "Pendente")
+
+            if (agenda.StatusAgenda != "Agendamento Requisitado")
             {
                 response.codRetorno = 1;
-                response.StatusRetorno = "Agenda não pode ser confirmada. Veja seu Status";
-                response.AgendaConfirmada = PrepararAgendaRetorno(Agenda);
-                return await Task.FromResult(response);
+                response.StatusRetorno = "Agenda não pode ser Confirmada";
+                response.AgendaConfirmada = PrepararAgendaRetorno(agenda);
+                return response;
             }
 
 
             var dataAgora = DateTime.Now;
-            Agenda.DataStatus = dataAgora;
-            Agenda.StatusAgenda = "Cancelada";
+            agenda.DataStatus = dataAgora;
+            agenda.StatusAgenda = "Confirmada";
 
-            _repository.Update(Agenda);
-            response.AgendaConfirmada = PrepararAgendaRetorno(Agenda);
+            _agendaRepository.Update(agenda);
+            response.AgendaConfirmada = PrepararAgendaRetorno(agenda);                
             
-            return await Task.FromResult(response);
+            return response;
         }
 
         public AgendaFinalizadaMessageResponse FinalizarAgenda(Guid idAgenda)
@@ -154,7 +187,7 @@ namespace AgendaService.Services
             response.StatusRetorno = "Agenda Finalizada Com Sucesso";
             response.AgendaFinalizada = new AgendaMessage();
 
-            var Agenda = _repository.GetById(idAgenda);
+            var Agenda = _agendaRepository.GetById(idAgenda);
 
             if (Agenda == null)
             {
@@ -164,10 +197,10 @@ namespace AgendaService.Services
             }
 
 
-            if (Agenda.StatusAgenda != "Confirmada")
+            if (Agenda.StatusAgenda != "Agendamento Requisitado")
             {
                 response.codRetorno = 1;
-                response.StatusRetorno = "Agenda não pode ser finalizada. Veja seu Status";
+                response.StatusRetorno = "Agenda não pode ser Finalizada. Favor Verificar Status";
                 response.AgendaFinalizada = PrepararAgendaRetorno(Agenda);
                 return response;
             }
@@ -176,7 +209,7 @@ namespace AgendaService.Services
             Agenda.DataStatus = dataAgora;
             Agenda.StatusAgenda = "Finalizada";
 
-            _repository.Update(Agenda);
+            _agendaRepository.Update(Agenda);
             response.AgendaFinalizada = PrepararAgendaRetorno(Agenda);
             return response;
         }
@@ -189,7 +222,7 @@ namespace AgendaService.Services
             response.codRetorno = 0;
             response.StatusRetorno = String.Format("Agendas {0}s Retornados com sucesso", status);
 
-            var Agendas = _repository.FindAgendaStatus(status);
+            var Agendas = _agendaRepository.FindAgendaStatus(status);
 
             if (Agendas == null)
             {
@@ -213,7 +246,7 @@ namespace AgendaService.Services
             response.codRetorno = 0;
             response.StatusRetorno = "Agendas expiradas Retornadas com sucesso";
 
-            var Agendas = _repository.FindAgendaExpirada();
+            var Agendas = _agendaRepository.FindAgendaExpirada();
 
             if (Agendas == null)
             {
