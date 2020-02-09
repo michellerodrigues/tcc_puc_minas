@@ -11,6 +11,7 @@ namespace Messages.Descartes.Commands
         public string DataAgendamento { get; set; }
         public DateTime DataRegistro { get; set; }
         public string Status { get; set; }="ok";
+        public string Tipo { get; set; }
         public AgendarRetiradaCommand()
         {
             

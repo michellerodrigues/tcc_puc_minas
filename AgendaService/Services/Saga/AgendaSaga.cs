@@ -23,6 +23,7 @@ namespace AgendaService.Saga
         protected override void ConfigureHowToFindSaga(SagaPropertyMapper<AgendaSagaData> mapper)
         {
             mapper.ConfigureMapping<AgendarRetiradaCommand>(message =>message.Id).ToSaga(saga => saga.AgendaId);
+            //mapper.ConfigureMapping<AgendarRetiradaCommand>(message =>message.Tipo).ToSaga(saga => saga.Tipo);
             mapper.ConfigureMapping<RetiradaAgendadaEvent>(message=>message.Id).ToSaga(saga => saga.AgendaId);
             mapper.ConfigureMapping<ConfirmarAgendamentoRetiradaCommand>(message=>message.Id).ToSaga(saga => saga.AgendaId);
             mapper.ConfigureMapping<AgendamentoRetiradaConfirmadoEvent>(message=>message.Id).ToSaga(saga => saga.AgendaId);
@@ -41,6 +42,7 @@ namespace AgendaService.Saga
             
             if(retorno.codRetorno==0)
             {
+                //message.Tipo = typeof(AgendarRetiradaCommand).ToString();
                 return context.Publish(new RetiradaAgendadaEvent(message.Id,retorno.Email));
             }
             else
@@ -83,7 +85,7 @@ namespace AgendaService.Saga
             Task.Factory.StartNew(async() => { await AgendaApiService.EnviarEmailAgendamento(message.EmailConfirmacao,"Agendamento Confirmado",mensagem);});     
 
             //a triagem deveá se conectar ao agendamento e escutar o evento de 'AgendamentoRetiradaConfirmadoEvent'
-            return context.Publish(new RealizarTriagemCommand()
+            return context.Send(new RealizarTriagemCommand()
             {DataEntrada=message.ConfirmadoEm,EmailAgente=message.EmailConfirmacao,Id=message.Id}); 
         }
         public Task Handle(CancelarAgendamentoRetiradaConfirmadaCommand message, IMessageHandlerContext context)

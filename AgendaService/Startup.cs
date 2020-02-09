@@ -68,11 +68,11 @@ namespace AgendaService
             services.AddScoped<IResponsavelRepository,ResponsavelRepository>();  
             services.AddScoped<IAgendaRepository,AgendaRepository>();  
             services.AddScoped<IAgendaApiService,AgendaApiService>();
-            ConfigureNserviceBus(services,context);            
+            ConfigureNserviceBus(services);            
         
         }
 
-        public void ConfigureNserviceBus(IServiceCollection services, AppDataContext context)
+        public void ConfigureNserviceBus(IServiceCollection services)
         {
             
             var endpointName = "Descarte.Agenda";
@@ -135,6 +135,7 @@ namespace AgendaService
             routing.RouteToEndpoint(typeof(ConfirmarAgendamentoRetiradaCommand), endpointName);
             routing.RouteToEndpoint(typeof(CancelarAgendamentoRetiradaCommand), endpointName);
             routing.RouteToEndpoint(typeof(CancelarAgendamentoRetiradaConfirmadaCommand), endpointName);
+            routing.RouteToEndpoint(typeof(RealizarTriagemCommand), "Descarte.Triagem");
 
             IEndpointInstance endpoint = null;
 
