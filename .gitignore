@@ -20,5 +20,5 @@
 /RabbitMqueueApiService/packages
 /teste/.vscode
 /teste/obj
-/bin
-/obj
+/*/bin
+/*/obj
