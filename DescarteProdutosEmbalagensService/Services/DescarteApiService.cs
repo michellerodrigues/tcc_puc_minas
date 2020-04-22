@@ -42,6 +42,14 @@ namespace DescarteService.Services
                 response.StatusRetorno = String.Format("Podutos Finalizados enviados para a fila de notificação. Job: {0}. Por favor, aguarde.", jobid);
 
             }
+              if(response==null)
+            {
+                response = new ObterProdutosFinalizadosMessageResponse()
+                {
+                    codRetorno = -1,
+                    StatusRetorno = "Não foi possível conectar com o serviço de Estoque. Aguarde a próxima execução"
+                };                
+            }
             return response;
         }
         public ObterProdutosVencidosMessageResponse ObterProdutosVencidos()
@@ -264,5 +272,6 @@ namespace DescarteService.Services
             }
             return response;
         }
+        
     }
 }
