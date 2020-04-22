@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\mica\\tcc\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\DescarteService.csproj": {}
+    "D:\\repos\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\DescarteService.csproj": {}
   },
   "projects": {
-    "D:\\mica\\tcc\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\DescarteService.csproj": {
+    "D:\\repos\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\DescarteService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\mica\\tcc\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\DescarteService.csproj",
+        "projectUniqueName": "D:\\repos\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\DescarteService.csproj",
         "projectName": "DescarteService",
-        "projectPath": "D:\\mica\\tcc\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\DescarteService.csproj",
+        "projectPath": "D:\\repos\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\DescarteService.csproj",
         "packagesPath": "C:\\Users\\Michelle Rodrigues\\.nuget\\packages\\",
-        "outputPath": "D:\\mica\\tcc\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\obj\\",
+        "outputPath": "D:\\repos\\tcc_puc_minas\\DescarteProdutosEmbalagensService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Michelle Rodrigues\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "D:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.0"
@@ -30,8 +31,8 @@
         "frameworks": {
           "netcoreapp2.0": {
             "projectReferences": {
-              "d:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj": {
-                "projectPath": "d:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj"
+              "D:\\repos\\tcc_puc_minas\\Messages\\Messages.csproj": {
+                "projectPath": "D:\\repos\\tcc_puc_minas\\Messages\\Messages.csproj"
               }
             }
           }
@@ -45,9 +46,17 @@
       "frameworks": {
         "netcoreapp2.0": {
           "dependencies": {
-            "HangFire": {
+            "Hangfire.AspNetCore": {
               "target": "Package",
-              "version": "[1.6.20, )"
+              "version": "[1.7.*, )"
+            },
+            "Hangfire.Core": {
+              "target": "Package",
+              "version": "[1.7.*, )"
+            },
+            "Hangfire.SqlServer": {
+              "target": "Package",
+              "version": "[1.7.*, )"
             },
             "Microsoft.AspNetCore.All": {
               "target": "Package",
@@ -66,6 +75,7 @@
               "version": "[2.1.1, )"
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.0, )",
               "autoReferenced": true
@@ -73,75 +83,38 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.0.3, )"
-            },
-            "NServiceBus": {
-              "target": "Package",
-              "version": "[7.1.6, )"
-            },
-            "NServiceBus.Autofac": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "NServiceBus.CustomChecks": {
-              "target": "Package",
-              "version": "[3.0.1, )"
-            },
-            "NServiceBus.Heartbeat": {
-              "target": "Package",
-              "version": "[3.0.1, )"
-            },
-            "NServiceBus.MSDependencyInjection": {
-              "target": "Package",
-              "version": "[0.1.3, )"
-            },
-            "NServiceBus.Metrics.ServiceControl": {
-              "target": "Package",
-              "version": "[3.0.2, )"
-            },
-            "NServiceBus.NHibernate": {
-              "target": "Package",
-              "version": "[8.1.1, )"
-            },
-            "NServiceBus.Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "NServiceBus.Persistence.Sql": {
-              "target": "Package",
-              "version": "[4.4.0, )"
-            },
-            "NServiceBus.RabbitMQ": {
-              "target": "Package",
-              "version": "[5.0.2, )"
-            },
-            "NServiceBus.SagaAudit": {
-              "target": "Package",
-              "version": "[3.0.1, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "d:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj": {
+    "D:\\repos\\tcc_puc_minas\\Messages\\Messages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj",
+        "projectUniqueName": "D:\\repos\\tcc_puc_minas\\Messages\\Messages.csproj",
         "projectName": "Messages",
-        "projectPath": "d:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj",
+        "projectPath": "D:\\repos\\tcc_puc_minas\\Messages\\Messages.csproj",
         "packagesPath": "C:\\Users\\Michelle Rodrigues\\.nuget\\packages\\",
-        "outputPath": "d:\\mica\\tcc\\tcc_puc_minas\\Messages\\obj\\",
+        "outputPath": "D:\\repos\\tcc_puc_minas\\Messages\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\Michelle Rodrigues\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "D:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -196,10 +169,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -16,6 +16,7 @@ using DescarteService.Services;
 using DescarteService.Data.Interfaces;
 using DescarteService.Data.Models;
 using DescarteService.Data.Repository;
+using System.Data.SqlClient;
 
 namespace DescarteService
 {
@@ -46,7 +47,8 @@ namespace DescarteService
         
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
 
-            services.AddHangfire(config => config.UseSqlServerStorage(Configuration.GetConnectionString("Jobs")));
+            services.AddHangfire(config => config.UseSqlServerStorage(GetHangfireConnectionString("JobDB")));
+            
 
             services.AddScoped<IDescarteApiService,DescarteApiService>();  
             services.AddScoped<IEmailService,EmailService>();
@@ -150,8 +152,26 @@ namespace DescarteService
             }
 
             return intervalo;
+
         }
+        private string GetHangfireConnectionString(string dbName)
+        {
+            string connectionStringFormat = "Server = DESKTOP-MO3ES0N\\SQLEXPRESS;Database={0};Integrated Security=False;User Id=job_user;Password=root@1234";
+            string.Format(connectionStringFormat, dbName);
 
+            using (var connection = new SqlConnection(String.Format(connectionStringFormat, "master")))
+            {
+                connection.Open();
 
+                using (var command = new SqlCommand(string.Format(
+                    @"IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = N'{0}') 
+                                    create database [{0}];
+                      ", dbName), connection))
+                {
+                    command.ExecuteNonQuery();
+                }
+            }
+            return String.Format(connectionStringFormat, dbName);
+        }
     }
 }
