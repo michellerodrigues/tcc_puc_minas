@@ -4877,23 +4877,24 @@
   },
   "packageFolders": {
     "C:\\Users\\Michelle Rodrigues\\.nuget\\packages\\": {},
-    "D:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj",
+      "projectUniqueName": "D:\\repos\\tcc_puc_minas\\Messages\\Messages.csproj",
       "projectName": "Messages",
-      "projectPath": "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\Messages.csproj",
+      "projectPath": "D:\\repos\\tcc_puc_minas\\Messages\\Messages.csproj",
       "packagesPath": "C:\\Users\\Michelle Rodrigues\\.nuget\\packages\\",
-      "outputPath": "D:\\mica\\tcc\\tcc_puc_minas\\Messages\\obj\\",
+      "outputPath": "D:\\repos\\tcc_puc_minas\\Messages\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "D:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\Michelle Rodrigues\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "D:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -4948,10 +4949,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

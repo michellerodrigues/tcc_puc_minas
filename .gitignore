@@ -3,3 +3,22 @@
 ################################################################################
 
 /EstoqueService/.vs/EstoqueService/v15/Server/sqlite3
+/DescarteProdutosEmbalagensService/bin/Debug/netcoreapp2.0
+/DescarteProdutosEmbalagensService/obj/Release/netcoreapp2.0
+/EasyNetQTeste/.vscode
+/EasyNetQTeste/bin/Debug
+/EasyNetQTeste/obj
+/rabbitApi/.vscode
+/rabbitApi/obj
+/RabbitApiService/.vscode
+/RabbitApiService/bin/Debug/netcoreapp2.1
+/RabbitApiService/obj
+/RabbitMqueueApiService/.vs
+/RabbitMqueueApiService/.vscode
+/RabbitMqueueApiService/bin/Debug/netcoreapp2.0
+/RabbitMqueueApiService/obj
+/RabbitMqueueApiService/packages
+/teste/.vscode
+/teste/obj
+/bin
+/obj
