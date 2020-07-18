@@ -1,0 +1,11 @@
+D:\repos\tcc_puc_minas\saga_pattern\sagaPattern\bin\Debug\netcoreapp2.0\sagaPattern.deps.json
+D:\repos\tcc_puc_minas\saga_pattern\sagaPattern\bin\Debug\netcoreapp2.0\sagaPattern.dll
+D:\repos\tcc_puc_minas\saga_pattern\sagaPattern\bin\Debug\netcoreapp2.0\sagaPattern.pdb
+D:\repos\tcc_puc_minas\saga_pattern\sagaPattern\bin\Debug\netcoreapp2.0\Messages.dll
+D:\repos\tcc_puc_minas\saga_pattern\sagaPattern\bin\Debug\netcoreapp2.0\Messages.pdb
+D:\repos\tcc_puc_minas\saga_pattern\sagaPattern\obj\Debug\netcoreapp2.0\sagaPattern.csprojAssemblyReference.cache
+D:\repos\tcc_puc_minas\saga_pattern\sagaPattern\obj\Debug\netcoreapp2.0\sagaPattern.AssemblyInfoInputs.cache
+D:\repos\tcc_puc_minas\saga_pattern\sagaPattern\obj\Debug\netcoreapp2.0\sagaPattern.AssemblyInfo.cs
+D:\repos\tcc_puc_minas\saga_pattern\sagaPattern\obj\Debug\netcoreapp2.0\sagaPattern.csproj.CopyComplete
+D:\repos\tcc_puc_minas\saga_pattern\sagaPattern\obj\Debug\netcoreapp2.0\sagaPattern.dll
+D:\repos\tcc_puc_minas\saga_pattern\sagaPattern\obj\Debug\netcoreapp2.0\sagaPattern.pdb

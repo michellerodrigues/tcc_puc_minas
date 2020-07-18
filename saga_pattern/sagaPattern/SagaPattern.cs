@@ -1,16 +1,31 @@
 using System;
 using System.Collections.Generic;
-using RabbitMQ.Client;
+using System.Threading.Tasks;
+using Agropop.Saga.Factory;
+using Agropop.Saga.Messages;
 
 namespace Agropop.Saga
 {
-    public class SagaPattern
+    public class SagaPattern : MessageHandlerContext, IAmStartedByMessages<IMessage>, IHandleMessages<IMessage>
     {
-        private static IMessageHandlerContext _context;
-        public SagaPattern(IMessageHandlerContext context)
-        {           
-            _context = context;
+      
+        public SagaPattern(IChannel channel):base(channel){
+
         }
-        IMessageHandlerContext Context => _context;
+       
+        public void StartSaga()
+        {
+            base.Consume();
+        }
+
+        public override Task Handle(BaseMessage message)
+        {
+            return base.Handle(message);
+        }
+
+        public Task Handle(IMessage message)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
