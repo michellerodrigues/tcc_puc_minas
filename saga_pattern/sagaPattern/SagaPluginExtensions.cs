@@ -8,7 +8,7 @@ namespace Agropop.Saga.DependencyInjection
 {
     public static class SagaPluginExtensions
     {               
-        public static SagaConfig sagaConfig;
+        public static SagaConfig sagaConfig = new SagaConfig();
         public static void AddSagaPattern(IServiceCollection services, IConfiguration Configuration)
         {
             AddSagaConfig(Configuration, services);
@@ -21,7 +21,7 @@ namespace Agropop.Saga.DependencyInjection
 
         private static void AddSagaConfig(this IConfiguration Configuration, IServiceCollection services)
         {
-            Configuration.GetSection("SagaConfig").Bind(sagaConfig);   
+            Configuration.GetSection("AppSettings:SagaConfig").Bind(sagaConfig);   
             services.AddSingleton<ISagaConfig>(sagaConfig);        
         }
 

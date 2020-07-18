@@ -1,16 +1,16 @@
 ﻿public class SagaConfig : ISagaConfig
 {
-     public ConnectionConfig Connection { get; set; }
-     public ExchangeOptionsConfig ExchangeOptions { get; set; }
-     public QueueOptionsConfig QueueOptions { get; set; }
+     public Connection Connection { get; set; }
+     public ExchangeOptions ExchangeOptions { get; set; }
+     public QueueOptions QueueOptions { get; set; }
 }
 
-public class ConnectionConfig
+public class Connection
 {   
      public string RabbitMQSUrl { get; set; }
 }
 
-public class ExchangeOptionsConfig
+public class ExchangeOptions
 {   
      public string Exchange { get; set; }
      public string Type { get; set; }
@@ -19,7 +19,7 @@ public class ExchangeOptionsConfig
      public string AlternateExchange { get; set; }
 }
 
-public class QueueOptionsConfig
+public class QueueOptions
 {   
      public string Queue { get; set; }
      public bool Durable { get; set; }
