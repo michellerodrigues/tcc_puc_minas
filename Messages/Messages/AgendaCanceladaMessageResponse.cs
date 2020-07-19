@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Runtime.Serialization;
-using Messages.Descartes.Messages;
+﻿using System.Runtime.Serialization;
 
 namespace Messages.Descartes.Messages
 {

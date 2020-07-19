@@ -28,6 +28,7 @@ namespace DescarteService.Services
         }
 
         static string EstoqueServicesURL = Startup.AppSettings.EstoqueServicesURL;
+        
         public ObterProdutosFinalizadosMessageResponse ObterProdutosFinalizados()
         {
 

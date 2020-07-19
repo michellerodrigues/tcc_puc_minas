@@ -1,9 +1,9 @@
 using System;
-using NServiceBus;
+
 
 namespace Messages.Descartes.Commands
 {
-    public class RetiradaDescarteRealizadaEvent : IEvent
+    public class RetiradaDescarteRealizadaEvent
     {
         public Guid Id { get; set; }
         public DateTime DataDescarte { get; set; }

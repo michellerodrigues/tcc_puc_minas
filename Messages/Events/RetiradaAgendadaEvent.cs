@@ -1,9 +1,8 @@
 using System;
-using NServiceBus;
 
 namespace Messages.Descartes.Events
 {
-    public class RetiradaAgendadaEvent : IEvent
+    public class RetiradaAgendadaEvent
     {
         public Guid Id { get; set; }
         public DateTime DataRegistro { get; set; }

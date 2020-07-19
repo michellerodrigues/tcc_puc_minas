@@ -1,9 +1,8 @@
 using System;
-using NServiceBus;
 
 namespace Messages.Descartes.Commands
 {
-    public class TriagemRealizadaEvent : IEvent
+    public class TriagemRealizadaEvent
     {
         public Guid Id { get; set; }
         public DateTime DataRealizacao { get; set; }

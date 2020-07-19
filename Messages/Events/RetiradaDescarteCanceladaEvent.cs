@@ -1,9 +1,9 @@
 using System;
-using NServiceBus;
+
 
 namespace Messages.Descartes.Commands
 {
-    public class RetiradaDescarteCanceladaEvent : ICommand
+    public class RetiradaDescarteCanceladaEvent
     {
         public Guid Id { get; set; }
         public DateTime DataCancelamento { get; set; }

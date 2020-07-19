@@ -1,9 +1,9 @@
 using System;
-using NServiceBus;
+using Messages.Descartes.Messages;
 
 namespace Messages.Descartes.Commands
 {
-    public class AgendarRetiradaCommand : ICommand
+    public class AgendarRetiradaCommand:IMessage
     {
         public Guid Id { get; set; }
         public string EmailAgente { get; set; }

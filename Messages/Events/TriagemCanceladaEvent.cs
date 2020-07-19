@@ -1,9 +1,9 @@
 using System;
-using NServiceBus;
+
 
 namespace Messages.Descartes.Commands
 {
-    public class TriagemCanceladaEvent : IEvent
+    public class TriagemCanceladaEvent
     {
         public Guid Id { get; set; }
 

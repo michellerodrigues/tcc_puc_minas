@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 namespace Messages.Descartes.Messages
 {
     [DataContract]
-    public class ProdutoMessage
+    public class ProdutoMessage : IMessage
     {
        [DataMember(Name = "idItemEstoque")]
         public Guid IdItemEstoque { get; set; }
@@ -34,5 +34,6 @@ namespace Messages.Descartes.Messages
         [DataMember(Name = "volumeEmbalagem")]
         public decimal VolumeEmbalagem { get; set; }
 
+        public Guid Id => IdItemEstoque;
     }
 }

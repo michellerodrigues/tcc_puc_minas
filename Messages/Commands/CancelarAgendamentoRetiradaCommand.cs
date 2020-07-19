@@ -1,10 +1,8 @@
 using System;
-using NServiceBus;
 
 namespace Messages.Descartes.Commands
 {
-    public class CancelarAgendamentoRetiradaCommand : ICommand
-    {
+    public class CancelarAgendamentoRetiradaCommand{
         public Guid Id { get; set; }
         public string EmailSolicitante { get; set; }
         public DateTime DataSolicitacao { get; set; }

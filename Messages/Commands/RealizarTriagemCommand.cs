@@ -1,9 +1,8 @@
 using System;
-using NServiceBus;
 
 namespace Messages.Descartes.Commands
 {
-    public class RealizarTriagemCommand : ICommand
+    public class RealizarTriagemCommand
     {
         public Guid Id { get; set; }
         public string EmailAgente { get; set; }
