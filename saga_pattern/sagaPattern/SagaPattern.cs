@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Agropop.Saga.Factory;
+using Agropop.Saga.Interfaces;
 using Agropop.Saga.Messages;
 
 namespace Agropop.Saga

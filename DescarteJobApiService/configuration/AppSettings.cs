@@ -12,7 +12,7 @@
     public string MensagemPadraoDescarteProutoVencido{ get; set; }    
     public string MensagemPadraoDescarteEmbalagens{ get; set; }
 
-    public SagaConfig SagaConfig { get; set; }
+    public SagaConfigOpt SagaConfig { get; set; }
 
 
 }
@@ -25,30 +25,30 @@ public class EnvioEmail
      public bool EnableSSL { get; set; }
 }
 
-public class SagaConfig
+public class SagaConfigOpt
 {
-     public Connection Connection { get; set; }
-     public ExchangeOptions ExchangeOptions { get; set; }
-     public QueueOptions QueueOptions { get; set; }
+    private ConnectOpt Connection { get; set; }
+    public ExchangenOpt ExchangeOptions { get; set; }
+    public QueuenOpt QueueOptions { get; set; }
 }
 
-public class Connection
+public class ConnectOpt
 {   
      public string RabbitMQSUrl { get; set; }
 }
 
-public class ExchangeOptions
+public class ExchangenOpt
 {   
-     public string Exchange { get; set; }
+     public string Name { get; set; }
      public string Type { get; set; }
      public string RoutingKey { get; set; }
      public bool Durable { get; set; }     
      public string AlternateExchange { get; set; }
 }
 
-public class QueueOptions
+public class QueuenOpt
 {   
-     public string Queue { get; set; }
+     public string Name { get; set; }
      public bool Durable { get; set; }
      public bool Exclusive { get; set; }
      public bool AutoDelete { get; set; }     

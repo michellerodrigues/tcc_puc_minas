@@ -1,3 +1,6 @@
+using System;
+using Agropop.Saga.Interfaces;
+using Microsoft.Extensions.Options;
 using RabbitMQ.Client;
 
 namespace Agropop.Saga
@@ -9,9 +12,14 @@ namespace Agropop.Saga
         private readonly IModel _model;
 
 
-        public RabbitMQClient(IConnectionFactory factory, IConnection connection, IModel model)
+        public RabbitMQClient(IOptions<SagaConfigOptions> sagaConfig)
         {
-            _factory = factory;
+            IConnectionFactory conn = new ConnectionFactory()
+            {
+                Uri = new Uri(sagaConfig.Value.Connection.RabbitMQSUrl)
+            };
+
+            _factory = conn;
             _connection = _factory.CreateConnection();
             _model = _connection.CreateModel();
         }

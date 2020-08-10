@@ -1,6 +1,6 @@
 using RabbitMQ.Client;
 
-namespace Agropop.Saga
+namespace Agropop.Saga.Interfaces
 {
     public interface IConsumeOptions
     {

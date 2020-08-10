@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Agropop.Saga;
+using Agropop.Saga.Interfaces;
 using Messages.Descartes.Messages;
 
 

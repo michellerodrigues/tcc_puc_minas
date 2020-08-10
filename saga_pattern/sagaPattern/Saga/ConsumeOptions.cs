@@ -1,3 +1,4 @@
+using Agropop.Saga.Interfaces;
 using RabbitMQ.Client;
 
 namespace Agropop.Saga

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Agropop.Saga.Interfaces;
 using RabbitMQ.Client;
 
 namespace Agropop.Saga
@@ -9,8 +10,11 @@ namespace Agropop.Saga
         private readonly IQueueOptions _queueOptions;
         private readonly IExchangeOptions _exchangeOptions;
         
-        public Channel(IMessageBroker messageBroker)
+        public Channel(IMessageBroker messageBroker, IQueueOptions queueOptions, IExchangeOptions exchangeOptions)
         {
+            _queueOptions = queueOptions;
+            _exchangeOptions = exchangeOptions;
+            
            /* messageBroker.Model.QueueDeclare(
                 queue: queueOptions.Queue,
                 durable: queueOptions.Durable,

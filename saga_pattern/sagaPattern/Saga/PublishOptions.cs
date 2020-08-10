@@ -1,5 +1,7 @@
 
 
+using Agropop.Saga.Interfaces;
+
 namespace Agropop.Saga
 {
     public class PublishOptions : IPublishOptions

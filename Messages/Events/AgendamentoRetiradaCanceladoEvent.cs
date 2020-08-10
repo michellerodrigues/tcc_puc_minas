@@ -1,7 +1,7 @@
 using System;
 
 
-namespace Messages.Descartes.Events
+namespace Saga.Messages.Events
 {
     public class AgendamentoRetiradaCanceladoEvent
     {

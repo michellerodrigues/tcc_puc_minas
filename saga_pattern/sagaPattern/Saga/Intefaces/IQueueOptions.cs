@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Agropop.Saga
+namespace Agropop.Saga.Interfaces
 {   public interface IQueueOptions
     {
         string Queue

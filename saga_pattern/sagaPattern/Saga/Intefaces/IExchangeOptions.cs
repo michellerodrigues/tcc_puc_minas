@@ -1,4 +1,4 @@
-namespace Agropop.Saga
+namespace Agropop.Saga.Interfaces
 {   public interface IExchangeOptions
     {
         string Exchange

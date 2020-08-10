@@ -95,13 +95,12 @@ namespace DescarteService
 
             RecurringJob.AddOrUpdate<DescarteJobService>("VerificarProdutosFinalizados", js => js.ObterProdutosFinalizados(), Cron.DayInterval(7));
 
-            
         }
-
 
         private void ConfigureSagaPatern(IServiceCollection services, IConfiguration configuration)
         {
-            SagaPluginExtensions.AddSagaPattern(services, configuration);            
+            SagaPluginExtensions.AddSagaPattern(services, configuration);    
+            services.AddSingleton<DescarteSaga>();
         }
         private int GetRetriesJob(string tentativas)
         {

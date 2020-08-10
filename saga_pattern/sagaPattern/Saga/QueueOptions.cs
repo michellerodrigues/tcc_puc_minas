@@ -1,4 +1,7 @@
 using System.Collections.Generic;
+using Agropop.Saga.Interfaces;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 
 namespace Agropop.Saga
 {
@@ -9,13 +12,17 @@ namespace Agropop.Saga
         private readonly  bool _exclusive;
         private readonly  bool _autoDelete;
         private readonly  IDictionary<string, object>  _arguments;
+        private readonly SagaConfigOptions _sagaConfigValue;
 
-        public QueueOptions(IMessageBroker messageBroker,SagaConfig sagaConfig)
+
+        public QueueOptions(IMessageBroker messageBroker,  IOptions<SagaConfigOptions> sagaConfig)
         {   
-            _queue = sagaConfig.QueueOptions.Queue;
-            _durable = sagaConfig.QueueOptions.Durable;
-            _exclusive = sagaConfig.QueueOptions.Exclusive;
-            _autoDelete = sagaConfig.QueueOptions.AutoDelete;
+            _sagaConfigValue = sagaConfig.Value;
+
+            _queue = _sagaConfigValue.QueueOptions.Name;
+            _durable = _sagaConfigValue.QueueOptions.Durable;
+            _exclusive = _sagaConfigValue.QueueOptions.Exclusive;
+            _autoDelete = _sagaConfigValue.QueueOptions.AutoDelete;
             _arguments = null;
 
             messageBroker.Model.QueueDeclare(

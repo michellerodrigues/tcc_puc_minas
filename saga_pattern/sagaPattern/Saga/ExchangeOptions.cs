@@ -1,4 +1,7 @@
 using System.Collections.Generic;
+using Agropop.Saga.Interfaces;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 
 namespace Agropop.Saga
 {
@@ -9,22 +12,22 @@ namespace Agropop.Saga
         private readonly  string _routingKey;
         private readonly  bool _durable;
         private readonly  string _alternateExchange;
+        private readonly SagaConfigOptions _sagaConfigValue;
 
-        public ExchangeOptions(IMessageBroker messageBroker, SagaConfig sagaConfig)
+        public ExchangeOptions(IMessageBroker messageBroker, IOptions<SagaConfigOptions> sagaConfig)
         {   
-            _exchange = sagaConfig.ExchangeOptions.Exchange;
-            _type = sagaConfig.ExchangeOptions.Type;
-            _routingKey = sagaConfig.ExchangeOptions.RoutingKey;
-            _durable = sagaConfig.ExchangeOptions.Durable;
-            _alternateExchange = sagaConfig.ExchangeOptions.AlternateExchange;
+            _sagaConfigValue =sagaConfig.Value;
+            _exchange = _sagaConfigValue.ExchangeOptions.Name;
+            _type = _sagaConfigValue.ExchangeOptions.Type;
+            _routingKey = _sagaConfigValue.ExchangeOptions.RoutingKey;
+            _durable = _sagaConfigValue.ExchangeOptions.Durable;
+            _alternateExchange = _sagaConfigValue.ExchangeOptions.AlternateExchange;
             
             bool autodelete=false;
 
             IDictionary<string, object> arguments = new Dictionary<string, object>();
             arguments.Add("alternate-exchange",_alternateExchange);
-            messageBroker.Model.ExchangeDeclare(exchange: _exchange, type: _type, durable: _durable, autoDelete:autodelete, arguments:arguments);
-
-            
+            messageBroker.Model.ExchangeDeclare(exchange: _exchange, type: _type, durable: _durable, autoDelete:autodelete, arguments:arguments);            
         }
 
         public string Exchange => _exchange;
