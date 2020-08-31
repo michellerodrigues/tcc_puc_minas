@@ -1,9 +1,10 @@
 using Agropop.Saga.Messages;
-using RabbitMQ.Client;
+using Agropop.Saga.Messages.Commands;
+using Agropop.Saga.Messages.Events;
 
 namespace Agropop.Saga.Interfaces
 {
-    public interface ISagaPattern : IAmStartedByMessages<IMessage>, IHandleMessages<IMessage>
+    public interface ISagaPattern : IAmStartedByMessages<IMessage>, IHandleMessages<ICommand>
     {
 
     }

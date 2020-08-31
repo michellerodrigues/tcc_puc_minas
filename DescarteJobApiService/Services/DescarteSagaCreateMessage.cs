@@ -1,23 +1,18 @@
-﻿using Agropop.Saga.Factory;
-using Messages.Descartes.Messages;
-
+﻿using Agropop.Saga.Util;
+using Messages.Descartes.Commands;
 
 namespace DescarteService.Services
 {
-    public static class DescarteSagaCreateMessage : ITransformleMessage<DescartePendenteCommand>
+    public class DescarteSagaCreateMessage : BaseTransformMessage<DescartePendenteCommand>
     {
-        private BaseMessge AddBaseMessage(IMessage message)
+        public Saga.Messages.Base.BaseMessage TransformCommandToMessage(string lote)
         {
-            BaseMessage baseMessage = new BaseMessage()
+            var command = new DescartePendenteCommand()
             {
-                assemblyName = message.GetType().Assembly.FullName,
-                fullNameType = message.GetType().FullName,
-                content = message,
-                handleMethod="AgendarRetiradaCommandHandle",
-                UserForNewType = message.GetType().FullName + ","+ message.GetType().Assembly.FullName
-            };  
+                LoteDeDescarte = lote
+            };
 
-            return  baseMessage;
+            return base.TransformTOBaseMessage(command);
         }
     }
 }

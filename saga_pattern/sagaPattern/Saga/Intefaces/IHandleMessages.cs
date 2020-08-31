@@ -2,8 +2,8 @@ using System.Threading.Tasks;
 
 namespace Agropop.Saga.Interfaces
 {
-    public interface IHandleMessages<T>
+    public interface IHandleMessages<ICommand>
     {        
-        Task Handle(T message);
+        Task Handle(ICommand message);
     }
 }

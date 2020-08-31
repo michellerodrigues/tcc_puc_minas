@@ -3,7 +3,7 @@ using Messages.Descartes.Messages;
 
 namespace Messages.Descartes.Commands
 {
-    public class AgendarRetiradaCommand:IMessage
+    public class AgendarRetiradaCommand:ICommand
     {
         public Guid Id { get; set; }
         public string EmailAgente { get; set; }

@@ -1,21 +1,52 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Agropop.Saga;
 using Agropop.Saga.Interfaces;
-using Messages.Descartes.Messages;
-
+using Messages.Descartes.Commands;
+using Messages.Descartes.Events;
 
 namespace DescarteService.Services
 {
-    public class DescarteSaga : MessageHandlerContext, IAmStartedByMessages<IMessage>, IHandleMessages<IMessage>
+    public class DescarteSaga : MessageHandlerContext, 
+    IAmStartedByMessages<DescartePendenteCommand>, 
+    IHandleMessages<AgendarRetiradaCommand>,
+    IHandleMessages<DescartePendenteNotificadoEvent>
     {
         public DescarteSaga(IChannel channel) : base(channel)
         {
-            base.Consume();
+            //base.Consume();
         }
 
-        public Task Handle(IMessage message)
+        public Task Handle(AgendarRetiradaCommand message)
         {
-            throw new System.NotImplementedException();
+            var evento = new AgendamentoRetiradaConfirmadoEvent()
+            {
+                Id = message.Id
+            };
+
+            base.Publish(evento);
+
+            return Task.Delay(0);
+        }
+
+        public Task Handle (DescartePendenteNotificadoEvent evento)
+        {
+            var command = new AgendarRetiradaCommand()
+            {
+                Id = evento.Id
+            };
+            base.Publish(command);
+            return Task.Delay(0);
+        }
+
+        public Task Handle(DescartePendenteCommand message)
+        {
+            var evento = new DescartePendenteNotificadoEvent()
+            {
+                Id = message.Id
+            };
+            base.Publish(evento);
+            return Task.Delay(0);
         }
     }
 }

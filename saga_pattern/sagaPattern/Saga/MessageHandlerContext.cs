@@ -7,6 +7,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using Agropop.Saga.Factory;
 using Agropop.Saga.Interfaces;
+using Agropop.Saga.Messages.Commands;
+using Agropop.Saga.Messages.Events;
 using Newtonsoft.Json;
 using RabbitMQ.Client.Events;
 

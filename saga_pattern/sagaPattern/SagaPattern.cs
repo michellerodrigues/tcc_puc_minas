@@ -1,13 +1,13 @@
 using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using Agropop.Saga.Factory;
 using Agropop.Saga.Interfaces;
 using Agropop.Saga.Messages;
+using Agropop.Saga.Messages.Commands;
 
 namespace Agropop.Saga
 {
-    public class SagaPattern : MessageHandlerContext, IAmStartedByMessages<IMessage>, IHandleMessages<IMessage>
+    public class SagaPattern : MessageHandlerContext, IAmStartedByMessages<IMessage>, 
+    IHandleMessages<ICommand>
     {
       
         public SagaPattern(IChannel channel):base(channel){
@@ -19,12 +19,12 @@ namespace Agropop.Saga
             base.Consume();
         }
 
-        public override Task Handle(BaseMessage message)
+        public Task Handle(IMessage message)
         {
-            return base.Handle(message);
+            throw new NotImplementedException();
         }
 
-        public Task Handle(IMessage message)
+        Task IHandleMessages<ICommand>.Handle(ICommand message)
         {
             throw new NotImplementedException();
         }

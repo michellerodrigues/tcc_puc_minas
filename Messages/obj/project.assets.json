@@ -682,11 +682,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\repos\\tcc_puc_minas\\Messages\\Messages.csproj",
+      "projectUniqueName": "D:\\repos\\tcc_puc_minas\\Messages\\Messages.csproj",
       "projectName": "Messages",
-      "projectPath": "d:\\repos\\tcc_puc_minas\\Messages\\Messages.csproj",
+      "projectPath": "D:\\repos\\tcc_puc_minas\\Messages\\Messages.csproj",
       "packagesPath": "C:\\Users\\Michelle Rodrigues\\.nuget\\packages\\",
-      "outputPath": "d:\\repos\\tcc_puc_minas\\Messages\\obj\\",
+      "outputPath": "D:\\repos\\tcc_puc_minas\\Messages\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\"
