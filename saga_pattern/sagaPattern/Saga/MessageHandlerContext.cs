@@ -85,13 +85,17 @@ namespace Agropop.Saga
 
         private dynamic DynamicCast(object entity, Type to)
         {
-            var openCast = this.GetType().GetMethod("Cast", BindingFlags.Static | BindingFlags.NonPublic);
+            var openCast = this.GetType().GetMethod("Cast");
             var closeCast = openCast.MakeGenericMethod(to);
             
+
+            //Close cast chegando nulo, sem encntrar o target location ;
+            //verificar se o descarte saga utiliza a message correta. Não sei porque parou de funcionar
+          //  var retorno = closeCast.Invoke(entity, new[] { entity });
             var retorno = closeCast.Invoke(entity, new[] { entity });
             return retorno;
         }
-        private static T Cast<T>(object entity) where T : class
+        public virtual T Cast<T>(object entity) where T : class
         {
             return entity as T;
         }       

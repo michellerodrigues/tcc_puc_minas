@@ -27,9 +27,9 @@ public class EnvioEmail
 
 public class SagaConfigOpt
 {
-    private ConnectOpt Connection { get; set; }
-    public ExchangenOpt ExchangeOptions { get; set; }
-    public QueuenOpt QueueOptions { get; set; }
+    public ConnectOpt Connection { get; set; }
+    public ExchangenOpt Exchange { get; set; }
+    public QueuenOpt Queue { get; set; }
 }
 
 public class ConnectOpt

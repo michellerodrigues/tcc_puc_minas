@@ -14,7 +14,7 @@ namespace DescarteService.Services
     {
         public DescarteSaga(IChannel channel) : base(channel)
         {
-            //base.Consume();
+          //  base.Consume();
         }
 
         public Task Handle(AgendarRetiradaCommand message)
@@ -48,5 +48,9 @@ namespace DescarteService.Services
             base.Publish(evento);
             return Task.Delay(0);
         }
+        public override T Cast<T>(object entity)
+        {
+            return base.Cast<T>(entity);
+        } 
     }
 }

@@ -17,11 +17,11 @@ namespace Agropop.Saga
         public ExchangeOptions(IMessageBroker messageBroker, IOptions<SagaConfigOptions> sagaConfig)
         {   
             _sagaConfigValue =sagaConfig.Value;
-            _exchange = _sagaConfigValue.ExchangeOptions.Name;
-            _type = _sagaConfigValue.ExchangeOptions.Type;
-            _routingKey = _sagaConfigValue.ExchangeOptions.RoutingKey;
-            _durable = _sagaConfigValue.ExchangeOptions.Durable;
-            _alternateExchange = _sagaConfigValue.ExchangeOptions.AlternateExchange;
+            _exchange = _sagaConfigValue.Exchange.Name;
+            _type = _sagaConfigValue.Exchange.Type;
+            _routingKey = _sagaConfigValue.Exchange.RoutingKey;
+            _durable = _sagaConfigValue.Exchange.Durable;
+            _alternateExchange = _sagaConfigValue.Exchange.AlternateExchange;
             
             bool autodelete=false;
 

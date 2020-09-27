@@ -19,10 +19,10 @@ namespace Agropop.Saga
         {   
             _sagaConfigValue = sagaConfig.Value;
 
-            _queue = _sagaConfigValue.QueueOptions.Name;
-            _durable = _sagaConfigValue.QueueOptions.Durable;
-            _exclusive = _sagaConfigValue.QueueOptions.Exclusive;
-            _autoDelete = _sagaConfigValue.QueueOptions.AutoDelete;
+            _queue = _sagaConfigValue.Queue.Name;
+            _durable = _sagaConfigValue.Queue.Durable;
+            _exclusive = _sagaConfigValue.Queue.Exclusive;
+            _autoDelete = _sagaConfigValue.Queue.AutoDelete;
             _arguments = null;
 
             messageBroker.Model.QueueDeclare(

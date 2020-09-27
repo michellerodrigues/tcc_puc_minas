@@ -9,5 +9,7 @@ namespace Agropop.Saga.Interfaces
     {
         void  Publish(object message);
         List<string> Consume();
+
+        T Cast<T>(object entity) where T : class;
     }
 }

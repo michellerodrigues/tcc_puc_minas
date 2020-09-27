@@ -2,8 +2,8 @@
 {
      public const string SagaConfig = "AppSettings:SagaConfig";
      public ConnectionOpt Connection { get; set; }
-     public ExchangeOpt ExchangeOptions { get; set; }
-     public QueueOpt QueueOptions { get; set; }   
+     public ExchangeOpt Exchange { get; set; }
+     public QueueOpt Queue{ get; set; }   
 }
 
 public class ConnectionOpt
